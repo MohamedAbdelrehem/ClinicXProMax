@@ -29,13 +29,51 @@ namespace Clinic_Mang_Sys
         /// </summary>
         private void InitializeComponent()
         {
+            this.Close = new System.Windows.Forms.Button();
+            this.Minmize = new System.Windows.Forms.Button();
+            this.HomePage = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // Close
+            // 
+            this.Close.BackColor = System.Drawing.Color.Red;
+            this.Close.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Close.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Close.Location = new System.Drawing.Point(378, 12);
+            this.Close.Name = "Close";
+            this.Close.Size = new System.Drawing.Size(30, 28);
+            this.Close.TabIndex = 0;
+            this.Close.UseVisualStyleBackColor = false;
+            // 
+            // Minmize
+            // 
+            this.Minmize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.Minmize.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.Minmize.Location = new System.Drawing.Point(342, 12);
+            this.Minmize.Name = "Minmize";
+            this.Minmize.Size = new System.Drawing.Size(30, 28);
+            this.Minmize.TabIndex = 1;
+            this.Minmize.UseVisualStyleBackColor = false;
+            // 
+            // HomePage
+            // 
+            this.HomePage.Location = new System.Drawing.Point(77, 231);
+            this.HomePage.Name = "HomePage";
+            this.HomePage.Size = new System.Drawing.Size(273, 66);
+            this.HomePage.TabIndex = 2;
+            this.HomePage.Text = "button1";
+            this.HomePage.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.Aqua;
+            this.ClientSize = new System.Drawing.Size(428, 309);
+            this.Controls.Add(this.HomePage);
+            this.Controls.Add(this.Minmize);
+            this.Controls.Add(this.Close);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -44,6 +82,10 @@ namespace Clinic_Mang_Sys
         }
 
         #endregion
+
+        private System.Windows.Forms.Button Close;
+        private System.Windows.Forms.Button Minmize;
+        private System.Windows.Forms.Button HomePage;
     }
 }
 
