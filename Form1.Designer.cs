@@ -32,6 +32,7 @@ namespace Clinic_Mang_Sys
             this.Close = new System.Windows.Forms.Button();
             this.Minmize = new System.Windows.Forms.Button();
             this.HomePage = new System.Windows.Forms.Button();
+            this.formLogo = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Close
@@ -65,12 +66,22 @@ namespace Clinic_Mang_Sys
             this.HomePage.Text = "button1";
             this.HomePage.UseVisualStyleBackColor = false;
             // 
+            // formLogo
+            // 
+            this.formLogo.AutoSize = true;
+            this.formLogo.Location = new System.Drawing.Point(25, 21);
+            this.formLogo.Name = "formLogo";
+            this.formLogo.Size = new System.Drawing.Size(63, 13);
+            this.formLogo.TabIndex = 3;
+            this.formLogo.Text = "DoctorPage";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(428, 309);
+            this.Controls.Add(this.formLogo);
             this.Controls.Add(this.HomePage);
             this.Controls.Add(this.Minmize);
             this.Controls.Add(this.Close);
@@ -79,6 +90,7 @@ namespace Clinic_Mang_Sys
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -87,6 +99,7 @@ namespace Clinic_Mang_Sys
         private System.Windows.Forms.Button Close;
         private System.Windows.Forms.Button Minmize;
         private System.Windows.Forms.Button HomePage;
+        private System.Windows.Forms.Label formLogo;
     }
 }
 
