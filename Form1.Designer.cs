@@ -58,7 +58,7 @@ namespace Clinic_Mang_Sys
             // HomePage
             // 
             this.HomePage.BackColor = System.Drawing.Color.Green;
-            this.HomePage.Location = new System.Drawing.Point(139, 228);
+            this.HomePage.Location = new System.Drawing.Point(134, 244);
             this.HomePage.Name = "HomePage";
             this.HomePage.Size = new System.Drawing.Size(112, 38);
             this.HomePage.TabIndex = 2;
