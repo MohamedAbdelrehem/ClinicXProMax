@@ -57,18 +57,19 @@ namespace Clinic_Mang_Sys
             // 
             // HomePage
             // 
-            this.HomePage.Location = new System.Drawing.Point(77, 231);
+            this.HomePage.BackColor = System.Drawing.Color.Green;
+            this.HomePage.Location = new System.Drawing.Point(134, 244);
             this.HomePage.Name = "HomePage";
-            this.HomePage.Size = new System.Drawing.Size(273, 66);
+            this.HomePage.Size = new System.Drawing.Size(112, 38);
             this.HomePage.TabIndex = 2;
             this.HomePage.Text = "button1";
-            this.HomePage.UseVisualStyleBackColor = true;
+            this.HomePage.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Aqua;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(428, 309);
             this.Controls.Add(this.HomePage);
             this.Controls.Add(this.Minmize);
