@@ -36,7 +36,7 @@ namespace Clinic_Mang_Sys
             // adminButton
             // 
             this.adminButton.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.adminButton.Location = new System.Drawing.Point(401, 199);
+            this.adminButton.Location = new System.Drawing.Point(177, 92);
             this.adminButton.Name = "adminButton";
             this.adminButton.Size = new System.Drawing.Size(205, 80);
             this.adminButton.TabIndex = 0;
@@ -46,7 +46,7 @@ namespace Clinic_Mang_Sys
             // loginButton
             // 
             this.loginButton.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.loginButton.Location = new System.Drawing.Point(101, 199);
+            this.loginButton.Location = new System.Drawing.Point(387, 240);
             this.loginButton.Name = "loginButton";
             this.loginButton.Size = new System.Drawing.Size(187, 80);
             this.loginButton.TabIndex = 1;
