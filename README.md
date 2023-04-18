@@ -17,7 +17,7 @@ ClinicXProMax is built using the following technologies:
 
 - C#
 - .NET Framework
-- GitHub (using Gitflow by Vincent Driessen )
+- GitHub (using "Gitflow" a Git branching model by Vincent Driessen )
 - GitKraken
 
 ## Installation
