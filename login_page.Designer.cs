@@ -1,7 +1,7 @@
 ﻿
 namespace Clinic_Mang_Sys
 {
-    partial class Form1
+    partial class login_page
     {
         /// <summary>
         /// Required designer variable.
@@ -75,7 +75,7 @@ namespace Clinic_Mang_Sys
             this.formLogo.TabIndex = 3;
             this.formLogo.Text = "DoctorPage";
             // 
-            // Form1
+            // login_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -86,8 +86,8 @@ namespace Clinic_Mang_Sys
             this.Controls.Add(this.Minmize);
             this.Controls.Add(this.Exit);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "login_page";
+            this.Text = "Login";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

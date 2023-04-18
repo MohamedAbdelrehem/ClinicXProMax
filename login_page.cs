@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace Clinic_Mang_Sys
 {
-    public partial class Form2 : Form
+    public partial class login_page : Form
     {
-        public Form2()
+        public login_page()
         {
             InitializeComponent();
         }
 
-        private void loginButton_Click(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
