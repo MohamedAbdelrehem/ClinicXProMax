@@ -7,10 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ComponentFactory.Krypton.Toolkit;
 
 namespace Clinic_Mang_Sys
 {
-    public partial class login_page : Form
+    public partial class login_page : KryptonForm
     {
         public login_page()
         {

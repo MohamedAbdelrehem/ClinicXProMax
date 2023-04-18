@@ -66,6 +66,7 @@ namespace Clinic_Mang_Sys
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "home_page";
             this.Text = "Home";
+            this.Load += new System.EventHandler(this.home_page_Load);
             this.ResumeLayout(false);
 
         }
