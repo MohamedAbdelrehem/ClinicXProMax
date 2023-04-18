@@ -21,5 +21,20 @@ namespace Clinic_Mang_Sys
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonPatiants_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelSideMenu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
