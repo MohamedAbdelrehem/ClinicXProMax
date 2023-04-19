@@ -1,6 +1,6 @@
 <p align="center">
  <img width="350px" src="Logo-ClinicXProMax.png" align="center" alt="ClinicXProMaxLogo" />
- 
+
 </h1>
 <p align="center">
 <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/MohamedAbdelrehem/ClinicXProMax">
