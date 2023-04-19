@@ -1,5 +1,34 @@
 <p align="center">
- <img width="350px" src="Logo-ClinicXProMax.png" align="center" alt="GitHub Readme Stats" />
+ <img width="350px" src="Logo-ClinicXProMax.png" align="center" alt="ClinicXProMaxLogo" />
+ 
+</h1>
+<p align="center">
+<img alt="GitHub contributors" src="https://img.shields.io/github/contributors/MohamedAbdelrehem/ClinicXProMax">
+<img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/y/MohamedAbdelrehem/ClinicXProMax">
+<img alt="GitHub closed pull requests" src="https://img.shields.io/github/issues-pr-closed/MohamedAbdelrehem/ClinicXProMax">
+<img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/MohamedAbdelrehem/ClinicXProMax">
+<img alt="GitHub" src="https://img.shields.io/github/license/MohamedAbdelrehem/ClinicXProMax?color=brightgreen">
+<br>
+<img src="https://img.shields.io/badge/--F05032?logo=git&logoColor=ffffff" />
+<img src="https://img.shields.io/badge/--6C33AF?logo=visual%20studio" />
+<img  src="https://img.shields.io/badge/--512BD4?logo=.net&logoColor=ffffff" />
+<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/MohamedAbdelrehem/ClinicXProMax">
+<img src="https://badgen.net/badge/icon/windows?icon=windows&label" />
+<img alt="GitHub release (latest by date including pre-releases)" src="https://img.shields.io/github/v/release/MohamedAbdelrehem/ClinicXProMax?include_prereleases">
+
+</p>
+<br>
+<p align="center">
+<a href="#-about-clinicxpromax">📖 About ClinicXProMax</a> &nbsp;&bull;&nbsp;
+<a href="#-features">🚀 Features</a> &nbsp;&bull;&nbsp;
+<a href="#-tech-stack">💻 Tech stack</a> &nbsp;&bull;&nbsp;
+<a href="#%EF%B8%8F-installation">🛠️ Installation</a>
+<br>
+<a href="#-contributing">🤝 Contributing</a> &nbsp;&bull;&nbsp;
+<a href="#%EF%B8%8F-license">⚠️ License</a> &nbsp;&bull;&nbsp;
+<a href="#-spread-the-word">🌟 Spread the word!</a> &nbsp;&bull;&nbsp;
+<a href="#special-thanks-for-minia-university-especially-drabdullah-hassan-and-engshimaa-younis-for-there-support-for-this-project">💛Special thanks</a>
+</p>
  <h1 align="center">ClinicXProMax</h1>
  <p align="center">From Appointments to Billing, We've Got You Covered</p>
 </p>
@@ -71,7 +100,7 @@ We believe in the power of open source software to transform industries and impr
 
 Join us in revolutionizing the way clinics manage patient care, appointments, and billing. Whether you're a developer looking to contribute to the project, a clinic in need of a reliable management system, or a healthcare advocate supporting open source software, we welcome you to our community.
 
-<img width="350px" src="Star.gif" align="right" alt="GitHub Readme Stats" />
+<img width="250px" src="Star.gif" align="right" alt="GitHub Readme Stats" />
 
 ## 🌟 Spread the word!
 
@@ -83,3 +112,4 @@ If you want to say thank you and/or support active development of ClinicXProMax:
 ##
 
 ### 💛Special thanks for Minia University especially Dr.Abdullah Hassan and Eng.Shimaa Younis for there support for this project
+
