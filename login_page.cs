@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace Clinic_Mang_Sys
 {
-    public partial class login_page : Form
+public partial class login_page : Form
+{
+    public login_page()
     {
-        public login_page()
-        {
-            InitializeComponent();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
+        InitializeComponent();
     }
+
+    private void Form1_Load(object sender, EventArgs e)
+    {
+
+    }
+}
 }
