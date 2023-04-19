@@ -4,6 +4,7 @@
  <p align="center">From Appointments to Billing, We've Got You Covered</p>
 </p>
 
+
 ## 📖 About ClinicXProMax
 
 ClinicXProMax is a clinic management system designed to simplify administrative tasks and streamline patient care for healthcare providers. This user-friendly solution helps doctors manage patient records, schedule appointments, and manage billing in an efficient and effective way.
@@ -57,6 +58,19 @@ We welcome contributions to ClinicXProMax! If you're interested in contributing,
 
 Please ensure that your code adheres to our coding standards and follows best practices. We appreciate your contributions and look forward to working with you!
 
+
+## ⚠️ License
+
+
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
+
+ClinicXProMax is released under the MIT License, meaning you are free to use, modify, and distribute the software for any purpose, including commercial use, with no limitations or fees.
+
+We believe in the power of open source software to transform industries and improve people's lives. By choosing the MIT License for ClinicXProMax, we hope to encourage collaboration and innovation in the healthcare industry.
+
+Join us in revolutionizing the way clinics manage patient care, appointments, and billing. Whether you're a developer looking to contribute to the project, a clinic in need of a reliable management system, or a healthcare advocate supporting open source software, we welcome you to our community.
+
 <img width="350px" src="Star.gif" align="right" alt="GitHub Readme Stats" />
 
 ## 🌟 Spread the word!
@@ -65,9 +79,6 @@ If you want to say thank you and/or support active development of ClinicXProMax:
 
 - Add a GitHub Star to the project!
 
-<!-- ## ⚠️ License
-
-The Well app is free and open-source software licensed under the GNU General Public License v3.0. All designs were created by [Cole Gawin](https://github.com/chroline) and distributed under Creative Commons license (CC BY-SA 4.0 International). -->
 
 ##
 
