@@ -45,6 +45,7 @@ namespace Clinic_Mang_Sys
             // 
             // panelSideMenu
             // 
+            this.panelSideMenu.AutoScroll = true;
             this.panelSideMenu.BackColor = System.Drawing.Color.Black;
             this.panelSideMenu.Controls.Add(this.button_About);
             this.panelSideMenu.Controls.Add(this.panel1);
@@ -56,7 +57,7 @@ namespace Clinic_Mang_Sys
             this.panelSideMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSideMenu.Location = new System.Drawing.Point(0, 0);
             this.panelSideMenu.Name = "panelSideMenu";
-            this.panelSideMenu.Size = new System.Drawing.Size(250, 524);
+            this.panelSideMenu.Size = new System.Drawing.Size(250, 491);
             this.panelSideMenu.TabIndex = 0;
             this.panelSideMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSideMenu_Paint);
             // 
@@ -77,9 +78,11 @@ namespace Clinic_Mang_Sys
             this.button_Dashboard.ForeColor = System.Drawing.Color.LightGray;
             this.button_Dashboard.Location = new System.Drawing.Point(0, 104);
             this.button_Dashboard.Name = "button_Dashboard";
+            this.button_Dashboard.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.button_Dashboard.Size = new System.Drawing.Size(250, 45);
             this.button_Dashboard.TabIndex = 1;
             this.button_Dashboard.Text = "Dashboard";
+            this.button_Dashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button_Dashboard.UseVisualStyleBackColor = true;
             // 
             // button_Patiants
@@ -91,9 +94,11 @@ namespace Clinic_Mang_Sys
             this.button_Patiants.ForeColor = System.Drawing.Color.LightGray;
             this.button_Patiants.Location = new System.Drawing.Point(0, 149);
             this.button_Patiants.Name = "button_Patiants";
+            this.button_Patiants.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.button_Patiants.Size = new System.Drawing.Size(250, 45);
             this.button_Patiants.TabIndex = 2;
             this.button_Patiants.Text = "Patients";
+            this.button_Patiants.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button_Patiants.UseVisualStyleBackColor = true;
             this.button_Patiants.Click += new System.EventHandler(this.buttonPatiants_Click);
             // 
@@ -106,9 +111,11 @@ namespace Clinic_Mang_Sys
             this.button_Appoinment.ForeColor = System.Drawing.Color.LightGray;
             this.button_Appoinment.Location = new System.Drawing.Point(0, 194);
             this.button_Appoinment.Name = "button_Appoinment";
+            this.button_Appoinment.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.button_Appoinment.Size = new System.Drawing.Size(250, 45);
             this.button_Appoinment.TabIndex = 3;
             this.button_Appoinment.Text = "Appointments";
+            this.button_Appoinment.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button_Appoinment.UseVisualStyleBackColor = true;
             // 
             // button_Setting
@@ -121,9 +128,11 @@ namespace Clinic_Mang_Sys
             this.button_Setting.ForeColor = System.Drawing.Color.LightGray;
             this.button_Setting.Location = new System.Drawing.Point(0, 239);
             this.button_Setting.Name = "button_Setting";
+            this.button_Setting.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.button_Setting.Size = new System.Drawing.Size(250, 45);
             this.button_Setting.TabIndex = 4;
             this.button_Setting.Text = "Settings";
+            this.button_Setting.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button_Setting.UseVisualStyleBackColor = false;
             // 
             // panel1
@@ -146,9 +155,11 @@ namespace Clinic_Mang_Sys
             this.button_Clinic_Setting_Subsetting.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button_Clinic_Setting_Subsetting.Location = new System.Drawing.Point(0, 0);
             this.button_Clinic_Setting_Subsetting.Name = "button_Clinic_Setting_Subsetting";
+            this.button_Clinic_Setting_Subsetting.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button_Clinic_Setting_Subsetting.Size = new System.Drawing.Size(250, 40);
             this.button_Clinic_Setting_Subsetting.TabIndex = 0;
             this.button_Clinic_Setting_Subsetting.Text = "Clinic Setting";
+            this.button_Clinic_Setting_Subsetting.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button_Clinic_Setting_Subsetting.UseVisualStyleBackColor = true;
             // 
             // button_Clinic_Program_Subsetting
@@ -160,9 +171,11 @@ namespace Clinic_Mang_Sys
             this.button_Clinic_Program_Subsetting.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button_Clinic_Program_Subsetting.Location = new System.Drawing.Point(0, 40);
             this.button_Clinic_Program_Subsetting.Name = "button_Clinic_Program_Subsetting";
+            this.button_Clinic_Program_Subsetting.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.button_Clinic_Program_Subsetting.Size = new System.Drawing.Size(250, 40);
             this.button_Clinic_Program_Subsetting.TabIndex = 1;
             this.button_Clinic_Program_Subsetting.Text = "Program Clinic";
+            this.button_Clinic_Program_Subsetting.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button_Clinic_Program_Subsetting.UseVisualStyleBackColor = true;
             // 
             // button_About
@@ -174,16 +187,18 @@ namespace Clinic_Mang_Sys
             this.button_About.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button_About.Location = new System.Drawing.Point(0, 363);
             this.button_About.Name = "button_About";
+            this.button_About.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.button_About.Size = new System.Drawing.Size(250, 45);
             this.button_About.TabIndex = 6;
             this.button_About.Text = "About";
+            this.button_About.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button_About.UseVisualStyleBackColor = true;
             // 
             // home_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(790, 524);
+            this.ClientSize = new System.Drawing.Size(669, 491);
             this.Controls.Add(this.panelSideMenu);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "home_page";
