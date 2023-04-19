@@ -6,7 +6,7 @@
     <members>
         <member name="T:Bunifu.UI.WinForms.BunifuShadowPanel">
             <summary>
-            Provides a beautiful and improved panel with shadowed borders 
+            Provides a beautiful and improved panel with shadowed borders
             amongst other features, including styling borders and edges.
             </summary>
         </member>
@@ -137,7 +137,7 @@
         </member>
         <member name="P:Bunifu.UI.WinForms.BunifuShadowPanel.FillStyle">
             <summary>
-            Gets or sets the color fill style to be 
+            Gets or sets the color fill style to be
             used when rendering the shadow panel.
             </summary>
         </member>
@@ -161,7 +161,7 @@
         </member>
         <member name="P:Bunifu.UI.WinForms.BunifuShadowPanel.ShadowTopLeftVisible">
             <summary>
-            [Deprecated] Gets or sets a value indicating 
+            [Deprecated] Gets or sets a value indicating
             whether the top-left shadow will be visible.
             </summary>
         </member>

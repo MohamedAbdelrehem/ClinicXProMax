@@ -6,7 +6,7 @@
     <members>
         <member name="T:Bunifu.UI.WinForms.BunifuRating">
             <summary>
-            Add awesome rating inputs with tons of 
+            Add awesome rating inputs with tons of
             customization options and UI enhancements.
             </summary>
         </member>
@@ -37,13 +37,13 @@
         </member>
         <member name="P:Bunifu.UI.WinForms.BunifuRating.ReadOnly">
             <summary>
-            Gets or sets a value indicating whether 
+            Gets or sets a value indicating whether
             the rating is in read-only mode.
             </summary>
         </member>
         <member name="P:Bunifu.UI.WinForms.BunifuRating.RightClickToClear">
             <summary>
-            Gets or sets a value indicating whether 
+            Gets or sets a value indicating whether
             the rating will be cleared after right-clicking it.
             </summary>
         </member>
@@ -84,13 +84,13 @@
         </member>
         <member name="P:Bunifu.UI.WinForms.BunifuRating.DisabledEmptyFillColor">
             <summary>
-            Gets or sets the fill color of 
+            Gets or sets the fill color of
             unrated shapes when disabled.
             </summary>
         </member>
         <member name="P:Bunifu.UI.WinForms.BunifuRating.DisabledRatedFillColor">
             <summary>
-            Gets or sets the fill color of 
+            Gets or sets the fill color of
             rated shapes when disabled.
             </summary>
         </member>
@@ -106,13 +106,13 @@
         </member>
         <member name="P:Bunifu.UI.WinForms.BunifuRating.HoverFillColor">
             <summary>
-            Gets or sets the fill color of 
+            Gets or sets the fill color of
             rating shapes on hover.
             </summary>
         </member>
         <member name="P:Bunifu.UI.WinForms.BunifuRating.HoverBorderColor">
             <summary>
-            Gets or sets the border color 
+            Gets or sets the border color
             of rating shapes on hover.
             </summary>
         </member>
@@ -163,7 +163,7 @@
         </member>
         <member name="P:Bunifu.UI.WinForms.BunifuRating.ValueHoveredEventArgs.Focused">
             <summary>
-            Gets a value indicating whether 
+            Gets a value indicating whether
             the rating has mouse input focus.
             </summary>
         </member>
