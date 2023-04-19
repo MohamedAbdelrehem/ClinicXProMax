@@ -1,6 +1,6 @@
 <p align="center">
  <img width="350px" src="Logo-ClinicXProMax.png" align="center" alt="ClinicXProMaxLogo" />
- 
+
 </h1>
 <p align="center">
 <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/MohamedAbdelrehem/ClinicXProMax">
@@ -32,7 +32,6 @@
  <h1 align="center">ClinicXProMax</h1>
  <p align="center">From Appointments to Billing, We've Got You Covered</p>
 </p>
-
 
 ## 📖 About ClinicXProMax
 
@@ -87,12 +86,9 @@ We welcome contributions to ClinicXProMax! If you're interested in contributing,
 
 Please ensure that your code adheres to our coding standards and follows best practices. We appreciate your contributions and look forward to working with you!
 
-
 ## ⚠️ License
 
-
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-
 
 ClinicXProMax is released under the MIT License, meaning you are free to use, modify, and distribute the software for any purpose, including commercial use, with no limitations or fees.
 
@@ -108,8 +104,6 @@ If you want to say thank you and/or support active development of ClinicXProMax:
 
 - Add a GitHub Star to the project!
 
-
 ##
 
 ### 💛Special thanks for Minia University especially Dr.Abdullah Hassan and Eng.Shimaa Younis for there support for this project
-
