@@ -4,11 +4,11 @@
  <p align="center">From Appointments to Billing, We've Got You Covered.!</p>
 </p>
 
-## About ClinicXProMax
+## 📖 About ClinicXProMax
 
 ClinicXProMax is a clinic management system designed to simplify administrative tasks and streamline patient care for healthcare providers. This user-friendly solution helps doctors manage patient records, schedule appointments, and manage billing in an efficient and effective way.
 
-## Features
+## 🚀 Features
 
 - **Patient Management:** Keep track of patient information like their name, contact details, medical history, insurance details, and treatment plans.
 - **Appointment Scheduling:** Schedule patient appointments, send reminders, and manage multiple schedules for doctors, nurses, and other staff.
@@ -29,7 +29,7 @@ Here's a brief high-level overview of the tech stack ClinicXProMax uses:
 
 - GitKraken: ClinicXProMax uses GitKraken, which is a Git client that provides a visual interface for managing Git repositories. GitKraken provides a range of features such as branch visualization, merge conflict resolution, and pull request management, making it a popular choice for managing Git repositories.
 
-## Installation
+## 🛠️ Installation
 
 To download and run ClinicXProMax:
 
@@ -44,7 +44,7 @@ Please note that ClinicXProMax currently only works on Windows.
 
 <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" align="center" alt="windows badge" />
 
-## Contributing
+## 🤝 Contributing
 
 We welcome contributions to ClinicXProMax! If you're interested in contributing, please follow these steps:
 
