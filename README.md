@@ -1,7 +1,7 @@
 <p align="center">
  <img width="350px" src="Logo-ClinicXProMax.png" align="center" alt="GitHub Readme Stats" />
  <h1 align="center">ClinicXProMax</h1>
- <p align="center">From Appointments to Billing, We've Got You Covered.!</p>
+ <p align="center">From Appointments to Billing, We've Got You Covered</p>
 </p>
 
 ## 📖 About ClinicXProMax
