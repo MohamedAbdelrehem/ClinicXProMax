@@ -17,7 +17,7 @@
         </member>
         <member name="T:Bunifu.UI.WinForms.BunifuPictureBox.Types">
             <summary>
-            Provides a list of shapes the 
+            Provides a list of shapes the
             control can be rendered in.
             </summary>
         </member>
@@ -38,7 +38,7 @@
         </member>
         <member name="P:Bunifu.UI.WinForms.BunifuPictureBox.AutoSizeHeight">
             <summary>
-            Gets or sets a value indicating whether the 
+            Gets or sets a value indicating whether the
             PictureBox will be autosized on resize.
             </summary>
         </member>
@@ -59,7 +59,7 @@
         </member>
         <member name="P:Bunifu.UI.WinForms.BunifuPictureBox.AllowFocused">
             <summary>
-            Gets or sets a value indicating 
+            Gets or sets a value indicating
             whether control allows focus.
             </summary>
         </member>
@@ -95,7 +95,7 @@
         </member>
         <member name="M:Bunifu.UI.WinForms.BunifuPictureBox.InitializeComponent">
             <summary>
-            Required method for Designer support - do not modify 
+            Required method for Designer support - do not modify
             the contents of this method with the code editor.
             </summary>
         </member>

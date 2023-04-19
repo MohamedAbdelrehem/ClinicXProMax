@@ -24,9 +24,9 @@
         </member>
         <member name="T:Utilities.BunifuSnackbar.Transitions.IManagedType">
             <summary>
-            Interface for all types we can perform transitions on. 
-            Each type (e.g. int, double, Color) that we can perform a transition on 
-            needs to have its own class that implements this interface. These classes 
+            Interface for all types we can perform transitions on.
+            Each type (e.g. int, double, Color) that we can perform a transition on
+            needs to have its own class that implements this interface. These classes
             tell the transition system how to act on objects of that type.
             </summary>
         </member>
@@ -37,7 +37,7 @@
         </member>
         <member name="M:Utilities.BunifuSnackbar.Transitions.IManagedType.copy(System.Object)">
             <summary>
-            Returns a deep copy of the object passed in. (In particular this is 
+            Returns a deep copy of the object passed in. (In particular this is
             needed for types that are objects.)
             </summary>
         </member>
@@ -51,16 +51,16 @@
         <member name="M:Utilities.BunifuSnackbar.Transitions.ITransitionType.onTimer(System.Int32,System.Double@,System.Boolean@)">
             <summary>
             Called by the Transition framework when its timer ticks to pass in the
-            time (in ms) since the transition started. 
-            
-            You should return (in an out parameter) the percentage movement towards 
+            time (in ms) since the transition started.
+
+            You should return (in an out parameter) the percentage movement towards
             the destination value for the time passed in. Note: this does not need to
             be a smooth transition from 0% to 100%. You can overshoot with values
             greater than 100% or undershoot if you need to (for example, to have some
             form of "elasticity").
-            
+
             The percentage should be returned as (for example) 0.1 for 10%.
-            
+
             You should return (in an out parameter) whether the transition has completed.
             (This may not be at the same time as the percentage has moved to 100%.)
             </summary>
@@ -164,32 +164,32 @@
         </member>
         <member name="T:Utilities.BunifuSnackbar.Transitions.Transition">
             <summary>
-            Lets you perform animated transitions of properties on arbitrary objects. These 
-            will often be transitions of UI properties, for example an animated fade-in of 
+            Lets you perform animated transitions of properties on arbitrary objects. These
+            will often be transitions of UI properties, for example an animated fade-in of
             a UI object, or an animated move of a UI object from one position to another.
-            
+
             Each transition can simulataneously change multiple properties, including properties
             across multiple objects.
-            
+
             Example transition
             ------------------
             a.      Transition t = new Transition(new TransitionMethod_Linear(500));
             b.      t.add(form1, "Width", 500);
             c.      t.add(form1, "BackColor", Color.Red);
             d.      t.run();
-              
+
             Line a:         Creates a new transition. You specify the transition method.
-                            
+
             Lines b. and c: Set the destination values of the properties you are animating.
-            
+
             Line d:         Starts the transition.
-            
+
             Transition methods
             ------------------
             TransitionMethod objects specify how the transition is made. Examples include
             linear transition, ease-in-ease-out and so on. Different transition methods may
             need different parameters.
-            
+
             </summary>
         </member>
         <member name="M:Utilities.BunifuSnackbar.Transitions.Transition.#cctor">
@@ -214,7 +214,7 @@
         </member>
         <member name="M:Utilities.BunifuSnackbar.Transitions.Transition.run(System.Object,System.String,System.Object,System.Object,Utilities.BunifuSnackbar.Transitions.ITransitionType)">
             <summary>
-            Sets the property passed in to the initial value passed in, then creates and 
+            Sets the property passed in to the initial value passed in, then creates and
             immediately runs a transition on it.
             </summary>
         </member>
@@ -225,7 +225,7 @@
         </member>
         <member name="M:Utilities.BunifuSnackbar.Transitions.Transition.#ctor(Utilities.BunifuSnackbar.Transitions.ITransitionType)">
             <summary>
-            Constructor. You pass in the object that holds the properties 
+            Constructor. You pass in the object that holds the properties
             that you are performing transitions on.
             </summary>
         </member>
@@ -258,7 +258,7 @@
         <member name="M:Utilities.BunifuSnackbar.Transitions.Transition.setProperty(System.Object,Utilities.BunifuSnackbar.Transitions.Transition.PropertyUpdateArgs)">
             <summary>
             Sets a property on the object passed in to the value passed in. This method
-            invokes itself on the GUI thread if the property is being invoked on a GUI 
+            invokes itself on the GUI thread if the property is being invoked on a GUI
             object.
             </summary>
         </member>
@@ -296,7 +296,7 @@
         </member>
         <member name="P:Utilities.BunifuSnackbar.Transitions.TransitionElement.EndValue">
             <summary>
-            The value of the animated properties at the EndTime. This is the percentage 
+            The value of the animated properties at the EndTime. This is the percentage
             movement of the properties between their start and end values. This should
             be expressed as (for example) 75 for 75%.
             </summary>
@@ -310,18 +310,18 @@
         <member name="T:Utilities.BunifuSnackbar.Transitions.TransitionManager">
             <summary>
             This class is responsible for running transitions. It holds the timer that
-            triggers transaction animation. 
+            triggers transaction animation.
             </summary><remarks>
             This class is a singleton.
-            
+
             We manage the transaction timer here so that we can have a single timer
             across all transactions. If each transaction has its own timer, this creates
             one thread for each transaction, and this can lead to too many threads in
             an application.
-            
-            This class essentially just manages the timer for the transitions. It calls 
+
+            This class essentially just manages the timer for the transitions. It calls
             back into the running transitions, which do the actual work of the transition.
-            
+
             </remarks>
         </member>
         <member name="M:Utilities.BunifuSnackbar.Transitions.TransitionManager.getInstance">
@@ -338,7 +338,7 @@
         <member name="M:Utilities.BunifuSnackbar.Transitions.TransitionManager.removeDuplicates(Utilities.BunifuSnackbar.Transitions.Transition)">
             <summary>
             Checks if any existing transitions are acting on the same properties as the
-            transition passed in. If so, we remove the duplicated properties from the 
+            transition passed in. If so, we remove the duplicated properties from the
             older transitions.
             </summary>
         </member>
@@ -360,7 +360,7 @@
         </member>
         <member name="M:Utilities.BunifuSnackbar.Transitions.TransitionManager.onTransitionCompleted(System.Object,Utilities.BunifuSnackbar.Transitions.Transition.Args)">
             <summary>
-            Called when a transition has completed. 
+            Called when a transition has completed.
             </summary>
         </member>
         <member name="T:Utilities.BunifuSnackbar.Transitions.TransitionType_Acceleration">
@@ -370,7 +370,7 @@
         </member>
         <member name="M:Utilities.BunifuSnackbar.Transitions.TransitionType_Acceleration.#ctor(System.Int32)">
             <summary>
-            Constructor. You pass in the time that the transition 
+            Constructor. You pass in the time that the transition
             will take (in milliseconds).
             </summary>
         </member>
@@ -404,7 +404,7 @@
         </member>
         <member name="M:Utilities.BunifuSnackbar.Transitions.TransitionType_CriticalDamping.#ctor(System.Int32)">
             <summary>
-            Constructor. You pass in the time that the transition 
+            Constructor. You pass in the time that the transition
             will take (in milliseconds).
             </summary>
         </member>
@@ -420,7 +420,7 @@
         </member>
         <member name="M:Utilities.BunifuSnackbar.Transitions.TransitionType_Deceleration.#ctor(System.Int32)">
             <summary>
-            Constructor. You pass in the time that the transition 
+            Constructor. You pass in the time that the transition
             will take (in milliseconds).
             </summary>
         </member>
@@ -436,13 +436,13 @@
         </member>
         <member name="T:Utilities.BunifuSnackbar.Transitions.TransitionType_EaseInEaseOut">
             <summary>
-            Manages an ease-in-ease-out transition. This accelerates during the first 
+            Manages an ease-in-ease-out transition. This accelerates during the first
             half of the transition, and then decelerates during the second half.
             </summary>
         </member>
         <member name="M:Utilities.BunifuSnackbar.Transitions.TransitionType_EaseInEaseOut.#ctor(System.Int32)">
             <summary>
-            Constructor. You pass in the time that the transition 
+            Constructor. You pass in the time that the transition
             will take (in milliseconds).
             </summary>
         </member>
@@ -459,7 +459,7 @@
             <summary>
             This transition type 'flashes' the properties a specified number of times, ending
             up by reverting them to their initial values. You specify the number of bounces and
-            the length of each bounce. 
+            the length of each bounce.
             </summary>
         </member>
         <member name="M:Utilities.BunifuSnackbar.Transitions.TransitionType_Flash.#ctor(System.Int32,System.Int32)">
@@ -499,35 +499,35 @@
         <member name="T:Utilities.BunifuSnackbar.Transitions.TransitionType_UserDefined">
             <summary>
             This class allows you to create user-defined transition types. You specify these
-            as a list of TransitionElements. Each of these defines: 
+            as a list of TransitionElements. Each of these defines:
             End time , End value, Interpolation method
-            
+
             For example, say you want to make a bouncing effect with a decay:
-            
+
             EndTime%    EndValue%   Interpolation
             --------    ---------   -------------
-            50          100         Acceleration 
+            50          100         Acceleration
             75          50          Deceleration
             85          100         Acceleration
             91          75          Deceleration
             95          100         Acceleration
             98          90          Deceleration
             100         100         Acceleration
-            
-            The time values are expressed as a percentage of the overall transition time. This 
+
+            The time values are expressed as a percentage of the overall transition time. This
             means that you can create a user-defined transition-type and then use it for transitions
             of different lengths.
-            
+
             The values are percentages of the values between the start and end values of the properties
             being animated in the transitions. 0% is the start value and 100% is the end value.
-            
+
             The interpolation is one of the values from the InterpolationMethod enum.
-            
+
             So the example above accelerates to the destination (as if under gravity) by
-            t=50%, then bounces back up to half the initial height by t=75%, slowing down 
-            (as if against gravity) before falling down again and bouncing to decreasing 
+            t=50%, then bounces back up to half the initial height by t=75%, slowing down
+            (as if against gravity) before falling down again and bouncing to decreasing
             heights each time.
-            
+
             </summary>
         </member>
         <member name="M:Utilities.BunifuSnackbar.Transitions.TransitionType_UserDefined.#ctor">
@@ -543,7 +543,7 @@
         </member>
         <member name="M:Utilities.BunifuSnackbar.Transitions.TransitionType_UserDefined.setup(System.Collections.Generic.IList{Utilities.BunifuSnackbar.Transitions.TransitionElement},System.Int32)">
             <summary>
-            Sets up the transitions. 
+            Sets up the transitions.
             </summary>
         </member>
         <member name="M:Utilities.BunifuSnackbar.Transitions.TransitionType_UserDefined.onTimer(System.Int32,System.Double@,System.Boolean@)">
@@ -553,7 +553,7 @@
         </member>
         <member name="M:Utilities.BunifuSnackbar.Transitions.TransitionType_UserDefined.getElementInfo(System.Double,System.Double@,System.Double@,System.Double@,System.Double@,Utilities.BunifuSnackbar.Transitions.InterpolationMethod@)">
             <summary>
-            Returns the element info for the time-fraction passed in. 
+            Returns the element info for the time-fraction passed in.
             </summary>
         </member>
         <member name="T:Utilities.BunifuSnackbar.Transitions.Utility">
@@ -606,10 +606,10 @@
         </member>
         <member name="M:Utilities.BunifuSnackbar.Transitions.Utility.raiseEvent``1(System.EventHandler{``0},System.Object,``0)">
             <summary>
-            Fires the event passed in in a thread-safe way. 
+            Fires the event passed in in a thread-safe way.
             </summary><remarks>
             This method loops through the targets of the event and invokes each in turn. If the
-            target supports ISychronizeInvoke (such as forms or controls) and is set to run 
+            target supports ISychronizeInvoke (such as forms or controls) and is set to run
             on a different thread, then we call BeginInvoke to marshal the event to the target
             thread. If the target does not support this interface (such as most non-form classes)
             or we are on the same thread as the target, then the event is fired on the same
@@ -723,19 +723,19 @@
         </member>
         <member name="P:Utilities.BunifuSnackbar.BunifuImageButtonExtended.ToolTipText">
             <summary>
-            Allows you to easily get or set some ToolTip information to 
+            Allows you to easily get or set some ToolTip information to
             be displayed to the user on mouse-hovering over the control.
             </summary>
         </member>
         <member name="P:Utilities.BunifuSnackbar.BunifuImageButtonExtended.ShowCursorChanges">
             <summary>
-             Gets or sets a value indicating whether the control 
+             Gets or sets a value indicating whether the control
              will show cursor changes during mouse-hover events.
             </summary>
         </member>
         <member name="P:Utilities.BunifuSnackbar.BunifuImageButtonExtended.ShowActiveImage">
             <summary>
-            Sets a value indicating whether the 'ActiveImage' 
+            Sets a value indicating whether the 'ActiveImage'
             will be applied on mouse-hover.
             </summary>
         </member>
@@ -761,19 +761,19 @@
         </member>
         <member name="P:Utilities.BunifuSnackbar.BunifuImageButtonExtended.ShowSizeMarkers">
             <summary>
-             Gets or sets a value indicating whether the size markers 
+             Gets or sets a value indicating whether the size markers
              displayed at the control's top-area will be visible during design-time.
             </summary>
         </member>
         <member name="P:Utilities.BunifuSnackbar.BunifuImageButtonExtended.ShowImageBorders">
             <summary>
-             Gets or sets a value indicating whether borders will 
+             Gets or sets a value indicating whether borders will
              be viewed for the image applied during design-time.
             </summary>
         </member>
         <member name="P:Utilities.BunifuSnackbar.BunifuImageButtonExtended.CreateParams">
             <summary>
-            Overrides the CreateParams method to stop flickering issues 
+            Overrides the CreateParams method to stop flickering issues
             by setting the "WS_EX_COMPOSITED" (0x02000000) style.
             </summary>
         </member>
@@ -881,19 +881,19 @@
             </summary>
         </member>
         <member name="F:Utilities.BunifuSnackbar.BunifuImageButtonExtended.components">
-            <summary> 
+            <summary>
             Required designer variable.
             </summary>
         </member>
         <member name="M:Utilities.BunifuSnackbar.BunifuImageButtonExtended.Dispose(System.Boolean)">
-            <summary> 
+            <summary>
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
         <member name="M:Utilities.BunifuSnackbar.BunifuImageButtonExtended.InitializeComponent">
-            <summary> 
-            Required method for Designer support - do not modify 
+            <summary>
+            Required method for Designer support - do not modify
             the contents of this method with the code editor.
             </summary>
         </member>
@@ -955,7 +955,7 @@
         </member>
         <member name="T:Utilities.BunifuSnackbar.BunifuButton">
             <summary>
-            Provides a highly customizable button with improved 
+            Provides a highly customizable button with improved
             styling options and additional feature improvements.
             </summary>
         </member>
@@ -1036,34 +1036,34 @@
         </member>
         <member name="P:Utilities.BunifuSnackbar.BunifuButton.AllowToggling">
             <summary>
-            Gets or sets a value indicating whether 
-            the button will be automatically toggled 
+            Gets or sets a value indicating whether
+            the button will be automatically toggled
             to receive or release focus when clicked.
             </summary>
         </member>
         <member name="P:Utilities.BunifuSnackbar.BunifuButton.AutoGenerateColors">
             <summary>
-            When set to true, the button's <see cref="P:Utilities.BunifuSnackbar.BunifuButton.IdleFillColor"/> 
-            and <see cref="P:Utilities.BunifuSnackbar.BunifuButton.IdleBorderColor"/> will be used to generate 
+            When set to true, the button's <see cref="P:Utilities.BunifuSnackbar.BunifuButton.IdleFillColor"/>
+            and <see cref="P:Utilities.BunifuSnackbar.BunifuButton.IdleBorderColor"/> will be used to generate
             colors for the various states supported.
             </summary>
         </member>
         <member name="P:Utilities.BunifuSnackbar.BunifuButton.AutoSize">
             <summary>
-            Specifies whether the Button will automatically 
-            size it's with to fit its contents. Use <see cref="P:Utilities.BunifuSnackbar.BunifuButton.TextMarginLeft"/> 
+            Specifies whether the Button will automatically
+            size it's with to fit its contents. Use <see cref="P:Utilities.BunifuSnackbar.BunifuButton.TextMarginLeft"/>
             property to set the <see cref="P:Utilities.BunifuSnackbar.BunifuButton.Text"/> padding (edges' distance).
             </summary>
         </member>
         <member name="P:Utilities.BunifuSnackbar.BunifuButton.IndicateFocus">
             <summary>
-            Gets or sets a value indicating whether the 
+            Gets or sets a value indicating whether the
             Button will provide a visual cue when focused.
             </summary>
         </member>
         <member name="P:Utilities.BunifuSnackbar.BunifuButton.AnimationSpeed">
             <summary>
-            Gets or sets the Button's animation speed (in milliseconds) 
+            Gets or sets the Button's animation speed (in milliseconds)
             when moving from one state to another.
             </summary>
         </member>
@@ -1095,13 +1095,13 @@
         </member>
         <member name="P:Utilities.BunifuSnackbar.BunifuButton.ColorContrastOnHover">
             <summary>
-            Sets how dark or light the button's color will 
+            Sets how dark or light the button's color will
             be whenever a mouse-hover event has occurred.
             </summary>
         </member>
         <member name="P:Utilities.BunifuSnackbar.BunifuButton.ColorContrastOnClick">
             <summary>
-            Sets how dark or light the button's color will 
+            Sets how dark or light the button's color will
             be whenever a mouse-click event has occurred.
             </summary>
         </member>
@@ -1187,7 +1187,7 @@
         </member>
         <member name="P:Utilities.BunifuSnackbar.BunifuButton.FocusState">
             <summary>
-            Gets or sets the state to use when the Button 
+            Gets or sets the state to use when the Button
             contains focus while the cursor is away.
             </summary>
         </member>
@@ -1198,7 +1198,7 @@
         </member>
         <member name="P:Utilities.BunifuSnackbar.BunifuButton.CustomizableEdges">
             <summary>
-            Gets or sets the list of border edges that will 
+            Gets or sets the list of border edges that will
             be customized whenever the border radius is applied.
             </summary>
         </member>
@@ -1214,19 +1214,19 @@
         </member>
         <member name="P:Utilities.BunifuSnackbar.BunifuButton.UseDefaultRadiusAndThickness">
             <summary>
-            Gets or sets a value indicating whether other states will automatically 
+            Gets or sets a value indicating whether other states will automatically
             use the idle state's border-radius and border-thickness.
             </summary>
         </member>
         <member name="P:Utilities.BunifuSnackbar.BunifuButton.IsDefault">
             <summary>
-            Gets or sets a value indicating whether the 
+            Gets or sets a value indicating whether the
             Bunifu button control is the default button.
             </summary>
         </member>
         <member name="P:Utilities.BunifuSnackbar.BunifuButton.Toggled">
             <summary>
-            Gets a value indicating whether  
+            Gets a value indicating whether
             the button has been clicked.
             </summary>
         </member>
@@ -1272,8 +1272,8 @@
         </member>
         <member name="T:Utilities.BunifuSnackbar.BunifuButton.StateProperties">
             <summary>
-            Provides options for use when creating a 
-            list of properties for use when defining a  
+            Provides options for use when creating a
+            list of properties for use when defining a
             control's various activity states.
             </summary>
         </member>
@@ -1319,13 +1319,13 @@
         </member>
         <member name="M:Utilities.BunifuSnackbar.BunifuButton.StateProperties.ToString">
             <summary>
-            Returns a string containing the object's 
+            Returns a string containing the object's
             properties and their values.
             </summary>
         </member>
         <member name="T:Utilities.BunifuSnackbar.BunifuButton.BorderEdges">
             <summary>
-            Includes the list of available border edges or dimensions 
+            Includes the list of available border edges or dimensions
             that can be customized or excluded when styling controls.
             </summary>
         </member>
@@ -1336,31 +1336,31 @@
         </member>
         <member name="P:Utilities.BunifuSnackbar.BunifuButton.BorderEdges.TopLeft">
             <summary>
-             Gets or sets a value indicating whether 
+             Gets or sets a value indicating whether
              the top-left edge will be included.
             </summary>
         </member>
         <member name="P:Utilities.BunifuSnackbar.BunifuButton.BorderEdges.TopRight">
             <summary>
-             Gets or sets a value indicating whether 
+             Gets or sets a value indicating whether
              the top-right edge will be included.
             </summary>
         </member>
         <member name="P:Utilities.BunifuSnackbar.BunifuButton.BorderEdges.BottomLeft">
             <summary>
-             Gets or sets a value indicating whether 
+             Gets or sets a value indicating whether
              the bottom-left edge will be included.
             </summary>
         </member>
         <member name="P:Utilities.BunifuSnackbar.BunifuButton.BorderEdges.BottomRight">
             <summary>
-             Gets or sets a value indicating whether 
+             Gets or sets a value indicating whether
              the bottom-right edge will be included.
             </summary>
         </member>
         <member name="M:Utilities.BunifuSnackbar.BunifuButton.BorderEdges.ToString">
             <summary>
-            Returns a <see cref="T:System.String"/> containing the 
+            Returns a <see cref="T:System.String"/> containing the
             list of properties and their applied values.
             </summary>
         </member>
@@ -1410,15 +1410,15 @@
         </member>
         <member name="M:Utilities.BunifuSnackbar.BunifuButton.NotifyDefault(System.Boolean)">
             <summary>
-            Notifies the Button whether it is the default button 
+            Notifies the Button whether it is the default button
             so that it can adjust its appearance accordingly.
             </summary>
             <param name="value"></param>
         </member>
         <member name="M:Utilities.BunifuSnackbar.BunifuButton.GenerateColors(System.Boolean)">
             <summary>
-            Generates colors for the the various states supported using 
-            the button's <see cref="P:Utilities.BunifuSnackbar.BunifuButton.IdleFillColor"/> and 
+            Generates colors for the the various states supported using
+            the button's <see cref="P:Utilities.BunifuSnackbar.BunifuButton.IdleFillColor"/> and
             <see cref="P:Utilities.BunifuSnackbar.BunifuButton.IdleBorderColor"/> properties.
             </summary>
             <param name="invalidate">Redraw the control's surface?</param>
@@ -1446,19 +1446,19 @@
             </summary>
         </member>
         <member name="F:Utilities.BunifuSnackbar.BunifuButton.components">
-            <summary> 
+            <summary>
             Required designer variable.
             </summary>
         </member>
         <member name="M:Utilities.BunifuSnackbar.BunifuButton.Dispose(System.Boolean)">
-            <summary> 
+            <summary>
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
         <member name="M:Utilities.BunifuSnackbar.BunifuButton.InitializeComponent">
-            <summary> 
-            Required method for Designer support - do not modify 
+            <summary>
+            Required method for Designer support - do not modify
             the contents of this method with the code editor.
             </summary>
         </member>
@@ -1520,7 +1520,7 @@
         </member>
         <member name="T:Utilities.BunifuSnackbar.BunifuFormDock.DockIndicators">
             <summary>
-            Provides a list of available docking indicators 
+            Provides a list of available docking indicators
             visible when dragging forms on-screen.
             </summary>
         </member>
@@ -1612,14 +1612,14 @@
         <member name="P:Utilities.BunifuSnackbar.BunifuFormDock.AllowHidingBottomRegion">
             <summary>
             When set to true, a white region that is drawn
-            at the bottom of the parent form will be hidden; 
-            however, when set to false, this region will be 
+            at the bottom of the parent form will be hidden;
+            however, when set to false, this region will be
             exposed at runtime.
             </summary>
         </member>
         <member name="P:Utilities.BunifuSnackbar.BunifuFormDock.BorderOptions">
             <summary>
-            Gets or sets Form border options that can be 
+            Gets or sets Form border options that can be
             used to add and style borders on the parent form.
             </summary>
         </member>
@@ -1630,13 +1630,13 @@
         </member>
         <member name="P:Utilities.BunifuSnackbar.BunifuFormDock.TitleBarOptions">
             <summary>
-            Gets or sets the list of options for selecting and managing 
+            Gets or sets the list of options for selecting and managing
             any control that is set as the parent form's Title Bar.
             </summary>
         </member>
         <member name="P:Utilities.BunifuSnackbar.BunifuFormDock.AllowDockingKeys">
             <summary>
-            Gets or sets a value indicating whether the parent form will allow 
+            Gets or sets a value indicating whether the parent form will allow
             the standard Windows docking keys to be supported at runtime.
             </summary>
         </member>
@@ -1657,19 +1657,19 @@
         </member>
         <member name="P:Utilities.BunifuSnackbar.BunifuFormDock.AllowOpacityChangesWhileDragging">
             <summary>
-            Gets or sets a value indicating whether the parent form's opacity or transparency 
+            Gets or sets a value indicating whether the parent form's opacity or transparency
             will be changed whenever it's being dragged on screen.
             </summary>
         </member>
         <member name="P:Utilities.BunifuSnackbar.BunifuFormDock.ShowCursorChanges">
             <summary>
-            Gets or sets a value indicating whether cursor-changes 
+            Gets or sets a value indicating whether cursor-changes
             will be provided when about to dock the parent form.
             </summary>
         </member>
         <member name="P:Utilities.BunifuSnackbar.BunifuFormDock.ShowDockingIndicators">
             <summary>
-            Gets or sets a value indicating whether the docking indicators 
+            Gets or sets a value indicating whether the docking indicators
             will be previewed before the parent form is docked.
             </summary>
         </member>
@@ -1735,57 +1735,57 @@
         </member>
         <member name="M:Utilities.BunifuSnackbar.BunifuFormDock.SubscribeControlToDragEvents(System.Windows.Forms.Control,System.Boolean)">
             <summary>
-            Subscribes any control specified to the drag  
+            Subscribes any control specified to the drag
             event operations performed on the parent form.
             </summary>
             <param name="control">
             The control to be subscribed to the drag events.
             </param>
             <param name="isPartOfTitleBar">
-            If the control is a part of the Title Bar section, set this parameter 
-            to true in order for the control to be subscribed to the 
+            If the control is a part of the Title Bar section, set this parameter
+            to true in order for the control to be subscribed to the
             <see cref="P:Utilities.BunifuSnackbar.TitleBarOptions.DoubleClickToExpandWindow"/> setting.
             </param>
         </member>
         <member name="M:Utilities.BunifuSnackbar.BunifuFormDock.SubscribeControlsToDragEvents(System.Windows.Forms.Control[],System.Boolean)">
             <summary>
-            Subscribes an array of controls specified to the drag  
+            Subscribes an array of controls specified to the drag
             event operations performed on the parent form.
             </summary>
             <param name="controls">
             An array of controls to be subscribed to the drag events.
             </param>
             <param name="arePartOfTitleBar">
-            If the controls are part of the Title Bar section, set this parameter 
-            to true in order for the controls to be subscribed to the 
+            If the controls are part of the Title Bar section, set this parameter
+            to true in order for the controls to be subscribed to the
             <see cref="P:Utilities.BunifuSnackbar.TitleBarOptions.DoubleClickToExpandWindow"/> setting.
             </param>
         </member>
         <member name="M:Utilities.BunifuSnackbar.BunifuFormDock.UnsubscribeControlToDragEvents(System.Windows.Forms.Control,System.Boolean)">
             <summary>
-            Unsubscribes any control attached to the drag  
+            Unsubscribes any control attached to the drag
             event operations performed on the parent form.
             </summary>
             <param name="control">
             The control previously attached to the drag events.
             </param>
             <param name="wasPartOfTitleBar">
-            If the control was a part of the Title Bar section, set this parameter 
-            to true in order for the control to be unsubscribed to the 
+            If the control was a part of the Title Bar section, set this parameter
+            to true in order for the control to be unsubscribed to the
             <see cref="P:Utilities.BunifuSnackbar.TitleBarOptions.DoubleClickToExpandWindow"/> setting.
             </param>
         </member>
         <member name="M:Utilities.BunifuSnackbar.BunifuFormDock.UnsubscribeControlsToDragEvents(System.Windows.Forms.Control[],System.Boolean)">
             <summary>
-            Unsubscribes an array of controls attached to the drag  
+            Unsubscribes an array of controls attached to the drag
             event operations performed on the parent form.
             </summary>
             <param name="controls">
             An array of controls previously attached to the drag events.
             </param>
             <param name="werePartOfTitleBar">
-            If the controls were part of the Title Bar section, set this parameter 
-            to true in order for the controls to be unsubscribed to the 
+            If the controls were part of the Title Bar section, set this parameter
+            to true in order for the controls to be unsubscribed to the
             <see cref="P:Utilities.BunifuSnackbar.TitleBarOptions.DoubleClickToExpandWindow"/> setting.
             </param>
         </member>
@@ -2020,7 +2020,7 @@
         </member>
         <member name="M:Utilities.BunifuSnackbar.BunifuFormDock.OnMouseUp(System.Object,System.Windows.Forms.MouseEventArgs)">
             <summary>
-            Raises the component's "MouseUp" event. 
+            Raises the component's "MouseUp" event.
             Use this to attach any control's "MouseUp" event to this "OnMouseUp" event.
             </summary>
             <param name="sender">The sender control.</param>
@@ -2074,7 +2074,7 @@
         </member>
         <member name="M:Utilities.BunifuSnackbar.BunifuFormDock.InitializeComponent">
             <summary>
-            Required method for Designer support - do not modify 
+            Required method for Designer support - do not modify
             the contents of this method with the code editor.
             </summary>
         </member>
@@ -2147,13 +2147,13 @@
         </member>
         <member name="M:Utilities.BunifuSnackbar.DockOptions.ToString">
             <summary>
-            Returns a <see cref="T:System.String"/> containing the list of docking options 
+            Returns a <see cref="T:System.String"/> containing the list of docking options
             provided and their applied statuses separated by semi-colons.
             </summary>
         </member>
         <member name="T:Utilities.BunifuSnackbar.TitleBarOptions">
             <summary>
-            Provides a list of options for selecting and managing any 
+            Provides a list of options for selecting and managing any
             control that is to be used as the parent form's Title Bar.
             </summary>
         </member>
@@ -2174,7 +2174,7 @@
         </member>
         <member name="P:Utilities.BunifuSnackbar.TitleBarOptions.DoubleClickToExpandWindow">
             <summary>
-             Gets or sets a value indicating whether the Title Bar control 
+             Gets or sets a value indicating whether the Title Bar control
              will expand the parent form once a user double-clicks on it.
             </summary>
         </member>
@@ -2186,13 +2186,13 @@
         </member>
         <member name="P:Utilities.BunifuSnackbar.TitleBarOptions.AllowFormDragging">
             <summary>
-             Gets or sets a value indicating whether the Title Bar control 
+             Gets or sets a value indicating whether the Title Bar control
              will be allowed to drag the parent form at runtime.
             </summary>
         </member>
         <member name="M:Utilities.BunifuSnackbar.TitleBarOptions.ToString">
             <summary>
-            Returns a <see cref="T:System.String"/> containing the list of Title Bar options 
+            Returns a <see cref="T:System.String"/> containing the list of Title Bar options
             provided and their applied property values separated by semi-colons.
             </summary>
         </member>
@@ -2209,7 +2209,7 @@
         </member>
         <member name="M:Utilities.BunifuSnackbar.FormBorderOptions.ToString">
             <summary>
-            Returns a <see cref="T:System.String"/> containing the list of Form Border Options 
+            Returns a <see cref="T:System.String"/> containing the list of Form Border Options
             provided and their applied property values separated by semi-colons.
             </summary>
         </member>
@@ -2221,7 +2221,7 @@
         </member>
         <member name="M:Utilities.BunifuSnackbar.FormBorderOptions.BorderRegion.ToString">
             <summary>
-            Returns a <see cref="T:System.String"/> containing the list of Form Border Options 
+            Returns a <see cref="T:System.String"/> containing the list of Form Border Options
             provided and their applied property values separated by semi-colons.
             </summary>
         </member>
@@ -2297,7 +2297,7 @@
         </member>
         <member name="T:Bunifu.UI.WinForms.BunifuSnackbar">
             <summary>
-            Deliver stunningly neat, time-bound, and brief messages 
+            Deliver stunningly neat, time-bound, and brief messages
             about application processes during or after execution.
             </summary>
         </member>
@@ -2313,7 +2313,7 @@
         </member>
         <member name="T:Bunifu.UI.WinForms.BunifuSnackbar.Hosts">
             <summary>
-            Provides a list of supported hosts 
+            Provides a list of supported hosts
             used to contain snackbars.
             </summary>
         </member>
@@ -2334,7 +2334,7 @@
         </member>
         <member name="T:Bunifu.UI.WinForms.BunifuSnackbar.Positions">
             <summary>
-            Provides a list of positions to be 
+            Provides a list of positions to be
             used when displaying the snackbar.
             </summary>
         </member>
@@ -2385,13 +2385,13 @@
         </member>
         <member name="F:Bunifu.UI.WinForms.BunifuSnackbar.Positions.Custom">
             <summary>
-            Lets you specify your own custom position 
+            Lets you specify your own custom position
             using the <see cref="!:CustomPosition"/> property.
             </summary>
         </member>
         <member name="T:Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes">
             <summary>
-            Provides a default list of snackbar message 
+            Provides a default list of snackbar message
             types that can be used in various scenarios.
             </summary>
         </member>
@@ -2417,159 +2417,159 @@
         </member>
         <member name="T:Bunifu.UI.WinForms.BunifuSnackbar.SnackbarResult">
             <summary>
-            Specifies identifiers to indicate 
+            Specifies identifiers to indicate
             the return value of a snackbar.
             </summary>
         </member>
         <member name="F:Bunifu.UI.WinForms.BunifuSnackbar.SnackbarResult.AutoClosed">
             <summary>
-            The snackbar return value is <see cref="F:Bunifu.UI.WinForms.BunifuSnackbar.SnackbarResult.AutoClosed"/>, 
+            The snackbar return value is <see cref="F:Bunifu.UI.WinForms.BunifuSnackbar.SnackbarResult.AutoClosed"/>,
             meaning the snackabr ended its duration of display.
             </summary>
         </member>
         <member name="F:Bunifu.UI.WinForms.BunifuSnackbar.SnackbarResult.UserClosed">
             <summary>
-            The snackbar return value is <see cref="F:Bunifu.UI.WinForms.BunifuSnackbar.SnackbarResult.UserClosed"/>, 
+            The snackbar return value is <see cref="F:Bunifu.UI.WinForms.BunifuSnackbar.SnackbarResult.UserClosed"/>,
             meaning the snackbar was closed by the end user.
             </summary>
         </member>
         <member name="F:Bunifu.UI.WinForms.BunifuSnackbar.SnackbarResult.ActionClicked">
             <summary>
-            The snackbar return value is <see cref="F:Bunifu.UI.WinForms.BunifuSnackbar.SnackbarResult.ActionClicked"/>, 
+            The snackbar return value is <see cref="F:Bunifu.UI.WinForms.BunifuSnackbar.SnackbarResult.ActionClicked"/>,
             meaning the snackbar's Action button was clicked.
             </summary>
         </member>
         <member name="P:Bunifu.UI.WinForms.BunifuSnackbar.AllowDragging">
             <summary>
-            Gets or sets a value indicating whether the 
+            Gets or sets a value indicating whether the
             Snackbar will be draggable once displayed.
             </summary>
         </member>
         <member name="P:Bunifu.UI.WinForms.BunifuSnackbar.ClickToClose">
             <summary>
-            Gets or sets a value indicating whether the 
+            Gets or sets a value indicating whether the
             Snackbar will be closed once clicked by the user.
             </summary>
         </member>
         <member name="P:Bunifu.UI.WinForms.BunifuSnackbar.DoubleClickToClose">
             <summary>
-            Gets or sets a value indicating whether the Snackbar 
+            Gets or sets a value indicating whether the Snackbar
             will be closed once double-clicked by the user.
             </summary>
         </member>
         <member name="P:Bunifu.UI.WinForms.BunifuSnackbar.AllowMultipleViews">
             <summary>
-            Gets or sets a value indicating whether multiple 
+            Gets or sets a value indicating whether multiple
             instances of the Snackbar will be displayed at a time.
             </summary>
         </member>
         <member name="P:Bunifu.UI.WinForms.BunifuSnackbar.ShowCloseIcon">
             <summary>
-            Gets or sets a value indicating whether 
+            Gets or sets a value indicating whether
             the close icon will be displayed.
             </summary>
         </member>
         <member name="P:Bunifu.UI.WinForms.BunifuSnackbar.ShowIcon">
             <summary>
-            Gets or sets a value indicating whether  
+            Gets or sets a value indicating whether
             the Snackbar icon will be displayed.
             </summary>
         </member>
         <member name="P:Bunifu.UI.WinForms.BunifuSnackbar.ShowBorders">
             <summary>
-            Gets or sets a value indicating whether the Snackbar 
+            Gets or sets a value indicating whether the Snackbar
             will display its borders rather than shadows.
             </summary>
         </member>
         <member name="P:Bunifu.UI.WinForms.BunifuSnackbar.ShowShadows">
             <summary>
-            Gets or sets a value indicating whether the Snackbar 
+            Gets or sets a value indicating whether the Snackbar
             will display its shadows rather than borders.
             </summary>
         </member>
         <member name="P:Bunifu.UI.WinForms.BunifuSnackbar.FadeCloseIcon">
             <summary>
-            Gets or sets a value indicating whether 
+            Gets or sets a value indicating whether
             the close icon will fade when inactive.
             </summary>
         </member>
         <member name="P:Bunifu.UI.WinForms.BunifuSnackbar.ZoomCloseIcon">
             <summary>
-            Gets or sets a value indicating whether the 
+            Gets or sets a value indicating whether the
             close icon will zoom-in when hovered onto.
             </summary>
         </member>
         <member name="P:Bunifu.UI.WinForms.BunifuSnackbar.Margin">
             <summary>
-            Gets or sets the Snackbar's overall 
+            Gets or sets the Snackbar's overall
             distance between its host and its edges.
             </summary>
         </member>
         <member name="P:Bunifu.UI.WinForms.BunifuSnackbar.ViewsMargin">
             <summary>
-            Gets or sets the distance between Snackbars whenever multiple 
+            Gets or sets the distance between Snackbars whenever multiple
             views are enabled using the property <see cref="P:Bunifu.UI.WinForms.BunifuSnackbar.AllowMultipleViews"/>.
             </summary>
         </member>
         <member name="P:Bunifu.UI.WinForms.BunifuSnackbar.MaximumViews">
             <summary>
-            Gets or sets the maximum number of Snackbars 
+            Gets or sets the maximum number of Snackbars
             that can be visible at a given time.
             </summary>
         </member>
         <member name="P:Bunifu.UI.WinForms.BunifuSnackbar.DurationAfterIdle">
             <summary>
-            Gets or sets the duration the Snackbar will remain 
+            Gets or sets the duration the Snackbar will remain
             visible after it receives and then loses mouse focus.
             </summary>
         </member>
         <member name="P:Bunifu.UI.WinForms.BunifuSnackbar.MessageRightMargin">
             <summary>
-            Gets or sets the Snackbar's message right margin, 
+            Gets or sets the Snackbar's message right margin,
             or distance between the message and the closing icon.
-            Please note that the minimum size for display will be 
+            Please note that the minimum size for display will be
             established beyond the user-provided margin.
             </summary>
         </member>
         <member name="P:Bunifu.UI.WinForms.BunifuSnackbar.InformationOptions">
             <summary>
-            Gets the list of customization options provided  
+            Gets the list of customization options provided
             for the Snackbar's informational messages.
             </summary>
         </member>
         <member name="P:Bunifu.UI.WinForms.BunifuSnackbar.SuccessOptions">
             <summary>
-            Gets the list of customization options provided 
+            Gets the list of customization options provided
             for the Snackbar's success messages.
             </summary>
         </member>
         <member name="P:Bunifu.UI.WinForms.BunifuSnackbar.WarningOptions">
             <summary>
-            Gets the list of customization options provided 
+            Gets the list of customization options provided
             for the Snackbar's warning messages.
             </summary>
         </member>
         <member name="P:Bunifu.UI.WinForms.BunifuSnackbar.ErrorOptions">
             <summary>
-            Gets the list of customization options provided 
+            Gets the list of customization options provided
             for the Snackbar's error messages.
             </summary>
         </member>
         <member name="P:Bunifu.UI.WinForms.BunifuSnackbar.MinimumSize">
             <summary>
-            Gets or sets the minimum size the 
+            Gets or sets the minimum size the
             Snackbar can be auto-resized to.
             </summary>
         </member>
         <member name="P:Bunifu.UI.WinForms.BunifuSnackbar.MaximumSize">
             <summary>
-            Gets or sets the maximum size the 
+            Gets or sets the maximum size the
             Snackbar can be auto-resized to.
             </summary>
         </member>
         <member name="P:Bunifu.UI.WinForms.BunifuSnackbar.Host">
             <summary>
-            Gets or sets the host that will 
+            Gets or sets the host that will
             be used to contain the Snackbar.
             </summary>
         </member>
@@ -2581,13 +2581,13 @@
         </member>
         <member name="T:Bunifu.UI.WinForms.BunifuSnackbar.CustomizationOptions">
             <summary>
-            Provides a list of supported customization 
+            Provides a list of supported customization
             options for Snackbar messages.
             </summary>
         </member>
         <member name="M:Bunifu.UI.WinForms.BunifuSnackbar.CustomizationOptions.#ctor">
             <summary>
-            Initializes a new instance of 
+            Initializes a new instance of
             <see cref="T:Bunifu.UI.WinForms.BunifuSnackbar.CustomizationOptions"/> class.
             </summary>
         </member>
@@ -2680,10 +2680,10 @@
             </summary>
             <param name="owner">The Form owning the Snackbar.</param>
             <param name="message">The Snackbar message to be displayed.</param>
-            <param name="type">The type of message to be displayed.</param> 
+            <param name="type">The type of message to be displayed.</param>
             <param name="duration">
-            The time it will take before the 
-            Snackbar automatically closes. 
+            The time it will take before the
+            Snackbar automatically closes.
             </param>
             <returns>A <see cref="T:Bunifu.UI.WinForms.BunifuSnackbar.SnackbarResult"/>.</returns>
         </member>
@@ -2695,8 +2695,8 @@
             <param name="message">The Snackbar message to be displayed.</param>
             <param name="type">The type of message to be displayed.</param>
             <param name="duration">
-            The time it will take before the 
-            Snackbar automatically closes. 
+            The time it will take before the
+            Snackbar automatically closes.
             </param>
             <param name="action">
             Specify the text to be displayed
@@ -2712,12 +2712,12 @@
             <param name="message">The Snackbar message to be displayed.</param>
             <param name="type">The type of message to be displayed.</param>
             <param name="position">
-            The relative area or position where 
+            The relative area or position where
             the Snackbar will be displayed.
             </param>
             <param name="duration">
-            The time it will take before the 
-            Snackbar automatically closes. 
+            The time it will take before the
+            Snackbar automatically closes.
             </param>
             <param name="action">
             Specify the text to be displayed
@@ -2733,16 +2733,16 @@
             <param name="message">The Snackbar message to be displayed.</param>
             <param name="type">The type of message to be displayed.</param>
             <param name="position">
-            The relative area or position where 
+            The relative area or position where
             the Snackbar will be displayed.
             </param>
             <param name="host">
-            The specific container that 
+            The specific container that
             will host the Snackbar.
             </param>
             <param name="duration">
-            The time it will take before the 
-            Snackbar automatically closes. 
+            The time it will take before the
+            Snackbar automatically closes.
             </param>
             <param name="action">
             Specify the text to be displayed
@@ -2756,19 +2756,19 @@
             </summary>
             <param name="owner">The Form owning the Snackbar.</param>
             <param name="displayControl">
-            The control to be displayed in-place-of 
+            The control to be displayed in-place-of
             the default snackbar content.
             </param>
             <param name="duration">
-            The time it will take before the 
-            Snackbar automatically closes. 
+            The time it will take before the
+            Snackbar automatically closes.
             </param>
             <param name="position">
-            The relative area or position where 
+            The relative area or position where
             the Snackbar will be displayed.
             </param>
             <param name="host">
-            The specific container that 
+            The specific container that
             will host the Snackbar.
             </param>
             <returns>A <see cref="T:Bunifu.UI.WinForms.BunifuSnackbar.SnackbarResult"/>.</returns>
@@ -2785,7 +2785,7 @@
         </member>
         <member name="M:Bunifu.UI.WinForms.BunifuSnackbar.ChangeBitmapColor(System.Drawing.Bitmap,System.Drawing.Color)">
             <summary>
-            Lets you change the color(s) of a  
+            Lets you change the color(s) of a
             Bitmap image to a monochrome color.
             </summary>
             <param name="bitmapImage">The Bitmap image to use.</param>
@@ -2798,7 +2798,7 @@
             </summary>
         </member>
         <member name="M:Bunifu.UI.WinForms.BunifuSnackbar.Dispose(System.Boolean)">
-            <summary> 
+            <summary>
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
@@ -2811,22 +2811,22 @@
         </member>
         <member name="T:Bunifu.UI.WinForms.SnackbarExtensions">
             <summary>
-            Provides extension methods that can  
+            Provides extension methods that can
             be utilized with Bunifu Snackbars.
             </summary>
         </member>
         <member name="M:Bunifu.UI.WinForms.SnackbarExtensions.Then(Bunifu.UI.WinForms.BunifuSnackbar.SnackbarResult,System.Action{Bunifu.UI.WinForms.BunifuSnackbar.SnackbarResult})">
             <summary>
-            Lets you to check the result returned by the 
-            Snackbar once it is closed. You can also use 
-            this to execute any specific action based on 
+            Lets you to check the result returned by the
+            Snackbar once it is closed. You can also use
+            this to execute any specific action based on
             the result provided.
             </summary>
             <param name="result">
             The result returned by the Snackbar.
             </param>
             <param name="action">
-            The action to be performed either 
+            The action to be performed either
             anonymously or as per a specific result.
             </param>
         </member>

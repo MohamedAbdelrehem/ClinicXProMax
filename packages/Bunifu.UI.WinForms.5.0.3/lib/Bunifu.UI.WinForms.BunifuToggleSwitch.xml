@@ -6,7 +6,7 @@
     <members>
         <member name="T:Bunifu.UI.WinForms.BunifuToggleSwitch">
             <summary>
-            Add customizable switches that toggle between 
+            Add customizable switches that toggle between
             the visual states of settings and features.
             </summary>
         </member>
@@ -17,7 +17,7 @@
         </member>
         <member name="P:Bunifu.UI.WinForms.BunifuToggleSwitch.Checked">
             <summary>
-            Gets or sets a value indicating whether 
+            Gets or sets a value indicating whether
             the Toggle Switch has been checked.
             </summary>
         </member>
@@ -75,7 +75,7 @@
         </member>
         <member name="T:Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState">
             <summary>
-            Provides visual properties for customizing  
+            Provides visual properties for customizing
             <see cref="T:Bunifu.UI.WinForms.BunifuToggleSwitch"/>.
             </summary>
         </member>
@@ -121,7 +121,7 @@
         </member>
         <member name="M:Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState.ToString">
             <summary>
-            Returns a <see cref="T:System.String"/> containing 
+            Returns a <see cref="T:System.String"/> containing
             the default properties.
             </summary>
         </member>
@@ -132,7 +132,7 @@
         </member>
         <member name="M:Bunifu.UI.WinForms.BunifuToggleSwitch.Refresh">
             <summary>
-            Forces the control to invalidate its client area and 
+            Forces the control to invalidate its client area and
             immediately redraw itself and any child controls.
             </summary>
         </member>
@@ -200,24 +200,24 @@
         </member>
         <member name="M:Bunifu.UI.WinForms.BunifuToggleSwitch.BunifuControlActionList.Redraw">
             <summary>
-            Forces the control to invalidate its client area and 
+            Forces the control to invalidate its client area and
             immediately redraw itself and any child controls.
             </summary>
         </member>
         <member name="F:Bunifu.UI.WinForms.BunifuToggleSwitch.components">
-            <summary> 
+            <summary>
             Required designer variable.
             </summary>
         </member>
         <member name="M:Bunifu.UI.WinForms.BunifuToggleSwitch.Dispose(System.Boolean)">
-            <summary> 
+            <summary>
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
         <member name="M:Bunifu.UI.WinForms.BunifuToggleSwitch.InitializeComponent">
-            <summary> 
-            Required method for Designer support - do not modify 
+            <summary>
+            Required method for Designer support - do not modify
             the contents of this method with the code editor.
             </summary>
         </member>

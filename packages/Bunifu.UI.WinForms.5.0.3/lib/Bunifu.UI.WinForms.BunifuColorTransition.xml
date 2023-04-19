@@ -42,7 +42,7 @@
         </member>
         <member name="P:Bunifu.UI.WinForms.BunifuColorTransition.AutoTransition">
             <summary>
-            Gets or sets a value indicating whether 
+            Gets or sets a value indicating whether
             automatic color transitions will be enabled.
             </summary>
         </member>
@@ -138,7 +138,7 @@
             </summary>
         </member>
         <member name="M:Bunifu.UI.WinForms.BunifuColorTransition.Dispose(System.Boolean)">
-            <summary> 
+            <summary>
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>

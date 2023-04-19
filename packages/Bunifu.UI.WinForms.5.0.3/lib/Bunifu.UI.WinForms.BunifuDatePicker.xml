@@ -81,7 +81,7 @@
         </member>
         <member name="P:Bunifu.UI.WinForms.BunifuDatePicker.FillDatePicker">
             <summary>
-            Gets or sets a value indicating whether the date picker 
+            Gets or sets a value indicating whether the date picker
             will be filled using the <see cref="P:Bunifu.UI.WinForms.BunifuDatePicker.Color"/> property.
             </summary>
         </member>
@@ -157,13 +157,13 @@
         </member>
         <member name="P:Bunifu.UI.WinForms.BunifuDatePicker.RightToLeftLayout">
             <summary>
-            Gets or sets whether the contents of the <see cref="T:System.Windows.Forms.DateTimePicker" /> 
+            Gets or sets whether the contents of the <see cref="T:System.Windows.Forms.DateTimePicker" />
             are laid out from right to left.
             </summary>
         </member>
         <member name="P:Bunifu.UI.WinForms.BunifuDatePicker.ShowUpDown">
             <summary>
-            Gets or sets a value indicating whether a spin button control 
+            Gets or sets a value indicating whether a spin button control
             (also known as an up-down control) is used to adjust the date/time value.
             </summary>
         </member>
@@ -202,7 +202,7 @@
         </member>
         <member name="M:Bunifu.UI.WinForms.BunifuDatePicker.InitializeComponent">
             <summary>
-            Required method for Designer support - do not modify 
+            Required method for Designer support - do not modify
             the contents of this method with the code editor.
             </summary>
         </member>

@@ -550,7 +550,7 @@
             Retrieves the dimensions of the bounding rectangle of the specified window. The dimensions are given in screen coordinates that are relative to the upper-left corner of the screen.
             </summary>
             <remarks>
-            In conformance with conventions for the RECT structure, the bottom-right coordinates of the returned rectangle are exclusive. In other words, 
+            In conformance with conventions for the RECT structure, the bottom-right coordinates of the returned rectangle are exclusive. In other words,
             the pixel at (right, bottom) lies immediately outside the rectangle.
             </remarks>
             <param name="hWnd">A handle to the window.</param>
@@ -562,7 +562,7 @@
             Retrieves the dimensions of the bounding rectangle of the specified window. The dimensions are given in screen coordinates that are relative to the upper-left corner of the screen.
             </summary>
             <remarks>
-            In conformance with conventions for the RECT structure, the bottom-right coordinates of the returned rectangle are exclusive. In other words, 
+            In conformance with conventions for the RECT structure, the bottom-right coordinates of the returned rectangle are exclusive. In other words,
             the pixel at (right, bottom) lies immediately outside the rectangle.
             </remarks>
             <param name="handle">A handle to the window.</param>
@@ -570,7 +570,7 @@
         </member>
         <member name="T:TheArtOfDev.HtmlRenderer.WinForms.HtmlContainer">
             <summary>
-            Low level handling of Html Renderer logic, this class is used by <see cref="T:TheArtOfDev.HtmlRenderer.Core.Parse.HtmlParser"/>, 
+            Low level handling of Html Renderer logic, this class is used by <see cref="T:TheArtOfDev.HtmlRenderer.Core.Parse.HtmlParser"/>,
             <see cref="!:HtmlLabel"/>, <see cref="!:HtmlToolTip"/> and <see cref="T:TheArtOfDev.HtmlRenderer.WinForms.HtmlRender"/>.<br/>
             </summary>
             <seealso cref="P:TheArtOfDev.HtmlRenderer.WinForms.HtmlContainer.HtmlContainerInt"/>
@@ -674,7 +674,7 @@
             False - images are loaded asynchronously to html parsing when downloaded from URL or loaded from disk.<br/>
             </summary>
             <remarks>
-            Asynchronously image loading allows to unblock html rendering while image is downloaded or loaded from disk using IO 
+            Asynchronously image loading allows to unblock html rendering while image is downloaded or loaded from disk using IO
             ports to achieve better performance.<br/>
             Asynchronously image loading should be avoided when the full html content must be available during render, like render to image.
             </remarks>
@@ -686,7 +686,7 @@
             False - images that are not visible because of scroll location are not loaded until they are scrolled to.
             </summary>
             <remarks>
-            Images late loading improve performance if the page contains image outside the visible scroll area, especially if there is large 
+            Images late loading improve performance if the page contains image outside the visible scroll area, especially if there is large
             amount of images, as all image loading is delayed (downloading and loading into memory).<br/>
             Late image loading may effect the layout and actual size as image without set size will not have actual size until they are loaded
             resulting in layout change during user scroll.<br/>
@@ -867,8 +867,8 @@
             <remarks>
             <para>
             <b>GDI vs. GDI+ text rendering</b><br/>
-            Windows supports two text rendering technologies: GDI and GDI+.<br/> 
-            GDI is older, has better performance and looks better on standard monitors but doesn't support alpha channel for transparency.<br/> 
+            Windows supports two text rendering technologies: GDI and GDI+.<br/>
+            GDI is older, has better performance and looks better on standard monitors but doesn't support alpha channel for transparency.<br/>
             GDI+ is newer, device independent so work better for printers but is slower and looks worse on monitors.<br/>
             HtmlRender supports both GDI and GDI+ text rendering to accommodate different needs, GDI+ text rendering methods have "GdiPlus" suffix
             in their name where GDI do not.<br/>
@@ -879,7 +879,7 @@
             Because of GDI text rendering issue with alpha channel clear type text rendering rendering to image requires special handling.<br/>
             <u>Solid color background -</u> generate an image where the background is filled with solid color and all the html is rendered on top
             of the background color, GDI text rendering will be used. (RenderToImage method where the first argument is html string)<br/>
-            <u>Image background -</u> render html on top of existing image with whatever currently exist but it cannot have transparent pixels, 
+            <u>Image background -</u> render html on top of existing image with whatever currently exist but it cannot have transparent pixels,
             GDI text rendering will be used. (RenderToImage method where the first argument is Image object)<br/>
             <u>Transparent background -</u> render html to empty image using GDI+ text rendering, the generated image can be transparent.
             Text rendering can be controlled using <see cref="T:System.Drawing.Text.TextRenderingHint"/>, note that <see cref="F:System.Drawing.Text.TextRenderingHint.ClearTypeGridFit"/>
@@ -900,7 +900,7 @@
             Allows to overwrite the loaded image by providing the image object manually, or different source (file or URL) to load from.<br/>
             Example: image 'src' can be non-valid string that is interpreted in the overwrite delegate by custom logic to resource image object<br/>
             Example: image 'src' in the html is relative - the overwrite intercepts the load and provide full source URL to load the image from<br/>
-            Example: image download requires authentication - the overwrite intercepts the load, downloads the image to disk using custom code and provide 
+            Example: image download requires authentication - the overwrite intercepts the load, downloads the image to disk using custom code and provide
             file path to load the image from.<br/>
             If no alternative data is provided the original source will be used.<br/>
             Note: Cannot use asynchronous scheme overwrite scheme.<br/>
@@ -935,7 +935,7 @@
         <member name="M:TheArtOfDev.HtmlRenderer.WinForms.HtmlRender.AddFontFamilyMapping(System.String,System.String)">
             <summary>
             Adds a font mapping from <paramref name="fromFamily"/> to <paramref name="toFamily"/> iff the <paramref name="fromFamily"/> is not found.<br/>
-            When the <paramref name="fromFamily"/> font is used in rendered html and is not found in existing 
+            When the <paramref name="fromFamily"/> font is used in rendered html and is not found in existing
             fonts (installed or added) it will be replaced by <paramref name="toFamily"/>.<br/>
             </summary>
             <remarks>
@@ -947,7 +947,7 @@
         <member name="M:TheArtOfDev.HtmlRenderer.WinForms.HtmlRender.ParseStyleSheet(System.String,System.Boolean)">
             <summary>
             Parse the given stylesheet to <see cref="T:TheArtOfDev.HtmlRenderer.Core.CssData"/> object.<br/>
-            If <paramref name="combineWithDefault"/> is true the parsed css blocks are added to the 
+            If <paramref name="combineWithDefault"/> is true the parsed css blocks are added to the
             default css data (as defined by W3), merged if class name already exists. If false only the data in the given stylesheet is returned.
             </summary>
             <seealso cref="!:http://www.w3.org/TR/CSS21/sample.html"/>
@@ -989,7 +989,7 @@
             <summary>
             Renders the specified HTML source on the specified location and max width restriction.<br/>
             Use GDI text rendering, note <see cref="P:System.Drawing.Graphics.TextRenderingHint"/> has no effect.<br/>
-            If <paramref name="maxWidth"/> is zero the html will use all the required width, otherwise it will perform line 
+            If <paramref name="maxWidth"/> is zero the html will use all the required width, otherwise it will perform line
             wrap as specified in the html<br/>
             Returned is the actual width and height of the rendered html.<br/>
             </summary>
@@ -1007,7 +1007,7 @@
             <summary>
             Renders the specified HTML source on the specified location and max size restriction.<br/>
             Use GDI text rendering, note <see cref="P:System.Drawing.Graphics.TextRenderingHint"/> has no effect.<br/>
-            If <paramref name="maxSize"/>.Width is zero the html will use all the required width, otherwise it will perform line 
+            If <paramref name="maxSize"/>.Width is zero the html will use all the required width, otherwise it will perform line
             wrap as specified in the html<br/>
             If <paramref name="maxSize"/>.Height is zero the html will use all the required height, otherwise it will clip at the
             given max height not rendering the html below it.<br/>
@@ -1026,7 +1026,7 @@
             <summary>
             Renders the specified HTML source on the specified location and max size restriction.<br/>
             Use GDI+ text rending, use <see cref="P:System.Drawing.Graphics.TextRenderingHint"/> to control text rendering.<br/>
-            If <paramref name="maxWidth"/> is zero the html will use all the required width, otherwise it will perform line 
+            If <paramref name="maxWidth"/> is zero the html will use all the required width, otherwise it will perform line
             wrap as specified in the html<br/>
             Returned is the actual width and height of the rendered html.<br/>
             </summary>
@@ -1044,7 +1044,7 @@
             <summary>
             Renders the specified HTML source on the specified location and max size restriction.<br/>
             Use GDI+ text rending, use <see cref="P:System.Drawing.Graphics.TextRenderingHint"/> to control text rendering.<br/>
-            If <paramref name="maxSize"/>.Width is zero the html will use all the required width, otherwise it will perform line 
+            If <paramref name="maxSize"/>.Width is zero the html will use all the required width, otherwise it will perform line
             wrap as specified in the html<br/>
             If <paramref name="maxSize"/>.Height is zero the html will use all the required height, otherwise it will clip at the
             given max height not rendering the html below it.<br/>
@@ -1110,7 +1110,7 @@
         <member name="M:TheArtOfDev.HtmlRenderer.WinForms.HtmlRender.RenderToImage(System.String,System.Int32,System.Int32,System.Drawing.Color,TheArtOfDev.HtmlRenderer.Core.CssData,System.EventHandler{TheArtOfDev.HtmlRenderer.Core.Entities.HtmlStylesheetLoadEventArgs},System.EventHandler{TheArtOfDev.HtmlRenderer.Core.Entities.HtmlImageLoadEventArgs})">
             <summary>
             Renders the specified HTML into a new image of unknown size that will be determined by max width/height and HTML layout.<br/>
-            If <paramref name="maxWidth"/> is zero the html will use all the required width, otherwise it will perform line 
+            If <paramref name="maxWidth"/> is zero the html will use all the required width, otherwise it will perform line
             wrap as specified in the html<br/>
             If <paramref name="maxHeight"/> is zero the html will use all the required height, otherwise it will clip at the
             given max height not rendering the html below it.<br/>
@@ -1132,7 +1132,7 @@
         <member name="M:TheArtOfDev.HtmlRenderer.WinForms.HtmlRender.RenderToImage(System.String,System.Drawing.Size,System.Drawing.Size,System.Drawing.Color,TheArtOfDev.HtmlRenderer.Core.CssData,System.EventHandler{TheArtOfDev.HtmlRenderer.Core.Entities.HtmlStylesheetLoadEventArgs},System.EventHandler{TheArtOfDev.HtmlRenderer.Core.Entities.HtmlImageLoadEventArgs})">
             <summary>
             Renders the specified HTML into a new image of unknown size that will be determined by min/max width/height and HTML layout.<br/>
-            If <paramref name="maxSize.Width.Width"/> is zero the html will use all the required width, otherwise it will perform line 
+            If <paramref name="maxSize.Width.Width"/> is zero the html will use all the required width, otherwise it will perform line
             wrap as specified in the html<br/>
             If <paramref name="maxSize.Height.Height"/> is zero the html will use all the required height, otherwise it will clip at the
             given max height not rendering the html below it.<br/>
@@ -1171,7 +1171,7 @@
         <member name="M:TheArtOfDev.HtmlRenderer.WinForms.HtmlRender.RenderToImageGdiPlus(System.String,System.Int32,System.Int32,System.Drawing.Text.TextRenderingHint,TheArtOfDev.HtmlRenderer.Core.CssData,System.EventHandler{TheArtOfDev.HtmlRenderer.Core.Entities.HtmlStylesheetLoadEventArgs},System.EventHandler{TheArtOfDev.HtmlRenderer.Core.Entities.HtmlImageLoadEventArgs})">
             <summary>
             Renders the specified HTML into a new image of unknown size that will be determined by max width/height and HTML layout.<br/>
-            If <paramref name="maxWidth"/> is zero the html will use all the required width, otherwise it will perform line 
+            If <paramref name="maxWidth"/> is zero the html will use all the required width, otherwise it will perform line
             wrap as specified in the html<br/>
             If <paramref name="maxHeight"/> is zero the html will use all the required height, otherwise it will clip at the
             given max height not rendering the html below it.<br/>
@@ -1191,7 +1191,7 @@
         <member name="M:TheArtOfDev.HtmlRenderer.WinForms.HtmlRender.RenderToImageGdiPlus(System.String,System.Drawing.Size,System.Drawing.Size,System.Drawing.Text.TextRenderingHint,TheArtOfDev.HtmlRenderer.Core.CssData,System.EventHandler{TheArtOfDev.HtmlRenderer.Core.Entities.HtmlStylesheetLoadEventArgs},System.EventHandler{TheArtOfDev.HtmlRenderer.Core.Entities.HtmlImageLoadEventArgs})">
             <summary>
             Renders the specified HTML into a new image of unknown size that will be determined by min/max width/height and HTML layout.<br/>
-            If <paramref name="maxSize.Width.Width"/> is zero the html will use all the required width, otherwise it will perform line 
+            If <paramref name="maxSize.Width.Width"/> is zero the html will use all the required width, otherwise it will perform line
             wrap as specified in the html<br/>
             If <paramref name="maxSize.Height.Height"/> is zero the html will use all the required height, otherwise it will clip at the
             given max height not rendering the html below it.<br/>
@@ -1234,7 +1234,7 @@
         <member name="M:TheArtOfDev.HtmlRenderer.WinForms.HtmlRender.RenderClip(System.Drawing.Graphics,System.String,System.Drawing.PointF,System.Drawing.SizeF,TheArtOfDev.HtmlRenderer.Core.CssData,System.Boolean,System.EventHandler{TheArtOfDev.HtmlRenderer.Core.Entities.HtmlStylesheetLoadEventArgs},System.EventHandler{TheArtOfDev.HtmlRenderer.Core.Entities.HtmlImageLoadEventArgs})">
             <summary>
             Renders the specified HTML source on the specified location and max size restriction.<br/>
-            If <paramref name="maxSize"/>.Width is zero the html will use all the required width, otherwise it will perform line 
+            If <paramref name="maxSize"/>.Width is zero the html will use all the required width, otherwise it will perform line
             wrap as specified in the html<br/>
             If <paramref name="maxSize"/>.Height is zero the html will use all the required height, otherwise it will clip at the
             given max height not rendering the html below it.<br/>
@@ -1254,7 +1254,7 @@
         <member name="M:TheArtOfDev.HtmlRenderer.WinForms.HtmlRender.RenderHtml(System.Drawing.Graphics,System.String,System.Drawing.PointF,System.Drawing.SizeF,TheArtOfDev.HtmlRenderer.Core.CssData,System.Boolean,System.EventHandler{TheArtOfDev.HtmlRenderer.Core.Entities.HtmlStylesheetLoadEventArgs},System.EventHandler{TheArtOfDev.HtmlRenderer.Core.Entities.HtmlImageLoadEventArgs})">
             <summary>
             Renders the specified HTML source on the specified location and max size restriction.<br/>
-            If <paramref name="maxSize"/>.Width is zero the html will use all the required width, otherwise it will perform line 
+            If <paramref name="maxSize"/>.Width is zero the html will use all the required width, otherwise it will perform line
             wrap as specified in the html<br/>
             If <paramref name="maxSize"/>.Height is zero the html will use all the required height, otherwise it will clip at the
             given max height not rendering the html below it.<br/>
@@ -1720,7 +1720,7 @@
         </member>
         <member name="T:TheArtOfDev.HtmlRenderer.Adapters.Entities.RRect">
             <summary>
-            Stores a set of four floating-point numbers that represent the location and size of a rectangle. 
+            Stores a set of four floating-point numbers that represent the location and size of a rectangle.
             </summary>
         </member>
         <member name="F:TheArtOfDev.HtmlRenderer.Adapters.Entities.RRect.Empty">
@@ -2286,7 +2286,7 @@
         <member name="T:TheArtOfDev.HtmlRenderer.Adapters.RAdapter">
             <summary>
             Platform adapter to bridge platform specific objects to HTML Renderer core library.<br/>
-            Core uses abstract renderer objects (RAdapter/RControl/REtc...) to access platform specific functionality, the concrete platforms 
+            Core uses abstract renderer objects (RAdapter/RControl/REtc...) to access platform specific functionality, the concrete platforms
             implements those objects to provide concrete platform implementation. Those allowing the core library to be platform agnostic.
             <para>
             Platforms: WinForms, WPF, Metro, PDF renders, etc.<br/>
@@ -2399,7 +2399,7 @@
         <member name="M:TheArtOfDev.HtmlRenderer.Adapters.RAdapter.AddFontFamilyMapping(System.String,System.String)">
             <summary>
             Adds a font mapping from <paramref name="fromFamily"/> to <paramref name="toFamily"/> iff the <paramref name="fromFamily"/> is not found.<br/>
-            When the <paramref name="fromFamily"/> font is used in rendered html and is not found in existing 
+            When the <paramref name="fromFamily"/> font is used in rendered html and is not found in existing
             fonts (installed or added) it will be replaced by <paramref name="toFamily"/>.<br/>
             </summary>
             <param name="fromFamily">the font family to replace</param>
@@ -3005,7 +3005,7 @@
         </member>
         <member name="T:TheArtOfDev.HtmlRenderer.Adapters.RPen">
             <summary>
-            Adapter for platform specific pen objects - used to draw graphics (lines, rectangles and paths) 
+            Adapter for platform specific pen objects - used to draw graphics (lines, rectangles and paths)
             </summary>
         </member>
         <member name="P:TheArtOfDev.HtmlRenderer.Adapters.RPen.Width">
@@ -3045,7 +3045,7 @@
         <member name="M:TheArtOfDev.HtmlRenderer.Core.CssData.Parse(TheArtOfDev.HtmlRenderer.Adapters.RAdapter,System.String,System.Boolean)">
             <summary>
             Parse the given stylesheet to <see cref="T:TheArtOfDev.HtmlRenderer.Core.CssData"/> object.<br/>
-            If <paramref name="combineWithDefault"/> is true the parsed css blocks are added to the 
+            If <paramref name="combineWithDefault"/> is true the parsed css blocks are added to the
             default css data (as defined by W3), merged if class name already exists. If false only the data in the given stylesheet is returned.
             </summary>
             <seealso cref="!:http://www.w3.org/TR/CSS21/sample.html"/>
@@ -3070,7 +3070,7 @@
         <member name="M:TheArtOfDev.HtmlRenderer.Core.CssData.GetCssBlock(System.String,System.String)">
             <summary>
             Get collection of css blocks for the requested class selector.<br/>
-            the <paramref name="className"/> can be: class name, html element name, html element and 
+            the <paramref name="className"/> can be: class name, html element name, html element and
             class name (elm.class), hash tag with element id (#id).<br/>
             returned all the blocks that word on the requested class selector, it can contain simple
             selector or hierarchy selector.
@@ -3128,7 +3128,7 @@
             <remarks>
             The Box can contains other boxes, that's the way that the CSS Tree
             is composed.
-            
+
             To know more about boxes visit CSS spec:
             http://www.w3.org/TR/CSS21/box.html
             </remarks>
@@ -3344,7 +3344,7 @@
         </member>
         <member name="M:TheArtOfDev.HtmlRenderer.Core.Dom.CssBox.SetBeforeBox(TheArtOfDev.HtmlRenderer.Core.Dom.CssBox)">
             <summary>
-            Set this box in 
+            Set this box in
             </summary>
             <param name="before"></param>
         </member>
@@ -3860,7 +3860,7 @@
         </member>
         <member name="P:TheArtOfDev.HtmlRenderer.Core.Dom.CssBoxProperties.ActualBottom">
             <summary>
-            Gets or sets the bottom of the box. 
+            Gets or sets the bottom of the box.
             (When setting, alters only the Size.Height of the box)
             </summary>
         </member>
@@ -4016,7 +4016,7 @@
         </member>
         <member name="P:TheArtOfDev.HtmlRenderer.Core.Dom.CssBoxProperties.ActualColor">
             <summary>
-            
+
             Gets the actual color for the text.
             </summary>
         </member>
@@ -4153,7 +4153,7 @@
         </member>
         <member name="M:TheArtOfDev.HtmlRenderer.Core.Dom.CssLayoutEngine.BubbleRectangles(TheArtOfDev.HtmlRenderer.Core.Dom.CssBox,TheArtOfDev.HtmlRenderer.Core.Dom.CssLineBox)">
             <summary>
-            Recursively creates the rectangles of the blockBox, by bubbling from deep to outside of the boxes 
+            Recursively creates the rectangles of the blockBox, by bubbling from deep to outside of the boxes
             in the rectangle structure
             </summary>
         </member>
@@ -4236,7 +4236,7 @@
         </member>
         <member name="F:TheArtOfDev.HtmlRenderer.Core.Dom.CssLayoutEngineTable._caption">
             <summary>
-            
+
             </summary>
         </member>
         <member name="F:TheArtOfDev.HtmlRenderer.Core.Dom.CssLayoutEngineTable._bodyrows">
@@ -4251,7 +4251,7 @@
         </member>
         <member name="F:TheArtOfDev.HtmlRenderer.Core.Dom.CssLayoutEngineTable._allRows">
             <summary>
-            
+
             </summary>
         </member>
         <member name="M:TheArtOfDev.HtmlRenderer.Core.Dom.CssLayoutEngineTable.#ctor(TheArtOfDev.HtmlRenderer.Core.Dom.CssBox)">
@@ -4270,7 +4270,7 @@
         </member>
         <member name="M:TheArtOfDev.HtmlRenderer.Core.Dom.CssLayoutEngineTable.PerformLayout(TheArtOfDev.HtmlRenderer.Adapters.RGraphics,TheArtOfDev.HtmlRenderer.Core.Dom.CssBox)">
             <summary>
-            
+
             </summary>
             <param name="g"></param>
             <param name="tableBox"> </param>
@@ -4299,7 +4299,7 @@
         </member>
         <member name="M:TheArtOfDev.HtmlRenderer.Core.Dom.CssLayoutEngineTable.DetermineMissingColumnWidths(System.Double)">
             <summary>
-            
+
             </summary>
             <param name="availCellSpace"></param>
         </member>
@@ -4382,7 +4382,7 @@
             </summary>
             <returns></returns>
             <remarks>
-            The table's width can be larger than the result of this method, because of the minimum 
+            The table's width can be larger than the result of this method, because of the minimum
             size that individual boxes.
             </remarks>
         </member>
@@ -4393,7 +4393,7 @@
             </summary>
             <returns></returns>
             <remarks>
-            The table's width can be larger than the result of this method, because of the minimum 
+            The table's width can be larger than the result of this method, because of the minimum
             size that individual boxes.
             </remarks>
         </member>
@@ -4530,7 +4530,7 @@
         </member>
         <member name="P:TheArtOfDev.HtmlRenderer.Core.Dom.CssLineBox.RelatedBoxes">
             <summary>
-            Gets a list of boxes related with the linebox. 
+            Gets a list of boxes related with the linebox.
             To know the words of the box inside this linebox, use the <see cref="M:TheArtOfDev.HtmlRenderer.Core.Dom.CssLineBox.WordsOf(TheArtOfDev.HtmlRenderer.Core.Dom.CssBox)"/> method.
             </summary>
         </member>
@@ -4614,7 +4614,7 @@
             Represents a word inside an inline box
             </summary>
             <remarks>
-            Because of performance, words of text are the most atomic 
+            Because of performance, words of text are the most atomic
             element in the project. It should be characters, but come on,
             imagine the performance when drawing char by char on the device.<br/>
             It may change for future versions of the library.
@@ -5089,7 +5089,7 @@
         </member>
         <member name="M:TheArtOfDev.HtmlRenderer.Core.Entities.CssBlock.GetHashCode">
             <summary>
-            Serves as a hash function for a particular type. 
+            Serves as a hash function for a particular type.
             </summary>
             <returns>A hash code for the current <see cref="T:System.Object"/>.</returns>
         </member>
@@ -5160,7 +5160,7 @@
             Callback used in <see cref="T:TheArtOfDev.HtmlRenderer.Core.Entities.HtmlImageLoadEventArgs"/> to allow setting image externally and async.<br/>
             The callback can provide path to image file path, URL or the actual image to use.<br/>
             If <paramref name="imageRectangle"/> is given (not <see cref="F:TheArtOfDev.HtmlRenderer.Adapters.Entities.RRect.Empty"/>) then only the specified rectangle will
-            be used from the loaded image and not all of it, also the rectangle will be used for size and not the actual image size.<br/> 
+            be used from the loaded image and not all of it, also the rectangle will be used for size and not the actual image size.<br/>
             </summary>
             <param name="path">the path to the image to load (file path or URL)</param>
             <param name="image">the image to use</param>
@@ -5172,7 +5172,7 @@
             Allows to overwrite the loaded image by providing the image object manually, or different source (file or URL) to load from.<br/>
             Example: image 'src' can be non-valid string that is interpreted in the overwrite delegate by custom logic to resource image object<br/>
             Example: image 'src' in the html is relative - the overwrite intercepts the load and provide full source URL to load the image from<br/>
-            Example: image download requires authentication - the overwrite intercepts the load, downloads the image to disk using custom code and 
+            Example: image download requires authentication - the overwrite intercepts the load, downloads the image to disk using custom code and
             provide file path to load the image from. Can also use the asynchronous image overwrite not to block HTML rendering is applicable.<br/>
             If no alternative data is provided the original source will be used.<br/>
             </summary>
@@ -5238,8 +5238,8 @@
             <summary>
             Callback to overwrite the loaded image with image to load from given URI.<br/>
             Can be called directly from delegate handler or asynchronously after setting <see cref="P:TheArtOfDev.HtmlRenderer.Core.Entities.HtmlImageLoadEventArgs.Handled"/> to True.<br/>
-            Only the specified rectangle (x,y,width,height) will be used from the loaded image and not all of it, also 
-            the rectangle will be used for size and not the actual image size.<br/> 
+            Only the specified rectangle (x,y,width,height) will be used from the loaded image and not all of it, also
+            the rectangle will be used for size and not the actual image size.<br/>
             </summary>
             <param name="path">the path to the image to load (file path or URL)</param>
             <param name="imageRectangle">optional: limit to specific rectangle of the image and not all of it</param>
@@ -5249,7 +5249,7 @@
             Callback to overwrite the loaded image with given image object.<br/>
             Can be called directly from delegate handler or asynchronously after setting <see cref="P:TheArtOfDev.HtmlRenderer.Core.Entities.HtmlImageLoadEventArgs.Handled"/> to True.<br/>
             If <paramref name="imageRectangle"/> is given (not <see cref="F:TheArtOfDev.HtmlRenderer.Adapters.Entities.RRect.Empty"/>) then only the specified rectangle will
-            be used from the loaded image and not all of it, also the rectangle will be used for size and not the actual image size.<br/> 
+            be used from the loaded image and not all of it, also the rectangle will be used for size and not the actual image size.<br/>
             </summary>
             <param name="image">the image to load</param>
         </member>
@@ -5257,8 +5257,8 @@
             <summary>
             Callback to overwrite the loaded image with given image object.<br/>
             Can be called directly from delegate handler or asynchronously after setting <see cref="P:TheArtOfDev.HtmlRenderer.Core.Entities.HtmlImageLoadEventArgs.Handled"/> to True.<br/>
-            Only the specified rectangle (x,y,width,height) will be used from the loaded image and not all of it, also 
-            the rectangle will be used for size and not the actual image size.<br/> 
+            Only the specified rectangle (x,y,width,height) will be used from the loaded image and not all of it, also
+            the rectangle will be used for size and not the actual image size.<br/>
             </summary>
             <param name="image">the image to load</param>
             <param name="imageRectangle">optional: limit to specific rectangle of the image and not all of it</param>
@@ -5825,7 +5825,7 @@
         </member>
         <member name="F:TheArtOfDev.HtmlRenderer.Core.Handlers.FontsHandler._adapter">
             <summary>
-            
+
             </summary>
         </member>
         <member name="F:TheArtOfDev.HtmlRenderer.Core.Handlers.FontsHandler._fontsMapping">
@@ -5864,7 +5864,7 @@
         <member name="M:TheArtOfDev.HtmlRenderer.Core.Handlers.FontsHandler.AddFontFamilyMapping(System.String,System.String)">
             <summary>
             Adds a font mapping from <paramref name="fromFamily"/> to <paramref name="toFamily"/> iff the <paramref name="fromFamily"/> is not found.<br/>
-            When the <paramref name="fromFamily"/> font is used in rendered html and is not found in existing 
+            When the <paramref name="fromFamily"/> font is used in rendered html and is not found in existing
             fonts (installed or added) it will be replaced by <paramref name="toFamily"/>.<br/>
             </summary>
             <param name="fromFamily">the font family to replace</param>
@@ -5897,7 +5897,7 @@
             Handler for downloading images from the web.<br/>
             Single instance of the handler used for all images downloaded in a single html, this way if the html contains more
             than one reference to the same image it will be downloaded only once.<br/>
-            Also handles corrupt, partial and canceled downloads by first downloading to temp file and only if successful moving to cached 
+            Also handles corrupt, partial and canceled downloads by first downloading to temp file and only if successful moving to cached
             file location.
             </summary>
         </member>
@@ -5908,7 +5908,7 @@
         </member>
         <member name="F:TheArtOfDev.HtmlRenderer.Core.Handlers.ImageDownloader._imageDownloadCallbacks">
             <summary>
-            dictionary of image cache path to callbacks of download to handle multiple requests to download the same image 
+            dictionary of image cache path to callbacks of download to handle multiple requests to download the same image
             </summary>
         </member>
         <member name="M:TheArtOfDev.HtmlRenderer.Core.Handlers.ImageDownloader.DownloadImage(System.Uri,System.String,System.Boolean,TheArtOfDev.HtmlRenderer.Core.Handlers.DownloadFileAsyncCallback)">
@@ -6448,7 +6448,7 @@
             <summary>
             Low level handling of Html Renderer logic.<br/>
             Allows html layout and rendering without association to actual control, those allowing to handle html rendering on any graphics object.<br/>
-            Using this class will require the client to handle all propagation's of mouse/keyboard events, layout/paint calls, scrolling offset, 
+            Using this class will require the client to handle all propagation's of mouse/keyboard events, layout/paint calls, scrolling offset,
             location/size/rectangle handling and UI refresh requests.<br/>
             </summary>
             <remarks>
@@ -6463,7 +6463,7 @@
             <para>
             <b>ScrollOffset:</b><br/>
             This will adjust the rendered html by the given offset so the content will be "scrolled".<br/>
-            Element that is rendered at location (50,100) with offset of (0,200) will not be rendered 
+            Element that is rendered at location (50,100) with offset of (0,200) will not be rendered
             at -100, therefore outside the client rectangle.
             </para>
             <para>
@@ -6485,7 +6485,7 @@
             Allows to overwrite the loaded image by providing the image object manually, or different source (file or URL) to load from.<br/>
             Example: image 'src' can be non-valid string that is interpreted in the overwrite delegate by custom logic to resource image object<br/>
             Example: image 'src' in the html is relative - the overwrite intercepts the load and provide full source URL to load the image from<br/>
-            Example: image download requires authentication - the overwrite intercepts the load, downloads the image to disk using custom code and provide 
+            Example: image download requires authentication - the overwrite intercepts the load, downloads the image to disk using custom code and provide
             file path to load the image from.<br/>
             If no alternative data is provided the original source will be used.<br/>
             </para>
@@ -6522,7 +6522,7 @@
         </member>
         <member name="F:TheArtOfDev.HtmlRenderer.Core.HtmlContainerInt._selectionHandler">
             <summary>
-            Handler for text selection in the html. 
+            Handler for text selection in the html.
             </summary>
         </member>
         <member name="F:TheArtOfDev.HtmlRenderer.Core.HtmlContainerInt._imageDownloader">
@@ -6558,7 +6558,7 @@
         </member>
         <member name="F:TheArtOfDev.HtmlRenderer.Core.HtmlContainerInt._avoidGeometryAntialias">
             <summary>
-            Gets or sets a value indicating if anti-aliasing should be avoided 
+            Gets or sets a value indicating if anti-aliasing should be avoided
             for geometry like backgrounds and borders
             </summary>
         </member>
@@ -6625,7 +6625,7 @@
         </member>
         <member name="P:TheArtOfDev.HtmlRenderer.Core.HtmlContainerInt.Adapter">
             <summary>
-            
+
             </summary>
         </member>
         <member name="P:TheArtOfDev.HtmlRenderer.Core.HtmlContainerInt.CssParser">
@@ -6697,7 +6697,7 @@
             False - images are loaded asynchronously to html parsing when downloaded from URL or loaded from disk.<br/>
             </summary>
             <remarks>
-            Asynchronously image loading allows to unblock html rendering while image is downloaded or loaded from disk using IO 
+            Asynchronously image loading allows to unblock html rendering while image is downloaded or loaded from disk using IO
             ports to achieve better performance.<br/>
             Asynchronously image loading should be avoided when the full html content must be available during render, like render to image.
             </remarks>
@@ -6709,7 +6709,7 @@
             False - images that are not visible because of scroll location are not loaded until they are scrolled to.
             </summary>
             <remarks>
-            Images late loading improve performance if the page contains image outside the visible scroll area, especially if there is large 
+            Images late loading improve performance if the page contains image outside the visible scroll area, especially if there is large
             amount of images, as all image loading is delayed (downloading and loading into memory).<br/>
             Late image loading may effect the layout and actual size as image without set size will not have actual size until they are loaded
             resulting in layout change during user scroll.<br/>
@@ -7033,7 +7033,7 @@
         </member>
         <member name="F:TheArtOfDev.HtmlRenderer.Core.Parse.CssParser._adapter">
             <summary>
-            
+
             </summary>
         </member>
         <member name="F:TheArtOfDev.HtmlRenderer.Core.Parse.CssParser._valueParser">
@@ -7056,7 +7056,7 @@
             Parse the given stylesheet source to CSS blocks dictionary.<br/>
             The CSS blocks are organized into two level buckets of media type and class name.<br/>
             Root media type are found under 'all' bucket.<br/>
-            If <paramref name="combineWithDefault"/> is true the parsed css blocks are added to the 
+            If <paramref name="combineWithDefault"/> is true the parsed css blocks are added to the
             default css data (as defined by W3), merged if class name already exists. If false only the data in the given stylesheet is returned.
             </summary>
             <seealso cref="!:http://www.w3.org/TR/CSS21/sample.html"/>
@@ -7092,7 +7092,7 @@
         </member>
         <member name="M:TheArtOfDev.HtmlRenderer.Core.Parse.CssParser.ParseColor(System.String)">
             <summary>
-            Parses a color value in CSS style; e.g. #ff0000, red, rgb(255,0,0), rgb(100%, 0, 0) 
+            Parses a color value in CSS style; e.g. #ff0000, red, rgb(255,0,0), rgb(100%, 0, 0)
             </summary>
             <param name="colorStr">color string value to parse</param>
             <returns>color value</returns>
@@ -7186,7 +7186,7 @@
         </member>
         <member name="M:TheArtOfDev.HtmlRenderer.Core.Parse.CssParser.ParseImageProperty(System.String)">
             <summary>
-            
+
             </summary>
             <param name="propValue">the value of the property to parse</param>
             <returns>parsed value</returns>
@@ -7257,7 +7257,7 @@
         </member>
         <member name="M:TheArtOfDev.HtmlRenderer.Core.Parse.CssParser.ParseBorder(System.String,System.String@,System.String@,System.String@)">
             <summary>
-            
+
             </summary>
             <param name="value"></param>
             <param name="width"> </param>
@@ -7292,7 +7292,7 @@
         </member>
         <member name="F:TheArtOfDev.HtmlRenderer.Core.Parse.CssValueParser._adapter">
             <summary>
-            
+
             </summary>
         </member>
         <member name="M:TheArtOfDev.HtmlRenderer.Core.Parse.CssValueParser.#ctor(TheArtOfDev.HtmlRenderer.Adapters.RAdapter)">
@@ -7557,7 +7557,7 @@
         </member>
         <member name="M:TheArtOfDev.HtmlRenderer.Core.Parse.DomParser.TranslateAttributes(TheArtOfDev.HtmlRenderer.Core.Dom.HtmlTag,TheArtOfDev.HtmlRenderer.Core.Dom.CssBox)">
             <summary>
-            
+
             </summary>
             <param name="tag"></param>
             <param name="box"></param>
@@ -7662,7 +7662,7 @@
         </member>
         <member name="T:TheArtOfDev.HtmlRenderer.Core.Parse.HtmlParser">
             <summary>
-            
+
             </summary>
         </member>
         <member name="M:TheArtOfDev.HtmlRenderer.Core.Parse.HtmlParser.ParseDocument(System.String)">
@@ -7724,7 +7724,7 @@
         </member>
         <member name="F:TheArtOfDev.HtmlRenderer.Core.Parse.RegexParserUtils.CssBlocks">
             <summary>
-            Extracts defined blocks in CSS. 
+            Extracts defined blocks in CSS.
             WARNING: Blocks will include blocks inside at-rules.
             </summary>
         </member>
@@ -8570,16 +8570,16 @@
         </member>
         <member name="M:TheArtOfDev.HtmlRenderer.Core.Utils.SubString.Substring(System.Int32,System.Int32)">
             <summary>
-            Retrieves a substring from this instance. The substring starts at a specified character position and has a specified length. 
+            Retrieves a substring from this instance. The substring starts at a specified character position and has a specified length.
             </summary>
             <param name="startIdx">The zero-based starting character position of a substring in this instance.</param>
             <param name="length">The number of characters in the substring. </param>
-            <returns>A String equivalent to the substring of length length that begins at startIndex in this instance, or 
+            <returns>A String equivalent to the substring of length length that begins at startIndex in this instance, or
             Empty if startIndex is equal to the length of this instance and length is zero. </returns>
         </member>
         <member name="T:Bunifu.UI.WinForms.BunifuLabel">
             <summary>
-            Provides standard and rich HTML text-rendering capabilities with 
+            Provides standard and rich HTML text-rendering capabilities with
             native support for CSS 2.0 styling and inline CSS style-tags.
             </summary>
         </member>
@@ -8641,7 +8641,7 @@
         </member>
         <member name="P:Bunifu.UI.WinForms.BunifuLabel.AllowParentOverrides">
             <summary>
-            Gets or sets a value indicating whether the label will inherit 
+            Gets or sets a value indicating whether the label will inherit
             its parent font and fore color properties.
             </summary>
         </member>
@@ -8681,7 +8681,7 @@
         <member name="P:Bunifu.UI.WinForms.BunifuLabel.RightToLeft">
             <summary>
             Gets or sets a value indicating whether control's elements are aligned to support
-            locales using right-to-left fonts. You can also use the following inline CSS style: 
+            locales using right-to-left fonts. You can also use the following inline CSS style:
             style="text-align: right; direction: Rtl;"
             </summary>
         </member>
@@ -8987,24 +8987,24 @@
         </member>
         <member name="M:Bunifu.UI.WinForms.BunifuLabel.OnParentForeColorChanged(System.EventArgs)">
             <summary>
-            Raises the <see cref="E:System.Windows.Forms.Control.ForeColorChanged"/> 
-            event when the <see cref="P:System.Windows.Forms.Control.ForeColor" /> property 
+            Raises the <see cref="E:System.Windows.Forms.Control.ForeColorChanged"/>
+            event when the <see cref="P:System.Windows.Forms.Control.ForeColor" /> property
             value of the control's container changes.
             </summary>
             <param name="e">
-            An <see cref="T:System.EventArgs"/> 
+            An <see cref="T:System.EventArgs"/>
             that contains the event data.
             </param>
         </member>
         <member name="M:Bunifu.UI.WinForms.BunifuLabel.OnParentFontChanged(System.EventArgs)">
             <summary>
-            Raises the <see cref="M:Bunifu.UI.WinForms.BunifuLabel.OnParentFontChanged(System.EventArgs)"/> event 
+            Raises the <see cref="M:Bunifu.UI.WinForms.BunifuLabel.OnParentFontChanged(System.EventArgs)"/> event
             when the parent font changes.
             </summary>
         </member>
         <member name="M:Bunifu.UI.WinForms.BunifuLabel.OnParentChanged(System.EventArgs)">
             <summary>
-            Raises the <see cref="M:Bunifu.UI.WinForms.BunifuLabel.OnParentChanged(System.EventArgs)"/> event 
+            Raises the <see cref="M:Bunifu.UI.WinForms.BunifuLabel.OnParentChanged(System.EventArgs)"/> event
             when the parent control changes.
             </summary>
         </member>
@@ -9088,7 +9088,7 @@
         </member>
         <member name="F:Bunifu.UI.WinForms.Ellipsis.EllipsisFormat.Start">
             <summary>
-            Text is trimmed at the begining of the string. An ellipsis (...) is drawn in place of remaining text. 
+            Text is trimmed at the begining of the string. An ellipsis (...) is drawn in place of remaining text.
             </summary>
         </member>
         <member name="F:Bunifu.UI.WinForms.Ellipsis.EllipsisFormat.Middle">
@@ -9108,11 +9108,11 @@
         </member>
         <member name="M:Bunifu.UI.WinForms.Ellipsis.Compact(System.String,System.Windows.Forms.Control,Bunifu.UI.WinForms.Ellipsis.EllipsisFormat)">
             <summary>
-            Truncates a text string to fit within a given control width by replacing trimmed text with ellipses. 
+            Truncates a text string to fit within a given control width by replacing trimmed text with ellipses.
             </summary>
             <param name="text">The text or string to be trimmed.</param>
             <param name="control">
-            The control whose Text property will be trimmed-down. 
+            The control whose Text property will be trimmed-down.
             The Text must fit within control's width.
             The control's Font is used to measure the Text string.
             </param>
@@ -9136,7 +9136,7 @@
         </member>
         <member name="F:HtmlRenderer.Parse.RegexParserHelper.CssBlocks">
             <summary>
-            Extracts defined blocks in CSS. 
+            Extracts defined blocks in CSS.
             WARNING: Blocks will include blocks inside at-rules.
             </summary>
         </member>

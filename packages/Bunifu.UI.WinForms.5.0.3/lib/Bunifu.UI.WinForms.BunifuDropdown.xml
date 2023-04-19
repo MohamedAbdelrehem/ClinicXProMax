@@ -32,7 +32,7 @@
         </member>
         <member name="T:Bunifu.UI.WinForms.BunifuDropdown.Indicator">
             <summary>
-            Provides various positions for the dropdown indicator. 
+            Provides various positions for the dropdown indicator.
             </summary>
         </member>
         <member name="F:Bunifu.UI.WinForms.BunifuDropdown.Indicator.Left">
@@ -93,7 +93,7 @@
         </member>
         <member name="P:Bunifu.UI.WinForms.BunifuDropdown.FillIndicator">
             <summary>
-            Gets or sets a value inidicating whether 
+            Gets or sets a value inidicating whether
             the indicator will be filled.
             </summary>
         </member>
@@ -109,13 +109,13 @@
         </member>
         <member name="P:Bunifu.UI.WinForms.BunifuDropdown.TextLeftMargin">
             <summary>
-            Gets or sets the margin between the 
+            Gets or sets the margin between the
             dropdown's text and its borders.
             </summary>
         </member>
         <member name="P:Bunifu.UI.WinForms.BunifuDropdown.ItemTopMargin">
             <summary>
-            Gets or sets the margin between each 
+            Gets or sets the margin between each
             dropdown's item and the items container.
             </summary>
         </member>
@@ -222,7 +222,7 @@
         </member>
         <member name="P:Bunifu.UI.WinForms.BunifuDropdown.FillDropDown">
             <summary>
-            Gets or sets a value indicating whether 
+            Gets or sets a value indicating whether
             the dropdown will be color-filled.
             </summary>
         </member>
@@ -273,7 +273,7 @@
         </member>
         <member name="P:Bunifu.UI.WinForms.BunifuDropdown.DrawMode">
             <summary>
-            Gets or sets a value indicating whether your code or the 
+            Gets or sets a value indicating whether your code or the
             Operating System will handle drawing of elements in the list.
             </summary>
         </member>
@@ -295,7 +295,7 @@
         </member>
         <member name="M:Bunifu.UI.WinForms.BunifuDropdown.InitializeComponent">
             <summary>
-            Required method for Designer support - do not modify 
+            Required method for Designer support - do not modify
             the contents of this method with the code editor.
             </summary>
         </member>

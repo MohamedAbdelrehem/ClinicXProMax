@@ -85,19 +85,19 @@
             </summary>
         </member>
         <member name="F:Bunifu.UI.WinForms.BunifuAnimatorNS.DoubleBitmapControl.components">
-            <summary> 
+            <summary>
             Required designer variable.
             </summary>
         </member>
         <member name="M:Bunifu.UI.WinForms.BunifuAnimatorNS.DoubleBitmapControl.Dispose(System.Boolean)">
-            <summary> 
+            <summary>
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
         <member name="M:Bunifu.UI.WinForms.BunifuAnimatorNS.DoubleBitmapControl.InitializeComponent">
-            <summary> 
-            Required method for Designer support - do not modify 
+            <summary>
+            Required method for Designer support - do not modify
             the contents of this method with the code editor.
             </summary>
         </member>
@@ -140,7 +140,7 @@
         </member>
         <member name="T:Bunifu.UI.WinForms.BunifuTransition">
             <summary>
-            Add beautiful transitions to your controls and 
+            Add beautiful transitions to your controls and
             container controls when showing/hiding them.
             </summary>
             <seealso cref="T:System.ComponentModel.Component" />
@@ -597,7 +597,7 @@
         </member>
         <member name="M:Bunifu.UI.WinForms.BunifuTransition.InitializeComponent">
             <summary>
-            Required method for Designer support - do not modify 
+            Required method for Designer support - do not modify
             the contents of this method with the code editor.
             </summary>
         </member>
