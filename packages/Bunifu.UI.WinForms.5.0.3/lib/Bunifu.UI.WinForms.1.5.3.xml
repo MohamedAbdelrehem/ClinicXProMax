@@ -601,19 +601,19 @@
             </summary>
         </member>
         <member name="F:BunifuAnimatorNS.DoubleBitmapControl.components">
-            <summary> 
+            <summary>
             Required designer variable.
             </summary>
         </member>
         <member name="M:BunifuAnimatorNS.DoubleBitmapControl.Dispose(System.Boolean)">
-            <summary> 
+            <summary>
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
         <member name="M:BunifuAnimatorNS.DoubleBitmapControl.InitializeComponent">
-            <summary> 
-            Required method for Designer support - do not modify 
+            <summary>
+            Required method for Designer support - do not modify
             the contents of this method with the code editor.
             </summary>
         </member>
@@ -660,7 +660,7 @@
             </summary>
         </member>
         <member name="M:Bunifu.Framework.Bunifu1530.Dispose(System.Boolean)">
-            <summary> 
+            <summary>
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
@@ -727,19 +727,19 @@
             </value>
         </member>
         <member name="F:Bunifu.Framework.UI.BunifuCheckbox.components">
-            <summary> 
+            <summary>
             Required designer variable.
             </summary>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuCheckbox.Dispose(System.Boolean)">
-            <summary> 
+            <summary>
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuCheckbox.InitializeComponent">
-            <summary> 
-            Required method for Designer support - do not modify 
+            <summary>
+            Required method for Designer support - do not modify
             the contents of this method with the code editor.
             </summary>
         </member>
@@ -761,12 +761,12 @@
         </member>
         <member name="P:Bunifu.Framework.UI.BunifuCircleProgressbar.LabelVisible">
             <summary>
-            Gets or sets the back color of the progress 
+            Gets or sets the back color of the progress
             </summary>
             <value>
             The color of the progress back.
             </value>
-            
+
         </member>
         <member name="P:Bunifu.Framework.UI.BunifuCircleProgressbar.Value">
             <summary>
@@ -790,19 +790,19 @@
             </summary>
         </member>
         <member name="F:Bunifu.Framework.UI.BunifuCircleProgressbar.components">
-            <summary> 
+            <summary>
             Required designer variable.
             </summary>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuCircleProgressbar.Dispose(System.Boolean)">
-            <summary> 
+            <summary>
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuCircleProgressbar.InitializeComponent">
-            <summary> 
-            Required method for Designer support - do not modify 
+            <summary>
+            Required method for Designer support - do not modify
             the contents of this method with the code editor.
             </summary>
         </member>
@@ -836,19 +836,19 @@
             </value>
         </member>
         <member name="F:Bunifu.Framework.UI.BunifuDatepicker.components">
-            <summary> 
+            <summary>
             Required designer variable.
             </summary>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuDatepicker.Dispose(System.Boolean)">
-            <summary> 
+            <summary>
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuDatepicker.InitializeComponent">
-            <summary> 
-            Required method for Designer support - do not modify 
+            <summary>
+            Required method for Designer support - do not modify
             the contents of this method with the code editor.
             </summary>
         </member>
@@ -887,7 +887,7 @@
             </summary>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuColorTransition.Dispose(System.Boolean)">
-            <summary> 
+            <summary>
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
@@ -912,19 +912,19 @@
             </value>
         </member>
         <member name="F:Bunifu.Framework.UI.BunifuCustomDataGrid.components">
-            <summary> 
+            <summary>
             Required designer variable.
             </summary>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuCustomDataGrid.Dispose(System.Boolean)">
-            <summary> 
+            <summary>
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuCustomDataGrid.InitializeComponent">
-            <summary> 
-            Required method for Designer support - do not modify 
+            <summary>
+            Required method for Designer support - do not modify
             the contents of this method with the code editor.
             </summary>
         </member>
@@ -934,7 +934,7 @@
             </summary>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuDragControl.Dispose(System.Boolean)">
-            <summary> 
+            <summary>
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
@@ -1024,7 +1024,7 @@
             Gets or sets the items.
             </summary>
             <value>The items.</value>
-            
+
         </member>
         <member name="P:Bunifu.Framework.UI.BunifuDropdown.items">
             <summary>
@@ -1122,19 +1122,19 @@
             <value>The color of the disabled.</value>
         </member>
         <member name="F:Bunifu.Framework.UI.BunifuDropdown.components">
-            <summary>    
+            <summary>
             Required designer variable.
             </summary>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuDropdown.Dispose(System.Boolean)">
-            <summary> 
+            <summary>
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuDropdown.InitializeComponent">
-            <summary> 
-            Required method for Designer support - do not modify 
+            <summary>
+            Required method for Designer support - do not modify
             the contents of this method with the code editor.
             </summary>
         </member>
@@ -1144,7 +1144,7 @@
             </summary>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuElipse.Dispose(System.Boolean)">
-            <summary> 
+            <summary>
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
@@ -1162,7 +1162,7 @@
             <value>
             The button text.
             </value>
-            
+
         </member>
         <member name="P:Bunifu.Framework.UI.BunifuFlatButton.Text">
             <summary>
@@ -1198,7 +1198,7 @@
             <value>
             The text align.
             </value>
-            
+
         </member>
         <member name="P:Bunifu.Framework.UI.BunifuFlatButton.BorderRadius">
             <summary>
@@ -1299,7 +1299,7 @@
             <summary>
              Button color on Normal/Idle state
             </summary>
-            
+
         </member>
         <member name="P:Bunifu.Framework.UI.BunifuFlatButton.IconZoom">
             <summary>
@@ -1336,7 +1336,7 @@
         <member name="P:Bunifu.Framework.UI.BunifuFlatButton.selected">
             <summary>
               Selects th button to actidve/Not active
-            </summary> 
+            </summary>
         </member>
         <member name="P:Bunifu.Framework.UI.BunifuFlatButton.OnHoverTextColor">
             <summary>
@@ -1349,19 +1349,19 @@
             </summary>
         </member>
         <member name="F:Bunifu.Framework.UI.BunifuFlatButton.components">
-            <summary> 
+            <summary>
             Required designer variable.
             </summary>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuFlatButton.Dispose(System.Boolean)">
-            <summary> 
+            <summary>
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuFlatButton.InitializeComponent">
-            <summary> 
-            Required method for Designer support - do not modify 
+            <summary>
+            Required method for Designer support - do not modify
             the contents of this method with the code editor.
             </summary>
         </member>
@@ -1421,19 +1421,19 @@
             <param name="progress">The progress.</param>
         </member>
         <member name="F:Bunifu.Framework.UI.BunifuGauge.components">
-            <summary> 
+            <summary>
             Required designer variable.
             </summary>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuGauge.Dispose(System.Boolean)">
-            <summary> 
+            <summary>
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuGauge.InitializeComponent">
-            <summary> 
-            Required method for Designer support - do not modify 
+            <summary>
+            Required method for Designer support - do not modify
             the contents of this method with the code editor.
             </summary>
         </member>
@@ -1479,24 +1479,24 @@
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuGradientPanel.Refresh">
             <summary>
-            Forces the control to invalidate its client area and 
+            Forces the control to invalidate its client area and
             immediately redraw itself and any child controls.
             </summary>
         </member>
         <member name="F:Bunifu.Framework.UI.BunifuGradientPanel.components">
-            <summary> 
+            <summary>
             Required designer variable.
             </summary>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuGradientPanel.Dispose(System.Boolean)">
-            <summary> 
+            <summary>
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuGradientPanel.InitializeComponent">
-            <summary> 
-            Required method for Designer support - do not modify 
+            <summary>
+            Required method for Designer support - do not modify
             the contents of this method with the code editor.
             </summary>
         </member>
@@ -1557,7 +1557,7 @@
             </summary>
             <param name="Data">The data.</param>
             <param name="jobname">The jobname.</param>
-            
+
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuHTTP_Utils.PostString(System.String,System.String,System.String)">
             <summary>
@@ -1621,7 +1621,7 @@
             </summary>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuHTTP_Utils.Dispose(System.Boolean)">
-            <summary> 
+            <summary>
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
@@ -1649,19 +1649,19 @@
             </value>
         </member>
         <member name="F:Bunifu.Framework.UI.BunifuImageButton.components">
-            <summary> 
+            <summary>
             Required designer variable.
             </summary>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuImageButton.Dispose(System.Boolean)">
-            <summary> 
+            <summary>
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuImageButton.InitializeComponent">
-            <summary> 
-            Required method for Designer support - do not modify 
+            <summary>
+            Required method for Designer support - do not modify
             the contents of this method with the code editor.
             </summary>
         </member>
@@ -1706,19 +1706,19 @@
             </value>
         </member>
         <member name="F:Bunifu.Framework.UI.BunifuCards.components">
-            <summary> 
+            <summary>
             Required designer variable.
             </summary>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuCards.Dispose(System.Boolean)">
-            <summary> 
+            <summary>
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuCards.InitializeComponent">
-            <summary> 
-            Required method for Designer support - do not modify 
+            <summary>
+            Required method for Designer support - do not modify
             the contents of this method with the code editor.
             </summary>
         </member>
@@ -1999,19 +1999,19 @@
             <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
         </member>
         <member name="F:Bunifu.Framework.UI.BunifuMaterialTextbox.components">
-            <summary> 
+            <summary>
             Required designer variable.
             </summary>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuMaterialTextbox.Dispose(System.Boolean)">
-            <summary> 
+            <summary>
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuMaterialTextbox.InitializeComponent">
-            <summary> 
-            Required method for Designer support - do not modify 
+            <summary>
+            Required method for Designer support - do not modify
             the contents of this method with the code editor.
             </summary>
         </member>
@@ -2058,7 +2058,7 @@
               <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode, ControlEvidence" />
               <IPermission class="System.Diagnostics.PerformanceCounterPermission, System, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
             </PermissionSet>
-            
+
         </member>
         <member name="P:Bunifu.Framework.UI.BunifuMetroTextbox.Text">
             <summary>
@@ -2110,19 +2110,19 @@
             <value>The maximum length.</value>
         </member>
         <member name="F:Bunifu.Framework.UI.BunifuMetroTextbox.components">
-            <summary> 
+            <summary>
             Required designer variable.
             </summary>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuMetroTextbox.Dispose(System.Boolean)">
-            <summary> 
+            <summary>
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuMetroTextbox.InitializeComponent">
-            <summary> 
-            Required method for Designer support - do not modify 
+            <summary>
+            Required method for Designer support - do not modify
             the contents of this method with the code editor.
             </summary>
         </member>
@@ -2181,19 +2181,19 @@
             </value>
         </member>
         <member name="F:Bunifu.Framework.UI.BunifuRange.components">
-            <summary> 
+            <summary>
             Required designer variable.
             </summary>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuRange.Dispose(System.Boolean)">
-            <summary> 
+            <summary>
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuRange.InitializeComponent">
-            <summary> 
-            Required method for Designer support - do not modify 
+            <summary>
+            Required method for Designer support - do not modify
             the contents of this method with the code editor.
             </summary>
         </member>
@@ -2211,19 +2211,19 @@
             </summary>
         </member>
         <member name="F:Bunifu.Framework.UI.BunifuRating.components">
-            <summary> 
+            <summary>
             Required designer variable.
             </summary>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuRating.Dispose(System.Boolean)">
-            <summary> 
+            <summary>
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuRating.InitializeComponent">
-            <summary> 
-            Required method for Designer support - do not modify 
+            <summary>
+            Required method for Designer support - do not modify
             the contents of this method with the code editor.
             </summary>
         </member>
@@ -2236,19 +2236,19 @@
             </value>
         </member>
         <member name="F:Bunifu.Framework.UI.BunifuSeparator.components">
-            <summary> 
+            <summary>
             Required designer variable.
             </summary>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuSeparator.Dispose(System.Boolean)">
-            <summary> 
+            <summary>
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuSeparator.InitializeComponent">
-            <summary> 
-            Required method for Designer support - do not modify 
+            <summary>
+            Required method for Designer support - do not modify
             the contents of this method with the code editor.
             </summary>
         </member>
@@ -2264,7 +2264,7 @@
             <value>
             The color of the on.
             </value>
-            
+
         </member>
         <member name="P:Bunifu.Framework.UI.BunifuiOSSwitch.OffColor">
             <summary>
@@ -2275,19 +2275,19 @@
             </value>
         </member>
         <member name="F:Bunifu.Framework.UI.BunifuiOSSwitch.components">
-            <summary> 
+            <summary>
             Required designer variable.
             </summary>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuiOSSwitch.Dispose(System.Boolean)">
-            <summary> 
+            <summary>
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuiOSSwitch.InitializeComponent">
-            <summary> 
-            Required method for Designer support - do not modify 
+            <summary>
+            Required method for Designer support - do not modify
             the contents of this method with the code editor.
             </summary>
         </member>
@@ -2380,19 +2380,19 @@
             </value>
         </member>
         <member name="F:Bunifu.Framework.UI.BunifuThinButton2.components">
-            <summary> 
+            <summary>
             Required designer variable.
             </summary>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuThinButton2.Dispose(System.Boolean)">
-            <summary> 
+            <summary>
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuThinButton2.InitializeComponent">
-            <summary> 
-            Required method for Designer support - do not modify 
+            <summary>
+            Required method for Designer support - do not modify
             the contents of this method with the code editor.
             </summary>
         </member>
@@ -2445,19 +2445,19 @@
             </PermissionSet>
         </member>
         <member name="F:Bunifu.Framework.UI.BunifuTileButton.components">
-            <summary> 
+            <summary>
             Required designer variable.
             </summary>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuTileButton.Dispose(System.Boolean)">
-            <summary> 
+            <summary>
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuTileButton.InitializeComponent">
-            <summary> 
-            Required method for Designer support - do not modify 
+            <summary>
+            Required method for Designer support - do not modify
             the contents of this method with the code editor.
             </summary>
         </member>
@@ -2507,19 +2507,19 @@
             </value>
         </member>
         <member name="F:Bunifu.Framework.UI.BunifuSlider.components">
-            <summary> 
+            <summary>
             Required designer variable.
             </summary>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuSlider.Dispose(System.Boolean)">
-            <summary> 
+            <summary>
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuSlider.InitializeComponent">
-            <summary> 
-            Required method for Designer support - do not modify 
+            <summary>
+            Required method for Designer support - do not modify
             the contents of this method with the code editor.
             </summary>
         </member>
@@ -2577,19 +2577,19 @@
             </value>
         </member>
         <member name="F:Bunifu.Framework.UI.BunifuVTrackbar.components">
-            <summary> 
+            <summary>
             Required designer variable.
             </summary>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuVTrackbar.Dispose(System.Boolean)">
-            <summary> 
+            <summary>
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuVTrackbar.InitializeComponent">
-            <summary> 
-            Required method for Designer support - do not modify 
+            <summary>
+            Required method for Designer support - do not modify
             the contents of this method with the code editor.
             </summary>
         </member>
@@ -2599,7 +2599,7 @@
             </summary>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuWebClient.Dispose(System.Boolean)">
-            <summary> 
+            <summary>
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
@@ -2657,19 +2657,19 @@
             </summary>
         </member>
         <member name="F:Bunifu.Framework.UI.BunifuSearchEngine.components">
-            <summary> 
+            <summary>
             Required designer variable.
             </summary>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuSearchEngine.Dispose(System.Boolean)">
-            <summary> 
+            <summary>
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuSearchEngine.InitializeComponent">
-            <summary> 
-            Required method for Designer support - do not modify 
+            <summary>
+            Required method for Designer support - do not modify
             the contents of this method with the code editor.
             </summary>
         </member>
@@ -2714,19 +2714,19 @@
             </value>
         </member>
         <member name="F:Bunifu.Framework.UI.BunifuSwitch.components">
-            <summary> 
+            <summary>
             Required designer variable.
             </summary>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuSwitch.Dispose(System.Boolean)">
-            <summary> 
+            <summary>
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuSwitch.InitializeComponent">
-            <summary> 
-            Required method for Designer support - do not modify 
+            <summary>
+            Required method for Designer support - do not modify
             the contents of this method with the code editor.
             </summary>
         </member>
@@ -2792,19 +2792,19 @@
             </value>
         </member>
         <member name="F:Bunifu.Framework.UI.BunifuTrackbar.components">
-            <summary> 
+            <summary>
             Required designer variable.
             </summary>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuTrackbar.Dispose(System.Boolean)">
-            <summary> 
+            <summary>
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuTrackbar.InitializeComponent">
-            <summary> 
-            Required method for Designer support - do not modify 
+            <summary>
+            Required method for Designer support - do not modify
             the contents of this method with the code editor.
             </summary>
         </member>
@@ -2841,19 +2841,19 @@
             </value>
         </member>
         <member name="F:Bunifu.Framework.UI.BunifuProgressBar.components">
-            <summary> 
+            <summary>
             Required designer variable.
             </summary>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuProgressBar.Dispose(System.Boolean)">
-            <summary> 
+            <summary>
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuProgressBar.InitializeComponent">
-            <summary> 
-            Required method for Designer support - do not modify 
+            <summary>
+            Required method for Designer support - do not modify
             the contents of this method with the code editor.
             </summary>
         </member>
@@ -2863,7 +2863,7 @@
             </summary>
         </member>
         <member name="M:Bunifu.Framework.UI.BunifuFormFadeTransition.Dispose(System.Boolean)">
-            <summary> 
+            <summary>
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
@@ -2888,19 +2888,19 @@
             </value>
         </member>
         <member name="F:Bunifu.Framework.BunifuCustomTextbox.components">
-            <summary> 
+            <summary>
             Required designer variable.
             </summary>
         </member>
         <member name="M:Bunifu.Framework.BunifuCustomTextbox.Dispose(System.Boolean)">
-            <summary> 
+            <summary>
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
         <member name="M:Bunifu.Framework.BunifuCustomTextbox.InitializeComponent">
-            <summary> 
-            Required method for Designer support - do not modify 
+            <summary>
+            Required method for Designer support - do not modify
             the contents of this method with the code editor.
             </summary>
         </member>
@@ -2910,7 +2910,7 @@
             </summary>
         </member>
         <member name="M:Bunifu.Framework.BunifuFonts.Dispose(System.Boolean)">
-            <summary> 
+            <summary>
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>

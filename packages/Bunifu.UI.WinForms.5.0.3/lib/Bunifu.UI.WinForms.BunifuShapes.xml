@@ -51,7 +51,7 @@
         </member>
         <member name="P:Bunifu.UI.WinForms.BunifuShapes.FillShape">
             <summary>
-            Gets or sets a value indicating whether 
+            Gets or sets a value indicating whether
             shapes will be filled upon drawing.
             </summary>
         </member>
@@ -133,7 +133,7 @@
             </summary>
         </member>
         <member name="M:Bunifu.UI.WinForms.BunifuShapes.Dispose(System.Boolean)">
-            <summary> 
+            <summary>
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
