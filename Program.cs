@@ -13,7 +13,7 @@ static class Program {
   static void Main() {
     Application.EnableVisualStyles();
     Application.SetCompatibleTextRenderingDefault(false);
-    Application.Run(new login_page());
+    Application.Run(new FrmMain());
   }
 }
 }

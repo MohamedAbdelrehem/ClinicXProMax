@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Clinic_Mang_Sys
 {
-    public partial class home_page : Form
+    public partial class FrmMain : Form
     {
-        public home_page() { InitializeComponent(); }
+        public FrmMain() { InitializeComponent(); }
 
         private void buttonPatiants_Click(object sender, EventArgs e) { }
 

@@ -1,7 +1,7 @@
 ﻿
 namespace Clinic_Mang_Sys
 {
-    partial class home_page
+    partial class FrmMain
     {
         /// <summary>
         /// Required designer variable.
@@ -199,14 +199,14 @@ namespace Clinic_Mang_Sys
             this.panelLogo.Size = new System.Drawing.Size(250, 104);
             this.panelLogo.TabIndex = 0;
             // 
-            // home_page
+            // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(669, 491);
             this.Controls.Add(this.panelSideMenu);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "home_page";
+            this.Name = "FrmMain";
             this.Text = "Home";
             this.panelSideMenu.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
