@@ -14,7 +14,13 @@ namespace Clinic_Mang_Sys.Pages
     {
         public Dashboard()
         {
+            if (this.IsInDesignMode()) return;
             InitializeComponent();
+        }
+
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
