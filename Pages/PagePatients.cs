@@ -16,5 +16,10 @@ namespace Clinic_Mang_Sys.Pages
         {
             InitializeComponent();
         }
+
+        private void DataGridViewPatients_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
