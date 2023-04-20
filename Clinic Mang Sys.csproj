@@ -164,6 +164,12 @@
     <Compile Include="Pages\PageAppointments.Designer.cs">
       <DependentUpon>PageAppointments.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pages\PagePatients.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\PagePatients.Designer.cs">
+      <DependentUpon>PagePatients.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\login_page.resx">
