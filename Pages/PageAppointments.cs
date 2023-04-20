@@ -7,19 +7,30 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Kimtoo.BindingProvider;
 
 namespace Clinic_Mang_Sys.Pages {
 public partial class PageAppointments : UserControl {
   public PageAppointments() {
-     if (this.IsInDesignMode()) return;
+    if (this.IsInDesignMode())
+      return;
     InitializeComponent();
+    LoadData();
   }
+  public DataGridViewAvatar GetAvatar(string Name) => new DataGridViewAvatar {
+    Value = Name,
+  };
 
-  private void PageAppointments_Load(object sender, EventArgs e) {}
+  private void LoadData() {
+    List<Models.Appointment> data = new List<Models.Appointment>();
 
-        private void bunifuDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+    for (int i = 0; i < 10; i++) {
+      data.Add(new Models.Appointment { Name = "memo", Address = "betna",
+                                        Email = "mohamed@gmail.com",
+                                        Phone = "01011929211" });
     }
+
+    grid.Bind(data);
+  }
+}
 }
