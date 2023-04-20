@@ -10,17 +10,17 @@ using System.Windows.Forms;
 
 namespace Clinic_Mang_Sys.Pages
 {
-    public partial class Dashboard : UserControl
+public partial class Dashboard : UserControl
+{
+    public Dashboard()
     {
-        public Dashboard()
-        {
-            if (this.IsInDesignMode()) return;
-            InitializeComponent();
-        }
-
-        private void Dashboard_Load(object sender, EventArgs e)
-        {
-
-        }
+        if (this.IsInDesignMode()) return;
+        InitializeComponent();
     }
+
+    private void Dashboard_Load(object sender, EventArgs e)
+    {
+
+    }
+}
 }
