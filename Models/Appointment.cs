@@ -1,4 +1,5 @@
-﻿using System;
+﻿//using ServiceStack.DataAnnotation;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,7 +13,7 @@ namespace Clinic_Mang_Sys.Models
     {
         //[AutoIncrement, PrimaryKey] Tool
         public int Id { get; set; }
-        //[ForeignKey(typeof(Patient), OnDe1ete = "CASCADE" ) ] Database
+        //[ForeignKey(typeof(Patient), OnDelete = "CASCADE" ) ] Database
         public int PatientId { get; set; }
 
         public string Notes { get; set; } = "";
