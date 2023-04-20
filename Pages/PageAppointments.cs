@@ -21,8 +21,7 @@ namespace Clinic_Mang_Sys.Pages
             LoadData();
         }
 
-        public DataGridViewAvatar GetAvatar(string Name) =>
-            new DataGridViewAvatar { Value = Name, };
+
 
         private void LoadData()
         {
