@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace Clinic_Mang_Sys.Pages {
 public partial class PageAppointments : UserControl {
-  public PageAppointments() {
-    // if (this.IsInDesignMode()) return;
-    InitializeComponent();
-  }
+    public PageAppointments() {
+        // if (this.IsInDesignMode()) return;
+        InitializeComponent();
+    }
 
-  private void PageAppointments_Load(object sender, EventArgs e) {}
+    private void PageAppointments_Load(object sender, EventArgs e) {}
 }
 }
