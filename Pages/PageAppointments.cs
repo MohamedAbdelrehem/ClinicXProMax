@@ -9,28 +9,39 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Kimtoo.BindingProvider;
 
-namespace Clinic_Mang_Sys.Pages {
-public partial class PageAppointments : UserControl {
-  public PageAppointments() {
-    if (this.IsInDesignMode())
-      return;
-    InitializeComponent();
-    LoadData();
-  }
-  public DataGridViewAvatar GetAvatar(string Name) => new DataGridViewAvatar {
-    Value = Name,
-  };
+namespace Clinic_Mang_Sys.Pages
+{
+    public partial class PageAppointments : UserControl
+    {
+        public PageAppointments()
+        {
+            if (this.IsInDesignMode())
+                return;
+            InitializeComponent();
+            LoadData();
+        }
 
-  private void LoadData() {
-    List<Models.Appointment> data = new List<Models.Appointment>();
+        public DataGridViewAvatar GetAvatar(string Name) =>
+            new DataGridViewAvatar { Value = Name, };
 
-    for (int i = 0; i < 10; i++) {
-      data.Add(new Models.Appointment { Name = "memo", Address = "betna",
-                                        Email = "mohamed@gmail.com",
-                                        Phone = "01011929211" });
+        private void LoadData()
+        {
+            List<Models.Appointment> data = new List<Models.Appointment>();
+
+            for (int i = 0; i < 10; i++)
+            {
+                data.Add(
+                    new Models.Appointment
+                    {
+                        Name = "memo",
+                        Address = "betna",
+                        Email = "mohamed@gmail.com",
+                        Phone = "01011929211"
+                    }
+                );
+            }
+
+            grid.Bind(data);
+        }
     }
-
-    grid.Bind(data);
-  }
-}
 }
