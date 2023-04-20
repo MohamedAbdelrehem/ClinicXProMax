@@ -295,6 +295,7 @@ partial class PageAppointments {
             // 
             // Column10
             // 
+            this.Column10.DataPropertyName = "Avatar(@Name)";
             this.Column10.FillWeight = 20F;
             this.Column10.HeaderText = "";
             this.Column10.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
@@ -334,7 +335,9 @@ partial class PageAppointments {
             // Column9
             // 
             this.Column9.ActiveLinkColor = System.Drawing.Color.Crimson;
+            this.Column9.DataPropertyName = "❌";
             this.Column9.HeaderText = "";
+            this.Column9.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.Column9.LinkColor = System.Drawing.Color.Crimson;
             this.Column9.Name = "Column9";
             this.Column9.ReadOnly = true;

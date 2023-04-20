@@ -21,8 +21,6 @@ namespace Clinic_Mang_Sys.Pages
             LoadData();
         }
 
-
-
         private void LoadData()
         {
             List<Models.Appointment> data = new List<Models.Appointment>();
@@ -42,5 +40,6 @@ namespace Clinic_Mang_Sys.Pages
 
             grid.Bind(data);
         }
+
     }
 }

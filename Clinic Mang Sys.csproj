@@ -180,6 +180,7 @@
     <Compile Include="Forms\FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Lib\Common.cs" />
     <Compile Include="Models\Appointment.cs" />
     <Compile Include="Pages\PageAppointments.cs">
       <SubType>UserControl</SubType>
