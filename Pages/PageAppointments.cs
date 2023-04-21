@@ -30,7 +30,7 @@ namespace Clinic_Mang_Sys.Pages
                 data.Add(
                     new Models.Appointment
                     {
-                        Name = "memo",
+                        Name = "memo" + i,
                         Address = "betna",
                         Email = "mohamed@gmail.com",
                         Phone = "01011929211"
@@ -41,5 +41,14 @@ namespace Clinic_Mang_Sys.Pages
             grid.Bind(data);
         }
 
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            pnlDrawwer.Visible = false;
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            pnlDrawwer.Visible = true;
+        }
     }
 }

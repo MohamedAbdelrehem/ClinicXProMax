@@ -9,7 +9,7 @@ namespace Clinic_Mang_Sys.Lib
 {
     public static class Common
     {
-        public static DataGridViewAvatar GetAvatar(string Name) =>
-            new DataGridViewAvatar { Value = Name, };
+        //public static DataGridViewAvatar GetAvatar(string Name) =>        Delete them temp
+        //  new DataGridViewAvatar { Value = Name, };
     }
 }
