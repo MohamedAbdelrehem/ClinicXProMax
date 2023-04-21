@@ -25,35 +25,39 @@ partial class FrmMain {
   private void InitializeComponent() {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.panelSideMenu = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.button_Clinic_Program_Subsetting = new System.Windows.Forms.Button();
-            this.button_Clinic_Setting_Subsetting = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panelLogo = new System.Windows.Forms.Panel();
-            this.button_About = new System.Windows.Forms.Button();
-            this.button_Setting = new System.Windows.Forms.Button();
-            this.button_Appoinment = new System.Windows.Forms.Button();
-            this.button_Patiants = new System.Windows.Forms.Button();
-            this.button_Dashboard = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.bunifuPictureBox2 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.NameOfAdmin = new System.Windows.Forms.Label();
+            this.bunifuPictureBox2 = new Bunifu.UI.WinForms.BunifuPictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.About_Page = new System.Windows.Forms.Button();
+            this.panelSettingSubsetting = new System.Windows.Forms.Panel();
+            this.Program_Subsetting = new System.Windows.Forms.Button();
+            this.Clinic_Subsetting = new System.Windows.Forms.Button();
+            this.Setting_page = new System.Windows.Forms.Button();
+            this.Appoinment_Page = new System.Windows.Forms.Button();
+            this.Patiants_Page = new System.Windows.Forms.Button();
+            this.buttonDashboard = new System.Windows.Forms.Button();
+            this.panelLogo = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panelChildForm = new System.Windows.Forms.Panel();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.panelSideMenu.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panelLogo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panelSettingSubsetting.SuspendLayout();
+            this.panelLogo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panelChildForm.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.SuspendLayout();
             // 
             // panelSideMenu
@@ -66,233 +70,41 @@ partial class FrmMain {
             this.panelSideMenu.Controls.Add(this.pictureBox4);
             this.panelSideMenu.Controls.Add(this.pictureBox3);
             this.panelSideMenu.Controls.Add(this.pictureBox2);
-            this.panelSideMenu.Controls.Add(this.button_About);
-            this.panelSideMenu.Controls.Add(this.panel1);
-            this.panelSideMenu.Controls.Add(this.button_Setting);
-            this.panelSideMenu.Controls.Add(this.button_Appoinment);
-            this.panelSideMenu.Controls.Add(this.button_Patiants);
-            this.panelSideMenu.Controls.Add(this.button_Dashboard);
+            this.panelSideMenu.Controls.Add(this.About_Page);
+            this.panelSideMenu.Controls.Add(this.panelSettingSubsetting);
+            this.panelSideMenu.Controls.Add(this.Setting_page);
+            this.panelSideMenu.Controls.Add(this.Appoinment_Page);
+            this.panelSideMenu.Controls.Add(this.Patiants_Page);
+            this.panelSideMenu.Controls.Add(this.buttonDashboard);
             this.panelSideMenu.Controls.Add(this.panelLogo);
             this.panelSideMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSideMenu.Location = new System.Drawing.Point(0, 0);
             this.panelSideMenu.Name = "panelSideMenu";
             this.panelSideMenu.Size = new System.Drawing.Size(250, 532);
             this.panelSideMenu.TabIndex = 0;
-            this.panelSideMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelSideMenu_Paint);
             // 
-            // panel1
+            // panel2
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel1.Controls.Add(this.button_Clinic_Program_Subsetting);
-            this.panel1.Controls.Add(this.button_Clinic_Setting_Subsetting);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 330);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(250, 79);
-            this.panel1.TabIndex = 5;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel2.Controls.Add(this.NameOfAdmin);
+            this.panel2.Controls.Add(this.bunifuPictureBox2);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 497);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(250, 35);
+            this.panel2.TabIndex = 15;
             // 
-            // button_Clinic_Program_Subsetting
+            // NameOfAdmin
             // 
-            this.button_Clinic_Program_Subsetting.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button_Clinic_Program_Subsetting.FlatAppearance.BorderSize = 0;
-            this.button_Clinic_Program_Subsetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Clinic_Program_Subsetting.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Clinic_Program_Subsetting.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button_Clinic_Program_Subsetting.Location = new System.Drawing.Point(0, 40);
-            this.button_Clinic_Program_Subsetting.Name = "button_Clinic_Program_Subsetting";
-            this.button_Clinic_Program_Subsetting.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.button_Clinic_Program_Subsetting.Size = new System.Drawing.Size(250, 40);
-            this.button_Clinic_Program_Subsetting.TabIndex = 1;
-            this.button_Clinic_Program_Subsetting.Text = "Program Clinic";
-            this.button_Clinic_Program_Subsetting.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_Clinic_Program_Subsetting.UseVisualStyleBackColor = true;
-            this.button_Clinic_Program_Subsetting.Click += new System.EventHandler(this.button_Clinic_Program_Subsetting_Click);
-            // 
-            // button_Clinic_Setting_Subsetting
-            // 
-            this.button_Clinic_Setting_Subsetting.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button_Clinic_Setting_Subsetting.FlatAppearance.BorderSize = 0;
-            this.button_Clinic_Setting_Subsetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Clinic_Setting_Subsetting.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Clinic_Setting_Subsetting.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button_Clinic_Setting_Subsetting.Location = new System.Drawing.Point(0, 0);
-            this.button_Clinic_Setting_Subsetting.Name = "button_Clinic_Setting_Subsetting";
-            this.button_Clinic_Setting_Subsetting.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
-            this.button_Clinic_Setting_Subsetting.Size = new System.Drawing.Size(250, 40);
-            this.button_Clinic_Setting_Subsetting.TabIndex = 0;
-            this.button_Clinic_Setting_Subsetting.Text = "Clinic Setting";
-            this.button_Clinic_Setting_Subsetting.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_Clinic_Setting_Subsetting.UseVisualStyleBackColor = true;
-            this.button_Clinic_Setting_Subsetting.Click += new System.EventHandler(this.button_Clinic_Setting_Subsetting_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(250, 149);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // panelLogo
-            // 
-            this.panelLogo.Controls.Add(this.pictureBox1);
-            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelLogo.Location = new System.Drawing.Point(0, 0);
-            this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(250, 150);
-            this.panelLogo.TabIndex = 0;
-            // 
-            // button_About
-            // 
-            this.button_About.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button_About.FlatAppearance.BorderSize = 0;
-            this.button_About.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_About.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_About.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.button_About.Location = new System.Drawing.Point(0, 409);
-            this.button_About.Name = "button_About";
-            this.button_About.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.button_About.Size = new System.Drawing.Size(250, 45);
-            this.button_About.TabIndex = 6;
-            this.button_About.Text = "About";
-            this.button_About.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_About.UseVisualStyleBackColor = true;
-            this.button_About.Click += new System.EventHandler(this.button_About_Click);
-            // 
-            // button_Setting
-            // 
-            this.button_Setting.BackColor = System.Drawing.Color.Black;
-            this.button_Setting.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button_Setting.FlatAppearance.BorderSize = 0;
-            this.button_Setting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Setting.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Setting.ForeColor = System.Drawing.Color.LightGray;
-            this.button_Setting.Location = new System.Drawing.Point(0, 285);
-            this.button_Setting.Name = "button_Setting";
-            this.button_Setting.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.button_Setting.Size = new System.Drawing.Size(250, 45);
-            this.button_Setting.TabIndex = 4;
-            this.button_Setting.Text = "Settings";
-            this.button_Setting.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_Setting.UseVisualStyleBackColor = false;
-            this.button_Setting.Click += new System.EventHandler(this.button_Setting_Click);
-            // 
-            // button_Appoinment
-            // 
-            this.button_Appoinment.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button_Appoinment.FlatAppearance.BorderSize = 0;
-            this.button_Appoinment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Appoinment.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Appoinment.ForeColor = System.Drawing.Color.LightGray;
-            this.button_Appoinment.Location = new System.Drawing.Point(0, 240);
-            this.button_Appoinment.Name = "button_Appoinment";
-            this.button_Appoinment.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.button_Appoinment.Size = new System.Drawing.Size(250, 45);
-            this.button_Appoinment.TabIndex = 3;
-            this.button_Appoinment.Text = "Appointments";
-            this.button_Appoinment.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_Appoinment.UseVisualStyleBackColor = true;
-            this.button_Appoinment.Click += new System.EventHandler(this.button_Appoinment_Click);
-            // 
-            // button_Patiants
-            // 
-            this.button_Patiants.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button_Patiants.FlatAppearance.BorderSize = 0;
-            this.button_Patiants.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Patiants.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Patiants.ForeColor = System.Drawing.Color.LightGray;
-            this.button_Patiants.Location = new System.Drawing.Point(0, 195);
-            this.button_Patiants.Name = "button_Patiants";
-            this.button_Patiants.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.button_Patiants.Size = new System.Drawing.Size(250, 45);
-            this.button_Patiants.TabIndex = 2;
-            this.button_Patiants.Text = "Patients";
-            this.button_Patiants.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_Patiants.UseVisualStyleBackColor = true;
-            this.button_Patiants.Click += new System.EventHandler(this.buttonPatiants_Click);
-            // 
-            // button_Dashboard
-            // 
-            this.button_Dashboard.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button_Dashboard.FlatAppearance.BorderSize = 0;
-            this.button_Dashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button_Dashboard.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button_Dashboard.ForeColor = System.Drawing.Color.LightGray;
-            this.button_Dashboard.Location = new System.Drawing.Point(0, 150);
-            this.button_Dashboard.Name = "button_Dashboard";
-            this.button_Dashboard.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.button_Dashboard.Size = new System.Drawing.Size(250, 45);
-            this.button_Dashboard.TabIndex = 1;
-            this.button_Dashboard.Text = "Dashboard";
-            this.button_Dashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button_Dashboard.UseVisualStyleBackColor = true;
-            this.button_Dashboard.Click += new System.EventHandler(this.button_Dashboard_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(12, 156);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(20, 33);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 7;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(12, 202);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(20, 32);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 8;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(13, 247);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(19, 32);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 9;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(13, 289);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(19, 35);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 10;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(13, 415);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(19, 35);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 11;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label1.Location = new System.Drawing.Point(113, 8);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 18);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "Admin";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.NameOfAdmin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.NameOfAdmin.AutoSize = true;
+            this.NameOfAdmin.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NameOfAdmin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.NameOfAdmin.Location = new System.Drawing.Point(113, 8);
+            this.NameOfAdmin.Name = "NameOfAdmin";
+            this.NameOfAdmin.Size = new System.Drawing.Size(50, 18);
+            this.NameOfAdmin.TabIndex = 13;
+            this.NameOfAdmin.Text = "Admin";
             // 
             // bunifuPictureBox2
             // 
@@ -309,64 +121,275 @@ partial class FrmMain {
             this.bunifuPictureBox2.TabIndex = 14;
             this.bunifuPictureBox2.TabStop = false;
             this.bunifuPictureBox2.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
-            this.bunifuPictureBox2.Click += new System.EventHandler(this.bunifuPictureBox2_Click);
             // 
-            // panel2
+            // pictureBox6
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.bunifuPictureBox2);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 497);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(250, 35);
-            this.panel2.TabIndex = 15;
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(13, 415);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(19, 35);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox6.TabIndex = 11;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(13, 289);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(19, 35);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 10;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(13, 247);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(19, 32);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 9;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(12, 202);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(20, 32);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 8;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(12, 156);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(20, 33);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 7;
+            this.pictureBox2.TabStop = false;
+            // 
+            // About_Page
+            // 
+            this.About_Page.Dock = System.Windows.Forms.DockStyle.Top;
+            this.About_Page.FlatAppearance.BorderSize = 0;
+            this.About_Page.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.About_Page.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.About_Page.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.About_Page.Location = new System.Drawing.Point(0, 409);
+            this.About_Page.Name = "About_Page";
+            this.About_Page.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.About_Page.Size = new System.Drawing.Size(250, 45);
+            this.About_Page.TabIndex = 6;
+            this.About_Page.Text = "About";
+            this.About_Page.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.About_Page.UseVisualStyleBackColor = true;
+            this.About_Page.Click += new System.EventHandler(this.About_Page_Click);
+            // 
+            // panelSettingSubsetting
+            // 
+            this.panelSettingSubsetting.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panelSettingSubsetting.Controls.Add(this.Program_Subsetting);
+            this.panelSettingSubsetting.Controls.Add(this.Clinic_Subsetting);
+            this.panelSettingSubsetting.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelSettingSubsetting.Location = new System.Drawing.Point(0, 330);
+            this.panelSettingSubsetting.Name = "panelSettingSubsetting";
+            this.panelSettingSubsetting.Size = new System.Drawing.Size(250, 79);
+            this.panelSettingSubsetting.TabIndex = 5;
+            // 
+            // Program_Subsetting
+            // 
+            this.Program_Subsetting.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Program_Subsetting.FlatAppearance.BorderSize = 0;
+            this.Program_Subsetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Program_Subsetting.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Program_Subsetting.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Program_Subsetting.Location = new System.Drawing.Point(0, 40);
+            this.Program_Subsetting.Name = "Program_Subsetting";
+            this.Program_Subsetting.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
+            this.Program_Subsetting.Size = new System.Drawing.Size(250, 39);
+            this.Program_Subsetting.TabIndex = 1;
+            this.Program_Subsetting.Text = "Program Clinic";
+            this.Program_Subsetting.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Program_Subsetting.UseVisualStyleBackColor = true;
+            this.Program_Subsetting.Click += new System.EventHandler(this.Program_Subsetting_Click);
+            // 
+            // Clinic_Subsetting
+            // 
+            this.Clinic_Subsetting.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Clinic_Subsetting.FlatAppearance.BorderSize = 0;
+            this.Clinic_Subsetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Clinic_Subsetting.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Clinic_Subsetting.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Clinic_Subsetting.Location = new System.Drawing.Point(0, 0);
+            this.Clinic_Subsetting.Name = "Clinic_Subsetting";
+            this.Clinic_Subsetting.Padding = new System.Windows.Forms.Padding(50, 0, 0, 0);
+            this.Clinic_Subsetting.Size = new System.Drawing.Size(250, 40);
+            this.Clinic_Subsetting.TabIndex = 0;
+            this.Clinic_Subsetting.Text = "Clinic Setting";
+            this.Clinic_Subsetting.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Clinic_Subsetting.UseVisualStyleBackColor = true;
+            this.Clinic_Subsetting.Click += new System.EventHandler(this.Clinic_Subsetting_Click);
+            // 
+            // Setting_page
+            // 
+            this.Setting_page.BackColor = System.Drawing.Color.Black;
+            this.Setting_page.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Setting_page.FlatAppearance.BorderSize = 0;
+            this.Setting_page.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Setting_page.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Setting_page.ForeColor = System.Drawing.Color.LightGray;
+            this.Setting_page.Location = new System.Drawing.Point(0, 285);
+            this.Setting_page.Name = "Setting_page";
+            this.Setting_page.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.Setting_page.Size = new System.Drawing.Size(250, 45);
+            this.Setting_page.TabIndex = 4;
+            this.Setting_page.Text = "Settings";
+            this.Setting_page.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Setting_page.UseVisualStyleBackColor = false;
+            this.Setting_page.Click += new System.EventHandler(this.Setting_page_Click);
+            // 
+            // Appoinment_Page
+            // 
+            this.Appoinment_Page.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Appoinment_Page.FlatAppearance.BorderSize = 0;
+            this.Appoinment_Page.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Appoinment_Page.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Appoinment_Page.ForeColor = System.Drawing.Color.LightGray;
+            this.Appoinment_Page.Location = new System.Drawing.Point(0, 240);
+            this.Appoinment_Page.Name = "Appoinment_Page";
+            this.Appoinment_Page.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.Appoinment_Page.Size = new System.Drawing.Size(250, 45);
+            this.Appoinment_Page.TabIndex = 3;
+            this.Appoinment_Page.Text = "Appointments";
+            this.Appoinment_Page.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Appoinment_Page.UseVisualStyleBackColor = true;
+            // 
+            // Patiants_Page
+            // 
+            this.Patiants_Page.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Patiants_Page.FlatAppearance.BorderSize = 0;
+            this.Patiants_Page.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Patiants_Page.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Patiants_Page.ForeColor = System.Drawing.Color.LightGray;
+            this.Patiants_Page.Location = new System.Drawing.Point(0, 195);
+            this.Patiants_Page.Name = "Patiants_Page";
+            this.Patiants_Page.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.Patiants_Page.Size = new System.Drawing.Size(250, 45);
+            this.Patiants_Page.TabIndex = 2;
+            this.Patiants_Page.Text = "Patients";
+            this.Patiants_Page.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Patiants_Page.UseVisualStyleBackColor = true;
+            // 
+            // buttonDashboard
+            // 
+            this.buttonDashboard.Dock = System.Windows.Forms.DockStyle.Top;
+            this.buttonDashboard.FlatAppearance.BorderSize = 0;
+            this.buttonDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDashboard.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDashboard.ForeColor = System.Drawing.Color.LightGray;
+            this.buttonDashboard.Location = new System.Drawing.Point(0, 150);
+            this.buttonDashboard.Name = "buttonDashboard";
+            this.buttonDashboard.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.buttonDashboard.Size = new System.Drawing.Size(250, 45);
+            this.buttonDashboard.TabIndex = 1;
+            this.buttonDashboard.Text = "Dashboard";
+            this.buttonDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonDashboard.UseVisualStyleBackColor = true;
+            // 
+            // panelLogo
+            // 
+            this.panelLogo.Controls.Add(this.pictureBox1);
+            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Name = "panelLogo";
+            this.panelLogo.Size = new System.Drawing.Size(250, 150);
+            this.panelLogo.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(250, 149);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // panelChildForm
+            // 
+            this.panelChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.panelChildForm.Controls.Add(this.pictureBox7);
+            this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelChildForm.Location = new System.Drawing.Point(250, 0);
+            this.panelChildForm.Name = "panelChildForm";
+            this.panelChildForm.Size = new System.Drawing.Size(490, 532);
+            this.panelChildForm.TabIndex = 2;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(490, 532);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 0;
+            this.pictureBox7.TabStop = false;
             // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(740, 532);
+            this.Controls.Add(this.panelChildForm);
             this.Controls.Add(this.panelSideMenu);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
-            this.Load += new System.EventHandler(this.FrmMain_Load);
             this.panelSideMenu.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panelLogo.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panelSettingSubsetting.ResumeLayout(false);
+            this.panelLogo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panelChildForm.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.ResumeLayout(false);
 
   }
 
   private System.Windows.Forms.Panel panelSideMenu;
-  private System.Windows.Forms.Panel panel1;
-  private System.Windows.Forms.Button button_Clinic_Program_Subsetting;
-  private System.Windows.Forms.Button button_Clinic_Setting_Subsetting;
+  private System.Windows.Forms.Panel panelSettingSubsetting;
+  private System.Windows.Forms.Button Program_Subsetting;
+  private System.Windows.Forms.Button Clinic_Subsetting;
         private System.Windows.Forms.Panel panelLogo;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button button_About;
-        private System.Windows.Forms.Button button_Setting;
-        private System.Windows.Forms.Button button_Appoinment;
-        private System.Windows.Forms.Button button_Patiants;
-        private System.Windows.Forms.Button button_Dashboard;
+        private System.Windows.Forms.Button About_Page;
+        private System.Windows.Forms.Button Setting_page;
+        private System.Windows.Forms.Button Appoinment_Page;
+        private System.Windows.Forms.Button Patiants_Page;
+        private System.Windows.Forms.Button buttonDashboard;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label NameOfAdmin;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox2;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panelChildForm;
+        private System.Windows.Forms.PictureBox pictureBox7;
     }
 }

@@ -10,42 +10,70 @@ using System.Windows.Forms;
 
 namespace Clinic_Mang_Sys {
 public partial class FrmMain : Form {
-  public FrmMain() { InitializeComponent(); }
+    public FrmMain() 
+        { 
+            InitializeComponent();
+            customizeDesing();
+        }
+        private void customizeDesing()
+        {
+            panelSettingSubsetting.Visible = false;
+        }
 
-  private void buttonPatiants_Click(object sender, EventArgs e) {}
+        private void hideSubsetting()
+        {
+            if (panelSettingSubsetting.Visible == true)
+                panelSettingSubsetting.Visible = false;
+        }
+        private void showSubsetting(Panel subsetting)
+        {
+            if (subsetting.Visible == false)
+            {
+                hideSubsetting();
+                subsetting.Visible = true;
 
-  private void panelSideMenu_Paint(object sender, PaintEventArgs e) {}
+            }
+            else
+            {
+                subsetting.Visible = false;
+            }
+        }
 
-  private void button_Dashboard_Click(object sender, EventArgs e) {}
+        private void Setting_page_Click(object sender, EventArgs e)
+        {
+            showSubsetting(panelSettingSubsetting);
+        }
 
-  private void button_Appoinment_Click(object sender, EventArgs e) {}
+        private void Clinic_Subsetting_Click(object sender, EventArgs e)
+        {
+            hideSubsetting();
+        }
 
-  private void button_Setting_Click(object sender, EventArgs e) {}
+        private void Program_Subsetting_Click(object sender, EventArgs e)
+        {
+            hideSubsetting();
+        }
 
-  private void button_Clinic_Setting_Subsetting_Click(object sender,
-                                                      EventArgs e) {}
-
-  private void button_Clinic_Program_Subsetting_Click(object sender,
-                                                      EventArgs e) {}
-
-  private void button_About_Click(object sender, EventArgs e) {}
-
-        private void FrmMain_Load(object sender, EventArgs e)
+        private void About_Page_Click(object sender, EventArgs e)
         {
 
+        }
+        private Form activeForm = null;
+        private void openChildForm(Form childForm)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panelChildForm.Controls.Add(childForm);
+            panelChildForm.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuPictureBox2_Click(object sender, EventArgs e)
         {
 
         }
