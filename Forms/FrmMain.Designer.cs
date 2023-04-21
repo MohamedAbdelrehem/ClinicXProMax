@@ -28,11 +28,11 @@ partial class FrmMain {
             this.panel2 = new System.Windows.Forms.Panel();
             this.NameOfAdmin = new System.Windows.Forms.Label();
             this.bunifuPictureBox2 = new Bunifu.UI.WinForms.BunifuPictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxAbout = new System.Windows.Forms.PictureBox();
+            this.pictureBoxSetting = new System.Windows.Forms.PictureBox();
+            this.pictureBoxAppointment = new System.Windows.Forms.PictureBox();
+            this.pictureBoxPatients = new System.Windows.Forms.PictureBox();
+            this.pictureBoxDashboard = new System.Windows.Forms.PictureBox();
             this.About_Page = new System.Windows.Forms.Button();
             this.panelSettingSubsetting = new System.Windows.Forms.Panel();
             this.Program_Subsetting = new System.Windows.Forms.Button();
@@ -48,11 +48,11 @@ partial class FrmMain {
             this.panelSideMenu.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAbout)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSetting)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAppointment)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPatients)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDashboard)).BeginInit();
             this.panelSettingSubsetting.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -65,11 +65,11 @@ partial class FrmMain {
             this.panelSideMenu.AutoScroll = true;
             this.panelSideMenu.BackColor = System.Drawing.Color.Black;
             this.panelSideMenu.Controls.Add(this.panel2);
-            this.panelSideMenu.Controls.Add(this.pictureBox6);
-            this.panelSideMenu.Controls.Add(this.pictureBox5);
-            this.panelSideMenu.Controls.Add(this.pictureBox4);
-            this.panelSideMenu.Controls.Add(this.pictureBox3);
-            this.panelSideMenu.Controls.Add(this.pictureBox2);
+            this.panelSideMenu.Controls.Add(this.pictureBoxAbout);
+            this.panelSideMenu.Controls.Add(this.pictureBoxSetting);
+            this.panelSideMenu.Controls.Add(this.pictureBoxAppointment);
+            this.panelSideMenu.Controls.Add(this.pictureBoxPatients);
+            this.panelSideMenu.Controls.Add(this.pictureBoxDashboard);
             this.panelSideMenu.Controls.Add(this.About_Page);
             this.panelSideMenu.Controls.Add(this.panelSettingSubsetting);
             this.panelSideMenu.Controls.Add(this.Setting_page);
@@ -122,67 +122,67 @@ partial class FrmMain {
             this.bunifuPictureBox2.TabStop = false;
             this.bunifuPictureBox2.Type = Bunifu.UI.WinForms.BunifuPictureBox.Types.Circle;
             // 
-            // pictureBox6
+            // pictureBoxAbout
             // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(13, 415);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(19, 35);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox6.TabIndex = 11;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
+            this.pictureBoxAbout.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxAbout.Image")));
+            this.pictureBoxAbout.Location = new System.Drawing.Point(13, 415);
+            this.pictureBoxAbout.Name = "pictureBoxAbout";
+            this.pictureBoxAbout.Size = new System.Drawing.Size(19, 35);
+            this.pictureBoxAbout.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxAbout.TabIndex = 11;
+            this.pictureBoxAbout.TabStop = false;
+            this.pictureBoxAbout.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
-            // pictureBox5
+            // pictureBoxSetting
             // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(13, 289);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(19, 35);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 10;
-            this.pictureBox5.TabStop = false;
+            this.pictureBoxSetting.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxSetting.Image")));
+            this.pictureBoxSetting.Location = new System.Drawing.Point(13, 289);
+            this.pictureBoxSetting.Name = "pictureBoxSetting";
+            this.pictureBoxSetting.Size = new System.Drawing.Size(19, 35);
+            this.pictureBoxSetting.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxSetting.TabIndex = 10;
+            this.pictureBoxSetting.TabStop = false;
             // 
-            // pictureBox4
+            // pictureBoxAppointment
             // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(13, 247);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(19, 32);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 9;
-            this.pictureBox4.TabStop = false;
+            this.pictureBoxAppointment.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxAppointment.Image")));
+            this.pictureBoxAppointment.Location = new System.Drawing.Point(13, 247);
+            this.pictureBoxAppointment.Name = "pictureBoxAppointment";
+            this.pictureBoxAppointment.Size = new System.Drawing.Size(19, 32);
+            this.pictureBoxAppointment.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxAppointment.TabIndex = 9;
+            this.pictureBoxAppointment.TabStop = false;
             // 
-            // pictureBox3
+            // pictureBoxPatients
             // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(12, 202);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(20, 32);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 8;
-            this.pictureBox3.TabStop = false;
+            this.pictureBoxPatients.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxPatients.Image")));
+            this.pictureBoxPatients.Location = new System.Drawing.Point(12, 202);
+            this.pictureBoxPatients.Name = "pictureBoxPatients";
+            this.pictureBoxPatients.Size = new System.Drawing.Size(20, 32);
+            this.pictureBoxPatients.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxPatients.TabIndex = 8;
+            this.pictureBoxPatients.TabStop = false;
             // 
-            // pictureBox2
+            // pictureBoxDashboard
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(12, 156);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(20, 33);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 7;
-            this.pictureBox2.TabStop = false;
+            this.pictureBoxDashboard.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxDashboard.Image")));
+            this.pictureBoxDashboard.Location = new System.Drawing.Point(12, 156);
+            this.pictureBoxDashboard.Name = "pictureBoxDashboard";
+            this.pictureBoxDashboard.Size = new System.Drawing.Size(20, 33);
+            this.pictureBoxDashboard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxDashboard.TabIndex = 7;
+            this.pictureBoxDashboard.TabStop = false;
             // 
             // About_Page
             // 
             this.About_Page.Dock = System.Windows.Forms.DockStyle.Top;
             this.About_Page.FlatAppearance.BorderSize = 0;
             this.About_Page.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.About_Page.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.About_Page.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.About_Page.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.About_Page.Location = new System.Drawing.Point(0, 409);
             this.About_Page.Name = "About_Page";
-            this.About_Page.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.About_Page.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.About_Page.Size = new System.Drawing.Size(250, 45);
             this.About_Page.TabIndex = 6;
             this.About_Page.Text = "About";
@@ -241,11 +241,11 @@ partial class FrmMain {
             this.Setting_page.Dock = System.Windows.Forms.DockStyle.Top;
             this.Setting_page.FlatAppearance.BorderSize = 0;
             this.Setting_page.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Setting_page.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Setting_page.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Setting_page.ForeColor = System.Drawing.Color.LightGray;
             this.Setting_page.Location = new System.Drawing.Point(0, 285);
             this.Setting_page.Name = "Setting_page";
-            this.Setting_page.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.Setting_page.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.Setting_page.Size = new System.Drawing.Size(250, 45);
             this.Setting_page.TabIndex = 4;
             this.Setting_page.Text = "Settings";
@@ -258,11 +258,11 @@ partial class FrmMain {
             this.Appoinment_Page.Dock = System.Windows.Forms.DockStyle.Top;
             this.Appoinment_Page.FlatAppearance.BorderSize = 0;
             this.Appoinment_Page.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Appoinment_Page.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Appoinment_Page.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Appoinment_Page.ForeColor = System.Drawing.Color.LightGray;
             this.Appoinment_Page.Location = new System.Drawing.Point(0, 240);
             this.Appoinment_Page.Name = "Appoinment_Page";
-            this.Appoinment_Page.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.Appoinment_Page.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.Appoinment_Page.Size = new System.Drawing.Size(250, 45);
             this.Appoinment_Page.TabIndex = 3;
             this.Appoinment_Page.Text = "Appointments";
@@ -274,11 +274,11 @@ partial class FrmMain {
             this.Patiants_Page.Dock = System.Windows.Forms.DockStyle.Top;
             this.Patiants_Page.FlatAppearance.BorderSize = 0;
             this.Patiants_Page.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Patiants_Page.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Patiants_Page.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Patiants_Page.ForeColor = System.Drawing.Color.LightGray;
             this.Patiants_Page.Location = new System.Drawing.Point(0, 195);
             this.Patiants_Page.Name = "Patiants_Page";
-            this.Patiants_Page.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.Patiants_Page.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.Patiants_Page.Size = new System.Drawing.Size(250, 45);
             this.Patiants_Page.TabIndex = 2;
             this.Patiants_Page.Text = "Patients";
@@ -290,11 +290,11 @@ partial class FrmMain {
             this.buttonDashboard.Dock = System.Windows.Forms.DockStyle.Top;
             this.buttonDashboard.FlatAppearance.BorderSize = 0;
             this.buttonDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDashboard.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDashboard.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonDashboard.ForeColor = System.Drawing.Color.LightGray;
             this.buttonDashboard.Location = new System.Drawing.Point(0, 150);
             this.buttonDashboard.Name = "buttonDashboard";
-            this.buttonDashboard.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.buttonDashboard.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
             this.buttonDashboard.Size = new System.Drawing.Size(250, 45);
             this.buttonDashboard.TabIndex = 1;
             this.buttonDashboard.Text = "Dashboard";
@@ -356,11 +356,11 @@ partial class FrmMain {
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAbout)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSetting)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAppointment)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPatients)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDashboard)).EndInit();
             this.panelSettingSubsetting.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -376,16 +376,16 @@ partial class FrmMain {
   private System.Windows.Forms.Button Clinic_Subsetting;
         private System.Windows.Forms.Panel panelLogo;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBoxDashboard;
         private System.Windows.Forms.Button About_Page;
         private System.Windows.Forms.Button Setting_page;
         private System.Windows.Forms.Button Appoinment_Page;
         private System.Windows.Forms.Button Patiants_Page;
         private System.Windows.Forms.Button buttonDashboard;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBoxAbout;
+        private System.Windows.Forms.PictureBox pictureBoxSetting;
+        private System.Windows.Forms.PictureBox pictureBoxAppointment;
+        private System.Windows.Forms.PictureBox pictureBoxPatients;
         private System.Windows.Forms.Label NameOfAdmin;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox2;
         private System.Windows.Forms.Panel panel2;
