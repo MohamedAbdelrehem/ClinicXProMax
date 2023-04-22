@@ -50,5 +50,10 @@ namespace Clinic_Mang_Sys.Pages
         {
             pnlDrawwer.Visible = true;
         }
+
+        private void btnClose_Click_1(object sender, EventArgs e)
+        {
+            pnlDrawwer.Visible = false;
+        }
     }
 }
