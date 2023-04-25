@@ -54,6 +54,8 @@ Here's a brief high-level overview of the tech stack ClinicXProMax uses:
 
 - .NET Framework: ClinicXProMax uses the .NET Framework, which is a software development platform that provides a comprehensive set of libraries, tools, and frameworks for building Windows desktop and web applications using C#. The .NET Framework provides a rich set of features such as memory management, security, and type safety, making it a robust and secure platform for building applications.
 
+- Microsoft SQL Server: ClinicXProMax uses Microsoft SQL Server, which is a relational database management system that is widely used for storing and retrieving data. SQL Server provides a range of features such as high availability, security, and scalability, making it a popular choice for managing large amounts of data.
+
 - GitHub: ClinicXProMax uses GitHub, which is a web-based platform for version control and collaboration that is widely used by software developers. GitHub provides a range of features such as code review, issue tracking, and project management, making it an ideal platform for managing software projects. ClinicXProMax follows the "Gitflow" branching model by Vincent Driessen, which is a popular Git branching model that provides a clear structure for managing Git branches and releases.
 
 - GitKraken: ClinicXProMax uses GitKraken, which is a Git client that provides a visual interface for managing Git repositories. GitKraken provides a range of features such as branch visualization, merge conflict resolution, and pull request management, making it a popular choice for managing Git repositories.
