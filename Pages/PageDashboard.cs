@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Clinic_Mang_Sys.Pages
 {
-    public partial class Dashboard : UserControl
+    public partial class PageDashboard : UserControl
     {
-        public Dashboard()
+        public PageDashboard()
         {
             if (this.IsInDesignMode()) return;
             InitializeComponent();

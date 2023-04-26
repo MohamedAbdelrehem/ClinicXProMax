@@ -158,11 +158,11 @@
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Appointment.cs" />
-    <Compile Include="Pages\Dashboard.cs">
+    <Compile Include="Pages\PageDashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Pages\Dashboard.Designer.cs">
-      <DependentUpon>Dashboard.cs</DependentUpon>
+    <Compile Include="Pages\PageDashboard.Designer.cs">
+      <DependentUpon>PageDashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="Pages\PageAppointments.cs">
       <SubType>UserControl</SubType>
@@ -178,8 +178,8 @@
     <EmbeddedResource Include="Forms\FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pages\Dashboard.resx">
-      <DependentUpon>Dashboard.cs</DependentUpon>
+    <EmbeddedResource Include="Pages\PageDashboard.resx">
+      <DependentUpon>PageDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\PageAppointments.resx">
       <DependentUpon>PageAppointments.cs</DependentUpon>
