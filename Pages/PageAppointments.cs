@@ -1,13 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using Clinic_Mang_Sys.Models;
 using Kimtoo.BindingProvider;
+using Kimtoo.DbContext;
+using ServiceStack.OrmLite;
 
 namespace Clinic_Mang_Sys.Pages
 {
@@ -15,30 +13,38 @@ namespace Clinic_Mang_Sys.Pages
     {
         public PageAppointments()
         {
-            if (this.IsInDesignMode())
-                return;
+            if (this.IsInDesignMode()) return;
             InitializeComponent();
             LoadData();
+
+            gridAppointment.OnDelete<Appointment>((a, b) => Db.Get().Delete(a) >= 0);
         }
 
         private void LoadData()
         {
-            List<Models.Appointment> data = new List<Models.Appointment>();
+            //get data for shadowbox dropmenu
+            PatientIdDropdown.DataSource = Db.Get().Select<Patients>();
 
-            for (int i = 0; i < 10; i++)
+            //get data for table
+            var data = Db.Get().Select<Appointment>();
+
+            if (TabGrid.CurrentSelection == "Pending")
             {
-                data.Add(
-                    new Models.Appointment
-                    {
-                        Name = "memo" + i,
-                        Address = "betna",
-                        Email = "mohamed@gmail.com",
-                        Phone = "01011929211"
-                    }
-                );
+                data = data.Where(r => !r.HasSessions() && r.Date < DateTime.Today).ToList();
+            }
+            else if (TabGrid.CurrentSelection == "Complete")
+            {
+                data = data.Where(r => r.HasSessions()).ToList();
+            }
+            else if (TabGrid.CurrentSelection == "Cancelled")
+            {
+                data = data.Where(r => r.Cancelled).ToList();
+
             }
 
-            grid.Bind(data);
+
+
+            gridAppointment.Bind<Appointment>(data);
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -48,12 +54,14 @@ namespace Clinic_Mang_Sys.Pages
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            PatientIdDropdown.DataSource = Db.Get().Select<Patients>();
             pnlDrawwer.Visible = true;
+            bindingProvider1.Bind(new Appointment());
         }
 
-        private void btnClose_Click_1(object sender, EventArgs e)
+        private void GridTabs_OnSelectionChange(object sender, EventArgs e)
         {
-            pnlDrawwer.Visible = false;
+            LoadData();
         }
     }
 }
