@@ -17,5 +17,23 @@ namespace Clinic_Mang_Sys.Pages
             if (this.IsInDesignMode()) return;
             InitializeComponent();
         }
+        /*private void LoadData()
+        {
+            var db = Connections.GetConnection();
+        }*/
+        private void PageDashboard_Load(object sender, EventArgs e)
+        {
+            //LoadData();
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            //LoadData();
+        }
+
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+            //LoadData();
+        }
     }
 }
