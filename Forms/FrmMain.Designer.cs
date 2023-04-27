@@ -1,270 +1,273 @@
 ﻿
-namespace Clinic_Mang_Sys {
-partial class FrmMain {
-  /// <summary>
-  /// Required designer variable.
-  /// </summary>
-  private System.ComponentModel.IContainer components = null;
+namespace ClinicXProMax.Forms
+{
+    partial class FrmMain
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
 
-  /// <summary>
-  /// Clean up any resources being used.
-  /// </summary>
-  /// <param name="disposing">true if managed resources should be disposed;
-  /// otherwise, false.</param>
-  protected override void Dispose(bool disposing) {
-    if (disposing && (components != null)) {
-      components.Dispose();
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed;
+        /// otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
+            Utilities.BunifuPages.BunifuAnimatorNS.Animation animation1 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
+            this.bunifuAppBar1 = new Bunifu.Utils.BunifuAppBar();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.navigtionMenu1 = new Kimtoo.NavigtionMenu();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.pages = new Bunifu.UI.WinForms.BunifuPages();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pages.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // bunifuAppBar1
+            // 
+            this.bunifuAppBar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
+            this.bunifuAppBar1.ControlBoxColor = System.Drawing.Color.Gray;
+            this.bunifuAppBar1.ControlBoxColorActive = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.bunifuAppBar1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bunifuAppBar1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.bunifuAppBar1.ForeColor = System.Drawing.Color.Gray;
+            this.bunifuAppBar1.Icon = null;
+            this.bunifuAppBar1.Location = new System.Drawing.Point(255, 0);
+            this.bunifuAppBar1.Name = "bunifuAppBar1";
+            this.bunifuAppBar1.Size = new System.Drawing.Size(1025, 46);
+            this.bunifuAppBar1.TabIndex = 3;
+            this.bunifuAppBar1.Title = "";
+            this.bunifuAppBar1.TitleMargin = new System.Windows.Forms.Padding(47, 12, 0, 0);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.navigtionMenu1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(255, 720);
+            this.panel1.TabIndex = 4;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 24);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(235, 127);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // navigtionMenu1
+            // 
+            this.navigtionMenu1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.navigtionMenu1.AutoScroll = true;
+            this.navigtionMenu1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.navigtionMenu1.BackColor_Click = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.navigtionMenu1.BackColor_Hover = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.navigtionMenu1.BackColor_Selected = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
+            this.navigtionMenu1.DisableToggling = new string[] {
+        "Settings.Database"};
+            this.navigtionMenu1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.navigtionMenu1.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.navigtionMenu1.ForeColor_Selected = System.Drawing.Color.DimGray;
+            this.navigtionMenu1.IsExpandable = false;
+            this.navigtionMenu1.IsExpanded = true;
+            this.navigtionMenu1.ItemHeight = 50;
+            this.navigtionMenu1.ItemImageSize = new System.Drawing.Size(20, 20);
+            this.navigtionMenu1.ItemPadding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.navigtionMenu1.ItemRightImageMargin = 20;
+            this.navigtionMenu1.ItemRightImageSize = new System.Drawing.Size(15, 15);
+            this.navigtionMenu1.Items = new Kimtoo.ButtonItem[] {
+        ((Kimtoo.ButtonItem)(resources.GetObject("navigtionMenu1.Items"))),
+        ((Kimtoo.ButtonItem)(resources.GetObject("navigtionMenu1.Items1"))),
+        ((Kimtoo.ButtonItem)(resources.GetObject("navigtionMenu1.Items2"))),
+        ((Kimtoo.ButtonItem)(resources.GetObject("navigtionMenu1.Items3"))),
+        ((Kimtoo.ButtonItem)(resources.GetObject("navigtionMenu1.Items4")))};
+            this.navigtionMenu1.ItemTextMargin = 8;
+            this.navigtionMenu1.Location = new System.Drawing.Point(56, 177);
+            this.navigtionMenu1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.navigtionMenu1.Name = "navigtionMenu1";
+            this.navigtionMenu1.Size = new System.Drawing.Size(199, 472);
+            this.navigtionMenu1.TabIndex = 0;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
+            this.tabPage2.Location = new System.Drawing.Point(4, 4);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1007, 641);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Patients";
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
+            this.tabPage3.Location = new System.Drawing.Point(4, 4);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(1007, 641);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Appointments";
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
+            this.tabPage1.Location = new System.Drawing.Point(4, 4);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(1007, 641);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Dashboard";
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
+            this.tabPage4.Location = new System.Drawing.Point(4, 4);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(1007, 641);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Settings";
+            // 
+            // pages
+            // 
+            this.pages.Alignment = System.Windows.Forms.TabAlignment.Bottom;
+            this.pages.AllowTransitions = false;
+            this.pages.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pages.Controls.Add(this.tabPage1);
+            this.pages.Controls.Add(this.tabPage2);
+            this.pages.Controls.Add(this.tabPage3);
+            this.pages.Controls.Add(this.tabPage4);
+            this.pages.Location = new System.Drawing.Point(261, 48);
+            this.pages.Multiline = true;
+            this.pages.Name = "pages";
+            this.pages.Page = this.tabPage2;
+            this.pages.PageIndex = 1;
+            this.pages.PageName = "tabPage2";
+            this.pages.PageTitle = "Patients";
+            this.pages.SelectedIndex = 0;
+            this.pages.Size = new System.Drawing.Size(1015, 667);
+            this.pages.TabIndex = 5;
+            animation1.AnimateOnlyDifferences = false;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.pages.Transition = animation1;
+            this.pages.TransitionType = Utilities.BunifuPages.BunifuAnimatorNS.AnimationType.Custom;
+            // 
+            // bunifuFormDock1
+            // 
+            this.bunifuFormDock1.AllowFormDragging = true;
+            this.bunifuFormDock1.AllowFormDropShadow = true;
+            this.bunifuFormDock1.AllowFormResizing = true;
+            this.bunifuFormDock1.AllowHidingBottomRegion = true;
+            this.bunifuFormDock1.AllowOpacityChangesWhileDragging = false;
+            this.bunifuFormDock1.BorderOptions.BottomBorder.BorderColor = System.Drawing.Color.Silver;
+            this.bunifuFormDock1.BorderOptions.BottomBorder.BorderThickness = 1;
+            this.bunifuFormDock1.BorderOptions.BottomBorder.ShowBorder = true;
+            this.bunifuFormDock1.BorderOptions.LeftBorder.BorderColor = System.Drawing.Color.Silver;
+            this.bunifuFormDock1.BorderOptions.LeftBorder.BorderThickness = 1;
+            this.bunifuFormDock1.BorderOptions.LeftBorder.ShowBorder = true;
+            this.bunifuFormDock1.BorderOptions.RightBorder.BorderColor = System.Drawing.Color.Silver;
+            this.bunifuFormDock1.BorderOptions.RightBorder.BorderThickness = 1;
+            this.bunifuFormDock1.BorderOptions.RightBorder.ShowBorder = true;
+            this.bunifuFormDock1.BorderOptions.TopBorder.BorderColor = System.Drawing.Color.Silver;
+            this.bunifuFormDock1.BorderOptions.TopBorder.BorderThickness = 1;
+            this.bunifuFormDock1.BorderOptions.TopBorder.ShowBorder = true;
+            this.bunifuFormDock1.ContainerControl = this;
+            this.bunifuFormDock1.DockingIndicatorsColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(215)))), ((int)(((byte)(233)))));
+            this.bunifuFormDock1.DockingIndicatorsOpacity = 0.5D;
+            this.bunifuFormDock1.DockingOptions.DockAll = true;
+            this.bunifuFormDock1.DockingOptions.DockBottomLeft = true;
+            this.bunifuFormDock1.DockingOptions.DockBottomRight = true;
+            this.bunifuFormDock1.DockingOptions.DockFullScreen = true;
+            this.bunifuFormDock1.DockingOptions.DockLeft = true;
+            this.bunifuFormDock1.DockingOptions.DockRight = true;
+            this.bunifuFormDock1.DockingOptions.DockTopLeft = true;
+            this.bunifuFormDock1.DockingOptions.DockTopRight = true;
+            this.bunifuFormDock1.FormDraggingOpacity = 0.9D;
+            this.bunifuFormDock1.ParentForm = this;
+            this.bunifuFormDock1.ShowCursorChanges = true;
+            this.bunifuFormDock1.ShowDockingIndicators = true;
+            this.bunifuFormDock1.TitleBarOptions.AllowFormDragging = true;
+            this.bunifuFormDock1.TitleBarOptions.BunifuFormDock = this.bunifuFormDock1;
+            this.bunifuFormDock1.TitleBarOptions.DoubleClickToExpandWindow = true;
+            this.bunifuFormDock1.TitleBarOptions.TitleBarControl = null;
+            this.bunifuFormDock1.TitleBarOptions.UseBackColorOnDockingIndicators = false;
+            // 
+            // FrmMain
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
+            this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.Controls.Add(this.bunifuAppBar1);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pages);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MinimumSize = new System.Drawing.Size(1100, 680);
+            this.Name = "FrmMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "FrmMain";
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.pages.ResumeLayout(false);
+            this.ResumeLayout(false);
+
+        }
+
+        private Bunifu.Utils.BunifuAppBar bunifuAppBar1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private Kimtoo.NavigtionMenu navigtionMenu1;
+        private Bunifu.UI.WinForms.BunifuPages pages;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.Timer timer1;
+        private Bunifu.UI.WinForms.BunifuFormDock bunifuFormDock1;
     }
-    base.Dispose(disposing);
-  }
-
-  /// <summary>
-  /// Required method for Designer support - do not modify
-  /// the contents of this method with the code editor.
-  /// </summary>
-  private void InitializeComponent() {
-    this.panelSideMenu = new System.Windows.Forms.Panel();
-    this.button_About = new System.Windows.Forms.Button();
-    this.panel1 = new System.Windows.Forms.Panel();
-    this.button_Clinic_Program_Subsetting = new System.Windows.Forms.Button();
-    this.button_Clinic_Setting_Subsetting = new System.Windows.Forms.Button();
-    this.button_Setting = new System.Windows.Forms.Button();
-    this.button_Appoinment = new System.Windows.Forms.Button();
-    this.button_Patiants = new System.Windows.Forms.Button();
-    this.button_Dashboard = new System.Windows.Forms.Button();
-    this.panelLogo = new System.Windows.Forms.Panel();
-    this.panelSideMenu.SuspendLayout();
-    this.panel1.SuspendLayout();
-    this.SuspendLayout();
-    //
-    // panelSideMenu
-    //
-    this.panelSideMenu.AutoScroll = true;
-    this.panelSideMenu.BackColor = System.Drawing.Color.Black;
-    this.panelSideMenu.Controls.Add(this.button_About);
-    this.panelSideMenu.Controls.Add(this.panel1);
-    this.panelSideMenu.Controls.Add(this.button_Setting);
-    this.panelSideMenu.Controls.Add(this.button_Appoinment);
-    this.panelSideMenu.Controls.Add(this.button_Patiants);
-    this.panelSideMenu.Controls.Add(this.button_Dashboard);
-    this.panelSideMenu.Controls.Add(this.panelLogo);
-    this.panelSideMenu.Dock = System.Windows.Forms.DockStyle.Left;
-    this.panelSideMenu.Location = new System.Drawing.Point(0, 0);
-    this.panelSideMenu.Name = "panelSideMenu";
-    this.panelSideMenu.Size = new System.Drawing.Size(250, 491);
-    this.panelSideMenu.TabIndex = 0;
-    this.panelSideMenu.Paint +=
-        new System.Windows.Forms.PaintEventHandler(this.panelSideMenu_Paint);
-    //
-    // button_About
-    //
-    this.button_About.Dock = System.Windows.Forms.DockStyle.Top;
-    this.button_About.FlatAppearance.BorderSize = 0;
-    this.button_About.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-    this.button_About.Font = new System.Drawing.Font(
-        "Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold,
-        System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-    this.button_About.ForeColor = System.Drawing.Color.FromArgb(
-        ((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-    this.button_About.Location = new System.Drawing.Point(0, 363);
-    this.button_About.Name = "button_About";
-    this.button_About.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-    this.button_About.Size = new System.Drawing.Size(250, 45);
-    this.button_About.TabIndex = 6;
-    this.button_About.Text = "About";
-    this.button_About.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-    this.button_About.UseVisualStyleBackColor = true;
-    this.button_About.Click += new System.EventHandler(this.button_About_Click);
-    //
-    // panel1
-    //
-    this.panel1.BackColor = System.Drawing.Color.FromArgb(
-        ((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-    this.panel1.Controls.Add(this.button_Clinic_Program_Subsetting);
-    this.panel1.Controls.Add(this.button_Clinic_Setting_Subsetting);
-    this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-    this.panel1.Location = new System.Drawing.Point(0, 284);
-    this.panel1.Name = "panel1";
-    this.panel1.Size = new System.Drawing.Size(250, 79);
-    this.panel1.TabIndex = 5;
-    //
-    // button_Clinic_Program_Subsetting
-    //
-    this.button_Clinic_Program_Subsetting.Dock =
-        System.Windows.Forms.DockStyle.Top;
-    this.button_Clinic_Program_Subsetting.FlatAppearance.BorderSize = 0;
-    this.button_Clinic_Program_Subsetting.FlatStyle =
-        System.Windows.Forms.FlatStyle.Flat;
-    this.button_Clinic_Program_Subsetting.Font =
-        new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Bold,
-                                System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-    this.button_Clinic_Program_Subsetting.ForeColor =
-        System.Drawing.Color.FromArgb(((int)(((byte)(224)))),
-                                      ((int)(((byte)(224)))),
-                                      ((int)(((byte)(224)))));
-    this.button_Clinic_Program_Subsetting.Location =
-        new System.Drawing.Point(0, 40);
-    this.button_Clinic_Program_Subsetting.Name =
-        "button_Clinic_Program_Subsetting";
-    this.button_Clinic_Program_Subsetting.Padding =
-        new System.Windows.Forms.Padding(35, 0, 0, 0);
-    this.button_Clinic_Program_Subsetting.Size =
-        new System.Drawing.Size(250, 40);
-    this.button_Clinic_Program_Subsetting.TabIndex = 1;
-    this.button_Clinic_Program_Subsetting.Text = "Program Clinic";
-    this.button_Clinic_Program_Subsetting.TextAlign =
-        System.Drawing.ContentAlignment.MiddleLeft;
-    this.button_Clinic_Program_Subsetting.UseVisualStyleBackColor = true;
-    this.button_Clinic_Program_Subsetting.Click +=
-        new System.EventHandler(this.button_Clinic_Program_Subsetting_Click);
-    //
-    // button_Clinic_Setting_Subsetting
-    //
-    this.button_Clinic_Setting_Subsetting.Dock =
-        System.Windows.Forms.DockStyle.Top;
-    this.button_Clinic_Setting_Subsetting.FlatAppearance.BorderSize = 0;
-    this.button_Clinic_Setting_Subsetting.FlatStyle =
-        System.Windows.Forms.FlatStyle.Flat;
-    this.button_Clinic_Setting_Subsetting.Font =
-        new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Bold,
-                                System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-    this.button_Clinic_Setting_Subsetting.ForeColor =
-        System.Drawing.Color.FromArgb(((int)(((byte)(224)))),
-                                      ((int)(((byte)(224)))),
-                                      ((int)(((byte)(224)))));
-    this.button_Clinic_Setting_Subsetting.Location =
-        new System.Drawing.Point(0, 0);
-    this.button_Clinic_Setting_Subsetting.Name =
-        "button_Clinic_Setting_Subsetting";
-    this.button_Clinic_Setting_Subsetting.Padding =
-        new System.Windows.Forms.Padding(35, 0, 0, 0);
-    this.button_Clinic_Setting_Subsetting.Size =
-        new System.Drawing.Size(250, 40);
-    this.button_Clinic_Setting_Subsetting.TabIndex = 0;
-    this.button_Clinic_Setting_Subsetting.Text = "Clinic Setting";
-    this.button_Clinic_Setting_Subsetting.TextAlign =
-        System.Drawing.ContentAlignment.MiddleLeft;
-    this.button_Clinic_Setting_Subsetting.UseVisualStyleBackColor = true;
-    this.button_Clinic_Setting_Subsetting.Click +=
-        new System.EventHandler(this.button_Clinic_Setting_Subsetting_Click);
-    //
-    // button_Setting
-    //
-    this.button_Setting.BackColor = System.Drawing.Color.Black;
-    this.button_Setting.Dock = System.Windows.Forms.DockStyle.Top;
-    this.button_Setting.FlatAppearance.BorderSize = 0;
-    this.button_Setting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-    this.button_Setting.Font = new System.Drawing.Font(
-        "Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold,
-        System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-    this.button_Setting.ForeColor = System.Drawing.Color.LightGray;
-    this.button_Setting.Location = new System.Drawing.Point(0, 239);
-    this.button_Setting.Name = "button_Setting";
-    this.button_Setting.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-    this.button_Setting.Size = new System.Drawing.Size(250, 45);
-    this.button_Setting.TabIndex = 4;
-    this.button_Setting.Text = "Settings";
-    this.button_Setting.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-    this.button_Setting.UseVisualStyleBackColor = false;
-    this.button_Setting.Click +=
-        new System.EventHandler(this.button_Setting_Click);
-    //
-    // button_Appoinment
-    //
-    this.button_Appoinment.Dock = System.Windows.Forms.DockStyle.Top;
-    this.button_Appoinment.FlatAppearance.BorderSize = 0;
-    this.button_Appoinment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-    this.button_Appoinment.Font = new System.Drawing.Font(
-        "Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold,
-        System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-    this.button_Appoinment.ForeColor = System.Drawing.Color.LightGray;
-    this.button_Appoinment.Location = new System.Drawing.Point(0, 194);
-    this.button_Appoinment.Name = "button_Appoinment";
-    this.button_Appoinment.Padding =
-        new System.Windows.Forms.Padding(10, 0, 0, 0);
-    this.button_Appoinment.Size = new System.Drawing.Size(250, 45);
-    this.button_Appoinment.TabIndex = 3;
-    this.button_Appoinment.Text = "Appointments";
-    this.button_Appoinment.TextAlign =
-        System.Drawing.ContentAlignment.MiddleLeft;
-    this.button_Appoinment.UseVisualStyleBackColor = true;
-    this.button_Appoinment.Click +=
-        new System.EventHandler(this.button_Appoinment_Click);
-    //
-    // button_Patiants
-    //
-    this.button_Patiants.Dock = System.Windows.Forms.DockStyle.Top;
-    this.button_Patiants.FlatAppearance.BorderSize = 0;
-    this.button_Patiants.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-    this.button_Patiants.Font = new System.Drawing.Font(
-        "Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold,
-        System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-    this.button_Patiants.ForeColor = System.Drawing.Color.LightGray;
-    this.button_Patiants.Location = new System.Drawing.Point(0, 149);
-    this.button_Patiants.Name = "button_Patiants";
-    this.button_Patiants.Padding =
-        new System.Windows.Forms.Padding(10, 0, 0, 0);
-    this.button_Patiants.Size = new System.Drawing.Size(250, 45);
-    this.button_Patiants.TabIndex = 2;
-    this.button_Patiants.Text = "Patients";
-    this.button_Patiants.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-    this.button_Patiants.UseVisualStyleBackColor = true;
-    this.button_Patiants.Click +=
-        new System.EventHandler(this.buttonPatiants_Click);
-    //
-    // button_Dashboard
-    //
-    this.button_Dashboard.Dock = System.Windows.Forms.DockStyle.Top;
-    this.button_Dashboard.FlatAppearance.BorderSize = 0;
-    this.button_Dashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-    this.button_Dashboard.Font = new System.Drawing.Font(
-        "Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold,
-        System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-    this.button_Dashboard.ForeColor = System.Drawing.Color.LightGray;
-    this.button_Dashboard.Location = new System.Drawing.Point(0, 104);
-    this.button_Dashboard.Name = "button_Dashboard";
-    this.button_Dashboard.Padding =
-        new System.Windows.Forms.Padding(10, 0, 0, 0);
-    this.button_Dashboard.Size = new System.Drawing.Size(250, 45);
-    this.button_Dashboard.TabIndex = 1;
-    this.button_Dashboard.Text = "Dashboard";
-    this.button_Dashboard.TextAlign =
-        System.Drawing.ContentAlignment.MiddleLeft;
-    this.button_Dashboard.UseVisualStyleBackColor = true;
-    this.button_Dashboard.Click +=
-        new System.EventHandler(this.button_Dashboard_Click);
-    //
-    // panelLogo
-    //
-    this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
-    this.panelLogo.Location = new System.Drawing.Point(0, 0);
-    this.panelLogo.Name = "panelLogo";
-    this.panelLogo.Size = new System.Drawing.Size(250, 104);
-    this.panelLogo.TabIndex = 0;
-    //
-    // FrmMain
-    //
-    this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-    this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-    this.ClientSize = new System.Drawing.Size(669, 491);
-    this.Controls.Add(this.panelSideMenu);
-    this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-    this.Name = "FrmMain";
-    this.Text = "Home";
-    this.panelSideMenu.ResumeLayout(false);
-    this.panel1.ResumeLayout(false);
-    this.ResumeLayout(false);
-  }
-
-  private System.Windows.Forms.Panel panelSideMenu;
-  private System.Windows.Forms.Button button_Dashboard;
-  private System.Windows.Forms.Panel panelLogo;
-  private System.Windows.Forms.Button button_Patiants;
-  private System.Windows.Forms.Panel panel1;
-  private System.Windows.Forms.Button button_Setting;
-  private System.Windows.Forms.Button button_Appoinment;
-  private System.Windows.Forms.Button button_Clinic_Program_Subsetting;
-  private System.Windows.Forms.Button button_Clinic_Setting_Subsetting;
-  private System.Windows.Forms.Button button_About;
-}
 }

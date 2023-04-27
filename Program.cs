@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Clinic_Mang_Sys
+
 {
     internal static class Program
     {
@@ -15,19 +16,20 @@ namespace Clinic_Mang_Sys
         [STAThread]
         private static void Main()
         {
+            //init the connection
+            //Connection.CheckAndCreateTable();
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmMain());
+            Application.Run(new Forms.FrmMain());
         }
 
         public static bool IsInDesignMode(this UserControl container)
         {
-
             if (
                 Application.ExecutablePath.IndexOf("devenv.exe", StringComparison.OrdinalIgnoreCase)
                 > -1
             )
-
             {
                 container.Controls.Add(
                     new Label()
@@ -36,10 +38,8 @@ namespace Clinic_Mang_Sys
                         AutoSize = false,
                         TextAlign = ContentAlignment.MiddleCenter,
                         Dock = DockStyle.Fill
-
                     }
                 );
-
 
                 return true;
             }

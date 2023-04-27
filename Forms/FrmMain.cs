@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace Clinic_Mang_Sys
 {
     public partial class FrmMain : Form
@@ -16,21 +17,19 @@ namespace Clinic_Mang_Sys
         {
             InitializeComponent();
         }
+        private void navigtionMenu1_OnItemSelected(object sender, string path, EventArgs e)
+        {
 
-        private void buttonPatiants_Click(object sender, EventArgs e) { }
 
-        private void panelSideMenu_Paint(object sender, PaintEventArgs e) { }
+            bunifuAppBar1.Title = path;
+            pages.SetPage(path);
+        }
 
-        private void button_Dashboard_Click(object sender, EventArgs e) { }
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            timer1.Stop();
+            bunifuFormDock1.WindowState = Bunifu.UI.WinForms.BunifuFormDock.FormWindowStates.Maximized;
+        }
 
-        private void button_Appoinment_Click(object sender, EventArgs e) { }
-
-        private void button_Setting_Click(object sender, EventArgs e) { }
-
-        private void button_Clinic_Setting_Subsetting_Click(object sender, EventArgs e) { }
-
-        private void button_Clinic_Program_Subsetting_Click(object sender, EventArgs e) { }
-
-        private void button_About_Click(object sender, EventArgs e) { }
     }
 }
