@@ -1,5 +1,5 @@
 ﻿
-namespace ClinicXProMax.Forms
+namespace Clinic_Mang_Sys
 {
     partial class FrmMain
     {
@@ -161,8 +161,8 @@ namespace ClinicXProMax.Forms
             // 
             this.pages.Alignment = System.Windows.Forms.TabAlignment.Bottom;
             this.pages.AllowTransitions = false;
-            this.pages.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.pages.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pages.Controls.Add(this.tabPage1);
             this.pages.Controls.Add(this.tabPage2);
