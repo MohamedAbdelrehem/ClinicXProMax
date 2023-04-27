@@ -8,7 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ClinicXProMax.Forms
+
+namespace Clinic_Mang_Sys
 {
     public partial class FrmMain : Form
     {
@@ -16,7 +17,6 @@ namespace ClinicXProMax.Forms
         {
             InitializeComponent();
         }
-
         private void navigtionMenu1_OnItemSelected(object sender, string path, EventArgs e)
         {
 
@@ -30,5 +30,6 @@ namespace ClinicXProMax.Forms
             timer1.Stop();
             bunifuFormDock1.WindowState = Bunifu.UI.WinForms.BunifuFormDock.FormWindowStates.Maximized;
         }
+
     }
 }

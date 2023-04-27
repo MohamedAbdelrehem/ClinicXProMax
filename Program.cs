@@ -5,7 +5,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ClinicXProMax
+namespace Clinic_Mang_Sys
+
 {
     internal static class Program
     {
