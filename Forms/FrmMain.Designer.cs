@@ -80,7 +80,7 @@ partial class FrmMain {
             this.panelSideMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSideMenu.Location = new System.Drawing.Point(0, 0);
             this.panelSideMenu.Name = "panelSideMenu";
-            this.panelSideMenu.Size = new System.Drawing.Size(250, 561);
+            this.panelSideMenu.Size = new System.Drawing.Size(250, 655);
             this.panelSideMenu.TabIndex = 0;
             // 
             // panel2
@@ -89,7 +89,7 @@ partial class FrmMain {
             this.panel2.Controls.Add(this.NameOfAdmin);
             this.panel2.Controls.Add(this.bunifuPictureBox2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 526);
+            this.panel2.Location = new System.Drawing.Point(0, 620);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(250, 35);
             this.panel2.TabIndex = 15;
@@ -327,7 +327,7 @@ partial class FrmMain {
             this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelChildForm.Location = new System.Drawing.Point(250, 0);
             this.panelChildForm.Name = "panelChildForm";
-            this.panelChildForm.Size = new System.Drawing.Size(834, 561);
+            this.panelChildForm.Size = new System.Drawing.Size(834, 655);
             this.panelChildForm.TabIndex = 2;
             // 
             // pictureBox7
@@ -336,7 +336,7 @@ partial class FrmMain {
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
             this.pictureBox7.Location = new System.Drawing.Point(0, 0);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(834, 561);
+            this.pictureBox7.Size = new System.Drawing.Size(834, 655);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox7.TabIndex = 0;
             this.pictureBox7.TabStop = false;
@@ -345,7 +345,7 @@ partial class FrmMain {
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1084, 561);
+            this.ClientSize = new System.Drawing.Size(1084, 655);
             this.Controls.Add(this.panelChildForm);
             this.Controls.Add(this.panelSideMenu);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
