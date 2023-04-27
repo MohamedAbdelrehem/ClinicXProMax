@@ -8,75 +8,27 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Clinic_Mang_Sys {
-public partial class FrmMain : Form {
-    public FrmMain() 
-        { 
+namespace ClinicXProMax.Forms
+{
+    public partial class FrmMain : Form
+    {
+        public FrmMain()
+        {
             InitializeComponent();
-            customizeDesing();
-        }
-        private void customizeDesing()
-        {
-            panelSettingSubsetting.Visible = false;
         }
 
-        private void hideSubsetting()
+        private void navigtionMenu1_OnItemSelected(object sender, string path, EventArgs e)
         {
-            if (panelSettingSubsetting.Visible == true)
-                panelSettingSubsetting.Visible = false;
-        }
-        private void showSubsetting(Panel subsetting)
-        {
-            if (subsetting.Visible == false)
-            {
-                hideSubsetting();
-                subsetting.Visible = true;
 
-            }
-            else
-            {
-                subsetting.Visible = false;
-            }
+
+            bunifuAppBar1.Title = path;
+            pages.SetPage(path);
         }
 
-        private void Setting_page_Click(object sender, EventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
         {
-            showSubsetting(panelSettingSubsetting);
-        }
-
-        private void Clinic_Subsetting_Click(object sender, EventArgs e)
-        {
-            hideSubsetting();
-        }
-
-        private void Program_Subsetting_Click(object sender, EventArgs e)
-        {
-            hideSubsetting();
-        }
-
-        private void About_Page_Click(object sender, EventArgs e)
-        {
-
-        }
-        private Form activeForm = null;
-        private void openChildForm(Form childForm)
-        {
-            if (activeForm != null)
-                activeForm.Close();
-            activeForm = childForm;
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-            panelChildForm.Controls.Add(childForm);
-            panelChildForm.Tag = childForm;
-            childForm.BringToFront();
-            childForm.Show();
-        }
-
-        private void pictureBox6_Click(object sender, EventArgs e)
-        {
-
+            timer1.Stop();
+            bunifuFormDock1.WindowState = Bunifu.UI.WinForms.BunifuFormDock.FormWindowStates.Maximized;
         }
     }
-
 }
