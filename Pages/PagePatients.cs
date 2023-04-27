@@ -41,7 +41,7 @@ namespace Clinic_Mang_Sys.Pages
             InitializeComponent();
             //gridPatients.DataSource = Patients;
             //LoadDataOld("select Name, Phone, Email, Address, DOB, Gender, Allergies,CreatedAt from Patients");
-            LoadData();
+            //LoadData();
 
             gridPatients.OnDelete<Patients>((a, b) => Db.Get().Delete(a) >= 0);
         }

@@ -35,16 +35,20 @@ namespace Clinic_Mang_Sys
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.navigtionMenu1 = new Kimtoo.NavigtionMenu();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.pages = new Bunifu.UI.WinForms.BunifuPages();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
+            this.pages = new Bunifu.UI.WinForms.BunifuPages();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.pagePatients1 = new Clinic_Mang_Sys.Pages.PagePatients();
+            this.pageAppointments1 = new Clinic_Mang_Sys.Pages.PageAppointments();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pages.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // bunifuAppBar1
@@ -116,85 +120,12 @@ namespace Clinic_Mang_Sys
             this.navigtionMenu1.Name = "navigtionMenu1";
             this.navigtionMenu1.Size = new System.Drawing.Size(199, 472);
             this.navigtionMenu1.TabIndex = 0;
+            this.navigtionMenu1.OnItemSelected += new Kimtoo.NavigtionMenu.OnSelectEventHandler(this.navigtionMenu1_OnItemSelected);
             // 
-            // tabPage2
+            // timer1
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
-            this.tabPage2.Location = new System.Drawing.Point(4, 4);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1007, 641);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Patients";
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
-            this.tabPage3.Location = new System.Drawing.Point(4, 4);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1007, 641);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Appointments";
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
-            this.tabPage1.Location = new System.Drawing.Point(4, 4);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1007, 641);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Dashboard";
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
-            this.tabPage4.Location = new System.Drawing.Point(4, 4);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1007, 641);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Settings";
-            // 
-            // pages
-            // 
-            this.pages.Alignment = System.Windows.Forms.TabAlignment.Bottom;
-            this.pages.AllowTransitions = false;
-            this.pages.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pages.Controls.Add(this.tabPage1);
-            this.pages.Controls.Add(this.tabPage2);
-            this.pages.Controls.Add(this.tabPage3);
-            this.pages.Controls.Add(this.tabPage4);
-            this.pages.Location = new System.Drawing.Point(261, 48);
-            this.pages.Multiline = true;
-            this.pages.Name = "pages";
-            this.pages.Page = this.tabPage2;
-            this.pages.PageIndex = 1;
-            this.pages.PageName = "tabPage2";
-            this.pages.PageTitle = "Patients";
-            this.pages.SelectedIndex = 0;
-            this.pages.Size = new System.Drawing.Size(1015, 667);
-            this.pages.TabIndex = 5;
-            animation1.AnimateOnlyDifferences = false;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.pages.Transition = animation1;
-            this.pages.TransitionType = Utilities.BunifuPages.BunifuAnimatorNS.AnimationType.Custom;
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // bunifuFormDock1
             // 
@@ -236,15 +167,112 @@ namespace Clinic_Mang_Sys
             this.bunifuFormDock1.TitleBarOptions.TitleBarControl = null;
             this.bunifuFormDock1.TitleBarOptions.UseBackColorOnDockingIndicators = false;
             // 
+            // pages
+            // 
+            this.pages.Alignment = System.Windows.Forms.TabAlignment.Bottom;
+            this.pages.AllowTransitions = false;
+            this.pages.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pages.Controls.Add(this.tabPage1);
+            this.pages.Controls.Add(this.tabPage2);
+            this.pages.Controls.Add(this.tabPage3);
+            this.pages.Controls.Add(this.tabPage4);
+            this.pages.Location = new System.Drawing.Point(261, 52);
+            this.pages.Multiline = true;
+            this.pages.Name = "pages";
+            this.pages.Page = this.tabPage1;
+            this.pages.PageIndex = 0;
+            this.pages.PageName = "tabPage1";
+            this.pages.PageTitle = "Dashboard";
+            this.pages.SelectedIndex = 0;
+            this.pages.Size = new System.Drawing.Size(1015, 656);
+            this.pages.TabIndex = 5;
+            animation1.AnimateOnlyDifferences = false;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.pages.Transition = animation1;
+            this.pages.TransitionType = Utilities.BunifuPages.BunifuAnimatorNS.AnimationType.Custom;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
+            this.tabPage1.Location = new System.Drawing.Point(4, 4);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(1007, 630);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Dashboard";
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
+            this.tabPage2.Controls.Add(this.pagePatients1);
+            this.tabPage2.Location = new System.Drawing.Point(4, 4);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1007, 630);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Patients";
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
+            this.tabPage3.Controls.Add(this.pageAppointments1);
+            this.tabPage3.Location = new System.Drawing.Point(4, 4);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(1007, 630);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Appointments";
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
+            this.tabPage4.Location = new System.Drawing.Point(4, 4);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(1007, 630);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Settings";
+            // 
+            // pagePatients1
+            // 
+            this.pagePatients1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pagePatients1.Location = new System.Drawing.Point(3, 3);
+            this.pagePatients1.Name = "pagePatients1";
+            this.pagePatients1.Size = new System.Drawing.Size(1001, 624);
+            this.pagePatients1.TabIndex = 0;
+            // 
+            // pageAppointments1
+            // 
+            this.pageAppointments1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pageAppointments1.Location = new System.Drawing.Point(3, 3);
+            this.pageAppointments1.Name = "pageAppointments1";
+            this.pageAppointments1.Size = new System.Drawing.Size(1001, 624);
+            this.pageAppointments1.TabIndex = 0;
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
             this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.Controls.Add(this.pages);
             this.Controls.Add(this.bunifuAppBar1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.pages);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MinimumSize = new System.Drawing.Size(1100, 680);
@@ -254,6 +282,8 @@ namespace Clinic_Mang_Sys
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pages.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -262,12 +292,14 @@ namespace Clinic_Mang_Sys
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Kimtoo.NavigtionMenu navigtionMenu1;
+        private System.Windows.Forms.Timer timer1;
+        private Bunifu.UI.WinForms.BunifuFormDock bunifuFormDock1;
         private Bunifu.UI.WinForms.BunifuPages pages;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
+        private Pages.PagePatients pagePatients1;
         private System.Windows.Forms.TabPage tabPage3;
+        private Pages.PageAppointments pageAppointments1;
         private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.Timer timer1;
-        private Bunifu.UI.WinForms.BunifuFormDock bunifuFormDock1;
     }
 }

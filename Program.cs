@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Clinic_Mang_Sys
-
 {
     internal static class Program
     {
@@ -21,7 +20,7 @@ namespace Clinic_Mang_Sys
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Forms.FrmMain());
+            Application.Run(new FrmMain());
         }
 
         public static bool IsInDesignMode(this UserControl container)
