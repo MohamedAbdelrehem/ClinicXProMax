@@ -147,6 +147,7 @@
     <Reference Include="Kimtoo.ValidationProvider, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\Kimtoo.ValidationProvider.1.0.8\lib\net452\Kimtoo.ValidationProvider.dll</HintPath>
     </Reference>
+
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=5.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.5.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
@@ -218,12 +219,17 @@
       <DependentUpon>PageDashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Patients.cs" />
-
     <Compile Include="Pages\PageAppointments.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Pages\PageAppointments.Designer.cs">
       <DependentUpon>PageAppointments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PagePatients.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\PagePatients.Designer.cs">
+      <DependentUpon>PagePatients.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -238,6 +244,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\PageAppointments.resx">
       <DependentUpon>PageAppointments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\PagePatients.resx">
+      <DependentUpon>PagePatients.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

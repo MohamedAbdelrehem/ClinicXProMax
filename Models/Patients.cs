@@ -14,7 +14,7 @@ namespace Clinic_Mang_Sys.Models
     {
         [AutoIncrement, PrimaryKey]
         public int Id { get; set; }
-
+        [ForeignKey(typeof(Patients), OnDelete = "CASCADE")]
         public string Name { get; set; } = "";
 
         public string Phone { get; set; } = "";
