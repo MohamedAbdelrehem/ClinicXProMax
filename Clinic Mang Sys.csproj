@@ -211,7 +211,14 @@
     </Compile>
     <Compile Include="Lib\Common.cs" />
     <Compile Include="Models\Appointment.cs" />
+    <Compile Include="Pages\PageDashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\PageDashboard.Designer.cs">
+      <DependentUpon>PageDashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\Patients.cs" />
+
     <Compile Include="Pages\PageAppointments.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -225,6 +232,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\PageDashboard.resx">
+      <DependentUpon>PageDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\PageAppointments.resx">
       <DependentUpon>PageAppointments.cs</DependentUpon>
