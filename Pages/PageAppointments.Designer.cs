@@ -1472,7 +1472,6 @@ partial class PageAppointments {
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
-            this.Controls.Add(this.gridAppointment);
             this.Controls.Add(this.SearchTextBox);
             this.Controls.Add(this.pnlDrawwer);
             this.Controls.Add(this.btnAdd);
@@ -1481,6 +1480,7 @@ partial class PageAppointments {
             this.Controls.Add(this.TabGrid);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnTreatment);
+            this.Controls.Add(this.gridAppointment);
             this.DoubleBuffered = true;
             validationObject24.CustomErrorMessage = "";
             validationObject24.Optional = false;
