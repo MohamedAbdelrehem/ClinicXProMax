@@ -75,7 +75,12 @@ Please note that ClinicXProMax currently only works on Windows.
 
 <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" align="center" alt="windows badge" />
 
-## 🤝 Contributing
+## 🔜 To Do
+
+- [ ] Add Arabic Language 🌍
+- [ ] Make custom Color Accent 🎨
+
+## 🤝 How to Contributing
 
 We welcome contributions to ClinicXProMax! If you're interested in contributing, please follow these steps:
 
