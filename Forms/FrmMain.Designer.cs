@@ -31,25 +31,62 @@ namespace Clinic_Mang_Sys
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             Utilities.BunifuPages.BunifuAnimatorNS.Animation animation1 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
+            this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
             this.bunifuAppBar1 = new Bunifu.Utils.BunifuAppBar();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.navigtionMenu1 = new Kimtoo.NavigtionMenu();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
-            this.pages = new Bunifu.UI.WinForms.BunifuPages();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.pagePatients1 = new Clinic_Mang_Sys.Pages.PagePatients();
-            this.pageAppointments1 = new Clinic_Mang_Sys.Pages.PageAppointments();
+            this.pages = new Bunifu.UI.WinForms.BunifuPages();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pages.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // bunifuFormDock1
+            // 
+            this.bunifuFormDock1.AllowFormDragging = true;
+            this.bunifuFormDock1.AllowFormDropShadow = true;
+            this.bunifuFormDock1.AllowFormResizing = true;
+            this.bunifuFormDock1.AllowHidingBottomRegion = true;
+            this.bunifuFormDock1.AllowOpacityChangesWhileDragging = false;
+            this.bunifuFormDock1.BorderOptions.BottomBorder.BorderColor = System.Drawing.Color.Silver;
+            this.bunifuFormDock1.BorderOptions.BottomBorder.BorderThickness = 1;
+            this.bunifuFormDock1.BorderOptions.BottomBorder.ShowBorder = true;
+            this.bunifuFormDock1.BorderOptions.LeftBorder.BorderColor = System.Drawing.Color.Silver;
+            this.bunifuFormDock1.BorderOptions.LeftBorder.BorderThickness = 1;
+            this.bunifuFormDock1.BorderOptions.LeftBorder.ShowBorder = true;
+            this.bunifuFormDock1.BorderOptions.RightBorder.BorderColor = System.Drawing.Color.Silver;
+            this.bunifuFormDock1.BorderOptions.RightBorder.BorderThickness = 1;
+            this.bunifuFormDock1.BorderOptions.RightBorder.ShowBorder = true;
+            this.bunifuFormDock1.BorderOptions.TopBorder.BorderColor = System.Drawing.Color.Silver;
+            this.bunifuFormDock1.BorderOptions.TopBorder.BorderThickness = 1;
+            this.bunifuFormDock1.BorderOptions.TopBorder.ShowBorder = true;
+            this.bunifuFormDock1.ContainerControl = this;
+            this.bunifuFormDock1.DockingIndicatorsColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(215)))), ((int)(((byte)(233)))));
+            this.bunifuFormDock1.DockingIndicatorsOpacity = 0.5D;
+            this.bunifuFormDock1.DockingOptions.DockAll = true;
+            this.bunifuFormDock1.DockingOptions.DockBottomLeft = true;
+            this.bunifuFormDock1.DockingOptions.DockBottomRight = true;
+            this.bunifuFormDock1.DockingOptions.DockFullScreen = true;
+            this.bunifuFormDock1.DockingOptions.DockLeft = true;
+            this.bunifuFormDock1.DockingOptions.DockRight = true;
+            this.bunifuFormDock1.DockingOptions.DockTopLeft = true;
+            this.bunifuFormDock1.DockingOptions.DockTopRight = true;
+            this.bunifuFormDock1.FormDraggingOpacity = 0.9D;
+            this.bunifuFormDock1.ParentForm = this;
+            this.bunifuFormDock1.ShowCursorChanges = true;
+            this.bunifuFormDock1.ShowDockingIndicators = true;
+            this.bunifuFormDock1.TitleBarOptions.AllowFormDragging = true;
+            this.bunifuFormDock1.TitleBarOptions.BunifuFormDock = this.bunifuFormDock1;
+            this.bunifuFormDock1.TitleBarOptions.DoubleClickToExpandWindow = true;
+            this.bunifuFormDock1.TitleBarOptions.TitleBarControl = null;
+            this.bunifuFormDock1.TitleBarOptions.UseBackColorOnDockingIndicators = false;
             // 
             // bunifuAppBar1
             // 
@@ -122,50 +159,45 @@ namespace Clinic_Mang_Sys
             this.navigtionMenu1.TabIndex = 0;
             this.navigtionMenu1.OnItemSelected += new Kimtoo.NavigtionMenu.OnSelectEventHandler(this.navigtionMenu1_OnItemSelected);
             // 
-            // timer1
+            // tabPage2
             // 
-            this.timer1.Enabled = true;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
+            this.tabPage2.Location = new System.Drawing.Point(4, 4);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1007, 641);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Patients";
             // 
-            // bunifuFormDock1
+            // tabPage3
             // 
-            this.bunifuFormDock1.AllowFormDragging = true;
-            this.bunifuFormDock1.AllowFormDropShadow = true;
-            this.bunifuFormDock1.AllowFormResizing = true;
-            this.bunifuFormDock1.AllowHidingBottomRegion = true;
-            this.bunifuFormDock1.AllowOpacityChangesWhileDragging = false;
-            this.bunifuFormDock1.BorderOptions.BottomBorder.BorderColor = System.Drawing.Color.Silver;
-            this.bunifuFormDock1.BorderOptions.BottomBorder.BorderThickness = 1;
-            this.bunifuFormDock1.BorderOptions.BottomBorder.ShowBorder = true;
-            this.bunifuFormDock1.BorderOptions.LeftBorder.BorderColor = System.Drawing.Color.Silver;
-            this.bunifuFormDock1.BorderOptions.LeftBorder.BorderThickness = 1;
-            this.bunifuFormDock1.BorderOptions.LeftBorder.ShowBorder = true;
-            this.bunifuFormDock1.BorderOptions.RightBorder.BorderColor = System.Drawing.Color.Silver;
-            this.bunifuFormDock1.BorderOptions.RightBorder.BorderThickness = 1;
-            this.bunifuFormDock1.BorderOptions.RightBorder.ShowBorder = true;
-            this.bunifuFormDock1.BorderOptions.TopBorder.BorderColor = System.Drawing.Color.Silver;
-            this.bunifuFormDock1.BorderOptions.TopBorder.BorderThickness = 1;
-            this.bunifuFormDock1.BorderOptions.TopBorder.ShowBorder = true;
-            this.bunifuFormDock1.ContainerControl = this;
-            this.bunifuFormDock1.DockingIndicatorsColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(215)))), ((int)(((byte)(233)))));
-            this.bunifuFormDock1.DockingIndicatorsOpacity = 0.5D;
-            this.bunifuFormDock1.DockingOptions.DockAll = true;
-            this.bunifuFormDock1.DockingOptions.DockBottomLeft = true;
-            this.bunifuFormDock1.DockingOptions.DockBottomRight = true;
-            this.bunifuFormDock1.DockingOptions.DockFullScreen = true;
-            this.bunifuFormDock1.DockingOptions.DockLeft = true;
-            this.bunifuFormDock1.DockingOptions.DockRight = true;
-            this.bunifuFormDock1.DockingOptions.DockTopLeft = true;
-            this.bunifuFormDock1.DockingOptions.DockTopRight = true;
-            this.bunifuFormDock1.FormDraggingOpacity = 0.9D;
-            this.bunifuFormDock1.ParentForm = this;
-            this.bunifuFormDock1.ShowCursorChanges = true;
-            this.bunifuFormDock1.ShowDockingIndicators = true;
-            this.bunifuFormDock1.TitleBarOptions.AllowFormDragging = true;
-            this.bunifuFormDock1.TitleBarOptions.BunifuFormDock = this.bunifuFormDock1;
-            this.bunifuFormDock1.TitleBarOptions.DoubleClickToExpandWindow = true;
-            this.bunifuFormDock1.TitleBarOptions.TitleBarControl = null;
-            this.bunifuFormDock1.TitleBarOptions.UseBackColorOnDockingIndicators = false;
+            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
+            this.tabPage3.Location = new System.Drawing.Point(4, 4);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(1007, 641);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Appointments";
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
+            this.tabPage1.Location = new System.Drawing.Point(4, 4);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(1007, 641);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Dashboard";
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
+            this.tabPage4.Location = new System.Drawing.Point(4, 4);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(1007, 641);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Settings";
             // 
             // pages
             // 
@@ -177,8 +209,9 @@ namespace Clinic_Mang_Sys
             this.pages.Controls.Add(this.tabPage1);
             this.pages.Controls.Add(this.tabPage2);
             this.pages.Controls.Add(this.tabPage3);
+            this.pages.Controls.Add(this.tabPage5);
             this.pages.Controls.Add(this.tabPage4);
-            this.pages.Location = new System.Drawing.Point(261, 52);
+            this.pages.Location = new System.Drawing.Point(261, 48);
             this.pages.Multiline = true;
             this.pages.Name = "pages";
             this.pages.Page = this.tabPage1;
@@ -186,7 +219,7 @@ namespace Clinic_Mang_Sys
             this.pages.PageName = "tabPage1";
             this.pages.PageTitle = "Dashboard";
             this.pages.SelectedIndex = 0;
-            this.pages.Size = new System.Drawing.Size(1015, 656);
+            this.pages.Size = new System.Drawing.Size(1015, 667);
             this.pages.TabIndex = 5;
             animation1.AnimateOnlyDifferences = false;
             animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
@@ -206,63 +239,20 @@ namespace Clinic_Mang_Sys
             this.pages.Transition = animation1;
             this.pages.TransitionType = Utilities.BunifuPages.BunifuAnimatorNS.AnimationType.Custom;
             // 
-            // tabPage1
+            // tabPage5
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
-            this.tabPage1.Location = new System.Drawing.Point(4, 4);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1007, 630);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Dashboard";
+            this.tabPage5.Location = new System.Drawing.Point(4, 4);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(1007, 641);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Sessions";
+            this.tabPage5.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // timer1
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
-            this.tabPage2.Controls.Add(this.pagePatients1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 4);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1007, 630);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Patients";
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
-            this.tabPage3.Controls.Add(this.pageAppointments1);
-            this.tabPage3.Location = new System.Drawing.Point(4, 4);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1007, 630);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Appointments";
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
-            this.tabPage4.Location = new System.Drawing.Point(4, 4);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1007, 630);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Settings";
-            // 
-            // pagePatients1
-            // 
-            this.pagePatients1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pagePatients1.Location = new System.Drawing.Point(3, 3);
-            this.pagePatients1.Name = "pagePatients1";
-            this.pagePatients1.Size = new System.Drawing.Size(1001, 624);
-            this.pagePatients1.TabIndex = 0;
-            // 
-            // pageAppointments1
-            // 
-            this.pageAppointments1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pageAppointments1.Location = new System.Drawing.Point(3, 3);
-            this.pageAppointments1.Name = "pageAppointments1";
-            this.pageAppointments1.Size = new System.Drawing.Size(1001, 624);
-            this.pageAppointments1.TabIndex = 0;
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // FrmMain
             // 
@@ -270,9 +260,9 @@ namespace Clinic_Mang_Sys
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
             this.ClientSize = new System.Drawing.Size(1280, 720);
-            this.Controls.Add(this.pages);
             this.Controls.Add(this.bunifuAppBar1);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pages);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MinimumSize = new System.Drawing.Size(1100, 680);
@@ -282,24 +272,21 @@ namespace Clinic_Mang_Sys
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pages.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
+        private Bunifu.UI.WinForms.BunifuFormDock bunifuFormDock1;
         private Bunifu.Utils.BunifuAppBar bunifuAppBar1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Kimtoo.NavigtionMenu navigtionMenu1;
-        private System.Windows.Forms.Timer timer1;
-        private Bunifu.UI.WinForms.BunifuFormDock bunifuFormDock1;
         private Bunifu.UI.WinForms.BunifuPages pages;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private Pages.PagePatients pagePatients1;
         private System.Windows.Forms.TabPage tabPage3;
-        private Pages.PageAppointments pageAppointments1;
+        private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.Timer timer1;
     }
 }
