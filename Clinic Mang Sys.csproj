@@ -228,9 +228,11 @@
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
     <Compile Include="Lib\Common.cs" />
+    <Compile Include="Lib\Lang.cs" />
     <Compile Include="Lib\MyToggleButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Lib\ThemeColor.cs" />
     <Compile Include="Models\Appointment.cs" />
     <Compile Include="Pages\PageDashboard.cs">
       <SubType>UserControl</SubType>
