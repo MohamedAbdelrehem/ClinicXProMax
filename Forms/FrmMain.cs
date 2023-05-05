@@ -18,15 +18,20 @@ namespace Clinic_Mang_Sys
             InitializeComponent();
 
             //to choose the language Temp
-            Lang.lang = "En"; //En,Ar
         }
 
         private void navigtionMenu1_OnItemSelected(object sender, string path, EventArgs e)
         {
+            if (path == "Settings")
+            {
+                //for loading UI
+                Cursor.Current = Cursors.WaitCursor;
+                //new FrmSettings().ShowDialog();
+                return;
+            }
             bunifuAppBar1.Title = path;
             pages.SetPage(path);
         }
-
         private void timer1_Tick(object sender, EventArgs e)
         {
             timer1.Stop();
