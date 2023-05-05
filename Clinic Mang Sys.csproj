@@ -234,6 +234,8 @@
     </Compile>
     <Compile Include="Lib\ThemeColor.cs" />
     <Compile Include="Models\Appointment.cs" />
+    <Compile Include="Models\Bill.cs" />
+    <Compile Include="Models\Treatment.cs" />
     <Compile Include="Pages\PageDashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>

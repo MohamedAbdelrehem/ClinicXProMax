@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-//using Kimtoo.DbManager;
 using ServiceStack.DataAnnotations;
 
 namespace Clinic_Mang_Sys.Models
@@ -14,6 +9,7 @@ namespace Clinic_Mang_Sys.Models
     {
         [AutoIncrement, PrimaryKey]
         public int Id { get; set; }
+
         [ForeignKey(typeof(Patients), OnDelete = "CASCADE")]
         public string Name { get; set; } = "";
 
@@ -25,7 +21,5 @@ namespace Clinic_Mang_Sys.Models
         public string Gender { get; set; } = "";
         public string Allergies { get; set; } = "";
         public DateTime CreatedAt { get; set; } = DateTime.Now;
-
-
     }
 }
