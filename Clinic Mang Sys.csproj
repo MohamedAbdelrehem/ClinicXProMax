@@ -145,6 +145,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\Clinic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Clinic.Designer.cs">
+      <DependentUpon>Clinic.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\login_page.cs">
       <SubType>Form</SubType>
     </Compile>
