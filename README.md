@@ -24,10 +24,11 @@
 <a href="#-tech-stack">💻 Tech stack</a> &nbsp;&bull;&nbsp;
 <a href="#%EF%B8%8F-installation">🛠️ Installation</a>
 <br>
-<a href="#-contributing">🤝 Contributing</a> &nbsp;&bull;&nbsp;
+<a href="#-to-do">🔜 To Do</a> &nbsp;&bull;&nbsp;
+<a href="#-how-to-contribute">🤝 How to contribute</a> &nbsp;&bull;&nbsp;
 <a href="#%EF%B8%8F-license">⚠️ License</a> &nbsp;&bull;&nbsp;
 <a href="#-spread-the-word">🌟 Spread the word!</a> &nbsp;&bull;&nbsp;
-<a href="#special-thanks-for-minia-university-especially-drabdullah-hassan-and-engshimaa-younis-for-there-support-for-this-project">💛Special thanks</a>
+<a href="#special-thanks-for-minia-university-especially-drabdullah-hassan-and-engal-shaimaa-a-younis-for-there-support-for-this-project">💛Special thanks</a>
 </p>
  <h1 align="center">ClinicXProMax</h1>
  <p align="center">From Appointments to Billing, We've Got You Covered</p>
@@ -84,7 +85,7 @@ Please note that ClinicXProMax currently only works on Windows.
 - [ ] About Us
 
 
-## 🤝 How to Contributing
+## 🤝 How to contribute
 
 We welcome contributions to ClinicXProMax! If you're interested in contributing, please follow these steps:
 
