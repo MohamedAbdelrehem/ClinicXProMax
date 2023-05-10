@@ -215,6 +215,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\FrmClinic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmClinic.Designer.cs">
+      <DependentUpon>FrmClinic.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\login_page.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -257,6 +263,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\FrmClinic.resx">
+      <DependentUpon>FrmClinic.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\login_page.resx">
       <DependentUpon>login_page.cs</DependentUpon>
     </EmbeddedResource>
