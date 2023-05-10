@@ -6,7 +6,6 @@ using ServiceStack.OrmLite;
 
 namespace Clinic_Mang_Sys.Models
 {
-    //[AutoGenerateTable(1)]
     [Alias("Appointment")]
     public class Appointment
     {
