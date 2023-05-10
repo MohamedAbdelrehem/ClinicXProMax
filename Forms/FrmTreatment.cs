@@ -1,15 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Globalization;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using Clinic_Mang_Sys.Models;
-using ClinicNew.Lib;
 using Kimtoo.BindingProvider;
 using Kimtoo.DbContext;
 using ServiceStack.OrmLite;

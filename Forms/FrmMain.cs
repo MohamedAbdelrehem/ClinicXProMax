@@ -1,14 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using Clinic_Mang_Sys.Forms;
+using Clinic_Mang_Sys.Lib;
 using Clinic_Mang_Sys.Models;
-using ClinicNew.Lib;
 using Kimtoo.DbContext;
 using Kimtoo.DbManager;
 using ServiceStack.OrmLite;
@@ -40,7 +36,7 @@ namespace Clinic_Mang_Sys
             catch (Exception)
             {
 
-                Connections.Show();
+                //Connections.Show();
             }
 
             //to choose the language Temp
@@ -100,7 +96,7 @@ namespace Clinic_Mang_Sys
             {
                 //for loading UI
                 Cursor.Current = Cursors.WaitCursor;
-                new FrmSettings().ShowDialog();
+                //new FrmSettings().ShowDialog();
                 return;
             }
             if (path == "Settings.Clinic")

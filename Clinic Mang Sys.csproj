@@ -147,6 +147,9 @@
     <Reference Include="Kimtoo.DbContext, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\Kimtoo.DbContext.1.0.2\lib\net45\Kimtoo.DbContext.dll</HintPath>
     </Reference>
+    <Reference Include="Kimtoo.DbManager, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Kimtoo.DbManager.1.0.8\lib\net472\Kimtoo.DbManager.dll</HintPath>
+    </Reference>
     <Reference Include="Kimtoo.Preloader, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\Kimtoo.Preloader.1.0.5\lib\net40\Kimtoo.Preloader.dll</HintPath>
     </Reference>
@@ -227,12 +230,6 @@
     <Compile Include="Forms\FrmTreatment.Designer.cs">
       <DependentUpon>FrmTreatment.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\login_page.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\login_page.Designer.cs">
-      <DependentUpon>login_page.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -247,6 +244,7 @@
     <Compile Include="Lib\ThemeColor.cs" />
     <Compile Include="Models\Appointment.cs" />
     <Compile Include="Models\Bill.cs" />
+    <Compile Include="Models\ClinicInfo.cs" />
     <Compile Include="Models\Treatment.cs" />
     <Compile Include="Pages\PageDashboard.cs">
       <SubType>UserControl</SubType>
@@ -269,17 +267,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-
     <EmbeddedResource Include="Forms\FrmClinic.resx">
       <DependentUpon>FrmClinic.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmTreatment.resx">
       <DependentUpon>FrmTreatment.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\login_page.resx">
-      <DependentUpon>login_page.cs</DependentUpon>
-    </EmbeddedResource>
-
     <EmbeddedResource Include="Forms\FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
