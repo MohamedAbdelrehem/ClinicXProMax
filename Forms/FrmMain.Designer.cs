@@ -99,9 +99,15 @@ namespace Clinic_Mang_Sys
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.validationProvider1 = new Kimtoo.ValidationProvider.ValidationProvider();
             this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
+            this.pageDashboard1 = new Clinic_Mang_Sys.Pages.PageDashboard();
+            this.pagePatients1 = new Clinic_Mang_Sys.Pages.PagePatients();
+            this.pageAppointments1 = new Clinic_Mang_Sys.Pages.PageAppointments();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.bunifuShadowPanel1.SuspendLayout();
             this.tabPage6.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.pages.SuspendLayout();
@@ -573,6 +579,7 @@ namespace Clinic_Mang_Sys
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
+            this.tabPage1.Controls.Add(this.pageDashboard1);
             validationObject9.CustomErrorMessage = "";
             validationObject9.Optional = false;
             validationObject9.PropertyName = "Text";
@@ -613,6 +620,7 @@ namespace Clinic_Mang_Sys
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
+            this.tabPage2.Controls.Add(this.pagePatients1);
             validationObject11.CustomErrorMessage = "";
             validationObject11.Optional = false;
             validationObject11.PropertyName = "Text";
@@ -633,6 +641,7 @@ namespace Clinic_Mang_Sys
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
+            this.tabPage3.Controls.Add(this.pageAppointments1);
             validationObject12.CustomErrorMessage = "";
             validationObject12.Optional = false;
             validationObject12.PropertyName = "Text";
@@ -810,10 +819,10 @@ namespace Clinic_Mang_Sys
             this.pages.Location = new System.Drawing.Point(261, 48);
             this.pages.Multiline = true;
             this.pages.Name = "pages";
-            this.pages.Page = this.tabPage6;
-            this.pages.PageIndex = 0;
-            this.pages.PageName = "tabPage6";
-            this.pages.PageTitle = "Login";
+            this.pages.Page = this.tabPage4;
+            this.pages.PageIndex = 5;
+            this.pages.PageName = "tabPage4";
+            this.pages.PageTitle = "Settings";
             this.pages.SelectedIndex = 0;
             this.pages.Size = new System.Drawing.Size(1015, 667);
             this.pages.TabIndex = 5;
@@ -884,6 +893,36 @@ namespace Clinic_Mang_Sys
             this.bunifuFormDock1.TitleBarOptions.TitleBarControl = null;
             this.bunifuFormDock1.TitleBarOptions.UseBackColorOnDockingIndicators = false;
             // 
+            // pageDashboard1
+            // 
+            this.pageDashboard1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bindingProvider1.SetLink(this.pageDashboard1, null);
+            this.validationProvider1.SetLink(this.pageDashboard1, null);
+            this.pageDashboard1.Location = new System.Drawing.Point(3, 3);
+            this.pageDashboard1.Name = "pageDashboard1";
+            this.pageDashboard1.Size = new System.Drawing.Size(1001, 635);
+            this.pageDashboard1.TabIndex = 0;
+            // 
+            // pagePatients1
+            // 
+            this.pagePatients1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bindingProvider1.SetLink(this.pagePatients1, null);
+            this.validationProvider1.SetLink(this.pagePatients1, null);
+            this.pagePatients1.Location = new System.Drawing.Point(3, 3);
+            this.pagePatients1.Name = "pagePatients1";
+            this.pagePatients1.Size = new System.Drawing.Size(1001, 635);
+            this.pagePatients1.TabIndex = 0;
+            // 
+            // pageAppointments1
+            // 
+            this.pageAppointments1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bindingProvider1.SetLink(this.pageAppointments1, null);
+            this.validationProvider1.SetLink(this.pageAppointments1, null);
+            this.pageAppointments1.Location = new System.Drawing.Point(3, 3);
+            this.pageAppointments1.Name = "pageAppointments1";
+            this.pageAppointments1.Size = new System.Drawing.Size(1001, 635);
+            this.pageAppointments1.TabIndex = 0;
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -903,6 +942,9 @@ namespace Clinic_Mang_Sys
             this.bunifuShadowPanel1.ResumeLayout(false);
             this.bunifuShadowPanel1.PerformLayout();
             this.tabPage6.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.pages.ResumeLayout(false);
@@ -933,5 +975,8 @@ namespace Clinic_Mang_Sys
         private Bunifu.UI.WinForms.BunifuPages pages;
         private System.Windows.Forms.Timer timer1;
         private Bunifu.UI.WinForms.BunifuFormDock bunifuFormDock1;
+        private Pages.PageDashboard pageDashboard1;
+        private Pages.PagePatients pagePatients1;
+        private Pages.PageAppointments pageAppointments1;
     }
 }
