@@ -215,12 +215,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\login_page.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\login_page.Designer.cs">
-      <DependentUpon>login_page.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -257,9 +251,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\login_page.resx">
-      <DependentUpon>login_page.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>
