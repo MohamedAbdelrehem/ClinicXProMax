@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Clinic_Mang_Sys
@@ -16,7 +13,7 @@ namespace Clinic_Mang_Sys
         private static void Main()
         {
             //init the connection
-            //Connection.CheckAndCreateTable();
+            Connection.CheckAndCreateTable();
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
