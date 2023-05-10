@@ -229,6 +229,7 @@ namespace Clinic_Mang_Sys.Forms
             this.btnChangeLogo.TextMarginLeft = 0;
             this.btnChangeLogo.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnChangeLogo.UseDefaultRadiusAndThickness = true;
+            this.btnChangeLogo.Click += new System.EventHandler(this.btnChangeLogo_Click);
             // 
             // label5
             // 
@@ -436,6 +437,7 @@ namespace Clinic_Mang_Sys.Forms
             this.btnSave.TextMarginLeft = 0;
             this.btnSave.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnSave.UseDefaultRadiusAndThickness = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // label4
             // 
