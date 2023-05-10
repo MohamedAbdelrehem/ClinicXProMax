@@ -269,6 +269,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+
     <EmbeddedResource Include="Forms\FrmClinic.resx">
       <DependentUpon>FrmClinic.cs</DependentUpon>
     </EmbeddedResource>
@@ -278,6 +279,7 @@
     <EmbeddedResource Include="Forms\login_page.resx">
       <DependentUpon>login_page.cs</DependentUpon>
     </EmbeddedResource>
+
     <EmbeddedResource Include="Forms\FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </EmbeddedResource>

@@ -3,7 +3,6 @@ using ServiceStack.DataAnnotations;
 
 namespace Clinic_Mang_Sys.Models
 {
-    //[AutoGenerateTable(1)]
     [Alias("Bill")]
     public class Bill
     {
