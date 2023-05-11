@@ -21,7 +21,7 @@ namespace Clinic_Mang_Sys.Forms
             InitializeComponent();
             instance = this;
             CheckEnableButton();
-
+            Cursor.Current = Cursors.Default;
 
             /*
             string mode = Properties.Settings.Default.Mode;
