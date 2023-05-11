@@ -41,7 +41,7 @@ namespace Clinic_Mang_Sys.Pages
             InitializeComponent();
             //gridPatients.DataSource = Patients;
             //LoadDataOld("select Name, Phone, Email, Address, DOB, Gender, Allergies,CreatedAt from Patients");
-            //LoadData();
+            LoadData();
 
             gridPatients.OnDelete<Patients>((a, b) => Db.Get().Delete(a) >= 0);
         }
@@ -53,7 +53,7 @@ namespace Clinic_Mang_Sys.Pages
         }
 
         private void LoadDataOld(string query)
-        {/*
+        { /*
             /*Con.Open();
             string query = "select * from Patients";
             SqlDataAdapter da = new SqlDataAdapter(query, Con);
@@ -62,7 +62,6 @@ namespace Clinic_Mang_Sys.Pages
             da.Fill(ds);
             gridPatients.DataSource = ds.Tables[0];
             Con.Close();*/
-
             // Con.Open();
             //SqlDataAdapter adapter = new SqlDataAdapter(query, Con);
             DataTable dataTable = new DataTable();
@@ -105,7 +104,7 @@ namespace Clinic_Mang_Sys.Pages
               }
 
               gridPatients.Bind(data);*/
-        }       //Minimize bec (Depresed)
+        } //Minimize bec (Depresed)
 
         private void btnClose_Click(object sender, EventArgs e)
         {
@@ -121,8 +120,8 @@ namespace Clinic_Mang_Sys.Pages
         private void btnSave_Click(object sender, EventArgs e)
         {
             //check validation
-            if (validationProvider1.Validate().Length > 0) return;
-
+            if (validationProvider1.Validate().Length > 0)
+                return;
 
             var db = Db.Get();
             //var test = bindingProvider1.Get<Patients>();
@@ -131,16 +130,24 @@ namespace Clinic_Mang_Sys.Pages
 
             //get state of Data was edited or Inserted (new)
             string AddOrEditedMessage;
-            if (SaveState) { AddOrEditedMessage = "Patient Added"; }
-            else { AddOrEditedMessage = "Patient updated"; }
-
+            if (SaveState)
+            {
+                AddOrEditedMessage = "Patient Added";
+            }
+            else
+            {
+                AddOrEditedMessage = "Patient updated";
+            }
 
             LoadData();
             pnlDrawwer.Visible = false;
 
             //show AddOrEditedMessage
-            bunifuSnackbar1.Show(this.FindForm(), AddOrEditedMessage, Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success);
-
+            bunifuSnackbar1.Show(
+                this.FindForm(),
+                AddOrEditedMessage,
+                Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Success
+            );
 
             //Old Way
             /*
@@ -209,5 +216,12 @@ namespace Clinic_Mang_Sys.Pages
             else
                 LoadData();
         }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            SearchTextBox.Text = "";
+            LoadData();
+        }
+
     }
 }
