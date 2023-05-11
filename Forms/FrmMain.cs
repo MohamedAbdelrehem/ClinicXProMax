@@ -16,7 +16,8 @@ namespace Clinic_Mang_Sys
         public static FrmMain instance;
         public FrmMain()
         {
-
+            Console.WriteLine(System.IO.Path.GetDirectoryName(typeof(Program).Assembly.Location));
+            
             try
             {
                 if (Db.Get().Select<ClinicInfo>().Count() == 0)
@@ -27,7 +28,7 @@ namespace Clinic_Mang_Sys
                         Email = "clinicxpromax@gmail.com",
                         Password = "clinicadmin1",
                         Address = "Giza. EG",
-                        Logo = Image.FromFile("logo.png").ToBytes(),
+                        Logo = Image.FromFile("../../Assets/logo.png").ToBytes(),
                         Phone = "01011929211",
                     }
                     );
@@ -55,8 +56,8 @@ namespace Clinic_Mang_Sys
                 .BunifuFormDock
                 .FormWindowStates
                 .Maximized;
-            picLogo.Image = Db.Get().Select<ClinicInfo>().FirstOrDefault().Logo.ToImage();
 
+            picLogo.Image = Db.Get().Select<ClinicInfo>().FirstOrDefault().Logo.ToImage();
             //debuging login for speed :)
 #if DEBUG
             EmailTextBox.Text = "clinicxpromax@gmail.com";

@@ -11,8 +11,7 @@ namespace Clinic_Mang_Sys
         /// <summary>
         /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed;
-        /// otherwise, false.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -22,6 +21,8 @@ namespace Clinic_Mang_Sys
             base.Dispose(disposing);
         }
 
+        #region Windows Form Designer generated code
+
         /// <summary>
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
@@ -29,6 +30,35 @@ namespace Clinic_Mang_Sys
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            Kimtoo.BindingProvider.BindingProvider.BindingObject bindingObject19 = new Kimtoo.BindingProvider.BindingProvider.BindingObject();
+            Kimtoo.ValidationProvider.ValidationObject validationObject19 = new Kimtoo.ValidationProvider.ValidationObject();
+            Kimtoo.BindingProvider.BindingProvider.BindingObject bindingObject22 = new Kimtoo.BindingProvider.BindingProvider.BindingObject();
+            Kimtoo.ValidationProvider.ValidationObject validationObject22 = new Kimtoo.ValidationProvider.ValidationObject();
+            Kimtoo.BindingProvider.BindingProvider.BindingObject bindingObject20 = new Kimtoo.BindingProvider.BindingProvider.BindingObject();
+            Kimtoo.ValidationProvider.ValidationObject validationObject20 = new Kimtoo.ValidationProvider.ValidationObject();
+            Kimtoo.ValidationProvider.ValidationObject validationObject21 = new Kimtoo.ValidationProvider.ValidationObject();
+            Kimtoo.BindingProvider.BindingProvider.BindingObject bindingObject21 = new Kimtoo.BindingProvider.BindingProvider.BindingObject();
+            Kimtoo.ValidationProvider.ValidationObject validationObject12 = new Kimtoo.ValidationProvider.ValidationObject();
+            Kimtoo.BindingProvider.BindingProvider.BindingObject bindingObject12 = new Kimtoo.BindingProvider.BindingProvider.BindingObject();
+            Kimtoo.BindingProvider.BindingProvider.BindingObject bindingObject11 = new Kimtoo.BindingProvider.BindingProvider.BindingObject();
+            Kimtoo.ValidationProvider.ValidationObject validationObject11 = new Kimtoo.ValidationProvider.ValidationObject();
+            Kimtoo.ValidationProvider.ValidationObject validationObject14 = new Kimtoo.ValidationProvider.ValidationObject();
+            Kimtoo.BindingProvider.BindingProvider.BindingObject bindingObject14 = new Kimtoo.BindingProvider.BindingProvider.BindingObject();
+            Kimtoo.ValidationProvider.ValidationObject validationObject13 = new Kimtoo.ValidationProvider.ValidationObject();
+            Kimtoo.BindingProvider.BindingProvider.BindingObject bindingObject13 = new Kimtoo.BindingProvider.BindingProvider.BindingObject();
+            Kimtoo.ValidationProvider.ValidationObject validationObject17 = new Kimtoo.ValidationProvider.ValidationObject();
+            Kimtoo.BindingProvider.BindingProvider.BindingObject bindingObject17 = new Kimtoo.BindingProvider.BindingProvider.BindingObject();
+            Kimtoo.ValidationProvider.ValidationObject validationObject10 = new Kimtoo.ValidationProvider.ValidationObject();
+            Kimtoo.BindingProvider.BindingProvider.BindingObject bindingObject10 = new Kimtoo.BindingProvider.BindingProvider.BindingObject();
+            Kimtoo.BindingProvider.BindingProvider.BindingObject bindingObject9 = new Kimtoo.BindingProvider.BindingProvider.BindingObject();
+            Kimtoo.ValidationProvider.ValidationObject validationObject9 = new Kimtoo.ValidationProvider.ValidationObject();
+            Kimtoo.ValidationProvider.ValidationObject validationObject18 = new Kimtoo.ValidationProvider.ValidationObject();
+            Kimtoo.BindingProvider.BindingProvider.BindingObject bindingObject18 = new Kimtoo.BindingProvider.BindingProvider.BindingObject();
+            Utilities.BunifuPages.BunifuAnimatorNS.Animation animation1 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
+            Kimtoo.ValidationProvider.ValidationObject validationObject8 = new Kimtoo.ValidationProvider.ValidationObject();
+            Kimtoo.BindingProvider.BindingProvider.BindingObject bindingObject8 = new Kimtoo.BindingProvider.BindingProvider.BindingObject();
+            Kimtoo.ValidationProvider.ValidationObject validationObject7 = new Kimtoo.ValidationProvider.ValidationObject();
+            Kimtoo.BindingProvider.BindingProvider.BindingObject bindingObject7 = new Kimtoo.BindingProvider.BindingProvider.BindingObject();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             Kimtoo.BindingProvider.BindingProvider.BindingObject bindingObject1 = new Kimtoo.BindingProvider.BindingProvider.BindingObject();
             Kimtoo.ValidationProvider.ValidationObject validationObject1 = new Kimtoo.ValidationProvider.ValidationObject();
@@ -51,148 +81,457 @@ namespace Clinic_Mang_Sys
             Kimtoo.ValidationProvider.ValidationObject validationObject5 = new Kimtoo.ValidationProvider.ValidationObject();
             Kimtoo.BindingProvider.BindingProvider.BindingObject bindingObject6 = new Kimtoo.BindingProvider.BindingProvider.BindingObject();
             Kimtoo.ValidationProvider.ValidationObject validationObject6 = new Kimtoo.ValidationProvider.ValidationObject();
-            Kimtoo.ValidationProvider.ValidationObject validationObject7 = new Kimtoo.ValidationProvider.ValidationObject();
-            Kimtoo.BindingProvider.BindingProvider.BindingObject bindingObject7 = new Kimtoo.BindingProvider.BindingProvider.BindingObject();
-            Kimtoo.ValidationProvider.ValidationObject validationObject8 = new Kimtoo.ValidationProvider.ValidationObject();
-            Kimtoo.BindingProvider.BindingProvider.BindingObject bindingObject8 = new Kimtoo.BindingProvider.BindingProvider.BindingObject();
-            Kimtoo.ValidationProvider.ValidationObject validationObject10 = new Kimtoo.ValidationProvider.ValidationObject();
-            Kimtoo.BindingProvider.BindingProvider.BindingObject bindingObject10 = new Kimtoo.BindingProvider.BindingProvider.BindingObject();
-            Kimtoo.ValidationProvider.ValidationObject validationObject11 = new Kimtoo.ValidationProvider.ValidationObject();
-            Kimtoo.BindingProvider.BindingProvider.BindingObject bindingObject11 = new Kimtoo.BindingProvider.BindingProvider.BindingObject();
-            Kimtoo.ValidationProvider.ValidationObject validationObject13 = new Kimtoo.ValidationProvider.ValidationObject();
-            Kimtoo.BindingProvider.BindingProvider.BindingObject bindingObject13 = new Kimtoo.BindingProvider.BindingProvider.BindingObject();
+            Kimtoo.ValidationProvider.ValidationObject validationObject16 = new Kimtoo.ValidationProvider.ValidationObject();
+            Kimtoo.BindingProvider.BindingProvider.BindingObject bindingObject16 = new Kimtoo.BindingProvider.BindingProvider.BindingObject();
             Kimtoo.ValidationProvider.ValidationObject validationObject15 = new Kimtoo.ValidationProvider.ValidationObject();
             Kimtoo.BindingProvider.BindingProvider.BindingObject bindingObject15 = new Kimtoo.BindingProvider.BindingProvider.BindingObject();
-            Kimtoo.BindingProvider.BindingProvider.BindingObject bindingObject16 = new Kimtoo.BindingProvider.BindingProvider.BindingObject();
-            Kimtoo.ValidationProvider.ValidationObject validationObject16 = new Kimtoo.ValidationProvider.ValidationObject();
-            Kimtoo.ValidationProvider.ValidationObject validationObject17 = new Kimtoo.ValidationProvider.ValidationObject();
-            Kimtoo.BindingProvider.BindingProvider.BindingObject bindingObject17 = new Kimtoo.BindingProvider.BindingProvider.BindingObject();
-            Kimtoo.ValidationProvider.ValidationObject validationObject18 = new Kimtoo.ValidationProvider.ValidationObject();
-            Kimtoo.BindingProvider.BindingProvider.BindingObject bindingObject18 = new Kimtoo.BindingProvider.BindingProvider.BindingObject();
-            Kimtoo.BindingProvider.BindingProvider.BindingObject bindingObject19 = new Kimtoo.BindingProvider.BindingProvider.BindingObject();
-            Kimtoo.ValidationProvider.ValidationObject validationObject19 = new Kimtoo.ValidationProvider.ValidationObject();
-            Kimtoo.BindingProvider.BindingProvider.BindingObject bindingObject20 = new Kimtoo.BindingProvider.BindingProvider.BindingObject();
-            Kimtoo.ValidationProvider.ValidationObject validationObject20 = new Kimtoo.ValidationProvider.ValidationObject();
-            Kimtoo.ValidationProvider.ValidationObject validationObject21 = new Kimtoo.ValidationProvider.ValidationObject();
-            Kimtoo.BindingProvider.BindingProvider.BindingObject bindingObject21 = new Kimtoo.BindingProvider.BindingProvider.BindingObject();
-            Utilities.BunifuPages.BunifuAnimatorNS.Animation animation1 = new Utilities.BunifuPages.BunifuAnimatorNS.Animation();
-            Kimtoo.BindingProvider.BindingProvider.BindingObject bindingObject9 = new Kimtoo.BindingProvider.BindingProvider.BindingObject();
-            Kimtoo.ValidationProvider.ValidationObject validationObject9 = new Kimtoo.ValidationProvider.ValidationObject();
-            Kimtoo.BindingProvider.BindingProvider.BindingObject bindingObject12 = new Kimtoo.BindingProvider.BindingProvider.BindingObject();
-            Kimtoo.ValidationProvider.ValidationObject validationObject12 = new Kimtoo.ValidationProvider.ValidationObject();
-            Kimtoo.BindingProvider.BindingProvider.BindingObject bindingObject14 = new Kimtoo.BindingProvider.BindingProvider.BindingObject();
-            Kimtoo.ValidationProvider.ValidationObject validationObject14 = new Kimtoo.ValidationProvider.ValidationObject();
-            this.bunifuSnackbar1 = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
-            this.bindingProvider1 = new Kimtoo.BindingProvider.BindingProvider();
+            this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
+            this.bunifuAppBar1 = new Bunifu.Utils.BunifuAppBar();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Menu = new Kimtoo.NavigtionMenu();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.pagePatients1 = new Clinic_Mang_Sys.Pages.PagePatients();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.pageAppointments1 = new Clinic_Mang_Sys.Pages.PageAppointments();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.pageDashboard1 = new Clinic_Mang_Sys.Pages.PageDashboard();
+            this.pages = new Bunifu.UI.WinForms.BunifuPages();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.bunifuShadowPanel1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.PasswordTextBox = new Bunifu.UI.WinForms.BunifuTextBox();
             this.EmailTextBox = new Bunifu.UI.WinForms.BunifuTextBox();
             this.btnLogin = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.label3 = new System.Windows.Forms.Label();
             this.picLogo = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.bunifuShadowPanel1 = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Menu = new Kimtoo.NavigtionMenu();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.bunifuAppBar1 = new Bunifu.Utils.BunifuAppBar();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pages = new Bunifu.UI.WinForms.BunifuPages();
+            this.pageAppointments2 = new Clinic_Mang_Sys.Pages.PageAppointments();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.bindingProvider1 = new Kimtoo.BindingProvider.BindingProvider();
             this.validationProvider1 = new Kimtoo.ValidationProvider.ValidationProvider();
-            this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
-            this.pageDashboard1 = new Clinic_Mang_Sys.Pages.PageDashboard();
-            this.pagePatients1 = new Clinic_Mang_Sys.Pages.PagePatients();
-            this.pageAppointments1 = new Clinic_Mang_Sys.Pages.PageAppointments();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
-            this.bunifuShadowPanel1.SuspendLayout();
-            this.tabPage6.SuspendLayout();
-            this.tabPage1.SuspendLayout();
+            this.bunifuSnackbar1 = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.pages.SuspendLayout();
+            this.tabPage6.SuspendLayout();
+            this.bunifuShadowPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
+            this.tabPage5.SuspendLayout();
             this.SuspendLayout();
             // 
-            // bunifuSnackbar1
+            // bunifuFormDock1
             // 
-            this.bunifuSnackbar1.AllowDragging = false;
-            this.bunifuSnackbar1.AllowMultipleViews = true;
-            this.bunifuSnackbar1.ClickToClose = true;
-            this.bunifuSnackbar1.DoubleClickToClose = true;
-            this.bunifuSnackbar1.DurationAfterIdle = 3000;
-            this.bunifuSnackbar1.ErrorOptions.ActionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bunifuSnackbar1.ErrorOptions.ActionBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bunifuSnackbar1.ErrorOptions.ActionBorderRadius = 1;
-            this.bunifuSnackbar1.ErrorOptions.ActionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
-            this.bunifuSnackbar1.ErrorOptions.ActionForeColor = System.Drawing.Color.Black;
-            this.bunifuSnackbar1.ErrorOptions.BackColor = System.Drawing.Color.White;
-            this.bunifuSnackbar1.ErrorOptions.BorderColor = System.Drawing.Color.White;
-            this.bunifuSnackbar1.ErrorOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(199)))));
-            this.bunifuSnackbar1.ErrorOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.bunifuSnackbar1.ErrorOptions.ForeColor = System.Drawing.Color.Black;
-            this.bunifuSnackbar1.ErrorOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon")));
-            this.bunifuSnackbar1.ErrorOptions.IconLeftMargin = 12;
-            this.bunifuSnackbar1.FadeCloseIcon = false;
-            this.bunifuSnackbar1.Host = Bunifu.UI.WinForms.BunifuSnackbar.Hosts.FormOwner;
-            this.bunifuSnackbar1.InformationOptions.ActionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bunifuSnackbar1.InformationOptions.ActionBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bunifuSnackbar1.InformationOptions.ActionBorderRadius = 1;
-            this.bunifuSnackbar1.InformationOptions.ActionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
-            this.bunifuSnackbar1.InformationOptions.ActionForeColor = System.Drawing.Color.Black;
-            this.bunifuSnackbar1.InformationOptions.BackColor = System.Drawing.Color.White;
-            this.bunifuSnackbar1.InformationOptions.BorderColor = System.Drawing.Color.White;
-            this.bunifuSnackbar1.InformationOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(213)))), ((int)(((byte)(255)))));
-            this.bunifuSnackbar1.InformationOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.bunifuSnackbar1.InformationOptions.ForeColor = System.Drawing.Color.Black;
-            this.bunifuSnackbar1.InformationOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon1")));
-            this.bunifuSnackbar1.InformationOptions.IconLeftMargin = 12;
-            this.bunifuSnackbar1.Margin = 10;
-            this.bunifuSnackbar1.MaximumSize = new System.Drawing.Size(0, 0);
-            this.bunifuSnackbar1.MaximumViews = 7;
-            this.bunifuSnackbar1.MessageRightMargin = 15;
-            this.bunifuSnackbar1.MinimumSize = new System.Drawing.Size(0, 0);
-            this.bunifuSnackbar1.ShowBorders = false;
-            this.bunifuSnackbar1.ShowCloseIcon = false;
-            this.bunifuSnackbar1.ShowIcon = true;
-            this.bunifuSnackbar1.ShowShadows = true;
-            this.bunifuSnackbar1.SuccessOptions.ActionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bunifuSnackbar1.SuccessOptions.ActionBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bunifuSnackbar1.SuccessOptions.ActionBorderRadius = 1;
-            this.bunifuSnackbar1.SuccessOptions.ActionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
-            this.bunifuSnackbar1.SuccessOptions.ActionForeColor = System.Drawing.Color.Black;
-            this.bunifuSnackbar1.SuccessOptions.BackColor = System.Drawing.Color.White;
-            this.bunifuSnackbar1.SuccessOptions.BorderColor = System.Drawing.Color.White;
-            this.bunifuSnackbar1.SuccessOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(255)))), ((int)(((byte)(237)))));
-            this.bunifuSnackbar1.SuccessOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.bunifuSnackbar1.SuccessOptions.ForeColor = System.Drawing.Color.Black;
-            this.bunifuSnackbar1.SuccessOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon2")));
-            this.bunifuSnackbar1.SuccessOptions.IconLeftMargin = 12;
-            this.bunifuSnackbar1.ViewsMargin = 7;
-            this.bunifuSnackbar1.WarningOptions.ActionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bunifuSnackbar1.WarningOptions.ActionBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.bunifuSnackbar1.WarningOptions.ActionBorderRadius = 1;
-            this.bunifuSnackbar1.WarningOptions.ActionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
-            this.bunifuSnackbar1.WarningOptions.ActionForeColor = System.Drawing.Color.Black;
-            this.bunifuSnackbar1.WarningOptions.BackColor = System.Drawing.Color.White;
-            this.bunifuSnackbar1.WarningOptions.BorderColor = System.Drawing.Color.White;
-            this.bunifuSnackbar1.WarningOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(143)))));
-            this.bunifuSnackbar1.WarningOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-            this.bunifuSnackbar1.WarningOptions.ForeColor = System.Drawing.Color.Black;
-            this.bunifuSnackbar1.WarningOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon3")));
-            this.bunifuSnackbar1.WarningOptions.IconLeftMargin = 12;
-            this.bunifuSnackbar1.ZoomCloseIcon = true;
+            this.bunifuFormDock1.AllowFormDragging = true;
+            this.bunifuFormDock1.AllowFormDropShadow = true;
+            this.bunifuFormDock1.AllowFormResizing = true;
+            this.bunifuFormDock1.AllowHidingBottomRegion = true;
+            this.bunifuFormDock1.AllowOpacityChangesWhileDragging = false;
+            this.bunifuFormDock1.BorderOptions.BottomBorder.BorderColor = System.Drawing.Color.Silver;
+            this.bunifuFormDock1.BorderOptions.BottomBorder.BorderThickness = 1;
+            this.bunifuFormDock1.BorderOptions.BottomBorder.ShowBorder = true;
+            this.bunifuFormDock1.BorderOptions.LeftBorder.BorderColor = System.Drawing.Color.Silver;
+            this.bunifuFormDock1.BorderOptions.LeftBorder.BorderThickness = 1;
+            this.bunifuFormDock1.BorderOptions.LeftBorder.ShowBorder = true;
+            this.bunifuFormDock1.BorderOptions.RightBorder.BorderColor = System.Drawing.Color.Silver;
+            this.bunifuFormDock1.BorderOptions.RightBorder.BorderThickness = 1;
+            this.bunifuFormDock1.BorderOptions.RightBorder.ShowBorder = true;
+            this.bunifuFormDock1.BorderOptions.TopBorder.BorderColor = System.Drawing.Color.Silver;
+            this.bunifuFormDock1.BorderOptions.TopBorder.BorderThickness = 1;
+            this.bunifuFormDock1.BorderOptions.TopBorder.ShowBorder = true;
+            this.bunifuFormDock1.ContainerControl = this;
+            this.bunifuFormDock1.DockingIndicatorsColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(215)))), ((int)(((byte)(233)))));
+            this.bunifuFormDock1.DockingIndicatorsOpacity = 0.5D;
+            this.bunifuFormDock1.DockingOptions.DockAll = true;
+            this.bunifuFormDock1.DockingOptions.DockBottomLeft = true;
+            this.bunifuFormDock1.DockingOptions.DockBottomRight = true;
+            this.bunifuFormDock1.DockingOptions.DockFullScreen = true;
+            this.bunifuFormDock1.DockingOptions.DockLeft = true;
+            this.bunifuFormDock1.DockingOptions.DockRight = true;
+            this.bunifuFormDock1.DockingOptions.DockTopLeft = true;
+            this.bunifuFormDock1.DockingOptions.DockTopRight = true;
+            this.bunifuFormDock1.FormDraggingOpacity = 0.9D;
+            this.bunifuFormDock1.ParentForm = this;
+            this.bunifuFormDock1.ShowCursorChanges = true;
+            this.bunifuFormDock1.ShowDockingIndicators = true;
+            this.bunifuFormDock1.TitleBarOptions.AllowFormDragging = true;
+            this.bunifuFormDock1.TitleBarOptions.BunifuFormDock = this.bunifuFormDock1;
+            this.bunifuFormDock1.TitleBarOptions.DoubleClickToExpandWindow = true;
+            this.bunifuFormDock1.TitleBarOptions.TitleBarControl = null;
+            this.bunifuFormDock1.TitleBarOptions.UseBackColorOnDockingIndicators = false;
+            // 
+            // bunifuAppBar1
+            // 
+            this.bunifuAppBar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
+            this.bunifuAppBar1.ControlBoxColor = System.Drawing.Color.Gray;
+            this.bunifuAppBar1.ControlBoxColorActive = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.bunifuAppBar1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bunifuAppBar1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.bunifuAppBar1.ForeColor = System.Drawing.Color.Gray;
+            this.bunifuAppBar1.Icon = null;
+            bindingObject19.Data = "";
+            bindingObject19.Property = "Text";
+            bindingObject19.TwoWay = true;
+            this.bindingProvider1.SetLink(this.bunifuAppBar1, bindingObject19);
+            validationObject19.CustomErrorMessage = "";
+            validationObject19.Optional = false;
+            validationObject19.PropertyName = "Text";
+            validationObject19.Regex = null;
+            validationObject19.ValidationType = Kimtoo.ValidationProvider.ValidationTypes.None;
+            this.validationProvider1.SetLink(this.bunifuAppBar1, validationObject19);
+            this.bunifuAppBar1.Location = new System.Drawing.Point(255, 0);
+            this.bunifuAppBar1.Name = "bunifuAppBar1";
+            this.bunifuAppBar1.Size = new System.Drawing.Size(1025, 46);
+            this.bunifuAppBar1.TabIndex = 0;
+            this.bunifuAppBar1.Title = "Login";
+            this.bunifuAppBar1.TitleMargin = new System.Windows.Forms.Padding(47, 12, 0, 0);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.Menu);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            bindingObject22.Data = "";
+            bindingObject22.Property = "Text";
+            bindingObject22.TwoWay = true;
+            this.bindingProvider1.SetLink(this.panel1, bindingObject22);
+            validationObject22.CustomErrorMessage = "";
+            validationObject22.Optional = false;
+            validationObject22.PropertyName = "Text";
+            validationObject22.Regex = null;
+            validationObject22.ValidationType = Kimtoo.ValidationProvider.ValidationTypes.None;
+            this.validationProvider1.SetLink(this.panel1, validationObject22);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(255, 720);
+            this.panel1.TabIndex = 1;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            bindingObject20.Data = "";
+            bindingObject20.Property = "Text";
+            bindingObject20.TwoWay = true;
+            this.bindingProvider1.SetLink(this.pictureBox1, bindingObject20);
+            validationObject20.CustomErrorMessage = "";
+            validationObject20.Optional = false;
+            validationObject20.PropertyName = "Text";
+            validationObject20.Regex = null;
+            validationObject20.ValidationType = Kimtoo.ValidationProvider.ValidationTypes.None;
+            this.validationProvider1.SetLink(this.pictureBox1, validationObject20);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 24);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(235, 127);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // Menu
+            // 
+            this.Menu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Menu.AutoScroll = true;
+            this.Menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.Menu.BackColor_Click = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.Menu.BackColor_Hover = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.Menu.BackColor_Selected = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
+            this.Menu.DisableToggling = new string[] {
+        "Settings.Personalization",
+        "Settings.Clinic",
+        "About US"};
+            this.Menu.Enabled = false;
+            this.Menu.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Menu.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.Menu.ForeColor_Selected = System.Drawing.Color.DimGray;
+            this.Menu.IsExpandable = false;
+            this.Menu.IsExpanded = true;
+            this.Menu.ItemHeight = 50;
+            this.Menu.ItemImageSize = new System.Drawing.Size(20, 20);
+            this.Menu.ItemPadding = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.Menu.ItemRightImageMargin = 20;
+            this.Menu.ItemRightImageSize = new System.Drawing.Size(15, 15);
+            this.Menu.Items = new Kimtoo.ButtonItem[] {
+        ((Kimtoo.ButtonItem)(resources.GetObject("Menu.Items"))),
+        ((Kimtoo.ButtonItem)(resources.GetObject("Menu.Items1"))),
+        ((Kimtoo.ButtonItem)(resources.GetObject("Menu.Items2"))),
+        ((Kimtoo.ButtonItem)(resources.GetObject("Menu.Items3"))),
+        ((Kimtoo.ButtonItem)(resources.GetObject("Menu.Items4"))),
+        ((Kimtoo.ButtonItem)(resources.GetObject("Menu.Items5")))};
+            this.Menu.ItemTextMargin = 8;
+            validationObject21.CustomErrorMessage = "";
+            validationObject21.Optional = false;
+            validationObject21.PropertyName = "Text";
+            validationObject21.Regex = null;
+            validationObject21.ValidationType = Kimtoo.ValidationProvider.ValidationTypes.None;
+            this.validationProvider1.SetLink(this.Menu, validationObject21);
+            bindingObject21.Data = "";
+            bindingObject21.Property = "Text";
+            bindingObject21.TwoWay = true;
+            this.bindingProvider1.SetLink(this.Menu, bindingObject21);
+            this.Menu.Location = new System.Drawing.Point(56, 177);
+            this.Menu.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.Menu.Name = "Menu";
+            this.Menu.Size = new System.Drawing.Size(199, 472);
+            this.Menu.TabIndex = 0;
+            this.Menu.OnItemSelected += new Kimtoo.NavigtionMenu.OnSelectEventHandler(this.Menu_OnItemSelected);
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
+            this.tabPage2.Controls.Add(this.pagePatients1);
+            validationObject12.CustomErrorMessage = "";
+            validationObject12.Optional = false;
+            validationObject12.PropertyName = "Text";
+            validationObject12.Regex = null;
+            validationObject12.ValidationType = Kimtoo.ValidationProvider.ValidationTypes.None;
+            this.validationProvider1.SetLink(this.tabPage2, validationObject12);
+            bindingObject12.Data = "";
+            bindingObject12.Property = "Text";
+            bindingObject12.TwoWay = true;
+            this.bindingProvider1.SetLink(this.tabPage2, bindingObject12);
+            this.tabPage2.Location = new System.Drawing.Point(4, 4);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1007, 641);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Patients";
+            // 
+            // pagePatients1
+            // 
+            this.pagePatients1.Dock = System.Windows.Forms.DockStyle.Fill;
+            bindingObject11.Data = "";
+            bindingObject11.Property = "Text";
+            bindingObject11.TwoWay = true;
+            this.bindingProvider1.SetLink(this.pagePatients1, bindingObject11);
+            validationObject11.CustomErrorMessage = "";
+            validationObject11.Optional = false;
+            validationObject11.PropertyName = "Text";
+            validationObject11.Regex = null;
+            validationObject11.ValidationType = Kimtoo.ValidationProvider.ValidationTypes.None;
+            this.validationProvider1.SetLink(this.pagePatients1, validationObject11);
+            this.pagePatients1.Location = new System.Drawing.Point(3, 3);
+            this.pagePatients1.Name = "pagePatients1";
+            this.pagePatients1.Size = new System.Drawing.Size(1001, 635);
+            this.pagePatients1.TabIndex = 0;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
+            this.tabPage3.Controls.Add(this.pageAppointments1);
+            validationObject14.CustomErrorMessage = "";
+            validationObject14.Optional = false;
+            validationObject14.PropertyName = "Text";
+            validationObject14.Regex = null;
+            validationObject14.ValidationType = Kimtoo.ValidationProvider.ValidationTypes.None;
+            this.validationProvider1.SetLink(this.tabPage3, validationObject14);
+            bindingObject14.Data = "";
+            bindingObject14.Property = "Text";
+            bindingObject14.TwoWay = true;
+            this.bindingProvider1.SetLink(this.tabPage3, bindingObject14);
+            this.tabPage3.Location = new System.Drawing.Point(4, 4);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(1007, 641);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Appointments";
+            // 
+            // pageAppointments1
+            // 
+            this.pageAppointments1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pageAppointments1.IsAppointments = true;
+            validationObject13.CustomErrorMessage = "";
+            validationObject13.Optional = false;
+            validationObject13.PropertyName = "Text";
+            validationObject13.Regex = null;
+            validationObject13.ValidationType = Kimtoo.ValidationProvider.ValidationTypes.None;
+            this.validationProvider1.SetLink(this.pageAppointments1, validationObject13);
+            bindingObject13.Data = "";
+            bindingObject13.Property = "Text";
+            bindingObject13.TwoWay = true;
+            this.bindingProvider1.SetLink(this.pageAppointments1, bindingObject13);
+            this.pageAppointments1.Location = new System.Drawing.Point(3, 3);
+            this.pageAppointments1.Name = "pageAppointments1";
+            this.pageAppointments1.Size = new System.Drawing.Size(1001, 635);
+            this.pageAppointments1.TabIndex = 0;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
+            validationObject17.CustomErrorMessage = "";
+            validationObject17.Optional = false;
+            validationObject17.PropertyName = "Text";
+            validationObject17.Regex = null;
+            validationObject17.ValidationType = Kimtoo.ValidationProvider.ValidationTypes.None;
+            this.validationProvider1.SetLink(this.tabPage4, validationObject17);
+            bindingObject17.Data = "";
+            bindingObject17.Property = "Text";
+            bindingObject17.TwoWay = true;
+            this.bindingProvider1.SetLink(this.tabPage4, bindingObject17);
+            this.tabPage4.Location = new System.Drawing.Point(4, 4);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(1007, 641);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Settings";
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
+            this.tabPage1.Controls.Add(this.pageDashboard1);
+            validationObject10.CustomErrorMessage = "";
+            validationObject10.Optional = false;
+            validationObject10.PropertyName = "Text";
+            validationObject10.Regex = null;
+            validationObject10.ValidationType = Kimtoo.ValidationProvider.ValidationTypes.None;
+            this.validationProvider1.SetLink(this.tabPage1, validationObject10);
+            bindingObject10.Data = "";
+            bindingObject10.Property = "Text";
+            bindingObject10.TwoWay = true;
+            this.bindingProvider1.SetLink(this.tabPage1, bindingObject10);
+            this.tabPage1.Location = new System.Drawing.Point(4, 4);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(1007, 641);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Dashboard";
+            // 
+            // pageDashboard1
+            // 
+            this.pageDashboard1.Dock = System.Windows.Forms.DockStyle.Fill;
+            bindingObject9.Data = "";
+            bindingObject9.Property = "Text";
+            bindingObject9.TwoWay = true;
+            this.bindingProvider1.SetLink(this.pageDashboard1, bindingObject9);
+            validationObject9.CustomErrorMessage = "";
+            validationObject9.Optional = false;
+            validationObject9.PropertyName = "Text";
+            validationObject9.Regex = null;
+            validationObject9.ValidationType = Kimtoo.ValidationProvider.ValidationTypes.None;
+            this.validationProvider1.SetLink(this.pageDashboard1, validationObject9);
+            this.pageDashboard1.Location = new System.Drawing.Point(3, 3);
+            this.pageDashboard1.Name = "pageDashboard1";
+            this.pageDashboard1.Size = new System.Drawing.Size(1001, 635);
+            this.pageDashboard1.TabIndex = 0;
+            // 
+            // pages
+            // 
+            this.pages.Alignment = System.Windows.Forms.TabAlignment.Bottom;
+            this.pages.AllowTransitions = false;
+            this.pages.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pages.Controls.Add(this.tabPage6);
+            this.pages.Controls.Add(this.tabPage1);
+            this.pages.Controls.Add(this.tabPage2);
+            this.pages.Controls.Add(this.tabPage3);
+            this.pages.Controls.Add(this.tabPage5);
+            this.pages.Controls.Add(this.tabPage4);
+            validationObject18.CustomErrorMessage = "";
+            validationObject18.Optional = false;
+            validationObject18.PropertyName = "Text";
+            validationObject18.Regex = null;
+            validationObject18.ValidationType = Kimtoo.ValidationProvider.ValidationTypes.None;
+            this.validationProvider1.SetLink(this.pages, validationObject18);
+            bindingObject18.Data = "";
+            bindingObject18.Property = "Text";
+            bindingObject18.TwoWay = true;
+            this.bindingProvider1.SetLink(this.pages, bindingObject18);
+            this.pages.Location = new System.Drawing.Point(261, 48);
+            this.pages.Multiline = true;
+            this.pages.Name = "pages";
+            this.pages.Page = this.tabPage6;
+            this.pages.PageIndex = 0;
+            this.pages.PageName = "tabPage6";
+            this.pages.PageTitle = "Login";
+            this.pages.SelectedIndex = 0;
+            this.pages.Size = new System.Drawing.Size(1015, 667);
+            this.pages.TabIndex = 2;
+            animation1.AnimateOnlyDifferences = false;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.pages.Transition = animation1;
+            this.pages.TransitionType = Utilities.BunifuPages.BunifuAnimatorNS.AnimationType.Custom;
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
+            this.tabPage6.Controls.Add(this.bunifuShadowPanel1);
+            validationObject8.CustomErrorMessage = "";
+            validationObject8.Optional = false;
+            validationObject8.PropertyName = "Text";
+            validationObject8.Regex = null;
+            validationObject8.ValidationType = Kimtoo.ValidationProvider.ValidationTypes.None;
+            this.validationProvider1.SetLink(this.tabPage6, validationObject8);
+            bindingObject8.Data = "";
+            bindingObject8.Property = "Text";
+            bindingObject8.TwoWay = true;
+            this.bindingProvider1.SetLink(this.tabPage6, bindingObject8);
+            this.tabPage6.Location = new System.Drawing.Point(4, 4);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(1007, 641);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "Login";
+            // 
+            // bunifuShadowPanel1
+            // 
+            this.bunifuShadowPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.bunifuShadowPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuShadowPanel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
+            this.bunifuShadowPanel1.BorderRadius = 1;
+            this.bunifuShadowPanel1.BorderThickness = 1;
+            this.bunifuShadowPanel1.Controls.Add(this.PasswordTextBox);
+            this.bunifuShadowPanel1.Controls.Add(this.EmailTextBox);
+            this.bunifuShadowPanel1.Controls.Add(this.btnLogin);
+            this.bunifuShadowPanel1.Controls.Add(this.label3);
+            this.bunifuShadowPanel1.Controls.Add(this.picLogo);
+            this.bunifuShadowPanel1.Controls.Add(this.label5);
+            this.bunifuShadowPanel1.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
+            this.bunifuShadowPanel1.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
+            validationObject7.CustomErrorMessage = "";
+            validationObject7.Optional = false;
+            validationObject7.PropertyName = "Text";
+            validationObject7.Regex = null;
+            validationObject7.ValidationType = Kimtoo.ValidationProvider.ValidationTypes.None;
+            this.validationProvider1.SetLink(this.bunifuShadowPanel1, validationObject7);
+            bindingObject7.Data = "";
+            bindingObject7.Property = "Text";
+            bindingObject7.TwoWay = true;
+            this.bindingProvider1.SetLink(this.bunifuShadowPanel1, bindingObject7);
+            this.bunifuShadowPanel1.Location = new System.Drawing.Point(190, 25);
+            this.bunifuShadowPanel1.Name = "bunifuShadowPanel1";
+            this.bunifuShadowPanel1.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
+            this.bunifuShadowPanel1.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
+            this.bunifuShadowPanel1.ShadowColor = System.Drawing.Color.DarkGray;
+            this.bunifuShadowPanel1.ShadowDept = 2;
+            this.bunifuShadowPanel1.ShadowDepth = 5;
+            this.bunifuShadowPanel1.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
+            this.bunifuShadowPanel1.ShadowTopLeftVisible = false;
+            this.bunifuShadowPanel1.Size = new System.Drawing.Size(581, 549);
+            this.bunifuShadowPanel1.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
+            this.bunifuShadowPanel1.TabIndex = 0;
             // 
             // PasswordTextBox
             // 
             this.PasswordTextBox.AcceptsReturn = false;
             this.PasswordTextBox.AcceptsTab = false;
-            this.PasswordTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.PasswordTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.PasswordTextBox.AnimationSpeed = 200;
             this.PasswordTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
@@ -278,7 +617,7 @@ namespace Clinic_Mang_Sys
             // 
             this.EmailTextBox.AcceptsReturn = false;
             this.EmailTextBox.AcceptsTab = false;
-            this.EmailTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.EmailTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.EmailTextBox.AnimationSpeed = 200;
             this.EmailTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
@@ -523,229 +862,20 @@ namespace Clinic_Mang_Sys
             this.label5.TabIndex = 20;
             this.label5.Text = "Password";
             // 
-            // bunifuShadowPanel1
+            // tabPage5
             // 
-            this.bunifuShadowPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuShadowPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuShadowPanel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
-            this.bunifuShadowPanel1.BorderRadius = 1;
-            this.bunifuShadowPanel1.BorderThickness = 1;
-            this.bunifuShadowPanel1.Controls.Add(this.PasswordTextBox);
-            this.bunifuShadowPanel1.Controls.Add(this.EmailTextBox);
-            this.bunifuShadowPanel1.Controls.Add(this.btnLogin);
-            this.bunifuShadowPanel1.Controls.Add(this.label3);
-            this.bunifuShadowPanel1.Controls.Add(this.picLogo);
-            this.bunifuShadowPanel1.Controls.Add(this.label5);
-            this.bunifuShadowPanel1.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
-            this.bunifuShadowPanel1.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
-            validationObject7.CustomErrorMessage = "";
-            validationObject7.Optional = false;
-            validationObject7.PropertyName = "Text";
-            validationObject7.Regex = null;
-            validationObject7.ValidationType = Kimtoo.ValidationProvider.ValidationTypes.None;
-            this.validationProvider1.SetLink(this.bunifuShadowPanel1, validationObject7);
-            bindingObject7.Data = "";
-            bindingObject7.Property = "Text";
-            bindingObject7.TwoWay = true;
-            this.bindingProvider1.SetLink(this.bunifuShadowPanel1, bindingObject7);
-            this.bunifuShadowPanel1.Location = new System.Drawing.Point(190, 25);
-            this.bunifuShadowPanel1.Name = "bunifuShadowPanel1";
-            this.bunifuShadowPanel1.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
-            this.bunifuShadowPanel1.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
-            this.bunifuShadowPanel1.ShadowColor = System.Drawing.Color.DarkGray;
-            this.bunifuShadowPanel1.ShadowDept = 2;
-            this.bunifuShadowPanel1.ShadowDepth = 5;
-            this.bunifuShadowPanel1.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
-            this.bunifuShadowPanel1.ShadowTopLeftVisible = false;
-            this.bunifuShadowPanel1.Size = new System.Drawing.Size(581, 549);
-            this.bunifuShadowPanel1.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
-            this.bunifuShadowPanel1.TabIndex = 0;
-            // 
-            // tabPage6
-            // 
-            this.tabPage6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
-            this.tabPage6.Controls.Add(this.bunifuShadowPanel1);
-            validationObject8.CustomErrorMessage = "";
-            validationObject8.Optional = false;
-            validationObject8.PropertyName = "Text";
-            validationObject8.Regex = null;
-            validationObject8.ValidationType = Kimtoo.ValidationProvider.ValidationTypes.None;
-            this.validationProvider1.SetLink(this.tabPage6, validationObject8);
-            bindingObject8.Data = "";
-            bindingObject8.Property = "Text";
-            bindingObject8.TwoWay = true;
-            this.bindingProvider1.SetLink(this.tabPage6, bindingObject8);
-            this.tabPage6.Location = new System.Drawing.Point(4, 4);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(1007, 641);
-            this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "Login";
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
-            this.tabPage1.Controls.Add(this.pageDashboard1);
-            validationObject10.CustomErrorMessage = "";
-            validationObject10.Optional = false;
-            validationObject10.PropertyName = "Text";
-            validationObject10.Regex = null;
-            validationObject10.ValidationType = Kimtoo.ValidationProvider.ValidationTypes.None;
-            this.validationProvider1.SetLink(this.tabPage1, validationObject10);
-            bindingObject10.Data = "";
-            bindingObject10.Property = "Text";
-            bindingObject10.TwoWay = true;
-            this.bindingProvider1.SetLink(this.tabPage1, bindingObject10);
-            this.tabPage1.Location = new System.Drawing.Point(4, 4);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1007, 641);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Dashboard";
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
-            validationObject11.CustomErrorMessage = "";
-            validationObject11.Optional = false;
-            validationObject11.PropertyName = "Text";
-            validationObject11.Regex = null;
-            validationObject11.ValidationType = Kimtoo.ValidationProvider.ValidationTypes.None;
-            this.validationProvider1.SetLink(this.tabPage4, validationObject11);
-            bindingObject11.Data = "";
-            bindingObject11.Property = "Text";
-            bindingObject11.TwoWay = true;
-            this.bindingProvider1.SetLink(this.tabPage4, bindingObject11);
-            this.tabPage4.Location = new System.Drawing.Point(4, 4);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1007, 641);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Settings";
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
-            this.tabPage2.Controls.Add(this.pagePatients1);
-            validationObject13.CustomErrorMessage = "";
-            validationObject13.Optional = false;
-            validationObject13.PropertyName = "Text";
-            validationObject13.Regex = null;
-            validationObject13.ValidationType = Kimtoo.ValidationProvider.ValidationTypes.None;
-            this.validationProvider1.SetLink(this.tabPage2, validationObject13);
-            bindingObject13.Data = "";
-            bindingObject13.Property = "Text";
-            bindingObject13.TwoWay = true;
-            this.bindingProvider1.SetLink(this.tabPage2, bindingObject13);
-            this.tabPage2.Location = new System.Drawing.Point(4, 4);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1007, 641);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Patients";
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
-            this.tabPage3.Controls.Add(this.pageAppointments1);
-            validationObject15.CustomErrorMessage = "";
-            validationObject15.Optional = false;
-            validationObject15.PropertyName = "Text";
-            validationObject15.Regex = null;
-            validationObject15.ValidationType = Kimtoo.ValidationProvider.ValidationTypes.None;
-            this.validationProvider1.SetLink(this.tabPage3, validationObject15);
-            bindingObject15.Data = "";
-            bindingObject15.Property = "Text";
-            bindingObject15.TwoWay = true;
-            this.bindingProvider1.SetLink(this.tabPage3, bindingObject15);
-            this.tabPage3.Location = new System.Drawing.Point(4, 4);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1007, 641);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Appointments";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            bindingObject16.Data = "";
-            bindingObject16.Property = "Text";
-            bindingObject16.TwoWay = true;
-            this.bindingProvider1.SetLink(this.pictureBox1, bindingObject16);
+            this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
+            this.tabPage5.Controls.Add(this.pageAppointments2);
             validationObject16.CustomErrorMessage = "";
             validationObject16.Optional = false;
             validationObject16.PropertyName = "Text";
             validationObject16.Regex = null;
             validationObject16.ValidationType = Kimtoo.ValidationProvider.ValidationTypes.None;
-            this.validationProvider1.SetLink(this.pictureBox1, validationObject16);
-            this.pictureBox1.Location = new System.Drawing.Point(12, 24);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(235, 127);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // Menu
-            // 
-            this.Menu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Menu.AutoScroll = true;
-            this.Menu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.Menu.BackColor_Click = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.Menu.BackColor_Hover = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.Menu.BackColor_Selected = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
-            this.Menu.DisableToggling = new string[] {
-        "Settings.Personalization",
-        "Settings.Clinic",
-        "About US"};
-            this.Menu.Enabled = false;
-            this.Menu.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Menu.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.Menu.ForeColor_Selected = System.Drawing.Color.DimGray;
-            this.Menu.IsExpandable = false;
-            this.Menu.IsExpanded = true;
-            this.Menu.ItemHeight = 50;
-            this.Menu.ItemImageSize = new System.Drawing.Size(20, 20);
-            this.Menu.ItemPadding = new System.Windows.Forms.Padding(8, 0, 0, 0);
-            this.Menu.ItemRightImageMargin = 20;
-            this.Menu.ItemRightImageSize = new System.Drawing.Size(15, 15);
-            this.Menu.Items = new Kimtoo.ButtonItem[] {
-        ((Kimtoo.ButtonItem)(resources.GetObject("Menu.Items"))),
-        ((Kimtoo.ButtonItem)(resources.GetObject("Menu.Items1"))),
-        ((Kimtoo.ButtonItem)(resources.GetObject("Menu.Items2"))),
-        ((Kimtoo.ButtonItem)(resources.GetObject("Menu.Items3"))),
-        ((Kimtoo.ButtonItem)(resources.GetObject("Menu.Items4"))),
-        ((Kimtoo.ButtonItem)(resources.GetObject("Menu.Items5")))};
-            this.Menu.ItemTextMargin = 8;
-            validationObject17.CustomErrorMessage = "";
-            validationObject17.Optional = false;
-            validationObject17.PropertyName = "Text";
-            validationObject17.Regex = null;
-            validationObject17.ValidationType = Kimtoo.ValidationProvider.ValidationTypes.None;
-            this.validationProvider1.SetLink(this.Menu, validationObject17);
-            bindingObject17.Data = "";
-            bindingObject17.Property = "Text";
-            bindingObject17.TwoWay = true;
-            this.bindingProvider1.SetLink(this.Menu, bindingObject17);
-            this.Menu.Location = new System.Drawing.Point(56, 177);
-            this.Menu.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.Menu.Name = "Menu";
-            this.Menu.Size = new System.Drawing.Size(199, 472);
-            this.Menu.TabIndex = 0;
-            this.Menu.OnItemSelected += new Kimtoo.NavigtionMenu.OnSelectEventHandler(this.Menu_OnItemSelected);
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
-            validationObject18.CustomErrorMessage = "";
-            validationObject18.Optional = false;
-            validationObject18.PropertyName = "Text";
-            validationObject18.Regex = null;
-            validationObject18.ValidationType = Kimtoo.ValidationProvider.ValidationTypes.None;
-            this.validationProvider1.SetLink(this.tabPage5, validationObject18);
-            bindingObject18.Data = "";
-            bindingObject18.Property = "Text";
-            bindingObject18.TwoWay = true;
-            this.bindingProvider1.SetLink(this.tabPage5, bindingObject18);
+            this.validationProvider1.SetLink(this.tabPage5, validationObject16);
+            bindingObject16.Data = "";
+            bindingObject16.Property = "Text";
+            bindingObject16.TwoWay = true;
+            this.bindingProvider1.SetLink(this.tabPage5, bindingObject16);
             this.tabPage5.Location = new System.Drawing.Point(4, 4);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
@@ -753,103 +883,24 @@ namespace Clinic_Mang_Sys
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Sessions";
             // 
-            // bunifuAppBar1
+            // pageAppointments2
             // 
-            this.bunifuAppBar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
-            this.bunifuAppBar1.ControlBoxColor = System.Drawing.Color.Gray;
-            this.bunifuAppBar1.ControlBoxColorActive = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.bunifuAppBar1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bunifuAppBar1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.bunifuAppBar1.ForeColor = System.Drawing.Color.Gray;
-            this.bunifuAppBar1.Icon = null;
-            bindingObject19.Data = "";
-            bindingObject19.Property = "Text";
-            bindingObject19.TwoWay = true;
-            this.bindingProvider1.SetLink(this.bunifuAppBar1, bindingObject19);
-            validationObject19.CustomErrorMessage = "";
-            validationObject19.Optional = false;
-            validationObject19.PropertyName = "Text";
-            validationObject19.Regex = null;
-            validationObject19.ValidationType = Kimtoo.ValidationProvider.ValidationTypes.None;
-            this.validationProvider1.SetLink(this.bunifuAppBar1, validationObject19);
-            this.bunifuAppBar1.Location = new System.Drawing.Point(255, 0);
-            this.bunifuAppBar1.Name = "bunifuAppBar1";
-            this.bunifuAppBar1.Size = new System.Drawing.Size(1025, 46);
-            this.bunifuAppBar1.TabIndex = 3;
-            this.bunifuAppBar1.Title = "Login";
-            this.bunifuAppBar1.TitleMargin = new System.Windows.Forms.Padding(47, 12, 0, 0);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.Menu);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            bindingObject20.Data = "";
-            bindingObject20.Property = "Text";
-            bindingObject20.TwoWay = true;
-            this.bindingProvider1.SetLink(this.panel1, bindingObject20);
-            validationObject20.CustomErrorMessage = "";
-            validationObject20.Optional = false;
-            validationObject20.PropertyName = "Text";
-            validationObject20.Regex = null;
-            validationObject20.ValidationType = Kimtoo.ValidationProvider.ValidationTypes.None;
-            this.validationProvider1.SetLink(this.panel1, validationObject20);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(255, 720);
-            this.panel1.TabIndex = 4;
-            // 
-            // pages
-            // 
-            this.pages.Alignment = System.Windows.Forms.TabAlignment.Bottom;
-            this.pages.AllowTransitions = false;
-            this.pages.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pages.Controls.Add(this.tabPage6);
-            this.pages.Controls.Add(this.tabPage1);
-            this.pages.Controls.Add(this.tabPage2);
-            this.pages.Controls.Add(this.tabPage3);
-            this.pages.Controls.Add(this.tabPage5);
-            this.pages.Controls.Add(this.tabPage4);
-            validationObject21.CustomErrorMessage = "";
-            validationObject21.Optional = false;
-            validationObject21.PropertyName = "Text";
-            validationObject21.Regex = null;
-            validationObject21.ValidationType = Kimtoo.ValidationProvider.ValidationTypes.None;
-            this.validationProvider1.SetLink(this.pages, validationObject21);
-            bindingObject21.Data = "";
-            bindingObject21.Property = "Text";
-            bindingObject21.TwoWay = true;
-            this.bindingProvider1.SetLink(this.pages, bindingObject21);
-            this.pages.Location = new System.Drawing.Point(261, 48);
-            this.pages.Multiline = true;
-            this.pages.Name = "pages";
-            this.pages.Page = this.tabPage4;
-            this.pages.PageIndex = 5;
-            this.pages.PageName = "tabPage4";
-            this.pages.PageTitle = "Settings";
-            this.pages.SelectedIndex = 0;
-            this.pages.Size = new System.Drawing.Size(1015, 667);
-            this.pages.TabIndex = 5;
-            animation1.AnimateOnlyDifferences = false;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.pages.Transition = animation1;
-            this.pages.TransitionType = Utilities.BunifuPages.BunifuAnimatorNS.AnimationType.Custom;
+            this.pageAppointments2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pageAppointments2.IsAppointments = false;
+            validationObject15.CustomErrorMessage = "";
+            validationObject15.Optional = false;
+            validationObject15.PropertyName = "Text";
+            validationObject15.Regex = null;
+            validationObject15.ValidationType = Kimtoo.ValidationProvider.ValidationTypes.None;
+            this.validationProvider1.SetLink(this.pageAppointments2, validationObject15);
+            bindingObject15.Data = "";
+            bindingObject15.Property = "Text";
+            bindingObject15.TwoWay = true;
+            this.bindingProvider1.SetLink(this.pageAppointments2, bindingObject15);
+            this.pageAppointments2.Location = new System.Drawing.Point(3, 3);
+            this.pageAppointments2.Name = "pageAppointments2";
+            this.pageAppointments2.Size = new System.Drawing.Size(1001, 635);
+            this.pageAppointments2.TabIndex = 1;
             // 
             // timer1
             // 
@@ -860,99 +911,74 @@ namespace Clinic_Mang_Sys
             // 
             this.validationProvider1.ErrorColor = System.Drawing.Color.Crimson;
             // 
-            // bunifuFormDock1
+            // bunifuSnackbar1
             // 
-            this.bunifuFormDock1.AllowFormDragging = true;
-            this.bunifuFormDock1.AllowFormDropShadow = true;
-            this.bunifuFormDock1.AllowFormResizing = true;
-            this.bunifuFormDock1.AllowHidingBottomRegion = true;
-            this.bunifuFormDock1.AllowOpacityChangesWhileDragging = false;
-            this.bunifuFormDock1.BorderOptions.BottomBorder.BorderColor = System.Drawing.Color.Silver;
-            this.bunifuFormDock1.BorderOptions.BottomBorder.BorderThickness = 1;
-            this.bunifuFormDock1.BorderOptions.BottomBorder.ShowBorder = true;
-            this.bunifuFormDock1.BorderOptions.LeftBorder.BorderColor = System.Drawing.Color.Silver;
-            this.bunifuFormDock1.BorderOptions.LeftBorder.BorderThickness = 1;
-            this.bunifuFormDock1.BorderOptions.LeftBorder.ShowBorder = true;
-            this.bunifuFormDock1.BorderOptions.RightBorder.BorderColor = System.Drawing.Color.Silver;
-            this.bunifuFormDock1.BorderOptions.RightBorder.BorderThickness = 1;
-            this.bunifuFormDock1.BorderOptions.RightBorder.ShowBorder = true;
-            this.bunifuFormDock1.BorderOptions.TopBorder.BorderColor = System.Drawing.Color.Silver;
-            this.bunifuFormDock1.BorderOptions.TopBorder.BorderThickness = 1;
-            this.bunifuFormDock1.BorderOptions.TopBorder.ShowBorder = true;
-            this.bunifuFormDock1.ContainerControl = this;
-            this.bunifuFormDock1.DockingIndicatorsColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(215)))), ((int)(((byte)(233)))));
-            this.bunifuFormDock1.DockingIndicatorsOpacity = 0.5D;
-            this.bunifuFormDock1.DockingOptions.DockAll = true;
-            this.bunifuFormDock1.DockingOptions.DockBottomLeft = true;
-            this.bunifuFormDock1.DockingOptions.DockBottomRight = true;
-            this.bunifuFormDock1.DockingOptions.DockFullScreen = true;
-            this.bunifuFormDock1.DockingOptions.DockLeft = true;
-            this.bunifuFormDock1.DockingOptions.DockRight = true;
-            this.bunifuFormDock1.DockingOptions.DockTopLeft = true;
-            this.bunifuFormDock1.DockingOptions.DockTopRight = true;
-            this.bunifuFormDock1.FormDraggingOpacity = 0.9D;
-            this.bunifuFormDock1.ParentForm = this;
-            this.bunifuFormDock1.ShowCursorChanges = true;
-            this.bunifuFormDock1.ShowDockingIndicators = true;
-            this.bunifuFormDock1.TitleBarOptions.AllowFormDragging = true;
-            this.bunifuFormDock1.TitleBarOptions.BunifuFormDock = this.bunifuFormDock1;
-            this.bunifuFormDock1.TitleBarOptions.DoubleClickToExpandWindow = true;
-            this.bunifuFormDock1.TitleBarOptions.TitleBarControl = null;
-            this.bunifuFormDock1.TitleBarOptions.UseBackColorOnDockingIndicators = false;
-            // 
-            // pageDashboard1
-            // 
-            this.pageDashboard1.Dock = System.Windows.Forms.DockStyle.Fill;
-            bindingObject9.Data = "";
-            bindingObject9.Property = "Text";
-            bindingObject9.TwoWay = true;
-            this.bindingProvider1.SetLink(this.pageDashboard1, bindingObject9);
-            validationObject9.CustomErrorMessage = "";
-            validationObject9.Optional = false;
-            validationObject9.PropertyName = "Text";
-            validationObject9.Regex = null;
-            validationObject9.ValidationType = Kimtoo.ValidationProvider.ValidationTypes.None;
-            this.validationProvider1.SetLink(this.pageDashboard1, validationObject9);
-            this.pageDashboard1.Location = new System.Drawing.Point(3, 3);
-            this.pageDashboard1.Name = "pageDashboard1";
-            this.pageDashboard1.Size = new System.Drawing.Size(1001, 635);
-            this.pageDashboard1.TabIndex = 0;
-            // 
-            // pagePatients1
-            // 
-            this.pagePatients1.Dock = System.Windows.Forms.DockStyle.Fill;
-            bindingObject12.Data = "";
-            bindingObject12.Property = "Text";
-            bindingObject12.TwoWay = true;
-            this.bindingProvider1.SetLink(this.pagePatients1, bindingObject12);
-            validationObject12.CustomErrorMessage = "";
-            validationObject12.Optional = false;
-            validationObject12.PropertyName = "Text";
-            validationObject12.Regex = null;
-            validationObject12.ValidationType = Kimtoo.ValidationProvider.ValidationTypes.None;
-            this.validationProvider1.SetLink(this.pagePatients1, validationObject12);
-            this.pagePatients1.Location = new System.Drawing.Point(3, 3);
-            this.pagePatients1.Name = "pagePatients1";
-            this.pagePatients1.Size = new System.Drawing.Size(1001, 635);
-            this.pagePatients1.TabIndex = 0;
-            // 
-            // pageAppointments1
-            // 
-            this.pageAppointments1.Dock = System.Windows.Forms.DockStyle.Fill;
-            bindingObject14.Data = "";
-            bindingObject14.Property = "Text";
-            bindingObject14.TwoWay = true;
-            this.bindingProvider1.SetLink(this.pageAppointments1, bindingObject14);
-            validationObject14.CustomErrorMessage = "";
-            validationObject14.Optional = false;
-            validationObject14.PropertyName = "Text";
-            validationObject14.Regex = null;
-            validationObject14.ValidationType = Kimtoo.ValidationProvider.ValidationTypes.None;
-            this.validationProvider1.SetLink(this.pageAppointments1, validationObject14);
-            this.pageAppointments1.Location = new System.Drawing.Point(3, 3);
-            this.pageAppointments1.Name = "pageAppointments1";
-            this.pageAppointments1.Size = new System.Drawing.Size(1001, 635);
-            this.pageAppointments1.TabIndex = 0;
+            this.bunifuSnackbar1.AllowDragging = false;
+            this.bunifuSnackbar1.AllowMultipleViews = true;
+            this.bunifuSnackbar1.ClickToClose = true;
+            this.bunifuSnackbar1.DoubleClickToClose = true;
+            this.bunifuSnackbar1.DurationAfterIdle = 3000;
+            this.bunifuSnackbar1.ErrorOptions.ActionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSnackbar1.ErrorOptions.ActionBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSnackbar1.ErrorOptions.ActionBorderRadius = 1;
+            this.bunifuSnackbar1.ErrorOptions.ActionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.bunifuSnackbar1.ErrorOptions.ActionForeColor = System.Drawing.Color.Black;
+            this.bunifuSnackbar1.ErrorOptions.BackColor = System.Drawing.Color.White;
+            this.bunifuSnackbar1.ErrorOptions.BorderColor = System.Drawing.Color.White;
+            this.bunifuSnackbar1.ErrorOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(204)))), ((int)(((byte)(199)))));
+            this.bunifuSnackbar1.ErrorOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.bunifuSnackbar1.ErrorOptions.ForeColor = System.Drawing.Color.Black;
+            this.bunifuSnackbar1.ErrorOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon")));
+            this.bunifuSnackbar1.ErrorOptions.IconLeftMargin = 12;
+            this.bunifuSnackbar1.FadeCloseIcon = false;
+            this.bunifuSnackbar1.Host = Bunifu.UI.WinForms.BunifuSnackbar.Hosts.FormOwner;
+            this.bunifuSnackbar1.InformationOptions.ActionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSnackbar1.InformationOptions.ActionBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSnackbar1.InformationOptions.ActionBorderRadius = 1;
+            this.bunifuSnackbar1.InformationOptions.ActionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.bunifuSnackbar1.InformationOptions.ActionForeColor = System.Drawing.Color.Black;
+            this.bunifuSnackbar1.InformationOptions.BackColor = System.Drawing.Color.White;
+            this.bunifuSnackbar1.InformationOptions.BorderColor = System.Drawing.Color.White;
+            this.bunifuSnackbar1.InformationOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(145)))), ((int)(((byte)(213)))), ((int)(((byte)(255)))));
+            this.bunifuSnackbar1.InformationOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.bunifuSnackbar1.InformationOptions.ForeColor = System.Drawing.Color.Black;
+            this.bunifuSnackbar1.InformationOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon1")));
+            this.bunifuSnackbar1.InformationOptions.IconLeftMargin = 12;
+            this.bunifuSnackbar1.Margin = 10;
+            this.bunifuSnackbar1.MaximumSize = new System.Drawing.Size(0, 0);
+            this.bunifuSnackbar1.MaximumViews = 7;
+            this.bunifuSnackbar1.MessageRightMargin = 15;
+            this.bunifuSnackbar1.MinimumSize = new System.Drawing.Size(0, 0);
+            this.bunifuSnackbar1.ShowBorders = false;
+            this.bunifuSnackbar1.ShowCloseIcon = false;
+            this.bunifuSnackbar1.ShowIcon = true;
+            this.bunifuSnackbar1.ShowShadows = true;
+            this.bunifuSnackbar1.SuccessOptions.ActionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSnackbar1.SuccessOptions.ActionBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSnackbar1.SuccessOptions.ActionBorderRadius = 1;
+            this.bunifuSnackbar1.SuccessOptions.ActionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.bunifuSnackbar1.SuccessOptions.ActionForeColor = System.Drawing.Color.Black;
+            this.bunifuSnackbar1.SuccessOptions.BackColor = System.Drawing.Color.White;
+            this.bunifuSnackbar1.SuccessOptions.BorderColor = System.Drawing.Color.White;
+            this.bunifuSnackbar1.SuccessOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(255)))), ((int)(((byte)(237)))));
+            this.bunifuSnackbar1.SuccessOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.bunifuSnackbar1.SuccessOptions.ForeColor = System.Drawing.Color.Black;
+            this.bunifuSnackbar1.SuccessOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon2")));
+            this.bunifuSnackbar1.SuccessOptions.IconLeftMargin = 12;
+            this.bunifuSnackbar1.ViewsMargin = 7;
+            this.bunifuSnackbar1.WarningOptions.ActionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSnackbar1.WarningOptions.ActionBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.bunifuSnackbar1.WarningOptions.ActionBorderRadius = 1;
+            this.bunifuSnackbar1.WarningOptions.ActionFont = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold);
+            this.bunifuSnackbar1.WarningOptions.ActionForeColor = System.Drawing.Color.Black;
+            this.bunifuSnackbar1.WarningOptions.BackColor = System.Drawing.Color.White;
+            this.bunifuSnackbar1.WarningOptions.BorderColor = System.Drawing.Color.White;
+            this.bunifuSnackbar1.WarningOptions.CloseIconColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(143)))));
+            this.bunifuSnackbar1.WarningOptions.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+            this.bunifuSnackbar1.WarningOptions.ForeColor = System.Drawing.Color.Black;
+            this.bunifuSnackbar1.WarningOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon3")));
+            this.bunifuSnackbar1.WarningOptions.IconLeftMargin = 12;
+            this.bunifuSnackbar1.ZoomCloseIcon = true;
             // 
             // FrmMain
             // 
@@ -960,54 +986,58 @@ namespace Clinic_Mang_Sys
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
             this.ClientSize = new System.Drawing.Size(1280, 720);
+            this.Controls.Add(this.pages);
             this.Controls.Add(this.bunifuAppBar1);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.pages);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MinimumSize = new System.Drawing.Size(1100, 680);
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmMain";
-            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
-            this.bunifuShadowPanel1.ResumeLayout(false);
-            this.bunifuShadowPanel1.PerformLayout();
-            this.tabPage6.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
             this.pages.ResumeLayout(false);
+            this.tabPage6.ResumeLayout(false);
+            this.bunifuShadowPanel1.ResumeLayout(false);
+            this.bunifuShadowPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
+            this.tabPage5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
-        private Bunifu.UI.WinForms.BunifuSnackbar bunifuSnackbar1;
-        private Kimtoo.BindingProvider.BindingProvider bindingProvider1;
-        private Bunifu.UI.WinForms.BunifuTextBox PasswordTextBox;
-        private Kimtoo.ValidationProvider.ValidationProvider validationProvider1;
-        private Bunifu.UI.WinForms.BunifuTextBox EmailTextBox;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnLogin;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox picLogo;
-        private System.Windows.Forms.Label label5;
-        private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel1;
-        private System.Windows.Forms.TabPage tabPage6;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage4;
+        #endregion
+
+        private Bunifu.UI.WinForms.BunifuFormDock bunifuFormDock1;
+        private System.Windows.Forms.Panel panel1;
+        private Kimtoo.NavigtionMenu Menu;
+        private Bunifu.Utils.BunifuAppBar bunifuAppBar1;
+        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private Kimtoo.NavigtionMenu Menu;
-        private System.Windows.Forms.TabPage tabPage5;
-        private Bunifu.Utils.BunifuAppBar bunifuAppBar1;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TabPage tabPage4;
+        private Clinic_Mang_Sys.Pages.PagePatients pagePatients1;
         private Bunifu.UI.WinForms.BunifuPages pages;
+        private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Timer timer1;
-        private Bunifu.UI.WinForms.BunifuFormDock bunifuFormDock1;
-        private Pages.PageDashboard pageDashboard1;
-        private Pages.PagePatients pagePatients1;
+        private System.Windows.Forms.TabPage tabPage5;
+        private Clinic_Mang_Sys.Pages.PageAppointments pageAppointments2;
+        private Clinic_Mang_Sys.Pages.PageDashboard pageDashboard1;
         private Pages.PageAppointments pageAppointments1;
+        private System.Windows.Forms.TabPage tabPage6;
+        private Bunifu.UI.WinForms.BunifuShadowPanel bunifuShadowPanel1;
+        private System.Windows.Forms.PictureBox picLogo;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label3;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnLogin;
+        private Kimtoo.ValidationProvider.ValidationProvider validationProvider1;
+        private Kimtoo.BindingProvider.BindingProvider bindingProvider1;
+        private Bunifu.UI.WinForms.BunifuTextBox PasswordTextBox;
+        private Bunifu.UI.WinForms.BunifuTextBox EmailTextBox;
+        private Bunifu.UI.WinForms.BunifuSnackbar bunifuSnackbar1;
     }
 }
