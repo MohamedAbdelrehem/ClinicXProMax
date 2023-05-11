@@ -1,8 +1,14 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Kimtoo.DbManager;
 using ServiceStack.DataAnnotations;
 
 namespace Clinic_Mang_Sys.Models
 {
+    //[AutoGenerateTable(1)]
     [Alias("ClinicInfo")]
     public class ClinicInfo
     {
