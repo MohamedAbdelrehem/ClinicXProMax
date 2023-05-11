@@ -97,7 +97,7 @@ namespace Clinic_Mang_Sys
             {
                 //for loading UI
                 Cursor.Current = Cursors.WaitCursor;
-                //new FrmSettings().ShowDialog();
+                new FrmSettings().ShowDialog();
                 return;
             }
             if (path == "Settings.Clinic")
@@ -105,6 +105,13 @@ namespace Clinic_Mang_Sys
                 //for loading UI
                 Cursor.Current = Cursors.WaitCursor;
                 new FrmClinic().ShowDialog();
+                return;
+            }
+            if (path == "About Us")
+            {
+                //for loading UI
+                Cursor.Current = Cursors.WaitCursor;
+                new FrmAbout().ShowDialog();
                 return;
             }
             bunifuAppBar1.Title = path;
