@@ -5,8 +5,8 @@ using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 using Bunifu.UI.WinForms;
-using Clinic_Mang_Sys.Lib;
 using Clinic_Mang_Sys.Models;
+using Clinic_Mang_Sys.Lib;
 using Kimtoo.BindingProvider;
 using Kimtoo.DbContext;
 using ServiceStack.OrmLite;
@@ -203,7 +203,7 @@ namespace Clinic_Mang_Sys.Pages
             //get record of cell
             var record = gridAppointment.GetRecord<Appointment>();
             //open form frmTreatment and start waiting for close
-            var frmTreatment = new Forms.FrmTreatment(record);
+            var frmTreatment = new Clinic_Mang_Sys.Forms.FrmTreatment(record);
             frmTreatment.FormTreatmentClosed += FrmTreatment_FormClosed;
             frmTreatment.ShowDialog();
 
@@ -246,5 +246,6 @@ namespace Clinic_Mang_Sys.Pages
             btnAdd.Text = "اضافة";
 
         }
+
     }
 }
