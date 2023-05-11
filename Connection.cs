@@ -1,4 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Data.SqlClient;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using ServiceStack.OrmLite;
 using Kimtoo.DbContext;
 using System.Windows.Forms;
@@ -13,7 +18,7 @@ namespace Clinic_Mang_Sys
             try
             {
                 var err = Db.Init(
-                    @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|ClincX.mdf;Integrated Security=True;Connect Timeout=30",
+                    @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\github\C#\ClinicXProMax\ClincX.mdf;Integrated Security=True;Asynchronous Processing=True;Connect Timeout=30",
                     SqlServerDialect.Provider
                 );
 
