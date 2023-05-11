@@ -7,7 +7,7 @@ using ServiceStack.DataAnnotations;
 
 namespace Clinic_Mang_Sys.Models
 {
-
+    //[AutoGenerateTable(0)]
     [Alias("Patients")]
     public class Patients
     {
