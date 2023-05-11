@@ -7,10 +7,8 @@ using Kimtoo.BindingProvider;
 using Kimtoo.DbContext;
 using ServiceStack.OrmLite;
 
-
 namespace Clinic_Mang_Sys.Forms
 {
-
     public partial class FrmTreatment : Form
     {
         private Treatment _treatment = null;
@@ -18,6 +16,77 @@ namespace Clinic_Mang_Sys.Forms
         public FrmTreatment(Appointment appointment)
         {
             InitializeComponent();
+
+
+            initializeCurrancy();
+
+            loadData(appointment);
+
+            //update lable total
+            loadTotalBilling();
+
+            gridTreatment.Bind(_treatment.GetBilling());
+            //Grid
+            gridEditDelete();
+
+            Cursor.Current = Cursors.Default;
+        }
+
+        private void loadData(Appointment appointment)
+        {
+            this._treatment = appointment.GetTreatment();
+            if (_treatment == null)
+            {
+                //create Appointment
+                _treatment = new Treatment { AppointmentId = appointment.Id, };
+                Db.Get().Save(_treatment);
+                //add defult billing
+                Db.Get()
+                    .Save(
+                        new Bill { TreatmentId = _treatment.Id, Description = "Appointment Fee" }
+                    );
+                Db.Get()
+                    .Save(
+                        new Bill { TreatmentId = _treatment.Id, Description = "Consultation Fee" }
+                    );
+                Db.Get()
+                    .Save(new Bill { TreatmentId = _treatment.Id, Description = "Prescriptions" });
+                Db.Get()
+                    .Save(new Bill { TreatmentId = _treatment.Id, Description = "Treatment Fee" });
+            }
+            bindingProvider1.Bind(_treatment);
+        }
+
+        private void gridEditDelete()
+        {
+            gridTreatment.OnDelete<Bill>((a, b) => Db.Get().Delete(a) >= 0);
+            gridTreatment.OnEdit<Bill>(
+                (a, b) =>
+                {
+                    try
+                    {
+                        Db.Get().Save(a);
+                    }
+                    catch (Exception e)
+                    {
+                        MessageBox.Show("Enter a Value without EGP");
+                    }
+
+                    loadTotalBilling();
+                    return true;
+                }
+            );
+            gridTreatment.OnError<Bill>(
+                (
+                    a,
+                    b
+                ) => { /*Do Nothing*/
+                }
+            );
+        }
+
+        private void initializeCurrancy()
+        {
             string Lang = Properties.Settings.Default.Lang;
             //Intialize Currancey
             gridTreatment.Columns[2]
@@ -47,60 +116,6 @@ namespace Clinic_Mang_Sys.Forms
                 gridTreatment.Columns[2].DefaultCellStyle.FormatProvider =
                     CultureInfo.GetCultureInfo("ar-EG");
             }
-
-            this._treatment = appointment.GetTreatment();
-            if (_treatment == null)
-            {
-                //create Appointment
-                _treatment = new Treatment { AppointmentId = appointment.Id, };
-                Db.Get().Save(_treatment);
-                //add defult billing
-                Db.Get()
-                    .Save(
-                        new Bill { TreatmentId = _treatment.Id, Description = "Appointment Fee" }
-                    );
-                Db.Get()
-                    .Save(
-                        new Bill { TreatmentId = _treatment.Id, Description = "Consultation Fee" }
-                    );
-                Db.Get()
-                    .Save(new Bill { TreatmentId = _treatment.Id, Description = "Prescriptions" });
-                Db.Get()
-                    .Save(new Bill { TreatmentId = _treatment.Id, Description = "Treatment Fee" });
-            }
-            bindingProvider1.Bind(_treatment);
-
-            //update lable total
-            loadTotalBilling();
-
-            gridTreatment.Bind(_treatment.GetBilling());
-            //Grid
-            gridTreatment.OnDelete<Bill>((a, b) => Db.Get().Delete(a) >= 0);
-            gridTreatment.OnEdit<Bill>(
-                (a, b) =>
-                {
-                    try
-                    {
-                        Db.Get().Save(a);
-                    }
-                    catch (Exception e)
-                    {
-                        MessageBox.Show("Enter a Valid Value");
-                    }
-
-                    loadTotalBilling();
-                    return true;
-                }
-            );
-            gridTreatment.OnError<Bill>(
-                (
-                    a,
-                    b
-                ) => { /*Do Nothing*/
-                }
-            );
-
-            Cursor.Current = Cursors.Default;
         }
 
         private void btnSave_Click(object sender, EventArgs e)
@@ -132,7 +147,7 @@ namespace Clinic_Mang_Sys.Forms
 
         void loadTotalBilling()
         {
-            lblTotal.Text = $"Total: {_treatment.GetBilling().Sum(r => r.Amount).ToString()}";
+            lblTotal.Text = $"Total: {_treatment.GetBilling().Sum(r => r.Amount).ToString()} EGP";
         }
 
 
@@ -142,6 +157,14 @@ namespace Clinic_Mang_Sys.Forms
         private void FrmTreatment_FormClosing(object sender, FormClosingEventArgs e)
         {
             FormTreatmentClosed?.Invoke(this, new FormClosedEventArgs(e.CloseReason));
+        }
+
+        private void btnReceipt_Click(object sender, EventArgs e)
+        {
+            //for loading UI
+            Cursor.Current = Cursors.WaitCursor;
+            //open form frmTreatment and start waiting for close
+            new FrmPrint(_treatment).ShowDialog();
         }
     }
 }
