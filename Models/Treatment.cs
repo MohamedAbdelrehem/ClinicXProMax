@@ -1,11 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using Kimtoo.DbContext;
+using Kimtoo.DbManager;
 using ServiceStack.DataAnnotations;
 using ServiceStack.OrmLite;
 
 namespace Clinic_Mang_Sys.Models
 {
+    //[AutoGenerateTable(1)]
     [Alias("Treatment")]
     public class Treatment
     {
@@ -15,7 +20,7 @@ namespace Clinic_Mang_Sys.Models
         [ForeignKey(typeof(Appointment), OnDelete = "CASCADE")]
         public int AppointmentId { get; set; }
 
-        public string ConsultationNote { get; set; } = "";
+        public string consultationNote { get; set; } = "";
 
         public string Prescriptions { get; set; } = "";
 

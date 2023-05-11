@@ -2,13 +2,15 @@
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.ComponentModel;
+
 public class MohamedToggleButton : CheckBox
-{//Fields
+{ //Fields
     private Color onBackColor = Color.MediumSlateBlue;
     private Color onToggleColor = Color.WhiteSmoke;
     private Color offBackColor = Color.Gray;
     private Color offToggleColor = Color.Gainsboro;
     private bool solidStyle = true;
+
     //Properties
     [Category("Mohamed Code Advance")]
     public Color OnBackColor
@@ -72,11 +74,13 @@ public class MohamedToggleButton : CheckBox
             this.Invalidate();
         }
     }
+
     //Constructor
     public MohamedToggleButton()
     {
         this.MinimumSize = new Size(35, 12);
     }
+
     //Methods
     private GraphicsPath GetFigurePath()
     {
@@ -92,6 +96,7 @@ public class MohamedToggleButton : CheckBox
 
         return path;
     }
+
     protected override void OnPaint(PaintEventArgs pevent)
     {
         int toggleSize = this.Height - 5;
@@ -103,20 +108,26 @@ public class MohamedToggleButton : CheckBox
             //Draw the control surface
             if (solidStyle)
                 pevent.Graphics.FillPath(new SolidBrush(onBackColor), GetFigurePath());
-            else pevent.Graphics.DrawPath(new Pen(onBackColor, 2), GetFigurePath());
+            else
+                pevent.Graphics.DrawPath(new Pen(onBackColor, 2), GetFigurePath());
             //Draw the toggle
-            pevent.Graphics.FillEllipse(new SolidBrush(onToggleColor),
-              new Rectangle(this.Width - this.Height + 1, 2, toggleSize, toggleSize));
+            pevent.Graphics.FillEllipse(
+                new SolidBrush(onToggleColor),
+                new Rectangle(this.Width - this.Height + 1, 2, toggleSize, toggleSize)
+            );
         }
         else //OFF
         {
             //Draw the control surface
             if (solidStyle)
                 pevent.Graphics.FillPath(new SolidBrush(offBackColor), GetFigurePath());
-            else pevent.Graphics.DrawPath(new Pen(offBackColor, 2), GetFigurePath());
+            else
+                pevent.Graphics.DrawPath(new Pen(offBackColor, 2), GetFigurePath());
             //Draw the toggle
-            pevent.Graphics.FillEllipse(new SolidBrush(offToggleColor),
-              new Rectangle(2, 2, toggleSize, toggleSize));
+            pevent.Graphics.FillEllipse(
+                new SolidBrush(offToggleColor),
+                new Rectangle(2, 2, toggleSize, toggleSize)
+            );
         }
     }
 }
