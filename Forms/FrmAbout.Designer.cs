@@ -51,7 +51,6 @@ namespace Clinic_Mang_Sys.Forms
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.bunifuAppBar1 = new Bunifu.Utils.BunifuAppBar();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -62,6 +61,7 @@ namespace Clinic_Mang_Sys.Forms
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.bunifuAppBar1 = new Bunifu.Utils.BunifuAppBar();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             this.bunifuPanel5.SuspendLayout();
@@ -362,22 +362,6 @@ namespace Clinic_Mang_Sys.Forms
             this.pictureBox4.TabIndex = 28;
             this.pictureBox4.TabStop = false;
             // 
-            // bunifuAppBar1
-            // 
-            this.bunifuAppBar1.BackColor = System.Drawing.Color.White;
-            this.bunifuAppBar1.ControlBoxColor = System.Drawing.Color.Gray;
-            this.bunifuAppBar1.ControlBoxColorActive = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.bunifuAppBar1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bunifuAppBar1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
-            this.bunifuAppBar1.ForeColor = System.Drawing.Color.Gray;
-            this.bunifuAppBar1.Icon = ((System.Drawing.Image)(resources.GetObject("bunifuAppBar1.Icon")));
-            this.bunifuAppBar1.Location = new System.Drawing.Point(0, 0);
-            this.bunifuAppBar1.Name = "bunifuAppBar1";
-            this.bunifuAppBar1.Size = new System.Drawing.Size(1446, 38);
-            this.bunifuAppBar1.TabIndex = 21;
-            this.bunifuAppBar1.Title = "About Us";
-            this.bunifuAppBar1.TitleMargin = new System.Windows.Forms.Padding(47, 12, 0, 0);
-            // 
             // pictureBox3
             // 
             this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
@@ -502,12 +486,29 @@ namespace Clinic_Mang_Sys.Forms
             this.label11.TabIndex = 36;
             this.label11.Text = "Mohamed Abdelrehem Ali :-";
             // 
+            // bunifuAppBar1
+            // 
+            this.bunifuAppBar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.bunifuAppBar1.ControlBoxColor = System.Drawing.Color.Gray;
+            this.bunifuAppBar1.ControlBoxColorActive = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.bunifuAppBar1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bunifuAppBar1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
+            this.bunifuAppBar1.ForeColor = System.Drawing.Color.Gray;
+            this.bunifuAppBar1.Icon = ((System.Drawing.Image)(resources.GetObject("bunifuAppBar1.Icon")));
+            this.bunifuAppBar1.Location = new System.Drawing.Point(0, 0);
+            this.bunifuAppBar1.Name = "bunifuAppBar1";
+            this.bunifuAppBar1.Size = new System.Drawing.Size(1446, 42);
+            this.bunifuAppBar1.TabIndex = 46;
+            this.bunifuAppBar1.Title = "Printing";
+            this.bunifuAppBar1.TitleMargin = new System.Windows.Forms.Padding(47, 12, 0, 0);
+            // 
             // FrmAbout
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
             this.ClientSize = new System.Drawing.Size(1446, 806);
+            this.Controls.Add(this.bunifuAppBar1);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
@@ -521,13 +522,14 @@ namespace Clinic_Mang_Sys.Forms
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.bunifuAppBar1);
             this.Controls.Add(this.bunifuPanel1);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(1446, 806);
             this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(1446, 806);
             this.Name = "FrmAbout";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmAbout";
@@ -584,7 +586,6 @@ namespace Clinic_Mang_Sys.Forms
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private Bunifu.Utils.BunifuAppBar bunifuAppBar1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -595,5 +596,6 @@ namespace Clinic_Mang_Sys.Forms
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
+        private Bunifu.Utils.BunifuAppBar bunifuAppBar1;
     }
 }
