@@ -51,7 +51,7 @@ namespace Clinic_Mang_Sys.Properties {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\ClincX.mdf;In" +
-            "tegrated Security=True;Connect Timeout=30")]
+            "tegrated Security=True;Asynchronous Processing=True;Connect Timeout=30")]
         public string ClincXConnectionString {
             get {
                 return ((string)(this["ClincXConnectionString"]));
