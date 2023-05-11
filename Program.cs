@@ -3,7 +3,7 @@ using System.Drawing;
 using System.Windows.Forms;
 
 namespace Clinic_Mang_Sys
-{
+{ 
     internal static class Program
     {
         /// <summary>
