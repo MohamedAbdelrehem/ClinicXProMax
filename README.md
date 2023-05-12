@@ -80,9 +80,10 @@ Please note that ClinicXProMax currently only works on Windows.
 
 - [ ] Add Arabic Language 🌍
 - [ ] Make custom Color Accent 🎨
-- [ ] Add RECEIPT and printing it
+- [x] Add RECEIPT 
+- [x] RECEIPT printing
 - [ ] Sending RECEIPT to Patient Whatsapp number.
-- [ ] About Us
+- [x] About Us
 
 
 ## 🤝 How to contribute
