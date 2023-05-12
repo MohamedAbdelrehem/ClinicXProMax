@@ -58,9 +58,9 @@ namespace Clinic_Mang_Sys.Forms
             this.imageMoon_dark = new System.Windows.Forms.PictureBox();
             this.btnArabic = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnEnglish = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.btnToggleDark_LightMode = new MohamedToggleButton();
             this.validationProvider1 = new Kimtoo.ValidationProvider.ValidationProvider();
             this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
-            this.btnToggleDark_LightMode = new MohamedToggleButton();
             ((System.ComponentModel.ISupportInitialize)(this.imageSun_light)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageMoon_light)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imageSun_dark)).BeginInit();
@@ -446,6 +446,31 @@ namespace Clinic_Mang_Sys.Forms
             this.btnEnglish.UseDefaultRadiusAndThickness = true;
             this.btnEnglish.Click += new System.EventHandler(this.btnEnglish_Click);
             // 
+            // btnToggleDark_LightMode
+            // 
+            this.btnToggleDark_LightMode.AutoSize = true;
+            bindingObject8.Data = "";
+            bindingObject8.Property = "Text";
+            bindingObject8.TwoWay = true;
+            this.bindingProvider1.SetLink(this.btnToggleDark_LightMode, bindingObject8);
+            validationObject8.CustomErrorMessage = "";
+            validationObject8.Optional = false;
+            validationObject8.PropertyName = "Text";
+            validationObject8.Regex = null;
+            validationObject8.ValidationType = Kimtoo.ValidationProvider.ValidationTypes.None;
+            this.validationProvider1.SetLink(this.btnToggleDark_LightMode, validationObject8);
+            this.btnToggleDark_LightMode.Location = new System.Drawing.Point(559, 84);
+            this.btnToggleDark_LightMode.MinimumSize = new System.Drawing.Size(60, 30);
+            this.btnToggleDark_LightMode.Name = "btnToggleDark_LightMode";
+            this.btnToggleDark_LightMode.OffBackColor = System.Drawing.Color.Gray;
+            this.btnToggleDark_LightMode.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.btnToggleDark_LightMode.OnBackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnToggleDark_LightMode.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.btnToggleDark_LightMode.Size = new System.Drawing.Size(60, 30);
+            this.btnToggleDark_LightMode.TabIndex = 3;
+            this.btnToggleDark_LightMode.UseVisualStyleBackColor = true;
+            this.btnToggleDark_LightMode.CheckedChanged += new System.EventHandler(this.btnToggleDark_LightMode_CheckedChanged);
+            // 
             // validationProvider1
             // 
             this.validationProvider1.ErrorColor = System.Drawing.Color.Crimson;
@@ -489,31 +514,6 @@ namespace Clinic_Mang_Sys.Forms
             this.bunifuFormDock1.TitleBarOptions.DoubleClickToExpandWindow = true;
             this.bunifuFormDock1.TitleBarOptions.TitleBarControl = null;
             this.bunifuFormDock1.TitleBarOptions.UseBackColorOnDockingIndicators = false;
-            // 
-            // btnToggleDark_LightMode
-            // 
-            this.btnToggleDark_LightMode.AutoSize = true;
-            bindingObject8.Data = "";
-            bindingObject8.Property = "Text";
-            bindingObject8.TwoWay = true;
-            this.bindingProvider1.SetLink(this.btnToggleDark_LightMode, bindingObject8);
-            validationObject8.CustomErrorMessage = "";
-            validationObject8.Optional = false;
-            validationObject8.PropertyName = "Text";
-            validationObject8.Regex = null;
-            validationObject8.ValidationType = Kimtoo.ValidationProvider.ValidationTypes.None;
-            this.validationProvider1.SetLink(this.btnToggleDark_LightMode, validationObject8);
-            this.btnToggleDark_LightMode.Location = new System.Drawing.Point(559, 84);
-            this.btnToggleDark_LightMode.MinimumSize = new System.Drawing.Size(60, 30);
-            this.btnToggleDark_LightMode.Name = "btnToggleDark_LightMode";
-            this.btnToggleDark_LightMode.OffBackColor = System.Drawing.Color.Gray;
-            this.btnToggleDark_LightMode.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.btnToggleDark_LightMode.OnBackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnToggleDark_LightMode.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.btnToggleDark_LightMode.Size = new System.Drawing.Size(60, 30);
-            this.btnToggleDark_LightMode.TabIndex = 3;
-            this.btnToggleDark_LightMode.UseVisualStyleBackColor = true;
-            this.btnToggleDark_LightMode.CheckedChanged += new System.EventHandler(this.btnToggleDark_LightMode_CheckedChanged);
             // 
             // FrmSettings
             // 
