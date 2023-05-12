@@ -24,10 +24,11 @@
 <a href="#-tech-stack">💻 Tech stack</a> &nbsp;&bull;&nbsp;
 <a href="#%EF%B8%8F-installation">🛠️ Installation</a>
 <br>
-<a href="#-contributing">🤝 Contributing</a> &nbsp;&bull;&nbsp;
+<a href="#-to-do">🔜 To Do</a> &nbsp;&bull;&nbsp;
+<a href="#-how-to-contribute">🤝 How to contribute</a> &nbsp;&bull;&nbsp;
 <a href="#%EF%B8%8F-license">⚠️ License</a> &nbsp;&bull;&nbsp;
 <a href="#-spread-the-word">🌟 Spread the word!</a> &nbsp;&bull;&nbsp;
-<a href="#special-thanks-for-minia-university-especially-drabdullah-hassan-and-engshimaa-younis-for-there-support-for-this-project">💛Special thanks</a>
+<a href="#special-thanks-for-minia-university-especially-drabdullah-hassan-and-engal-shaimaa-a-younis-for-there-support-for-this-project">💛Special thanks</a>
 </p>
  <h1 align="center">ClinicXProMax</h1>
  <p align="center">From Appointments to Billing, We've Got You Covered</p>
@@ -54,6 +55,8 @@ Here's a brief high-level overview of the tech stack ClinicXProMax uses:
 
 - .NET Framework: ClinicXProMax uses the .NET Framework, which is a software development platform that provides a comprehensive set of libraries, tools, and frameworks for building Windows desktop and web applications using C#. The .NET Framework provides a rich set of features such as memory management, security, and type safety, making it a robust and secure platform for building applications.
 
+- Microsoft SQL Server: ClinicXProMax uses Microsoft SQL Server, which is a relational database management system that is widely used for storing and retrieving data. SQL Server provides a range of features such as high availability, security, and scalability, making it a popular choice for managing large amounts of data.
+
 - GitHub: ClinicXProMax uses GitHub, which is a web-based platform for version control and collaboration that is widely used by software developers. GitHub provides a range of features such as code review, issue tracking, and project management, making it an ideal platform for managing software projects. ClinicXProMax follows the "Gitflow" branching model by Vincent Driessen, which is a popular Git branching model that provides a clear structure for managing Git branches and releases.
 
 - GitKraken: ClinicXProMax uses GitKraken, which is a Git client that provides a visual interface for managing Git repositories. GitKraken provides a range of features such as branch visualization, merge conflict resolution, and pull request management, making it a popular choice for managing Git repositories.
@@ -73,7 +76,17 @@ Please note that ClinicXProMax currently only works on Windows.
 
 <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" align="center" alt="windows badge" />
 
-## 🤝 Contributing
+## 🔜 To Do
+
+- [ ] Add Arabic Language 🌍
+- [ ] Make custom Color Accent 🎨
+- [x] Add RECEIPT 
+- [x] RECEIPT printing
+- [ ] Sending RECEIPT to Patient Whatsapp number.
+- [x] About Us
+
+
+## 🤝 How to contribute
 
 We welcome contributions to ClinicXProMax! If you're interested in contributing, please follow these steps:
 
@@ -106,4 +119,4 @@ If you want to say thank you and/or support active development of ClinicXProMax:
 
 ##
 
-### 💛Special thanks for Minia University especially Dr.Abdullah Hassan and Eng.Shimaa Younis for there support for this project
+### 💛Special thanks for Minia University especially Dr.Abdullah Hassan and Eng.Al-Shaimaa A. Younis for there support for this project
