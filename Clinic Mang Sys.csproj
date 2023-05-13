@@ -164,6 +164,7 @@
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Appointment.cs" />
+    <Compile Include="Models\Clinic.cs" />
     <Compile Include="Pages\PageAppointments.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -172,6 +173,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Clinic.resx">
+      <DependentUpon>Clinic.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\login_page.resx">
       <DependentUpon>login_page.cs</DependentUpon>
     </EmbeddedResource>
