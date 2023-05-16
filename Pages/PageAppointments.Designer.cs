@@ -587,7 +587,7 @@ namespace Clinic_Mang_Sys.Pages
             bindingObject4.Property = "SelectedValue";
             bindingObject4.TwoWay = true;
             this.bindingProvider1.SetLink(this.PatientIdDropdown, bindingObject4);
-            validationObject4.CustomErrorMessage = "Please chose a Patient";
+            validationObject4.CustomErrorMessage = "Please choose a Patient";
             validationObject4.Optional = false;
             validationObject4.PropertyName = "Text";
             validationObject4.Regex = "(.|\\s)*\\S(.|\\s)*";
