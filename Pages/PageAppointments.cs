@@ -42,8 +42,6 @@ namespace Clinic_Mang_Sys.Pages
             //Cursor look
             Cursor.Current = Cursors.WaitCursor;
 
-            //get data for shadowbox dropmenu
-            PatientIdDropdown.DataSource = Db.Get().Select<Patients>();
 
             List<Appointment> data = Db.Get().Select<Appointment>();
 
@@ -83,7 +81,9 @@ namespace Clinic_Mang_Sys.Pages
 
         private void buttonAdd_Click(object sender, EventArgs e)
         {
+            //get Patient data from DB if there any updates
             PatientIdDropdown.DataSource = Db.Get().Select<Patients>();
+            //then show Panal
             pnlDrawwer.Visible = true;
             bindingProvider1.Bind(new Appointment());
         }
