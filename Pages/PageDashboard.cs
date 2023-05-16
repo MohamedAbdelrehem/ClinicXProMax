@@ -63,7 +63,7 @@ namespace Clinic_Mang_Sys.Pages
             LoadData();
         }
 
-        private void btnRefresh_Click(object sender, EventArgs e)
+        private void buttonRefresh_Click(object sender, EventArgs e)
         {
             LoadData();
         }

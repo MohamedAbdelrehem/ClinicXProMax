@@ -17,7 +17,7 @@ namespace Clinic_Mang_Sys
         public FrmMain()
         {
             Console.WriteLine(System.IO.Path.GetDirectoryName(typeof(Program).Assembly.Location));
-            
+
             try
             {
                 if (Db.Get().Select<ClinicInfo>().Count() == 0)
@@ -72,7 +72,7 @@ namespace Clinic_Mang_Sys
 
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        private void buttonLogin_Click(object sender, EventArgs e)
         {
             //not empty
             if (validationProvider1.Validate().Length > 0) return;

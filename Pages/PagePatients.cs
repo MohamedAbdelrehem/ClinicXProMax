@@ -106,18 +106,18 @@ namespace Clinic_Mang_Sys.Pages
               gridPatients.Bind(data);*/
         } //Minimize bec (Depresed)
 
-        private void btnClose_Click(object sender, EventArgs e)
+        private void buttonClose_Click(object sender, EventArgs e)
         {
             pnlDrawwer.Visible = false;
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
+        private void buttonAdd_Click(object sender, EventArgs e)
         {
             pnlDrawwer.Visible = true;
             bindingProvider1.Bind(new Patients());
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
+        private void buttonSave_Click(object sender, EventArgs e)
         {
             //check validation
             if (validationProvider1.Validate().Length > 0)
@@ -217,7 +217,7 @@ namespace Clinic_Mang_Sys.Pages
                 LoadData();
         }
 
-        private void btnRefresh_Click(object sender, EventArgs e)
+        private void buttonRefresh_Click(object sender, EventArgs e)
         {
             SearchTextBox.Text = "";
             LoadData();

@@ -400,6 +400,7 @@
       <DependentUpon>ClincX.mdf</DependentUpon>
     </Content>
     <Content Include="Icon.ico" />
+    <None Include="Resources\imageSun_dark.Image.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

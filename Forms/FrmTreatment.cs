@@ -80,7 +80,8 @@ namespace Clinic_Mang_Sys.Forms
                 (
                     a,
                     b
-                ) => { /*Do Nothing*/
+                ) =>
+                { /*Do Nothing*/
                 }
             );
         }
@@ -118,7 +119,7 @@ namespace Clinic_Mang_Sys.Forms
             }
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
+        private void buttonSave_Click(object sender, EventArgs e)
         {
             Db.Get().Save(_treatment);
             bunifuSnackbar1.Show(
@@ -129,17 +130,17 @@ namespace Clinic_Mang_Sys.Forms
             loadTotalBilling();
         }
 
-        private void btnRefresh_Click(object sender, EventArgs e)
+        private void buttonRefresh_Click(object sender, EventArgs e)
         {
             gridTreatment.Bind(_treatment.GetBilling());
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
+        private void buttonAdd_Click(object sender, EventArgs e)
         {
             gridTreatment.Bind(new Bill() { TreatmentId = _treatment.Id }, 1);
         }
 
-        private void btnDel_Click(object sender, EventArgs e)
+        private void buttonDel_Click(object sender, EventArgs e)
         {
             gridTreatment.DeleteRow<Bill>();
             loadTotalBilling();
@@ -159,7 +160,7 @@ namespace Clinic_Mang_Sys.Forms
             FormTreatmentClosed?.Invoke(this, new FormClosedEventArgs(e.CloseReason));
         }
 
-        private void btnReceipt_Click(object sender, EventArgs e)
+        private void buttonReceipt_Click(object sender, EventArgs e)
         {
             //for loading UI
             Cursor.Current = Cursors.WaitCursor;

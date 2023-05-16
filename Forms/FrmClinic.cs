@@ -22,7 +22,7 @@ namespace Clinic_Mang_Sys.Forms
             Cursor.Current = Cursors.Default;
         }
 
-        private void btnChangeLogo_Click(object sender, EventArgs e)
+        private void buttonChangeLogo_Click(object sender, EventArgs e)
         {
             openFileDialog1.ShowDialog();
         }
@@ -31,7 +31,7 @@ namespace Clinic_Mang_Sys.Forms
             picLogo.Image = Image.FromFile(openFileDialog1.FileName);
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
+        private void buttonSave_Click(object sender, EventArgs e)
         {
             record.Logo = picLogo.Image.ToBytes();
             Db.Get().Save(record);

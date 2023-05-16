@@ -55,7 +55,7 @@ namespace Clinic_Mang_Sys.Pages
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bunifuPanel3 = new Bunifu.UI.WinForms.BunifuPanel();
-            this.btnRefresh = new System.Windows.Forms.PictureBox();
+            this.buttonRefresh = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
@@ -98,7 +98,7 @@ namespace Clinic_Mang_Sys.Pages
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridNewPatient)).BeginInit();
             this.bunifuPanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnRefresh)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buttonRefresh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.bunifuPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridRecentTransaction)).BeginInit();
@@ -145,7 +145,7 @@ namespace Clinic_Mang_Sys.Pages
             // 
             // lblCompleteValue
             // 
-            this.lblCompleteValue.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.lblCompleteValue.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCompleteValue.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
             this.lblCompleteValue.ForeColor = System.Drawing.Color.DarkGray;
@@ -223,7 +223,7 @@ namespace Clinic_Mang_Sys.Pages
             // 
             // lblActiveValue
             // 
-            this.lblActiveValue.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.lblActiveValue.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblActiveValue.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
             this.lblActiveValue.ForeColor = System.Drawing.Color.DarkGray;
@@ -275,8 +275,8 @@ namespace Clinic_Mang_Sys.Pages
             // 
             // tableLayoutPanel3
             // 
-            this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.tableLayoutPanel3.ColumnCount = 2;
@@ -316,8 +316,8 @@ namespace Clinic_Mang_Sys.Pages
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(191)))), ((int)(((byte)(244)))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.gridNewPatient.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.gridNewPatient.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.gridNewPatient.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gridNewPatient.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridNewPatient.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
@@ -410,7 +410,7 @@ namespace Clinic_Mang_Sys.Pages
             // 
             // bunifuPanel3
             // 
-            this.bunifuPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.bunifuPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuPanel3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(84)))), ((int)(((byte)(193)))));
             this.bunifuPanel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel3.BackgroundImage")));
@@ -418,7 +418,7 @@ namespace Clinic_Mang_Sys.Pages
             this.bunifuPanel3.BorderColor = System.Drawing.Color.Transparent;
             this.bunifuPanel3.BorderRadius = 40;
             this.bunifuPanel3.BorderThickness = 1;
-            this.bunifuPanel3.Controls.Add(this.btnRefresh);
+            this.bunifuPanel3.Controls.Add(this.buttonRefresh);
             this.bunifuPanel3.Controls.Add(this.label13);
             this.bunifuPanel3.Controls.Add(this.pictureBox7);
             this.bunifuPanel3.Location = new System.Drawing.Point(18, 9);
@@ -427,20 +427,20 @@ namespace Clinic_Mang_Sys.Pages
             this.bunifuPanel3.Size = new System.Drawing.Size(534, 41);
             this.bunifuPanel3.TabIndex = 0;
             // 
-            // btnRefresh
+            // buttonRefresh
             // 
-            this.btnRefresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(84)))), ((int)(((byte)(193)))));
-            this.btnRefresh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRefresh.Image = ((System.Drawing.Image)(resources.GetObject("btnRefresh.Image")));
-            this.btnRefresh.Location = new System.Drawing.Point(496, 8);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(20, 21);
-            this.btnRefresh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnRefresh.TabIndex = 5;
-            this.btnRefresh.TabStop = false;
-            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            this.buttonRefresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(123)))), ((int)(((byte)(84)))), ((int)(((byte)(193)))));
+            this.buttonRefresh.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.buttonRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonRefresh.Image = ((System.Drawing.Image)(resources.GetObject("buttonRefresh.Image")));
+            this.buttonRefresh.Location = new System.Drawing.Point(496, 8);
+            this.buttonRefresh.Name = "buttonRefresh";
+            this.buttonRefresh.Size = new System.Drawing.Size(20, 21);
+            this.buttonRefresh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.buttonRefresh.TabIndex = 5;
+            this.buttonRefresh.TabStop = false;
+            this.buttonRefresh.Click += new System.EventHandler(this.buttonRefresh_Click);
             // 
             // label13
             // 
@@ -490,8 +490,8 @@ namespace Clinic_Mang_Sys.Pages
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(236)))), ((int)(((byte)(219)))));
             dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
             this.gridRecentTransaction.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.gridRecentTransaction.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.gridRecentTransaction.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gridRecentTransaction.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridRecentTransaction.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
@@ -584,7 +584,7 @@ namespace Clinic_Mang_Sys.Pages
             // 
             // bunifuPanel4
             // 
-            this.bunifuPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.bunifuPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuPanel4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(184)))), ((int)(((byte)(107)))));
             this.bunifuPanel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel4.BackgroundImage")));
@@ -614,7 +614,7 @@ namespace Clinic_Mang_Sys.Pages
             this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuImageButton1.TabIndex = 5;
             this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Click += new System.EventHandler(this.btnRefresh_Click);
+            this.bunifuImageButton1.Click += new System.EventHandler(this.buttonRefresh_Click);
             // 
             // label14
             // 
@@ -641,7 +641,7 @@ namespace Clinic_Mang_Sys.Pages
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
@@ -687,7 +687,7 @@ namespace Clinic_Mang_Sys.Pages
             // 
             // lblBillingValue
             // 
-            this.lblBillingValue.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.lblBillingValue.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblBillingValue.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
             this.lblBillingValue.ForeColor = System.Drawing.Color.DarkGray;
@@ -777,7 +777,7 @@ namespace Clinic_Mang_Sys.Pages
             // 
             // lblPatientsValue
             // 
-            this.lblPatientsValue.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.lblPatientsValue.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblPatientsValue.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
             this.lblPatientsValue.ForeColor = System.Drawing.Color.DarkGray;
@@ -843,7 +843,7 @@ namespace Clinic_Mang_Sys.Pages
             // 
             // lblAppointmentsValue
             // 
-            this.lblAppointmentsValue.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.lblAppointmentsValue.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblAppointmentsValue.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
             this.lblAppointmentsValue.ForeColor = System.Drawing.Color.DarkGray;
@@ -895,7 +895,7 @@ namespace Clinic_Mang_Sys.Pages
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.tableLayoutPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
@@ -940,7 +940,7 @@ namespace Clinic_Mang_Sys.Pages
             // 
             // lblCancelledValue
             // 
-            this.lblCancelledValue.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.lblCancelledValue.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblCancelledValue.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
             this.lblCancelledValue.ForeColor = System.Drawing.Color.DarkGray;
@@ -1011,7 +1011,7 @@ namespace Clinic_Mang_Sys.Pages
             ((System.ComponentModel.ISupportInitialize)(this.gridNewPatient)).EndInit();
             this.bunifuPanel3.ResumeLayout(false);
             this.bunifuPanel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnRefresh)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buttonRefresh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.bunifuPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridRecentTransaction)).EndInit();
@@ -1053,7 +1053,7 @@ namespace Clinic_Mang_Sys.Pages
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
         private Bunifu.UI.WinForms.BunifuDataGridView gridNewPatient;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel3;
-        private System.Windows.Forms.PictureBox btnRefresh;
+        private System.Windows.Forms.PictureBox buttonRefresh;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.PictureBox pictureBox7;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel2;

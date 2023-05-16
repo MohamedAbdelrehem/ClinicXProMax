@@ -75,20 +75,20 @@ namespace Clinic_Mang_Sys.Pages
             Cursor.Current = Cursors.Default;
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
+        private void buttonClose_Click(object sender, EventArgs e)
         {
             pnlDrawwer.Visible = false;
             LoadData();
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
+        private void buttonAdd_Click(object sender, EventArgs e)
         {
             PatientIdDropdown.DataSource = Db.Get().Select<Patients>();
             pnlDrawwer.Visible = true;
             bindingProvider1.Bind(new Appointment());
         }
 
-        private void btnSave_Click(object sender, EventArgs e)
+        private void buttonSave_Click(object sender, EventArgs e)
         {
             //check validation
             if (validationProvider1.Validate().Length > 0)
@@ -128,7 +128,7 @@ namespace Clinic_Mang_Sys.Pages
             {
                 pnlDrawwer.Visible = true;
                 bindingProvider1.Bind(gridAppointment.GetRecord<Appointment>());
-                btnSave.Visible = CancelCheckBox.Enabled = !gridAppointment
+                buttonSave.Visible = CancelCheckBox.Enabled = !gridAppointment
                     .GetRecord<Appointment>()
                     .HasSessions();
             }
@@ -148,7 +148,7 @@ namespace Clinic_Mang_Sys.Pages
                 LoadData();
         }
 
-        private void btnRefresh_Click(object sender, EventArgs e)
+        private void buttonRefresh_Click(object sender, EventArgs e)
         {
             SearchTextBox.Text = "";
             LoadData();
@@ -185,10 +185,10 @@ namespace Clinic_Mang_Sys.Pages
             int rowCount = gridAppointment.RowCount;
             if (rowCount > 0)
             {
-                btnTreatment.Text = gridAppointment.GetRecord<Appointment>().HasSessions()
+                buttonTreatment.Text = gridAppointment.GetRecord<Appointment>().HasSessions()
                 ? "OPEN TREATMENT SESSION"
                 : "CREATE TREATMENT SESSION";
-                btnTreatment.Visible = !gridAppointment.GetRecord<Appointment>().Cancelled;
+                buttonTreatment.Visible = !gridAppointment.GetRecord<Appointment>().Cancelled;
             }
             else
             {
@@ -196,7 +196,7 @@ namespace Clinic_Mang_Sys.Pages
             }
         }
 
-        private void btnTreatment_Click(object sender, EventArgs e)
+        private void buttonTreatment_Click(object sender, EventArgs e)
         {
             //for loading UI
             Cursor.Current = Cursors.WaitCursor;
@@ -239,11 +239,11 @@ namespace Clinic_Mang_Sys.Pages
         public void Lang_En()
         {
             //MessageBox.Show("tese");
-            btnAdd.Text = "ADD";
+            buttonAdd.Text = "ADD";
         }
         public void Lang_Ar()
         {
-            btnAdd.Text = "اضافة";
+            buttonAdd.Text = "اضافة";
 
         }
 

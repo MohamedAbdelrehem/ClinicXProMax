@@ -21,6 +21,8 @@ namespace Clinic_Mang_Sys.Forms
             InitializeComponent();
             instance = this;
             CheckEnableButton();
+
+            tempTheme();
             Cursor.Current = Cursors.Default;
 
             /*
@@ -28,18 +30,18 @@ namespace Clinic_Mang_Sys.Forms
             //ThemeChange();
             if (mode == "Dark")
             {
-                btnToggleDark_LightMode.Checked = true;
+                buttonToggleDark_LightMode.Checked = true;
             }
             else if (Application.UserAppDataRegistry.GetValue("Mode").ToString() == "Dark")
             {
-                btnToggleDark_LightMode.Checked = false;
+                buttonToggleDark_LightMode.Checked = false;
             }*/
 
         }
 
 
 
-        private void btnToggleDark_LightMode_CheckedChanged(object sender, EventArgs e)
+        private void buttonToggleDark_LightMode_CheckedChanged(object sender, EventArgs e)
         {
             //Toggle between Light and Dark Mode
             if (Properties.Settings.Default.Mode == null || Properties.Settings.Default.Mode == "Light")
@@ -68,12 +70,24 @@ namespace Clinic_Mang_Sys.Forms
 
             // Save the changes to the settings
 
-
+            tempTheme();
 
             ThemeChange();
 
         }
-
+        private void tempTheme()
+        {
+            if (Properties.Settings.Default.Mode == "Light")
+            {
+                this.BackColor = Color.LightBlue;
+                //buttonToggleDark_LightMode.Checked = false;
+            }
+            else
+            {
+                this.BackColor = Color.DarkBlue;
+               // buttonToggleDark_LightMode.Checked = true;
+            }
+        }
         public void ThemeChange()
         {
             ThemeHelper.ThemeDarkLight(this);
@@ -84,19 +98,19 @@ namespace Clinic_Mang_Sys.Forms
             string Lang = Properties.Settings.Default.Lang;
             if (Lang == "En")
             {
-                btnEnglish.Enabled = false;
-                btnArabic.Enabled = true;
+                buttonEnglish.Enabled = false;
+                buttonArabic.Enabled = true;
 
 
             }
             else if (Lang == "Ar")
             {
-                btnEnglish.Enabled = true;
-                btnArabic.Enabled = false;
+                buttonEnglish.Enabled = true;
+                buttonArabic.Enabled = false;
 
             }
         }
-        private void btnEnglish_Click(object sender, EventArgs e)
+        private void buttonEnglish_Click(object sender, EventArgs e)
         {
             Properties.Settings.Default.Lang = "En";
             Properties.Settings.Default.Save();
@@ -104,7 +118,7 @@ namespace Clinic_Mang_Sys.Forms
             CheckEnableButton();
         }
 
-        private void btnArabic_Click(object sender, EventArgs e)
+        private void buttonArabic_Click(object sender, EventArgs e)
         {
             Properties.Settings.Default.Lang = "Ar";
             Properties.Settings.Default.Save();

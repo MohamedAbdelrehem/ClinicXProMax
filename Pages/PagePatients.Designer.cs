@@ -123,9 +123,9 @@ namespace Clinic_Mang_Sys.Pages
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColEdit = new System.Windows.Forms.DataGridViewLinkColumn();
             this.ColDel = new System.Windows.Forms.DataGridViewLinkColumn();
-            this.btnAdd = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.buttonAdd = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.validationProvider1 = new Kimtoo.ValidationProvider.ValidationProvider();
-            this.btnClose = new Bunifu.UI.WinForms.BunifuImageButton();
+            this.buttonClose = new Bunifu.UI.WinForms.BunifuImageButton();
             this.lblTitle = new System.Windows.Forms.Label();
             this.NameTextBox = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -141,9 +141,9 @@ namespace Clinic_Mang_Sys.Pages
             this.DOBDatePicker = new Bunifu.UI.WinForms.BunifuDatePicker();
             this.GenderDropdown = new Bunifu.UI.WinForms.BunifuDropdown();
             this.label6 = new System.Windows.Forms.Label();
-            this.btnSave = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.buttonSave = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.pnlDrawwer = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.btnRefresh = new Bunifu.UI.WinForms.BunifuImageButton();
+            this.buttonRefresh = new Bunifu.UI.WinForms.BunifuImageButton();
             this.bindingProvider1 = new Kimtoo.BindingProvider.BindingProvider();
             this.bunifuSnackbar1 = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.gridPatients)).BeginInit();
@@ -243,8 +243,8 @@ namespace Clinic_Mang_Sys.Pages
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.gridPatients.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.gridPatients.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.gridPatients.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gridPatients.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridPatients.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
@@ -422,155 +422,155 @@ namespace Clinic_Mang_Sys.Pages
             this.ColDel.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             this.ColDel.VisitedLinkColor = System.Drawing.Color.Crimson;
             // 
-            // btnAdd
+            // buttonAdd
             // 
-            this.btnAdd.AllowAnimations = true;
-            this.btnAdd.AllowMouseEffects = true;
-            this.btnAdd.AllowToggling = false;
-            this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAdd.AnimationSpeed = 200;
-            this.btnAdd.AutoGenerateColors = false;
-            this.btnAdd.AutoRoundBorders = false;
-            this.btnAdd.AutoSizeLeftIcon = true;
-            this.btnAdd.AutoSizeRightIcon = true;
-            this.btnAdd.BackColor = System.Drawing.Color.Transparent;
-            this.btnAdd.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.btnAdd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAdd.BackgroundImage")));
-            this.btnAdd.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnAdd.ButtonText = "ADD";
-            this.btnAdd.ButtonTextMarginLeft = 0;
-            this.btnAdd.ColorContrastOnClick = 45;
-            this.btnAdd.ColorContrastOnHover = 45;
-            this.btnAdd.Cursor = System.Windows.Forms.Cursors.Default;
+            this.buttonAdd.AllowAnimations = true;
+            this.buttonAdd.AllowMouseEffects = true;
+            this.buttonAdd.AllowToggling = false;
+            this.buttonAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonAdd.AnimationSpeed = 200;
+            this.buttonAdd.AutoGenerateColors = false;
+            this.buttonAdd.AutoRoundBorders = false;
+            this.buttonAdd.AutoSizeLeftIcon = true;
+            this.buttonAdd.AutoSizeRightIcon = true;
+            this.buttonAdd.BackColor = System.Drawing.Color.Transparent;
+            this.buttonAdd.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.buttonAdd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonAdd.BackgroundImage")));
+            this.buttonAdd.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.buttonAdd.ButtonText = "ADD";
+            this.buttonAdd.ButtonTextMarginLeft = 0;
+            this.buttonAdd.ColorContrastOnClick = 45;
+            this.buttonAdd.ColorContrastOnHover = 45;
+            this.buttonAdd.Cursor = System.Windows.Forms.Cursors.Default;
             borderEdges1.BottomLeft = true;
             borderEdges1.BottomRight = true;
             borderEdges1.TopLeft = true;
             borderEdges1.TopRight = true;
-            this.btnAdd.CustomizableEdges = borderEdges1;
-            this.btnAdd.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnAdd.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnAdd.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btnAdd.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btnAdd.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnAdd.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdd.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.btnAdd.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
-            this.btnAdd.IconMarginLeft = 11;
-            this.btnAdd.IconPadding = 10;
-            this.btnAdd.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAdd.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.btnAdd.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.btnAdd.IconSize = 25;
-            this.btnAdd.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(60)))), ((int)(((byte)(75)))));
-            this.btnAdd.IdleBorderRadius = 35;
-            this.btnAdd.IdleBorderThickness = 1;
-            this.btnAdd.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.btnAdd.IdleIconLeftImage = null;
-            this.btnAdd.IdleIconRightImage = null;
-            this.btnAdd.IndicateFocus = false;
+            this.buttonAdd.CustomizableEdges = borderEdges1;
+            this.buttonAdd.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.buttonAdd.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.buttonAdd.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.buttonAdd.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.buttonAdd.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.buttonAdd.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAdd.ForeColor = System.Drawing.Color.White;
+            this.buttonAdd.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonAdd.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.buttonAdd.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.buttonAdd.IconMarginLeft = 11;
+            this.buttonAdd.IconPadding = 10;
+            this.buttonAdd.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonAdd.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.buttonAdd.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.buttonAdd.IconSize = 25;
+            this.buttonAdd.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(60)))), ((int)(((byte)(75)))));
+            this.buttonAdd.IdleBorderRadius = 35;
+            this.buttonAdd.IdleBorderThickness = 1;
+            this.buttonAdd.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.buttonAdd.IdleIconLeftImage = null;
+            this.buttonAdd.IdleIconRightImage = null;
+            this.buttonAdd.IndicateFocus = false;
             bindingObject3.Data = "";
             bindingObject3.Property = "Text";
             bindingObject3.TwoWay = true;
-            this.bindingProvider1.SetLink(this.btnAdd, bindingObject3);
+            this.bindingProvider1.SetLink(this.buttonAdd, bindingObject3);
             validationObject3.CustomErrorMessage = "";
             validationObject3.Optional = false;
             validationObject3.PropertyName = "Text";
             validationObject3.Regex = null;
             validationObject3.ValidationType = Kimtoo.ValidationProvider.ValidationTypes.None;
-            this.validationProvider1.SetLink(this.btnAdd, validationObject3);
-            this.btnAdd.Location = new System.Drawing.Point(1093, 7);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnAdd.OnDisabledState.BorderRadius = 35;
-            this.btnAdd.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnAdd.OnDisabledState.BorderThickness = 1;
-            this.btnAdd.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btnAdd.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btnAdd.OnDisabledState.IconLeftImage = null;
-            this.btnAdd.OnDisabledState.IconRightImage = null;
-            this.btnAdd.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.btnAdd.onHoverState.BorderRadius = 35;
-            this.btnAdd.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnAdd.onHoverState.BorderThickness = 1;
-            this.btnAdd.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.btnAdd.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.onHoverState.IconLeftImage = null;
-            this.btnAdd.onHoverState.IconRightImage = null;
-            this.btnAdd.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(60)))), ((int)(((byte)(75)))));
-            this.btnAdd.OnIdleState.BorderRadius = 35;
-            this.btnAdd.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnAdd.OnIdleState.BorderThickness = 1;
-            this.btnAdd.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.btnAdd.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.OnIdleState.IconLeftImage = null;
-            this.btnAdd.OnIdleState.IconRightImage = null;
-            this.btnAdd.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.btnAdd.OnPressedState.BorderRadius = 35;
-            this.btnAdd.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnAdd.OnPressedState.BorderThickness = 1;
-            this.btnAdd.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.btnAdd.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.OnPressedState.IconLeftImage = null;
-            this.btnAdd.OnPressedState.IconRightImage = null;
-            this.btnAdd.Size = new System.Drawing.Size(88, 37);
-            this.btnAdd.TabIndex = 2;
-            this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnAdd.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnAdd.TextMarginLeft = 0;
-            this.btnAdd.TextPadding = new System.Windows.Forms.Padding(0);
-            this.btnAdd.UseDefaultRadiusAndThickness = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            this.validationProvider1.SetLink(this.buttonAdd, validationObject3);
+            this.buttonAdd.Location = new System.Drawing.Point(1093, 7);
+            this.buttonAdd.Name = "buttonAdd";
+            this.buttonAdd.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.buttonAdd.OnDisabledState.BorderRadius = 35;
+            this.buttonAdd.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.buttonAdd.OnDisabledState.BorderThickness = 1;
+            this.buttonAdd.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.buttonAdd.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.buttonAdd.OnDisabledState.IconLeftImage = null;
+            this.buttonAdd.OnDisabledState.IconRightImage = null;
+            this.buttonAdd.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.buttonAdd.onHoverState.BorderRadius = 35;
+            this.buttonAdd.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.buttonAdd.onHoverState.BorderThickness = 1;
+            this.buttonAdd.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.buttonAdd.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.buttonAdd.onHoverState.IconLeftImage = null;
+            this.buttonAdd.onHoverState.IconRightImage = null;
+            this.buttonAdd.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(60)))), ((int)(((byte)(75)))));
+            this.buttonAdd.OnIdleState.BorderRadius = 35;
+            this.buttonAdd.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.buttonAdd.OnIdleState.BorderThickness = 1;
+            this.buttonAdd.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.buttonAdd.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.buttonAdd.OnIdleState.IconLeftImage = null;
+            this.buttonAdd.OnIdleState.IconRightImage = null;
+            this.buttonAdd.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.buttonAdd.OnPressedState.BorderRadius = 35;
+            this.buttonAdd.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.buttonAdd.OnPressedState.BorderThickness = 1;
+            this.buttonAdd.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.buttonAdd.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.buttonAdd.OnPressedState.IconLeftImage = null;
+            this.buttonAdd.OnPressedState.IconRightImage = null;
+            this.buttonAdd.Size = new System.Drawing.Size(88, 37);
+            this.buttonAdd.TabIndex = 2;
+            this.buttonAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.buttonAdd.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.buttonAdd.TextMarginLeft = 0;
+            this.buttonAdd.TextPadding = new System.Windows.Forms.Padding(0);
+            this.buttonAdd.UseDefaultRadiusAndThickness = true;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // validationProvider1
             // 
             this.validationProvider1.ErrorColor = System.Drawing.Color.Crimson;
             // 
-            // btnClose
+            // buttonClose
             // 
-            this.btnClose.ActiveImage = null;
-            this.btnClose.AllowAnimations = true;
-            this.btnClose.AllowBuffering = false;
-            this.btnClose.AllowToggling = false;
-            this.btnClose.AllowZooming = true;
-            this.btnClose.AllowZoomingOnFocus = false;
-            this.btnClose.BackColor = System.Drawing.Color.Transparent;
-            this.btnClose.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnClose.ErrorImage = null;
-            this.btnClose.FadeWhenInactive = false;
-            this.btnClose.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
-            this.btnClose.Image = ((System.Drawing.Image)(resources.GetObject("btnClose.Image")));
-            this.btnClose.ImageActive = null;
-            this.btnClose.ImageLocation = null;
-            this.btnClose.ImageMargin = 10;
-            this.btnClose.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnClose.ImageZoomSize = new System.Drawing.Size(35, 35);
-            this.btnClose.InitialImage = null;
+            this.buttonClose.ActiveImage = null;
+            this.buttonClose.AllowAnimations = true;
+            this.buttonClose.AllowBuffering = false;
+            this.buttonClose.AllowToggling = false;
+            this.buttonClose.AllowZooming = true;
+            this.buttonClose.AllowZoomingOnFocus = false;
+            this.buttonClose.BackColor = System.Drawing.Color.Transparent;
+            this.buttonClose.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.buttonClose.ErrorImage = null;
+            this.buttonClose.FadeWhenInactive = false;
+            this.buttonClose.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
+            this.buttonClose.Image = ((System.Drawing.Image)(resources.GetObject("buttonClose.Image")));
+            this.buttonClose.ImageActive = null;
+            this.buttonClose.ImageLocation = null;
+            this.buttonClose.ImageMargin = 10;
+            this.buttonClose.ImageSize = new System.Drawing.Size(25, 25);
+            this.buttonClose.ImageZoomSize = new System.Drawing.Size(35, 35);
+            this.buttonClose.InitialImage = null;
             validationObject4.CustomErrorMessage = "";
             validationObject4.Optional = false;
             validationObject4.PropertyName = "Text";
             validationObject4.Regex = null;
             validationObject4.ValidationType = Kimtoo.ValidationProvider.ValidationTypes.None;
-            this.validationProvider1.SetLink(this.btnClose, validationObject4);
+            this.validationProvider1.SetLink(this.buttonClose, validationObject4);
             bindingObject4.Data = "";
             bindingObject4.Property = "Text";
             bindingObject4.TwoWay = true;
-            this.bindingProvider1.SetLink(this.btnClose, bindingObject4);
-            this.btnClose.Location = new System.Drawing.Point(13, 11);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Rotation = 0;
-            this.btnClose.ShowActiveImage = true;
-            this.btnClose.ShowCursorChanges = true;
-            this.btnClose.ShowImageBorders = true;
-            this.btnClose.ShowSizeMarkers = false;
-            this.btnClose.Size = new System.Drawing.Size(35, 35);
-            this.btnClose.TabIndex = 0;
-            this.btnClose.ToolTipText = "";
-            this.btnClose.WaitOnLoad = false;
-            this.btnClose.Zoom = 10;
-            this.btnClose.ZoomSpeed = 10;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            this.bindingProvider1.SetLink(this.buttonClose, bindingObject4);
+            this.buttonClose.Location = new System.Drawing.Point(13, 11);
+            this.buttonClose.Name = "buttonClose";
+            this.buttonClose.Rotation = 0;
+            this.buttonClose.ShowActiveImage = true;
+            this.buttonClose.ShowCursorChanges = true;
+            this.buttonClose.ShowImageBorders = true;
+            this.buttonClose.ShowSizeMarkers = false;
+            this.buttonClose.Size = new System.Drawing.Size(35, 35);
+            this.buttonClose.TabIndex = 0;
+            this.buttonClose.ToolTipText = "";
+            this.buttonClose.WaitOnLoad = false;
+            this.buttonClose.Zoom = 10;
+            this.buttonClose.ZoomSpeed = 10;
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // lblTitle
             // 
@@ -597,7 +597,7 @@ namespace Clinic_Mang_Sys.Pages
             // 
             this.NameTextBox.AcceptsReturn = false;
             this.NameTextBox.AcceptsTab = false;
-            this.NameTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.NameTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.NameTextBox.AnimationSpeed = 200;
             this.NameTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
@@ -704,7 +704,7 @@ namespace Clinic_Mang_Sys.Pages
             // 
             this.EmailTextBox.AcceptsReturn = false;
             this.EmailTextBox.AcceptsTab = false;
-            this.EmailTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.EmailTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.EmailTextBox.AnimationSpeed = 200;
             this.EmailTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
@@ -790,7 +790,7 @@ namespace Clinic_Mang_Sys.Pages
             // 
             this.PhoneTextBox.AcceptsReturn = false;
             this.PhoneTextBox.AcceptsTab = false;
-            this.PhoneTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.PhoneTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.PhoneTextBox.AnimationSpeed = 200;
             this.PhoneTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
@@ -897,7 +897,7 @@ namespace Clinic_Mang_Sys.Pages
             // 
             this.AddressTextBox.AcceptsReturn = false;
             this.AddressTextBox.AcceptsTab = false;
-            this.AddressTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.AddressTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.AddressTextBox.AnimationSpeed = 200;
             this.AddressTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
@@ -983,8 +983,8 @@ namespace Clinic_Mang_Sys.Pages
             // 
             this.AllergiesTextBox.AcceptsReturn = false;
             this.AllergiesTextBox.AcceptsTab = false;
-            this.AllergiesTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.AllergiesTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.AllergiesTextBox.AnimationSpeed = 200;
             this.AllergiesTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
@@ -1152,7 +1152,7 @@ namespace Clinic_Mang_Sys.Pages
             // 
             // DOBDatePicker
             // 
-            this.DOBDatePicker.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.DOBDatePicker.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.DOBDatePicker.BackColor = System.Drawing.Color.Transparent;
             this.DOBDatePicker.BorderRadius = 13;
@@ -1263,106 +1263,106 @@ namespace Clinic_Mang_Sys.Pages
             this.label6.TabIndex = 9;
             this.label6.Text = "Gender";
             // 
-            // btnSave
+            // buttonSave
             // 
-            this.btnSave.AllowAnimations = true;
-            this.btnSave.AllowMouseEffects = true;
-            this.btnSave.AllowToggling = false;
-            this.btnSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSave.AnimationSpeed = 200;
-            this.btnSave.AutoGenerateColors = false;
-            this.btnSave.AutoRoundBorders = false;
-            this.btnSave.AutoSizeLeftIcon = true;
-            this.btnSave.AutoSizeRightIcon = true;
-            this.btnSave.BackColor = System.Drawing.Color.Transparent;
-            this.btnSave.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.btnSave.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSave.BackgroundImage")));
-            this.btnSave.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnSave.ButtonText = "SAVE";
-            this.btnSave.ButtonTextMarginLeft = 0;
-            this.btnSave.ColorContrastOnClick = 45;
-            this.btnSave.ColorContrastOnHover = 45;
-            this.btnSave.Cursor = System.Windows.Forms.Cursors.Default;
+            this.buttonSave.AllowAnimations = true;
+            this.buttonSave.AllowMouseEffects = true;
+            this.buttonSave.AllowToggling = false;
+            this.buttonSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonSave.AnimationSpeed = 200;
+            this.buttonSave.AutoGenerateColors = false;
+            this.buttonSave.AutoRoundBorders = false;
+            this.buttonSave.AutoSizeLeftIcon = true;
+            this.buttonSave.AutoSizeRightIcon = true;
+            this.buttonSave.BackColor = System.Drawing.Color.Transparent;
+            this.buttonSave.BackColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.buttonSave.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonSave.BackgroundImage")));
+            this.buttonSave.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.buttonSave.ButtonText = "SAVE";
+            this.buttonSave.ButtonTextMarginLeft = 0;
+            this.buttonSave.ColorContrastOnClick = 45;
+            this.buttonSave.ColorContrastOnHover = 45;
+            this.buttonSave.Cursor = System.Windows.Forms.Cursors.Default;
             borderEdges2.BottomLeft = true;
             borderEdges2.BottomRight = true;
             borderEdges2.TopLeft = true;
             borderEdges2.TopRight = true;
-            this.btnSave.CustomizableEdges = borderEdges2;
-            this.btnSave.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnSave.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnSave.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btnSave.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btnSave.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
-            this.btnSave.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSave.IconLeftCursor = System.Windows.Forms.Cursors.Default;
-            this.btnSave.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
-            this.btnSave.IconMarginLeft = 11;
-            this.btnSave.IconPadding = 10;
-            this.btnSave.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSave.IconRightCursor = System.Windows.Forms.Cursors.Default;
-            this.btnSave.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
-            this.btnSave.IconSize = 25;
-            this.btnSave.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(60)))), ((int)(((byte)(75)))));
-            this.btnSave.IdleBorderRadius = 35;
-            this.btnSave.IdleBorderThickness = 1;
-            this.btnSave.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.btnSave.IdleIconLeftImage = null;
-            this.btnSave.IdleIconRightImage = null;
-            this.btnSave.IndicateFocus = false;
+            this.buttonSave.CustomizableEdges = borderEdges2;
+            this.buttonSave.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.buttonSave.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.buttonSave.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.buttonSave.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.buttonSave.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.buttonSave.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSave.ForeColor = System.Drawing.Color.White;
+            this.buttonSave.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonSave.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.buttonSave.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.buttonSave.IconMarginLeft = 11;
+            this.buttonSave.IconPadding = 10;
+            this.buttonSave.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonSave.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.buttonSave.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.buttonSave.IconSize = 25;
+            this.buttonSave.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(60)))), ((int)(((byte)(75)))));
+            this.buttonSave.IdleBorderRadius = 35;
+            this.buttonSave.IdleBorderThickness = 1;
+            this.buttonSave.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.buttonSave.IdleIconLeftImage = null;
+            this.buttonSave.IdleIconRightImage = null;
+            this.buttonSave.IndicateFocus = false;
             bindingObject20.Data = "";
             bindingObject20.Property = "Text";
             bindingObject20.TwoWay = true;
-            this.bindingProvider1.SetLink(this.btnSave, bindingObject20);
+            this.bindingProvider1.SetLink(this.buttonSave, bindingObject20);
             validationObject20.CustomErrorMessage = "";
             validationObject20.Optional = false;
             validationObject20.PropertyName = "Text";
             validationObject20.Regex = null;
             validationObject20.ValidationType = Kimtoo.ValidationProvider.ValidationTypes.None;
-            this.validationProvider1.SetLink(this.btnSave, validationObject20);
-            this.btnSave.Location = new System.Drawing.Point(489, 718);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
-            this.btnSave.OnDisabledState.BorderRadius = 35;
-            this.btnSave.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnSave.OnDisabledState.BorderThickness = 1;
-            this.btnSave.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.btnSave.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
-            this.btnSave.OnDisabledState.IconLeftImage = null;
-            this.btnSave.OnDisabledState.IconRightImage = null;
-            this.btnSave.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.btnSave.onHoverState.BorderRadius = 35;
-            this.btnSave.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnSave.onHoverState.BorderThickness = 1;
-            this.btnSave.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.btnSave.onHoverState.ForeColor = System.Drawing.Color.White;
-            this.btnSave.onHoverState.IconLeftImage = null;
-            this.btnSave.onHoverState.IconRightImage = null;
-            this.btnSave.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(60)))), ((int)(((byte)(75)))));
-            this.btnSave.OnIdleState.BorderRadius = 35;
-            this.btnSave.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnSave.OnIdleState.BorderThickness = 1;
-            this.btnSave.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
-            this.btnSave.OnIdleState.ForeColor = System.Drawing.Color.White;
-            this.btnSave.OnIdleState.IconLeftImage = null;
-            this.btnSave.OnIdleState.IconRightImage = null;
-            this.btnSave.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.btnSave.OnPressedState.BorderRadius = 35;
-            this.btnSave.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnSave.OnPressedState.BorderThickness = 1;
-            this.btnSave.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
-            this.btnSave.OnPressedState.ForeColor = System.Drawing.Color.White;
-            this.btnSave.OnPressedState.IconLeftImage = null;
-            this.btnSave.OnPressedState.IconRightImage = null;
-            this.btnSave.Size = new System.Drawing.Size(102, 37);
-            this.btnSave.TabIndex = 10;
-            this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnSave.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnSave.TextMarginLeft = 0;
-            this.btnSave.TextPadding = new System.Windows.Forms.Padding(0);
-            this.btnSave.UseDefaultRadiusAndThickness = true;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            this.validationProvider1.SetLink(this.buttonSave, validationObject20);
+            this.buttonSave.Location = new System.Drawing.Point(489, 718);
+            this.buttonSave.Name = "buttonSave";
+            this.buttonSave.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.buttonSave.OnDisabledState.BorderRadius = 35;
+            this.buttonSave.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.buttonSave.OnDisabledState.BorderThickness = 1;
+            this.buttonSave.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.buttonSave.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.buttonSave.OnDisabledState.IconLeftImage = null;
+            this.buttonSave.OnDisabledState.IconRightImage = null;
+            this.buttonSave.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.buttonSave.onHoverState.BorderRadius = 35;
+            this.buttonSave.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.buttonSave.onHoverState.BorderThickness = 1;
+            this.buttonSave.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.buttonSave.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.buttonSave.onHoverState.IconLeftImage = null;
+            this.buttonSave.onHoverState.IconRightImage = null;
+            this.buttonSave.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(62)))), ((int)(((byte)(60)))), ((int)(((byte)(75)))));
+            this.buttonSave.OnIdleState.BorderRadius = 35;
+            this.buttonSave.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.buttonSave.OnIdleState.BorderThickness = 1;
+            this.buttonSave.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
+            this.buttonSave.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.buttonSave.OnIdleState.IconLeftImage = null;
+            this.buttonSave.OnIdleState.IconRightImage = null;
+            this.buttonSave.OnPressedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.buttonSave.OnPressedState.BorderRadius = 35;
+            this.buttonSave.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.buttonSave.OnPressedState.BorderThickness = 1;
+            this.buttonSave.OnPressedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            this.buttonSave.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.buttonSave.OnPressedState.IconLeftImage = null;
+            this.buttonSave.OnPressedState.IconRightImage = null;
+            this.buttonSave.Size = new System.Drawing.Size(102, 37);
+            this.buttonSave.TabIndex = 10;
+            this.buttonSave.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.buttonSave.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.buttonSave.TextMarginLeft = 0;
+            this.buttonSave.TextPadding = new System.Windows.Forms.Padding(0);
+            this.buttonSave.UseDefaultRadiusAndThickness = true;
+            this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
             // pnlDrawwer
             // 
@@ -1370,7 +1370,7 @@ namespace Clinic_Mang_Sys.Pages
             this.pnlDrawwer.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
             this.pnlDrawwer.BorderRadius = 1;
             this.pnlDrawwer.BorderThickness = 1;
-            this.pnlDrawwer.Controls.Add(this.btnSave);
+            this.pnlDrawwer.Controls.Add(this.buttonSave);
             this.pnlDrawwer.Controls.Add(this.label6);
             this.pnlDrawwer.Controls.Add(this.GenderDropdown);
             this.pnlDrawwer.Controls.Add(this.DOBDatePicker);
@@ -1386,7 +1386,7 @@ namespace Clinic_Mang_Sys.Pages
             this.pnlDrawwer.Controls.Add(this.label1);
             this.pnlDrawwer.Controls.Add(this.NameTextBox);
             this.pnlDrawwer.Controls.Add(this.lblTitle);
-            this.pnlDrawwer.Controls.Add(this.btnClose);
+            this.pnlDrawwer.Controls.Add(this.buttonClose);
             this.pnlDrawwer.Dock = System.Windows.Forms.DockStyle.Right;
             this.pnlDrawwer.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
             this.pnlDrawwer.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
@@ -1414,50 +1414,50 @@ namespace Clinic_Mang_Sys.Pages
             this.pnlDrawwer.TabIndex = 3;
             this.pnlDrawwer.Visible = false;
             // 
-            // btnRefresh
+            // buttonRefresh
             // 
-            this.btnRefresh.ActiveImage = null;
-            this.btnRefresh.AllowAnimations = true;
-            this.btnRefresh.AllowBuffering = false;
-            this.btnRefresh.AllowToggling = false;
-            this.btnRefresh.AllowZooming = true;
-            this.btnRefresh.AllowZoomingOnFocus = false;
-            this.btnRefresh.BackColor = System.Drawing.Color.Transparent;
-            this.btnRefresh.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnRefresh.ErrorImage = ((System.Drawing.Image)(resources.GetObject("btnRefresh.ErrorImage")));
-            this.btnRefresh.FadeWhenInactive = false;
-            this.btnRefresh.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
-            this.btnRefresh.Image = ((System.Drawing.Image)(resources.GetObject("btnRefresh.Image")));
-            this.btnRefresh.ImageActive = null;
-            this.btnRefresh.ImageLocation = null;
-            this.btnRefresh.ImageMargin = 10;
-            this.btnRefresh.ImageSize = new System.Drawing.Size(25, 25);
-            this.btnRefresh.ImageZoomSize = new System.Drawing.Size(35, 35);
-            this.btnRefresh.InitialImage = ((System.Drawing.Image)(resources.GetObject("btnRefresh.InitialImage")));
+            this.buttonRefresh.ActiveImage = null;
+            this.buttonRefresh.AllowAnimations = true;
+            this.buttonRefresh.AllowBuffering = false;
+            this.buttonRefresh.AllowToggling = false;
+            this.buttonRefresh.AllowZooming = true;
+            this.buttonRefresh.AllowZoomingOnFocus = false;
+            this.buttonRefresh.BackColor = System.Drawing.Color.Transparent;
+            this.buttonRefresh.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.buttonRefresh.ErrorImage = null;
+            this.buttonRefresh.FadeWhenInactive = false;
+            this.buttonRefresh.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
+            this.buttonRefresh.Image = null;
+            this.buttonRefresh.ImageActive = null;
+            this.buttonRefresh.ImageLocation = null;
+            this.buttonRefresh.ImageMargin = 10;
+            this.buttonRefresh.ImageSize = new System.Drawing.Size(25, 25);
+            this.buttonRefresh.ImageZoomSize = new System.Drawing.Size(35, 35);
+            this.buttonRefresh.InitialImage = null;
             validationObject22.CustomErrorMessage = "";
             validationObject22.Optional = false;
             validationObject22.PropertyName = "Text";
             validationObject22.Regex = null;
             validationObject22.ValidationType = Kimtoo.ValidationProvider.ValidationTypes.None;
-            this.validationProvider1.SetLink(this.btnRefresh, validationObject22);
+            this.validationProvider1.SetLink(this.buttonRefresh, validationObject22);
             bindingObject22.Data = "";
             bindingObject22.Property = "Text";
             bindingObject22.TwoWay = true;
-            this.bindingProvider1.SetLink(this.btnRefresh, bindingObject22);
-            this.btnRefresh.Location = new System.Drawing.Point(254, 9);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Rotation = 0;
-            this.btnRefresh.ShowActiveImage = true;
-            this.btnRefresh.ShowCursorChanges = true;
-            this.btnRefresh.ShowImageBorders = true;
-            this.btnRefresh.ShowSizeMarkers = false;
-            this.btnRefresh.Size = new System.Drawing.Size(35, 35);
-            this.btnRefresh.TabIndex = 5;
-            this.btnRefresh.ToolTipText = "";
-            this.btnRefresh.WaitOnLoad = false;
-            this.btnRefresh.Zoom = 10;
-            this.btnRefresh.ZoomSpeed = 10;
-            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            this.bindingProvider1.SetLink(this.buttonRefresh, bindingObject22);
+            this.buttonRefresh.Location = new System.Drawing.Point(254, 9);
+            this.buttonRefresh.Name = "buttonRefresh";
+            this.buttonRefresh.Rotation = 0;
+            this.buttonRefresh.ShowActiveImage = true;
+            this.buttonRefresh.ShowCursorChanges = true;
+            this.buttonRefresh.ShowImageBorders = true;
+            this.buttonRefresh.ShowSizeMarkers = false;
+            this.buttonRefresh.Size = new System.Drawing.Size(35, 35);
+            this.buttonRefresh.TabIndex = 5;
+            this.buttonRefresh.ToolTipText = "";
+            this.buttonRefresh.WaitOnLoad = false;
+            this.buttonRefresh.Zoom = 10;
+            this.buttonRefresh.ZoomSpeed = 10;
+            this.buttonRefresh.Click += new System.EventHandler(this.buttonRefresh_Click);
             // 
             // bunifuSnackbar1
             // 
@@ -1533,9 +1533,9 @@ namespace Clinic_Mang_Sys.Pages
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
-            this.Controls.Add(this.btnRefresh);
+            this.Controls.Add(this.buttonRefresh);
             this.Controls.Add(this.pnlDrawwer);
-            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.buttonAdd);
             this.Controls.Add(this.gridPatients);
             this.Controls.Add(this.SearchTextBox);
             this.DoubleBuffered = true;
@@ -1562,11 +1562,11 @@ namespace Clinic_Mang_Sys.Pages
 
         private Bunifu.UI.WinForms.BunifuTextBox SearchTextBox;
         private Bunifu.UI.WinForms.BunifuDataGridView gridPatients;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnAdd;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton buttonAdd;
         private Kimtoo.ValidationProvider.ValidationProvider validationProvider1;
         private Kimtoo.BindingProvider.BindingProvider bindingProvider1;
         private Bunifu.UI.WinForms.BunifuSnackbar bunifuSnackbar1;
-        private Bunifu.UI.WinForms.BunifuImageButton btnClose;
+        private Bunifu.UI.WinForms.BunifuImageButton buttonClose;
         private System.Windows.Forms.Label lblTitle;
         private Bunifu.UI.WinForms.BunifuTextBox NameTextBox;
         private System.Windows.Forms.Label label1;
@@ -1582,9 +1582,9 @@ namespace Clinic_Mang_Sys.Pages
         private Bunifu.UI.WinForms.BunifuDatePicker DOBDatePicker;
         private Bunifu.UI.WinForms.BunifuDropdown GenderDropdown;
         private System.Windows.Forms.Label label6;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnSave;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton buttonSave;
         private Bunifu.UI.WinForms.BunifuShadowPanel pnlDrawwer;
-        private Bunifu.UI.WinForms.BunifuImageButton btnRefresh;
+        private Bunifu.UI.WinForms.BunifuImageButton buttonRefresh;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewImageColumn Column10;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
