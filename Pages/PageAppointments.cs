@@ -75,7 +75,7 @@ namespace Clinic_Mang_Sys.Pages
 
         private void buttonClose_Click(object sender, EventArgs e)
         {
-            pnlDrawwer.Visible = false;
+            panelDrawwer.Visible = false;
             LoadData();
         }
 
@@ -84,7 +84,7 @@ namespace Clinic_Mang_Sys.Pages
             //get Patient data from DB if there any updates
             PatientIdDropdown.DataSource = Db.Get().Select<Patients>();
             //then show Panal
-            pnlDrawwer.Visible = true;
+            panelDrawwer.Visible = true;
             bindingProvider1.Bind(new Appointment());
         }
 
@@ -109,7 +109,7 @@ namespace Clinic_Mang_Sys.Pages
             }
 
             LoadData();
-            pnlDrawwer.Visible = false;
+            panelDrawwer.Visible = false;
 
             //show AddOrEditedMessage
             bunifuSnackbar1.Show(
@@ -126,7 +126,7 @@ namespace Clinic_Mang_Sys.Pages
 
             if (e.ColumnIndex == ColEdit.Index)
             {
-                pnlDrawwer.Visible = true;
+                panelDrawwer.Visible = true;
                 bindingProvider1.Bind(gridAppointment.GetRecord<Appointment>());
                 buttonSave.Visible = CancelCheckBox.Enabled = !gridAppointment
                     .GetRecord<Appointment>()

@@ -142,12 +142,12 @@ namespace Clinic_Mang_Sys.Pages
             this.GenderDropdown = new Bunifu.UI.WinForms.BunifuDropdown();
             this.label6 = new System.Windows.Forms.Label();
             this.buttonSave = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.pnlDrawwer = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.panelDrawwer = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.buttonRefresh = new Bunifu.UI.WinForms.BunifuImageButton();
             this.bindingProvider1 = new Kimtoo.BindingProvider.BindingProvider();
             this.bunifuSnackbar1 = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.gridPatients)).BeginInit();
-            this.pnlDrawwer.SuspendLayout();
+            this.panelDrawwer.SuspendLayout();
             this.SuspendLayout();
             // 
             // SearchTextBox
@@ -243,8 +243,8 @@ namespace Clinic_Mang_Sys.Pages
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.gridPatients.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.gridPatients.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.gridPatients.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gridPatients.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridPatients.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
@@ -597,7 +597,7 @@ namespace Clinic_Mang_Sys.Pages
             // 
             this.NameTextBox.AcceptsReturn = false;
             this.NameTextBox.AcceptsTab = false;
-            this.NameTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.NameTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.NameTextBox.AnimationSpeed = 200;
             this.NameTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
@@ -704,7 +704,7 @@ namespace Clinic_Mang_Sys.Pages
             // 
             this.EmailTextBox.AcceptsReturn = false;
             this.EmailTextBox.AcceptsTab = false;
-            this.EmailTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.EmailTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.EmailTextBox.AnimationSpeed = 200;
             this.EmailTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
@@ -790,7 +790,7 @@ namespace Clinic_Mang_Sys.Pages
             // 
             this.PhoneTextBox.AcceptsReturn = false;
             this.PhoneTextBox.AcceptsTab = false;
-            this.PhoneTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.PhoneTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.PhoneTextBox.AnimationSpeed = 200;
             this.PhoneTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
@@ -897,7 +897,7 @@ namespace Clinic_Mang_Sys.Pages
             // 
             this.AddressTextBox.AcceptsReturn = false;
             this.AddressTextBox.AcceptsTab = false;
-            this.AddressTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.AddressTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.AddressTextBox.AnimationSpeed = 200;
             this.AddressTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
@@ -983,8 +983,8 @@ namespace Clinic_Mang_Sys.Pages
             // 
             this.AllergiesTextBox.AcceptsReturn = false;
             this.AllergiesTextBox.AcceptsTab = false;
-            this.AllergiesTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.AllergiesTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.AllergiesTextBox.AnimationSpeed = 200;
             this.AllergiesTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
@@ -1152,7 +1152,7 @@ namespace Clinic_Mang_Sys.Pages
             // 
             // DOBDatePicker
             // 
-            this.DOBDatePicker.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.DOBDatePicker.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.DOBDatePicker.BackColor = System.Drawing.Color.Transparent;
             this.DOBDatePicker.BorderRadius = 13;
@@ -1364,55 +1364,55 @@ namespace Clinic_Mang_Sys.Pages
             this.buttonSave.UseDefaultRadiusAndThickness = true;
             this.buttonSave.Click += new System.EventHandler(this.buttonSave_Click);
             // 
-            // pnlDrawwer
+            // panelDrawwer
             // 
-            this.pnlDrawwer.BackColor = System.Drawing.Color.Transparent;
-            this.pnlDrawwer.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
-            this.pnlDrawwer.BorderRadius = 1;
-            this.pnlDrawwer.BorderThickness = 1;
-            this.pnlDrawwer.Controls.Add(this.buttonSave);
-            this.pnlDrawwer.Controls.Add(this.label6);
-            this.pnlDrawwer.Controls.Add(this.GenderDropdown);
-            this.pnlDrawwer.Controls.Add(this.DOBDatePicker);
-            this.pnlDrawwer.Controls.Add(this.label5);
-            this.pnlDrawwer.Controls.Add(this.label7);
-            this.pnlDrawwer.Controls.Add(this.label4);
-            this.pnlDrawwer.Controls.Add(this.label2);
-            this.pnlDrawwer.Controls.Add(this.AllergiesTextBox);
-            this.pnlDrawwer.Controls.Add(this.AddressTextBox);
-            this.pnlDrawwer.Controls.Add(this.label3);
-            this.pnlDrawwer.Controls.Add(this.PhoneTextBox);
-            this.pnlDrawwer.Controls.Add(this.EmailTextBox);
-            this.pnlDrawwer.Controls.Add(this.label1);
-            this.pnlDrawwer.Controls.Add(this.NameTextBox);
-            this.pnlDrawwer.Controls.Add(this.lblTitle);
-            this.pnlDrawwer.Controls.Add(this.buttonClose);
-            this.pnlDrawwer.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlDrawwer.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
-            this.pnlDrawwer.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
+            this.panelDrawwer.BackColor = System.Drawing.Color.Transparent;
+            this.panelDrawwer.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
+            this.panelDrawwer.BorderRadius = 1;
+            this.panelDrawwer.BorderThickness = 1;
+            this.panelDrawwer.Controls.Add(this.buttonSave);
+            this.panelDrawwer.Controls.Add(this.label6);
+            this.panelDrawwer.Controls.Add(this.GenderDropdown);
+            this.panelDrawwer.Controls.Add(this.DOBDatePicker);
+            this.panelDrawwer.Controls.Add(this.label5);
+            this.panelDrawwer.Controls.Add(this.label7);
+            this.panelDrawwer.Controls.Add(this.label4);
+            this.panelDrawwer.Controls.Add(this.label2);
+            this.panelDrawwer.Controls.Add(this.AllergiesTextBox);
+            this.panelDrawwer.Controls.Add(this.AddressTextBox);
+            this.panelDrawwer.Controls.Add(this.label3);
+            this.panelDrawwer.Controls.Add(this.PhoneTextBox);
+            this.panelDrawwer.Controls.Add(this.EmailTextBox);
+            this.panelDrawwer.Controls.Add(this.label1);
+            this.panelDrawwer.Controls.Add(this.NameTextBox);
+            this.panelDrawwer.Controls.Add(this.lblTitle);
+            this.panelDrawwer.Controls.Add(this.buttonClose);
+            this.panelDrawwer.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelDrawwer.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
+            this.panelDrawwer.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
             bindingObject21.Data = "";
             bindingObject21.Property = "Text";
             bindingObject21.TwoWay = true;
-            this.bindingProvider1.SetLink(this.pnlDrawwer, bindingObject21);
+            this.bindingProvider1.SetLink(this.panelDrawwer, bindingObject21);
             validationObject21.CustomErrorMessage = "";
             validationObject21.Optional = false;
             validationObject21.PropertyName = "Text";
             validationObject21.Regex = null;
             validationObject21.ValidationType = Kimtoo.ValidationProvider.ValidationTypes.None;
-            this.validationProvider1.SetLink(this.pnlDrawwer, validationObject21);
-            this.pnlDrawwer.Location = new System.Drawing.Point(539, 0);
-            this.pnlDrawwer.Name = "pnlDrawwer";
-            this.pnlDrawwer.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
-            this.pnlDrawwer.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
-            this.pnlDrawwer.ShadowColor = System.Drawing.Color.DarkGray;
-            this.pnlDrawwer.ShadowDept = 2;
-            this.pnlDrawwer.ShadowDepth = 5;
-            this.pnlDrawwer.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
-            this.pnlDrawwer.ShadowTopLeftVisible = false;
-            this.pnlDrawwer.Size = new System.Drawing.Size(654, 798);
-            this.pnlDrawwer.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
-            this.pnlDrawwer.TabIndex = 3;
-            this.pnlDrawwer.Visible = false;
+            this.validationProvider1.SetLink(this.panelDrawwer, validationObject21);
+            this.panelDrawwer.Location = new System.Drawing.Point(539, 0);
+            this.panelDrawwer.Name = "panelDrawwer";
+            this.panelDrawwer.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
+            this.panelDrawwer.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
+            this.panelDrawwer.ShadowColor = System.Drawing.Color.DarkGray;
+            this.panelDrawwer.ShadowDept = 2;
+            this.panelDrawwer.ShadowDepth = 5;
+            this.panelDrawwer.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
+            this.panelDrawwer.ShadowTopLeftVisible = false;
+            this.panelDrawwer.Size = new System.Drawing.Size(654, 798);
+            this.panelDrawwer.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
+            this.panelDrawwer.TabIndex = 3;
+            this.panelDrawwer.Visible = false;
             // 
             // buttonRefresh
             // 
@@ -1534,7 +1534,7 @@ namespace Clinic_Mang_Sys.Pages
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
             this.Controls.Add(this.buttonRefresh);
-            this.Controls.Add(this.pnlDrawwer);
+            this.Controls.Add(this.panelDrawwer);
             this.Controls.Add(this.buttonAdd);
             this.Controls.Add(this.gridPatients);
             this.Controls.Add(this.SearchTextBox);
@@ -1552,8 +1552,8 @@ namespace Clinic_Mang_Sys.Pages
             this.Name = "PagePatients";
             this.Size = new System.Drawing.Size(1193, 798);
             ((System.ComponentModel.ISupportInitialize)(this.gridPatients)).EndInit();
-            this.pnlDrawwer.ResumeLayout(false);
-            this.pnlDrawwer.PerformLayout();
+            this.panelDrawwer.ResumeLayout(false);
+            this.panelDrawwer.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1583,7 +1583,7 @@ namespace Clinic_Mang_Sys.Pages
         private Bunifu.UI.WinForms.BunifuDropdown GenderDropdown;
         private System.Windows.Forms.Label label6;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton buttonSave;
-        private Bunifu.UI.WinForms.BunifuShadowPanel pnlDrawwer;
+        private Bunifu.UI.WinForms.BunifuShadowPanel panelDrawwer;
         private Bunifu.UI.WinForms.BunifuImageButton buttonRefresh;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewImageColumn Column10;

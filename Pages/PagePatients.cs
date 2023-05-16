@@ -108,12 +108,12 @@ namespace Clinic_Mang_Sys.Pages
 
         private void buttonClose_Click(object sender, EventArgs e)
         {
-            pnlDrawwer.Visible = false;
+            panelDrawwer.Visible = false;
         }
 
         private void buttonAdd_Click(object sender, EventArgs e)
         {
-            pnlDrawwer.Visible = true;
+            panelDrawwer.Visible = true;
             bindingProvider1.Bind(new Patients());
         }
 
@@ -140,7 +140,7 @@ namespace Clinic_Mang_Sys.Pages
             }
 
             LoadData();
-            pnlDrawwer.Visible = false;
+            panelDrawwer.Visible = false;
 
             //show AddOrEditedMessage
             bunifuSnackbar1.Show(
@@ -196,7 +196,7 @@ namespace Clinic_Mang_Sys.Pages
 
             if (e.ColumnIndex == ColEdit.Index)
             {
-                pnlDrawwer.Visible = true;
+                panelDrawwer.Visible = true;
                 bindingProvider1.Bind(gridPatients.GetRecord<Patients>());
             }
             if (e.ColumnIndex == ColDel.Index)

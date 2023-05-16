@@ -117,7 +117,7 @@ namespace Clinic_Mang_Sys.Pages
             this.ColEdit = new System.Windows.Forms.DataGridViewLinkColumn();
             this.ColDel = new System.Windows.Forms.DataGridViewLinkColumn();
             this.buttonAdd = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.pnlDrawwer = new Bunifu.UI.WinForms.BunifuShadowPanel();
+            this.panelDrawwer = new Bunifu.UI.WinForms.BunifuShadowPanel();
             this.label6 = new System.Windows.Forms.Label();
             this.CancelCheckBox = new Bunifu.UI.WinForms.BunifuCheckBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -142,7 +142,7 @@ namespace Clinic_Mang_Sys.Pages
             this.validationProvider1 = new Kimtoo.ValidationProvider.ValidationProvider();
             this.PatientIdDropdown = new Bunifu.UI.WinForms.BunifuDropdown();
             ((System.ComponentModel.ISupportInitialize)(this.gridAppointment)).BeginInit();
-            this.pnlDrawwer.SuspendLayout();
+            this.panelDrawwer.SuspendLayout();
             this.SuspendLayout();
             // 
             // SearchTextBox
@@ -238,8 +238,8 @@ namespace Clinic_Mang_Sys.Pages
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.gridAppointment.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.gridAppointment.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.gridAppointment.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gridAppointment.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridAppointment.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
@@ -499,52 +499,52 @@ namespace Clinic_Mang_Sys.Pages
             this.buttonAdd.UseDefaultRadiusAndThickness = true;
             this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
-            // pnlDrawwer
+            // panelDrawwer
             // 
-            this.pnlDrawwer.BackColor = System.Drawing.Color.Transparent;
-            this.pnlDrawwer.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
-            this.pnlDrawwer.BorderRadius = 1;
-            this.pnlDrawwer.BorderThickness = 1;
-            this.pnlDrawwer.Controls.Add(this.PatientIdDropdown);
-            this.pnlDrawwer.Controls.Add(this.label6);
-            this.pnlDrawwer.Controls.Add(this.CancelCheckBox);
-            this.pnlDrawwer.Controls.Add(this.label2);
-            this.pnlDrawwer.Controls.Add(this.buttonSave);
-            this.pnlDrawwer.Controls.Add(this.lblTitle);
-            this.pnlDrawwer.Controls.Add(this.label1);
-            this.pnlDrawwer.Controls.Add(this.DatePicker);
-            this.pnlDrawwer.Controls.Add(this.label5);
-            this.pnlDrawwer.Controls.Add(this.label4);
-            this.pnlDrawwer.Controls.Add(this.NotesTextBox);
-            this.pnlDrawwer.Controls.Add(this.label3);
-            this.pnlDrawwer.Controls.Add(this.TimeTextBox);
-            this.pnlDrawwer.Controls.Add(this.buttonClose);
-            this.pnlDrawwer.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlDrawwer.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
-            this.pnlDrawwer.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
+            this.panelDrawwer.BackColor = System.Drawing.Color.Transparent;
+            this.panelDrawwer.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
+            this.panelDrawwer.BorderRadius = 1;
+            this.panelDrawwer.BorderThickness = 1;
+            this.panelDrawwer.Controls.Add(this.PatientIdDropdown);
+            this.panelDrawwer.Controls.Add(this.label6);
+            this.panelDrawwer.Controls.Add(this.CancelCheckBox);
+            this.panelDrawwer.Controls.Add(this.label2);
+            this.panelDrawwer.Controls.Add(this.buttonSave);
+            this.panelDrawwer.Controls.Add(this.lblTitle);
+            this.panelDrawwer.Controls.Add(this.label1);
+            this.panelDrawwer.Controls.Add(this.DatePicker);
+            this.panelDrawwer.Controls.Add(this.label5);
+            this.panelDrawwer.Controls.Add(this.label4);
+            this.panelDrawwer.Controls.Add(this.NotesTextBox);
+            this.panelDrawwer.Controls.Add(this.label3);
+            this.panelDrawwer.Controls.Add(this.TimeTextBox);
+            this.panelDrawwer.Controls.Add(this.buttonClose);
+            this.panelDrawwer.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelDrawwer.FillStyle = Bunifu.UI.WinForms.BunifuShadowPanel.FillStyles.Solid;
+            this.panelDrawwer.GradientMode = Bunifu.UI.WinForms.BunifuShadowPanel.GradientModes.Vertical;
             validationObject18.CustomErrorMessage = "";
             validationObject18.Optional = false;
             validationObject18.PropertyName = "Text";
             validationObject18.Regex = null;
             validationObject18.ValidationType = Kimtoo.ValidationProvider.ValidationTypes.None;
-            this.validationProvider1.SetLink(this.pnlDrawwer, validationObject18);
+            this.validationProvider1.SetLink(this.panelDrawwer, validationObject18);
             bindingObject18.Data = "";
             bindingObject18.Property = "Text";
             bindingObject18.TwoWay = true;
-            this.bindingProvider1.SetLink(this.pnlDrawwer, bindingObject18);
-            this.pnlDrawwer.Location = new System.Drawing.Point(561, 0);
-            this.pnlDrawwer.Name = "pnlDrawwer";
-            this.pnlDrawwer.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
-            this.pnlDrawwer.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
-            this.pnlDrawwer.ShadowColor = System.Drawing.Color.DarkGray;
-            this.pnlDrawwer.ShadowDept = 2;
-            this.pnlDrawwer.ShadowDepth = 5;
-            this.pnlDrawwer.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
-            this.pnlDrawwer.ShadowTopLeftVisible = false;
-            this.pnlDrawwer.Size = new System.Drawing.Size(647, 795);
-            this.pnlDrawwer.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
-            this.pnlDrawwer.TabIndex = 3;
-            this.pnlDrawwer.Visible = false;
+            this.bindingProvider1.SetLink(this.panelDrawwer, bindingObject18);
+            this.panelDrawwer.Location = new System.Drawing.Point(561, 0);
+            this.panelDrawwer.Name = "panelDrawwer";
+            this.panelDrawwer.PanelColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
+            this.panelDrawwer.PanelColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
+            this.panelDrawwer.ShadowColor = System.Drawing.Color.DarkGray;
+            this.panelDrawwer.ShadowDept = 2;
+            this.panelDrawwer.ShadowDepth = 5;
+            this.panelDrawwer.ShadowStyle = Bunifu.UI.WinForms.BunifuShadowPanel.ShadowStyles.Surrounded;
+            this.panelDrawwer.ShadowTopLeftVisible = false;
+            this.panelDrawwer.Size = new System.Drawing.Size(647, 795);
+            this.panelDrawwer.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
+            this.panelDrawwer.TabIndex = 3;
+            this.panelDrawwer.Visible = false;
             // 
             // label6
             // 
@@ -634,7 +634,7 @@ namespace Clinic_Mang_Sys.Pages
             // 
             // label2
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.LightGray;
@@ -800,7 +800,7 @@ namespace Clinic_Mang_Sys.Pages
             // 
             // DatePicker
             // 
-            this.DatePicker.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.DatePicker.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.DatePicker.BackColor = System.Drawing.Color.Transparent;
             this.DatePicker.BorderRadius = 17;
@@ -881,8 +881,8 @@ namespace Clinic_Mang_Sys.Pages
             // 
             this.NotesTextBox.AcceptsReturn = false;
             this.NotesTextBox.AcceptsTab = false;
-            this.NotesTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.NotesTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.NotesTextBox.AnimationSpeed = 200;
             this.NotesTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
@@ -989,7 +989,7 @@ namespace Clinic_Mang_Sys.Pages
             // 
             this.TimeTextBox.AcceptsReturn = false;
             this.TimeTextBox.AcceptsTab = false;
-            this.TimeTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.TimeTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TimeTextBox.AnimationSpeed = 200;
             this.TimeTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
@@ -1537,7 +1537,7 @@ namespace Clinic_Mang_Sys.Pages
             // 
             // PatientIdDropdown
             // 
-            this.PatientIdDropdown.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.PatientIdDropdown.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.PatientIdDropdown.BackColor = System.Drawing.Color.Transparent;
             this.PatientIdDropdown.BackgroundColor = System.Drawing.Color.LightGray;
@@ -1596,7 +1596,7 @@ namespace Clinic_Mang_Sys.Pages
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
-            this.Controls.Add(this.pnlDrawwer);
+            this.Controls.Add(this.panelDrawwer);
             this.Controls.Add(this.TestTheme);
             this.Controls.Add(this.buttonAdd);
             this.Controls.Add(this.gridAppointment);
@@ -1621,8 +1621,8 @@ namespace Clinic_Mang_Sys.Pages
             this.Size = new System.Drawing.Size(1208, 795);
             this.Load += new System.EventHandler(this.PageAppointments_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridAppointment)).EndInit();
-            this.pnlDrawwer.ResumeLayout(false);
-            this.pnlDrawwer.PerformLayout();
+            this.panelDrawwer.ResumeLayout(false);
+            this.panelDrawwer.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1633,7 +1633,7 @@ namespace Clinic_Mang_Sys.Pages
         private Bunifu.UI.WinForms.BunifuTextBox SearchTextBox;
         private Bunifu.UI.WinForms.BunifuDataGridView gridAppointment;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton buttonAdd;
-        private Bunifu.UI.WinForms.BunifuShadowPanel pnlDrawwer;
+        private Bunifu.UI.WinForms.BunifuShadowPanel panelDrawwer;
         private Bunifu.UI.WinForms.BunifuImageButton buttonClose;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Label label1;
