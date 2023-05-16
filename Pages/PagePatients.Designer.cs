@@ -243,8 +243,8 @@ namespace Clinic_Mang_Sys.Pages
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.gridPatients.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.gridPatients.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.gridPatients.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gridPatients.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridPatients.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
@@ -597,7 +597,7 @@ namespace Clinic_Mang_Sys.Pages
             // 
             this.NameTextBox.AcceptsReturn = false;
             this.NameTextBox.AcceptsTab = false;
-            this.NameTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.NameTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.NameTextBox.AnimationSpeed = 200;
             this.NameTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
@@ -704,7 +704,7 @@ namespace Clinic_Mang_Sys.Pages
             // 
             this.EmailTextBox.AcceptsReturn = false;
             this.EmailTextBox.AcceptsTab = false;
-            this.EmailTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.EmailTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.EmailTextBox.AnimationSpeed = 200;
             this.EmailTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
@@ -790,7 +790,7 @@ namespace Clinic_Mang_Sys.Pages
             // 
             this.PhoneTextBox.AcceptsReturn = false;
             this.PhoneTextBox.AcceptsTab = false;
-            this.PhoneTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.PhoneTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.PhoneTextBox.AnimationSpeed = 200;
             this.PhoneTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
@@ -897,7 +897,7 @@ namespace Clinic_Mang_Sys.Pages
             // 
             this.AddressTextBox.AcceptsReturn = false;
             this.AddressTextBox.AcceptsTab = false;
-            this.AddressTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.AddressTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.AddressTextBox.AnimationSpeed = 200;
             this.AddressTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
@@ -983,8 +983,8 @@ namespace Clinic_Mang_Sys.Pages
             // 
             this.AllergiesTextBox.AcceptsReturn = false;
             this.AllergiesTextBox.AcceptsTab = false;
-            this.AllergiesTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.AllergiesTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.AllergiesTextBox.AnimationSpeed = 200;
             this.AllergiesTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
@@ -1123,11 +1123,11 @@ namespace Clinic_Mang_Sys.Pages
             bindingObject15.Property = "Text";
             bindingObject15.TwoWay = true;
             this.bindingProvider1.SetLink(this.label7, bindingObject15);
-            this.label7.Location = new System.Drawing.Point(55, 494);
+            this.label7.Location = new System.Drawing.Point(55, 487);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(68, 20);
+            this.label7.Size = new System.Drawing.Size(66, 40);
             this.label7.TabIndex = 5;
-            this.label7.Text = "Allergies";
+            this.label7.Text = "Chronic\r\nDiseases";
             // 
             // label5
             // 
@@ -1152,7 +1152,7 @@ namespace Clinic_Mang_Sys.Pages
             // 
             // DOBDatePicker
             // 
-            this.DOBDatePicker.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.DOBDatePicker.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.DOBDatePicker.BackColor = System.Drawing.Color.Transparent;
             this.DOBDatePicker.BorderRadius = 13;
