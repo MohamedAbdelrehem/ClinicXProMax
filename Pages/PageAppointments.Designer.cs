@@ -53,8 +53,6 @@ namespace Clinic_Mang_Sys.Pages
             Kimtoo.BindingProvider.BindingProvider.BindingObject bindingObject3 = new Kimtoo.BindingProvider.BindingProvider.BindingObject();
             Kimtoo.ValidationProvider.ValidationObject validationObject18 = new Kimtoo.ValidationProvider.ValidationObject();
             Kimtoo.BindingProvider.BindingProvider.BindingObject bindingObject18 = new Kimtoo.BindingProvider.BindingProvider.BindingObject();
-            Kimtoo.BindingProvider.BindingProvider.BindingObject bindingObject4 = new Kimtoo.BindingProvider.BindingProvider.BindingObject();
-            Kimtoo.ValidationProvider.ValidationObject validationObject4 = new Kimtoo.ValidationProvider.ValidationObject();
             Kimtoo.BindingProvider.BindingProvider.BindingObject bindingObject5 = new Kimtoo.BindingProvider.BindingProvider.BindingObject();
             Kimtoo.ValidationProvider.ValidationObject validationObject5 = new Kimtoo.ValidationProvider.ValidationObject();
             Kimtoo.BindingProvider.BindingProvider.BindingObject bindingObject6 = new Kimtoo.BindingProvider.BindingProvider.BindingObject();
@@ -104,6 +102,8 @@ namespace Clinic_Mang_Sys.Pages
             Kimtoo.BindingProvider.BindingProvider.BindingObject bindingObject23 = new Kimtoo.BindingProvider.BindingProvider.BindingObject();
             Kimtoo.BindingProvider.BindingProvider.BindingObject bindingObject24 = new Kimtoo.BindingProvider.BindingProvider.BindingObject();
             Kimtoo.ValidationProvider.ValidationObject validationObject24 = new Kimtoo.ValidationProvider.ValidationObject();
+            Kimtoo.BindingProvider.BindingProvider.BindingObject bindingObject4 = new Kimtoo.BindingProvider.BindingProvider.BindingObject();
+            Kimtoo.ValidationProvider.ValidationObject validationObject4 = new Kimtoo.ValidationProvider.ValidationObject();
             Kimtoo.BindingProvider.BindingProvider.BindingObject bindingObject25 = new Kimtoo.BindingProvider.BindingProvider.BindingObject();
             Kimtoo.ValidationProvider.ValidationObject validationObject25 = new Kimtoo.ValidationProvider.ValidationObject();
             this.SearchTextBox = new Bunifu.UI.WinForms.BunifuTextBox();
@@ -118,7 +118,6 @@ namespace Clinic_Mang_Sys.Pages
             this.ColDel = new System.Windows.Forms.DataGridViewLinkColumn();
             this.buttonAdd = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.pnlDrawwer = new Bunifu.UI.WinForms.BunifuShadowPanel();
-            this.PatientIdDropdown = new Bunifu.UI.WinForms.BunifuDropdown();
             this.label6 = new System.Windows.Forms.Label();
             this.CancelCheckBox = new Bunifu.UI.WinForms.BunifuCheckBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -141,6 +140,7 @@ namespace Clinic_Mang_Sys.Pages
             this.TestTheme = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.DateSwitch = new MohamedToggleButton();
             this.validationProvider1 = new Kimtoo.ValidationProvider.ValidationProvider();
+            this.PatientIdDropdown = new Bunifu.UI.WinForms.BunifuDropdown();
             ((System.ComponentModel.ISupportInitialize)(this.gridAppointment)).BeginInit();
             this.pnlDrawwer.SuspendLayout();
             this.SuspendLayout();
@@ -545,62 +545,6 @@ namespace Clinic_Mang_Sys.Pages
             this.pnlDrawwer.Style = Bunifu.UI.WinForms.BunifuShadowPanel.BevelStyles.Flat;
             this.pnlDrawwer.TabIndex = 3;
             this.pnlDrawwer.Visible = false;
-            // 
-            // PatientIdDropdown
-            // 
-            this.PatientIdDropdown.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.PatientIdDropdown.BackColor = System.Drawing.Color.Transparent;
-            this.PatientIdDropdown.BackgroundColor = System.Drawing.Color.LightGray;
-            this.PatientIdDropdown.BorderColor = System.Drawing.Color.Silver;
-            this.PatientIdDropdown.BorderRadius = 17;
-            this.PatientIdDropdown.Color = System.Drawing.Color.Silver;
-            this.PatientIdDropdown.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
-            this.PatientIdDropdown.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.PatientIdDropdown.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.PatientIdDropdown.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.PatientIdDropdown.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.PatientIdDropdown.DisabledIndicatorColor = System.Drawing.Color.DarkGray;
-            this.PatientIdDropdown.DisplayMember = "Name";
-            this.PatientIdDropdown.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.PatientIdDropdown.DropdownBorderThickness = Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thin;
-            this.PatientIdDropdown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.PatientIdDropdown.DropDownTextAlign = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
-            this.PatientIdDropdown.FillDropDown = true;
-            this.PatientIdDropdown.FillIndicator = false;
-            this.PatientIdDropdown.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.PatientIdDropdown.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.PatientIdDropdown.ForeColor = System.Drawing.Color.Black;
-            this.PatientIdDropdown.FormattingEnabled = true;
-            this.PatientIdDropdown.Icon = null;
-            this.PatientIdDropdown.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.PatientIdDropdown.IndicatorColor = System.Drawing.Color.Gray;
-            this.PatientIdDropdown.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
-            this.PatientIdDropdown.ItemBackColor = System.Drawing.Color.White;
-            this.PatientIdDropdown.ItemBorderColor = System.Drawing.Color.White;
-            this.PatientIdDropdown.ItemForeColor = System.Drawing.Color.Black;
-            this.PatientIdDropdown.ItemHeight = 26;
-            this.PatientIdDropdown.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
-            this.PatientIdDropdown.ItemHighLightForeColor = System.Drawing.Color.White;
-            this.PatientIdDropdown.ItemTopMargin = 3;
-            bindingObject4.Data = "PatientId";
-            bindingObject4.Property = "SelectedValue";
-            bindingObject4.TwoWay = true;
-            this.bindingProvider1.SetLink(this.PatientIdDropdown, bindingObject4);
-            validationObject4.CustomErrorMessage = "Please choose a Patient";
-            validationObject4.Optional = false;
-            validationObject4.PropertyName = "Text";
-            validationObject4.Regex = "(.|\\s)*\\S(.|\\s)*";
-            validationObject4.ValidationType = Kimtoo.ValidationProvider.ValidationTypes.NotEmpty;
-            this.validationProvider1.SetLink(this.PatientIdDropdown, validationObject4);
-            this.PatientIdDropdown.Location = new System.Drawing.Point(128, 124);
-            this.PatientIdDropdown.Name = "PatientIdDropdown";
-            this.PatientIdDropdown.Size = new System.Drawing.Size(472, 32);
-            this.PatientIdDropdown.TabIndex = 47;
-            this.PatientIdDropdown.Text = null;
-            this.PatientIdDropdown.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
-            this.PatientIdDropdown.TextLeftMargin = 5;
-            this.PatientIdDropdown.ValueMember = "Id";
             // 
             // label6
             // 
@@ -1591,6 +1535,62 @@ namespace Clinic_Mang_Sys.Pages
             // 
             this.validationProvider1.ErrorColor = System.Drawing.Color.Crimson;
             // 
+            // PatientIdDropdown
+            // 
+            this.PatientIdDropdown.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.PatientIdDropdown.BackColor = System.Drawing.Color.Transparent;
+            this.PatientIdDropdown.BackgroundColor = System.Drawing.Color.LightGray;
+            this.PatientIdDropdown.BorderColor = System.Drawing.Color.Silver;
+            this.PatientIdDropdown.BorderRadius = 17;
+            this.PatientIdDropdown.Color = System.Drawing.Color.Silver;
+            this.PatientIdDropdown.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
+            this.PatientIdDropdown.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.PatientIdDropdown.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.PatientIdDropdown.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.PatientIdDropdown.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.PatientIdDropdown.DisabledIndicatorColor = System.Drawing.Color.DarkGray;
+            this.PatientIdDropdown.DisplayMember = "Name";
+            this.PatientIdDropdown.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.PatientIdDropdown.DropdownBorderThickness = Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thin;
+            this.PatientIdDropdown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.PatientIdDropdown.DropDownTextAlign = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
+            this.PatientIdDropdown.FillDropDown = true;
+            this.PatientIdDropdown.FillIndicator = false;
+            this.PatientIdDropdown.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.PatientIdDropdown.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.PatientIdDropdown.ForeColor = System.Drawing.Color.Black;
+            this.PatientIdDropdown.FormattingEnabled = true;
+            this.PatientIdDropdown.Icon = null;
+            this.PatientIdDropdown.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
+            this.PatientIdDropdown.IndicatorColor = System.Drawing.Color.Gray;
+            this.PatientIdDropdown.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Right;
+            this.PatientIdDropdown.ItemBackColor = System.Drawing.Color.White;
+            this.PatientIdDropdown.ItemBorderColor = System.Drawing.Color.White;
+            this.PatientIdDropdown.ItemForeColor = System.Drawing.Color.Black;
+            this.PatientIdDropdown.ItemHeight = 26;
+            this.PatientIdDropdown.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
+            this.PatientIdDropdown.ItemHighLightForeColor = System.Drawing.Color.White;
+            this.PatientIdDropdown.ItemTopMargin = 3;
+            bindingObject4.Data = "PatientId";
+            bindingObject4.Property = "SelectedValue";
+            bindingObject4.TwoWay = true;
+            this.bindingProvider1.SetLink(this.PatientIdDropdown, bindingObject4);
+            validationObject4.CustomErrorMessage = "Please choose a Patient";
+            validationObject4.Optional = false;
+            validationObject4.PropertyName = "Text";
+            validationObject4.Regex = "(.|\\s)*\\S(.|\\s)*";
+            validationObject4.ValidationType = Kimtoo.ValidationProvider.ValidationTypes.NotEmpty;
+            this.validationProvider1.SetLink(this.PatientIdDropdown, validationObject4);
+            this.PatientIdDropdown.Location = new System.Drawing.Point(128, 124);
+            this.PatientIdDropdown.Name = "PatientIdDropdown";
+            this.PatientIdDropdown.Size = new System.Drawing.Size(472, 32);
+            this.PatientIdDropdown.TabIndex = 47;
+            this.PatientIdDropdown.Text = null;
+            this.PatientIdDropdown.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Left;
+            this.PatientIdDropdown.TextLeftMargin = 5;
+            this.PatientIdDropdown.ValueMember = "Id";
+            // 
             // PageAppointments
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1656,7 +1656,6 @@ namespace Clinic_Mang_Sys.Pages
         private MohamedToggleButton DateSwitch;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton buttonTreatment;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton TestTheme;
-        private Bunifu.UI.WinForms.BunifuDropdown PatientIdDropdown;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewImageColumn Column10;
         private System.Windows.Forms.DataGridViewLinkColumn Column2;
@@ -1665,5 +1664,6 @@ namespace Clinic_Mang_Sys.Pages
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewLinkColumn ColEdit;
         private System.Windows.Forms.DataGridViewLinkColumn ColDel;
+        private Bunifu.UI.WinForms.BunifuDropdown PatientIdDropdown;
     }
 }
