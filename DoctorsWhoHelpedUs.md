@@ -27,7 +27,7 @@
                 style="max-height:100%; max-width:100%" />
         </td>
       <td style="width:250px; height:250px; background-color:red;text-align:center; vertical-align:middle">
-            <img src="Assets/DoctorsImages/Dr.MahmoudHassan-2.jpg"
+            <img src="Assets/DoctorsImages/Dr.MarwaMamdoh-1.png"
                 style="max-height:100%; max-width:100%" />
         </td>
     </tr>
