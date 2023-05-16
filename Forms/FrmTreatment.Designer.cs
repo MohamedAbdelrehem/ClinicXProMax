@@ -60,6 +60,8 @@ namespace Clinic_Mang_Sys.Forms
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             Kimtoo.ValidationProvider.ValidationObject validationObject10 = new Kimtoo.ValidationProvider.ValidationObject();
             Kimtoo.BindingProvider.BindingProvider.BindingObject bindingObject10 = new Kimtoo.BindingProvider.BindingProvider.BindingObject();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             Kimtoo.ValidationProvider.ValidationObject validationObject9 = new Kimtoo.ValidationProvider.ValidationObject();
             Kimtoo.BindingProvider.BindingProvider.BindingObject bindingObject9 = new Kimtoo.BindingProvider.BindingProvider.BindingObject();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
@@ -78,8 +80,6 @@ namespace Clinic_Mang_Sys.Forms
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Kimtoo.BindingProvider.BindingProvider.BindingObject bindingObject7 = new Kimtoo.BindingProvider.BindingProvider.BindingObject();
             Kimtoo.ValidationProvider.ValidationObject validationObject7 = new Kimtoo.ValidationProvider.ValidationObject();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuAppBar1 = new Bunifu.Utils.BunifuAppBar();
             this.bunifuFormDock1 = new Bunifu.UI.WinForms.BunifuFormDock();
             this.label4 = new System.Windows.Forms.Label();
@@ -90,6 +90,9 @@ namespace Clinic_Mang_Sys.Forms
             this.bunifuTextBox1 = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.gridTreatment = new Bunifu.UI.WinForms.BunifuDataGridView();
+            this.Column10 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblTotal = new System.Windows.Forms.Label();
             this.validationProvider1 = new Kimtoo.ValidationProvider.ValidationProvider();
             this.buttonSave = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -101,9 +104,6 @@ namespace Clinic_Mang_Sys.Forms
             this.buttonReceipt = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bindingProvider1 = new Kimtoo.BindingProvider.BindingProvider();
             this.bunifuSnackbar1 = new Bunifu.UI.WinForms.BunifuSnackbar(this.components);
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column10 = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gridTreatment)).BeginInit();
             this.SuspendLayout();
             // 
@@ -198,8 +198,8 @@ namespace Clinic_Mang_Sys.Forms
             // 
             this.NotesTextBox.AcceptsReturn = false;
             this.NotesTextBox.AcceptsTab = false;
-            this.NotesTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.NotesTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.NotesTextBox.AnimationSpeed = 200;
             this.NotesTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
@@ -348,8 +348,8 @@ namespace Clinic_Mang_Sys.Forms
             // 
             this.bunifuTextBox1.AcceptsReturn = false;
             this.bunifuTextBox1.AcceptsTab = false;
-            this.bunifuTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.bunifuTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.bunifuTextBox1.AnimationSpeed = 200;
             this.bunifuTextBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
@@ -461,8 +461,8 @@ namespace Clinic_Mang_Sys.Forms
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.gridTreatment.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.gridTreatment.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.gridTreatment.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gridTreatment.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridTreatment.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(251)))), ((int)(((byte)(252)))));
@@ -532,6 +532,30 @@ namespace Clinic_Mang_Sys.Forms
             this.gridTreatment.Size = new System.Drawing.Size(592, 494);
             this.gridTreatment.TabIndex = 44;
             this.gridTreatment.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            // 
+            // Column10
+            // 
+            this.Column10.DataPropertyName = "Avatar(@Name)";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.NullValue = "System.Drawing.Bitmap";
+            this.Column10.DefaultCellStyle = dataGridViewCellStyle3;
+            this.Column10.FillWeight = 30F;
+            this.Column10.HeaderText = "";
+            this.Column10.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.Column10.Name = "Column10";
+            // 
+            // Column2
+            // 
+            this.Column2.FillWeight = 200F;
+            this.Column2.HeaderText = "Description";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            dataGridViewCellStyle4.NullValue = null;
+            this.Column3.DefaultCellStyle = dataGridViewCellStyle4;
+            this.Column3.HeaderText = "Amount";
+            this.Column3.Name = "Column3";
             // 
             // lblTotal
             // 
@@ -671,7 +695,7 @@ namespace Clinic_Mang_Sys.Forms
             this.buttonAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonAdd.BackColor = System.Drawing.Color.Transparent;
             this.buttonAdd.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.buttonAdd.ErrorImage = ((System.Drawing.Image)(resources.GetObject("buttonAdd.ErrorImage")));
+            this.buttonAdd.ErrorImage = null;
             this.buttonAdd.FadeWhenInactive = false;
             this.buttonAdd.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
             this.buttonAdd.Image = ((System.Drawing.Image)(resources.GetObject("buttonAdd.Image")));
@@ -680,7 +704,7 @@ namespace Clinic_Mang_Sys.Forms
             this.buttonAdd.ImageMargin = 0;
             this.buttonAdd.ImageSize = new System.Drawing.Size(34, 34);
             this.buttonAdd.ImageZoomSize = new System.Drawing.Size(35, 35);
-            this.buttonAdd.InitialImage = ((System.Drawing.Image)(resources.GetObject("buttonAdd.InitialImage")));
+            this.buttonAdd.InitialImage = null;
             validationObject6.CustomErrorMessage = "";
             validationObject6.Optional = false;
             validationObject6.PropertyName = "Text";
@@ -717,7 +741,7 @@ namespace Clinic_Mang_Sys.Forms
             this.buttonRefresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonRefresh.BackColor = System.Drawing.Color.Transparent;
             this.buttonRefresh.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.buttonRefresh.ErrorImage = ((System.Drawing.Image)(resources.GetObject("buttonRefresh.ErrorImage")));
+            this.buttonRefresh.ErrorImage = null;
             this.buttonRefresh.FadeWhenInactive = false;
             this.buttonRefresh.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
             this.buttonRefresh.Image = ((System.Drawing.Image)(resources.GetObject("buttonRefresh.Image")));
@@ -726,7 +750,7 @@ namespace Clinic_Mang_Sys.Forms
             this.buttonRefresh.ImageMargin = 5;
             this.buttonRefresh.ImageSize = new System.Drawing.Size(30, 30);
             this.buttonRefresh.ImageZoomSize = new System.Drawing.Size(35, 35);
-            this.buttonRefresh.InitialImage = ((System.Drawing.Image)(resources.GetObject("buttonRefresh.InitialImage")));
+            this.buttonRefresh.InitialImage = null;
             validationObject5.CustomErrorMessage = "";
             validationObject5.Optional = false;
             validationObject5.PropertyName = "Text";
@@ -763,7 +787,7 @@ namespace Clinic_Mang_Sys.Forms
             this.buttonDel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonDel.BackColor = System.Drawing.Color.Transparent;
             this.buttonDel.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.buttonDel.ErrorImage = ((System.Drawing.Image)(resources.GetObject("buttonDel.ErrorImage")));
+            this.buttonDel.ErrorImage = null;
             this.buttonDel.FadeWhenInactive = false;
             this.buttonDel.Flip = Bunifu.UI.WinForms.BunifuImageButton.FlipOrientation.Normal;
             this.buttonDel.Image = ((System.Drawing.Image)(resources.GetObject("buttonDel.Image")));
@@ -772,7 +796,7 @@ namespace Clinic_Mang_Sys.Forms
             this.buttonDel.ImageMargin = 0;
             this.buttonDel.ImageSize = new System.Drawing.Size(34, 34);
             this.buttonDel.ImageZoomSize = new System.Drawing.Size(35, 35);
-            this.buttonDel.InitialImage = ((System.Drawing.Image)(resources.GetObject("buttonDel.InitialImage")));
+            this.buttonDel.InitialImage = null;
             validationObject4.CustomErrorMessage = "";
             validationObject4.Optional = false;
             validationObject4.PropertyName = "Text";
@@ -1009,30 +1033,6 @@ namespace Clinic_Mang_Sys.Forms
             this.bunifuSnackbar1.WarningOptions.Icon = ((System.Drawing.Image)(resources.GetObject("resource.Icon3")));
             this.bunifuSnackbar1.WarningOptions.IconLeftMargin = 12;
             this.bunifuSnackbar1.ZoomCloseIcon = true;
-            // 
-            // Column3
-            // 
-            dataGridViewCellStyle4.NullValue = null;
-            this.Column3.DefaultCellStyle = dataGridViewCellStyle4;
-            this.Column3.HeaderText = "Amount";
-            this.Column3.Name = "Column3";
-            // 
-            // Column2
-            // 
-            this.Column2.FillWeight = 200F;
-            this.Column2.HeaderText = "Description";
-            this.Column2.Name = "Column2";
-            // 
-            // Column10
-            // 
-            this.Column10.DataPropertyName = "Avatar(@Name)";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.NullValue = "System.Drawing.Bitmap";
-            this.Column10.DefaultCellStyle = dataGridViewCellStyle3;
-            this.Column10.FillWeight = 30F;
-            this.Column10.HeaderText = "";
-            this.Column10.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.Column10.Name = "Column10";
             // 
             // FrmTreatment
             // 
