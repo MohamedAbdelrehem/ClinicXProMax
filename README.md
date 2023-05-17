@@ -117,6 +117,11 @@ If you want to say thank you and/or support active development of ClinicXProMax:
 
 - Add a GitHub Star to the project!
 
+
+## 👨‍⚕️📝 Doctors' Feedback
+
+- [Open DoctorsWhoHelpedUs.md](./DoctorsWhoHelpedUs.md)
+
 ##
 
 ### 💛Special thanks for Minia University especially Dr.Abdullah Hassan and Eng.Al-Shaimaa A. Younis for there support for this project
