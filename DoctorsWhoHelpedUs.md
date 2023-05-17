@@ -50,3 +50,8 @@ We would like to express our sincere gratitude to the following doctors who gene
 
  <img width="350px" src="Assets/DoctorsImages/Dr.Amgad.jpg" align="center" alt="DR" />
  
+  We would like to extend our heartfelt appreciation to these doctors and all others who have contributed their insights and support to the development of ClinicXProMax. Your expertise and commitment to improving healthcare services have been invaluable.
+
+Thank you for being an integral part of our journey towards enhancing clinic management and patient care.
+
+If you have any questions or would like to provide further feedback, please feel free to reach out to us.
