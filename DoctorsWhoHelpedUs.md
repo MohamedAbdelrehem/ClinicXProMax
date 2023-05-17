@@ -1,7 +1,7 @@
 <p align="center">
  <img width="450px" src="Logo-ClinicXProMax.png" align="center" alt="ClinicXProMaxLogo" />
 
-# Doctors' Feedback
+# 👨‍⚕️📝 Doctors' Feedback
 
 We would like to express our sincere gratitude to the following doctors who generously dedicated their time and expertise to provide valuable feedback for ClinicXProMax. Their insights and suggestions have been instrumental in shaping our clinic management system into a robust and user-friendly solution.
     
@@ -45,9 +45,17 @@ The team behind ClinicXProMax has done an excellent job in creating a powerful a
 </table>
 
  
- # Appreciation to Contributing Doctors
+ # 🌟💖 Appreciation to Contributing Doctors
   We would like to extend our heartfelt appreciation to these doctors and all others who have contributed their insights and support to the development of ClinicXProMax. Your expertise and commitment to improving healthcare services have been invaluable.
 
 Thank you for being an integral part of our journey towards enhancing clinic management and patient care.
 
 If you have any questions or would like to provide further feedback, please feel free to reach out to us.
+
+&nbsp;
+--------------------
+<br>
+
+<p align="center">
+ <img src="https://github.com/MohamedAbdelrehem/ClinicXProMax/assets/92957503/7ab02587-eed7-4dcf-bd60-46e245727ed4" alt="Dr.MahmoudHassan"  width="400">
+</p>
