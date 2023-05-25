@@ -260,7 +260,8 @@ namespace Clinic_Mang_Sys
         ((Kimtoo.ButtonItem)(resources.GetObject("Menu.Items2"))),
         ((Kimtoo.ButtonItem)(resources.GetObject("Menu.Items3"))),
         ((Kimtoo.ButtonItem)(resources.GetObject("Menu.Items4"))),
-        ((Kimtoo.ButtonItem)(resources.GetObject("Menu.Items5")))};
+        ((Kimtoo.ButtonItem)(resources.GetObject("Menu.Items5"))),
+        ((Kimtoo.ButtonItem)(resources.GetObject("Menu.Items6")))};
             this.Menu.ItemTextMargin = 8;
             validationObject21.CustomErrorMessage = "";
             validationObject21.Optional = false;
@@ -421,8 +422,8 @@ namespace Clinic_Mang_Sys
             // 
             this.pages.Alignment = System.Windows.Forms.TabAlignment.Bottom;
             this.pages.AllowTransitions = false;
-            this.pages.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.pages.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pages.Controls.Add(this.tabPage6);
             this.pages.Controls.Add(this.tabPage1);
@@ -531,7 +532,7 @@ namespace Clinic_Mang_Sys
             // 
             this.PasswordTextBox.AcceptsReturn = false;
             this.PasswordTextBox.AcceptsTab = false;
-            this.PasswordTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.PasswordTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.PasswordTextBox.AnimationSpeed = 200;
             this.PasswordTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
@@ -617,7 +618,7 @@ namespace Clinic_Mang_Sys
             // 
             this.EmailTextBox.AcceptsReturn = false;
             this.EmailTextBox.AcceptsTab = false;
-            this.EmailTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.EmailTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.EmailTextBox.AnimationSpeed = 200;
             this.EmailTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;

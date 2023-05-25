@@ -59,8 +59,6 @@ namespace Clinic_Mang_Sys.Forms
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.bunifuAppBar1 = new Bunifu.Utils.BunifuAppBar();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
@@ -457,34 +455,11 @@ namespace Clinic_Mang_Sys.Forms
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(12, 708);
+            this.label9.Location = new System.Drawing.Point(15, 733);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(356, 37);
+            this.label9.Size = new System.Drawing.Size(349, 37);
             this.label9.TabIndex = 34;
-            this.label9.Text = "Feel Free To Give Us a Call:";
-            // 
-            // label10
-            // 
-            this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 15F, System.Drawing.FontStyle.Bold);
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(402, 753);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(116, 24);
-            this.label10.TabIndex = 35;
-            this.label10.Text = "01011929211";
-            // 
-            // label11
-            // 
-            this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(137, 754);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(261, 25);
-            this.label11.TabIndex = 36;
-            this.label11.Text = "Mohamed Abdelrehem Ali :-";
+            this.label9.Text = "Feel Free To Give Us a Call";
             // 
             // bunifuAppBar1
             // 
@@ -499,7 +474,7 @@ namespace Clinic_Mang_Sys.Forms
             this.bunifuAppBar1.Name = "bunifuAppBar1";
             this.bunifuAppBar1.Size = new System.Drawing.Size(1446, 42);
             this.bunifuAppBar1.TabIndex = 46;
-            this.bunifuAppBar1.Title = "Printing";
+            this.bunifuAppBar1.Title = "About Us";
             this.bunifuAppBar1.TitleMargin = new System.Windows.Forms.Padding(47, 12, 0, 0);
             // 
             // FrmAbout
@@ -509,8 +484,6 @@ namespace Clinic_Mang_Sys.Forms
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(30)))), ((int)(((byte)(45)))));
             this.ClientSize = new System.Drawing.Size(1446, 806);
             this.Controls.Add(this.bunifuAppBar1);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -594,8 +567,6 @@ namespace Clinic_Mang_Sys.Forms
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
         private Bunifu.Utils.BunifuAppBar bunifuAppBar1;
     }
 }

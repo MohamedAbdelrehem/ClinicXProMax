@@ -18,6 +18,7 @@ namespace Clinic_Mang_Sys
         {
             Console.WriteLine(System.IO.Path.GetDirectoryName(typeof(Program).Assembly.Location));
 
+            //TEST
             try
             {
                 if (Db.Get().Select<ClinicInfo>().Count() == 0)
@@ -37,7 +38,7 @@ namespace Clinic_Mang_Sys
             catch (Exception)
             {
 
-                //Connections.Show();
+                MessageBox.Show("error in test");
             }
 
             //to choose the language Temp
@@ -81,7 +82,7 @@ namespace Clinic_Mang_Sys
             if (record.Email.ToLower() != EmailTextBox.Text.ToLower() || record.Password.ToLower() != PasswordTextBox.Text.ToLower())
             {
                 //show AddOrEditedMessage
-                bunifuSnackbar1.Show(this.FindForm(), "Incorrect username or password", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error);
+                bunifuSnackbar1.Show(this.FindForm(), "Incorrect Email or password", Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error);
                 return;
             }
             pages.SetPage("Dashboard");
@@ -112,6 +113,13 @@ namespace Clinic_Mang_Sys
                 //for loading UI
                 Cursor.Current = Cursors.WaitCursor;
                 new FrmAbout().ShowDialog();
+                return;
+            }
+            if (path == "Expens Calc")
+            {
+                //for loading UI
+                Cursor.Current = Cursors.WaitCursor;
+                new ProfitCalculatorForm().ShowDialog();
                 return;
             }
             bunifuAppBar1.Title = path;

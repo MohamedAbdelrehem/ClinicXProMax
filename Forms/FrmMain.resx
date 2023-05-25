@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <metadata name="bunifuFormDock1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>849, 56</value>
+    <value>549, 17</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>25</value>
+    <value>122</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="PasswordTextBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -143,10 +143,10 @@
 </value>
   </data>
   <metadata name="bindingProvider1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>460, 56</value>
+    <value>160, 17</value>
   </metadata>
   <metadata name="validationProvider1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>692, 56</value>
+    <value>392, 17</value>
   </metadata>
   <data name="EmailTextBox.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -169,7 +169,7 @@
   <data name="validationObject2.Regex" xml:space="preserve">
     <value>(?:[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9]))\.){3}(?:(2(5[0-5]|[0-4][0-9])|1[0-9][0-9]|[1-9]?[0-9])|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])</value>
   </data>
-  <data name="btnLogin.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="buttonLogin.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAJ8AAAAlCAYAAABcSjvzAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANdSURBVHhe7Zw9bNNAGIYzMjIyQX9p/v/aJvbduS6obWwH
@@ -3138,11 +3138,34 @@
         MELqTnFni2NmVOYH+72UegGbPNqfb7iihgAAAABJRU5ErkJgggs=
 </value>
   </data>
+  <data name="Menu.Items6" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAEVOYXZpZ2F0aW9uTWVudSwgVmVyc2lvbj0xLjAuMC4wLCBDdWx0
+        dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPW51bGwMAwAAAFFTeXN0ZW0uRHJhd2luZywgVmVyc2lv
+        bj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWIwM2Y1ZjdmMTFkNTBhM2EF
+        AQAAABFLaW10b28uQnV0dG9uSXRlbQYAAAAVPFRleHQ+a19fQmFja2luZ0ZpZWxkFTxJY29uPmtfX0Jh
+        Y2tpbmdGaWVsZBk8U3ViSXRlbXM+a19fQmFja2luZ0ZpZWxkGzxJc0V4cGFuZGVkPmtfX0JhY2tpbmdG
+        aWVsZBo8SW1hZ2VJZGxlPmtfX0JhY2tpbmdGaWVsZBw8SW1hZ2VBY3RpdmU+a19fQmFja2luZ0ZpZWxk
+        AQQGAAQEFVN5c3RlbS5EcmF3aW5nLkJpdG1hcAMAAAABFVN5c3RlbS5EcmF3aW5nLkJpdG1hcAMAAAAV
+        U3lzdGVtLkRyYXdpbmcuQml0bWFwAwAAAAIAAAAGBAAAAAtFeHBlbnMgQ2FsYwkFAAAACQYAAAAACQcA
+        AAAJCAAAAAUFAAAAFVN5c3RlbS5EcmF3aW5nLkJpdG1hcAEAAAAERGF0YQcCAwAAAAkJAAAAEQYAAAAA
+        AAAAAQcAAAAFAAAACQoAAAABCAAAAAUAAAAJCwAAAA8JAAAA4gAAAAKJUE5HDQoaCgAAAA1JSERSAAAA
+        QAAAAEAIBgAAAKppcd4AAAABc1JHQgCuzhzpAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwwAADsMB
+        x2+oZAAAAHdJREFUeF7t1yEKBFEMRMF///t+vWOaMRszcQ1V8GygZQ4AAAD8u/f+msuMveloU5mxNx1t
+        KjP2pqNNZQYAAMA304PRVGbsTUebyoy96WhTmbE3HW0qMwAAAL6ZHoymMmNvOtpUZuxNR5vKjL3paFOZ
+        AQAAAK9zHvBKs/mkPL8OAAAAAElFTkSuQmCCDwoAAACaAAAAAolQTkcNChoKAAAADUlIRFIAAAAUAAAA
+        FAgGAAAAjYkdDQAAAAFzUkdCAK7OHOkAAAAEZ0FNQQAAsY8L/GEFAAAACXBIWXMAAA7DAAAOwwHHb6hk
+        AAAAL0lEQVQ4T2MYBYMcfP369T+5GGrEKKA2wBbYxGKoEaOA2gBbYBOLoUaMAooBAwMA3TWuB90CQ6cA
+        AAAASUVORK5CYIIPCwAAAJoAAAACiVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNS
+        R0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAvSURBVDhPYxgFgxxk
+        Zmb+JxdDjRgF1AbYAptYDDViFFAbYAtsYjHUiFFAMWBgAABUQmQzUAaHhQAAAABJRU5ErkJgggs=
+</value>
+  </data>
   <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>605, 56</value>
+    <value>305, 17</value>
   </metadata>
   <metadata name="bunifuSnackbar1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>317, 56</value>
+    <value>17, 17</value>
   </metadata>
   <data name="resource.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

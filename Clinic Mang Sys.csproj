@@ -295,8 +295,26 @@
     <Compile Include="Forms\FrmMain.Designer.cs">
       <DependentUpon>FrmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ProfitCalculatorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProfitCalculatorForm.Designer.cs">
+      <DependentUpon>ProfitCalculatorForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Lib\Common.cs" />
     <Compile Include="Lib\Lang.cs" />
+    <Compile Include="Lib\MyButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Lib\myDate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Lib\MyDropmenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Lib\MyTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Lib\MyToggleButton.cs">
       <SubType>Component</SubType>
     </Compile>
