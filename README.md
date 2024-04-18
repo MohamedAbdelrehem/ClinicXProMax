@@ -121,7 +121,7 @@ If you want to say thank you and/or support active development of ClinicXProMax:
 
 ## 👨‍⚕️📝 Doctors' Feedback
 
-- [Open DoctorsWhoHelpedUs.md](./DoctorsWhoHelpedUs.md)
+- [Open DoctorsWhoHelpedUs.md](./DoctorsWhoHelpedUs.md)     <<================== Check the feedback here
 
 ##
 
